@@ -1,0 +1,6 @@
+\contentsline {chapter}{Abstract}{i}{section*.1}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\settowidth {\mytmplen }{\bfseries \cftchappresnum \cftchapaftersnum }\advance \cftchapnumwidth -\mytmplen \relax \renewcommand {\cftchappresnum }{Appendix\nobreakspace {}}\renewcommand {\cftchapaftersnum }{}\settowidth {\mytmplen }{\bfseries \cftchappresnum \cftchapaftersnum }\advance \cftchapnumwidth \mytmplen \relax 
+\contentsline {chapter}{\numberline {A}First Appendix Section}{7}{appendix.A}%
+\contentsline {chapter}{초록}{8}{section*.6}%
+\contentsline {chapter}{Acknowledgements}{9}{appendix*.7}%
