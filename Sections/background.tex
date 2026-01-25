@@ -1,0 +1,230 @@
+\chapter{Background Estimation}
+\label{ch:background}
+
+This chapter describes the methods used to estimate the various background contributions in the signal region. The backgrounds are categorized into three main types: nonprompt leptons from jet misidentification or heavy-flavor decays, conversion backgrounds from photon interactions, and prompt backgrounds from irreducible SM processes. Data-driven methods are employed for the first two categories, while prompt backgrounds are estimated from Monte Carlo simulation.
+
+\section{Overview of Background Composition}
+\label{sec:bkg_overview}
+
+The background composition in the signal region varies between the two analysis channels:
+
+\textbf{$\Pe\Pgm\Pgm$ channel}: The dominant backgrounds are nonprompt leptons ($\sim$46\%), $\ttbar$+X production ($\sim$32\%), and diboson production ($\sim$11\%). Conversion backgrounds contribute approximately 6\%.
+
+\textbf{$\Pgm\Pgm\Pgm$ channel}: Similar composition with nonprompt leptons ($\sim$46\%), $\ttbar$+X ($\sim$32\%), diboson ($\sim$13\%), and smaller conversion contributions ($\sim$1\%).
+
+The nonprompt background is estimated using a data-driven matrix method, conversion backgrounds use MC simulation with data-driven scale factors, and prompt backgrounds are taken directly from MC simulation.
+
+\section{Nonprompt Lepton Background}
+\label{sec:nonprompt}
+
+Nonprompt leptons arise from jets misidentified as leptons or from genuine leptons produced in heavy-flavor hadron decays within jets. These leptons typically fail tight isolation requirements but can pass identification criteria, making them a significant background for trilepton analyses.
+
+\subsection{The Matrix Method}
+
+The matrix method (also known as the fake rate method) extrapolates from control regions enriched in nonprompt leptons to estimate their contribution in the signal region. The method relies on defining two lepton identification criteria: ``tight'' (the signal selection) and ``loose'' (relaxed requirements).
+
+For a sample of events containing one lepton of interest (with other leptons fixed), the number of events passing tight ($N_T$) and loose ($N_L$) identification can be written as:
+\begin{align}
+N_T &= \epsilon_p N_p + \epsilon_f N_f \\
+N_L &= N_p + N_f
+\end{align}
+where $N_p$ and $N_f$ are the numbers of prompt and fake (nonprompt) leptons, $\epsilon_p$ is the tight-to-loose efficiency for prompt leptons, and $\epsilon_f$ is the corresponding efficiency for fake leptons (the ``fake rate'').
+
+Solving for the number of fake leptons passing tight identification:
+\begin{equation}
+N_f^T = \epsilon_f N_f = \frac{\epsilon_f}{\epsilon_p - \epsilon_f}(\epsilon_p N_L - N_T)
+\end{equation}
+
+\subsection{Simplification for Tight Identification}
+
+For the tight identification criteria used in this analysis, the prompt lepton efficiency $\epsilon_p$ is very close to unity. Under this approximation, the expression simplifies to:
+\begin{equation}
+N_f^T \approx \frac{\epsilon_f}{1 - \epsilon_f}(N_L - N_T) = \frac{f}{1-f} N_{L\bar{T}}
+\end{equation}
+where $f \equiv \epsilon_f$ is the fake rate and $N_{L\bar{T}}$ is the number of leptons passing loose but failing tight identification.
+
+\subsection{Extension to Multiple Leptons}
+
+For events with multiple leptons, the matrix method is extended by considering all possible combinations of prompt and fake leptons. For a trilepton event with leptons $\ell_1$, $\ell_2$, $\ell_3$, the nonprompt background contribution is:
+\begin{equation}
+N_{\text{fake}}^{TTT} = \sum_{\text{combinations}} w(\ell_1) \cdot w(\ell_2) \cdot w(\ell_3) \cdot N_{\text{data}}
+\end{equation}
+where the weights $w$ depend on whether each lepton passes ($T$) or fails ($\bar{T}$) tight identification:
+\begin{equation}
+w(\ell) = \begin{cases}
+-f/(1-f) & \text{if lepton passes tight ID} \\
++f/(1-f) & \text{if lepton fails tight ID}
+\end{cases}
+\end{equation}
+
+Events where all three leptons pass tight identification contribute with alternating signs depending on the number of assumed fake leptons, ensuring proper subtraction of the prompt component.
+
+\subsection{Fake Rate Measurement}
+
+The fake rate $f$ is measured in control regions enriched in QCD multijet events, where the lepton is likely to be nonprompt. Single-lepton events selected with prescaled triggers are used, requiring:
+\begin{itemize}
+\item Exactly one lepton passing loose identification
+\item Low missing transverse momentum ($\ptmiss < 20\GeV$) to suppress \PW boson contributions
+\item Low transverse mass ($M_T < 20\GeV$) as an additional \PW veto
+\item Away-side jet requirement to ensure a well-defined QCD topology
+\end{itemize}
+
+The fake rate is measured as a function of lepton $\pT$ and $|\eta|$, accounting for the kinematic dependence of the misidentification probability. Contamination from prompt leptons (primarily from \PW and \PZ decays) is subtracted using MC simulation.
+
+\subsection{Fake Rate Parametrization}
+
+The measured fake rates show strong dependence on lepton $\pT$, typically decreasing at higher momenta where isolation requirements become more discriminating. The fake rate also depends on the pseudorapidity region due to varying detector conditions.
+
+For electrons, typical fake rates range from 10--30\% at low $\pT$ to a few percent at high $\pT$. For muons, fake rates are generally lower, ranging from 5--20\% at low $\pT$ to below 5\% at high $\pT$.
+
+\subsection{Systematic Uncertainties}
+
+Systematic uncertainties on the fake rate measurement arise from several sources:
+\begin{itemize}
+\item \textbf{Prompt subtraction}: Uncertainty in the MC modeling of prompt contamination in the measurement region
+\item \textbf{Source dependence}: The fake rate can depend on the parent process (e.g., b jets vs. light jets)
+\item \textbf{Jet energy scale}: The fake rate depends on the mother jet properties, introducing sensitivity to jet energy calibration
+\end{itemize}
+
+A MC closure test is performed to validate the method. The fake rate measured in simulation is applied to simulated events with known composition, and the predicted nonprompt yield is compared to the truth-level expectation. The closure is typically within 25--35\%, and this non-closure is included in the systematic uncertainty.
+
+Based on these studies, a flat systematic uncertainty of 30\% is assigned to the nonprompt background normalization. This uncertainty is treated as uncorrelated between data-taking periods, as the fake rate behavior depends on the specific lepton identification criteria and detector conditions of each era.
+
+\section{Conversion Background}
+\label{sec:conversion}
+
+Photon conversions can produce additional electrons that mimic the signal topology. Two types of conversions are considered:
+
+\textbf{External conversions}: Photons converting to electron-positron pairs in detector material (primarily the silicon tracker and beam pipe).
+
+\textbf{Internal conversions} (Dalitz decays): Virtual photons from meson decays ($\pi^0 \to \gamma^* \gamma \to e^+e^- \gamma$) producing electron pairs.
+
+\subsection{Modeling of Conversion Backgrounds}
+
+Conversion backgrounds are modeled using MC simulation of processes that produce prompt photons, primarily $\PZ\gamma$ and $\ttbar\gamma$ production. The photon radiation is included in the simulation through QED showering on the generated particles.
+
+Conversion electrons are identified at generator level as reconstructed electrons that:
+\begin{itemize}
+\item Do not match a generator-level final-state electron within $\Delta R < 0.1$
+\item Match a generator-level prompt photon with $\Delta\pT/\pT < 0.5$ and $\Delta R < 0.2$
+\item Have a photon origin without hadronic ancestors
+\end{itemize}
+
+\subsection{Conversion Control Region}
+
+A dedicated control region enriched in conversion events is defined to validate the MC modeling and derive data-driven scale factors. The selection requires:
+\begin{itemize}
+\item Trilepton events with the dimuon mass away from the \PZ peak
+\item Trilepton invariant mass consistent with the \PZ mass (targeting $\PZ \to \ell\ell\gamma^{(*)}$)
+\item Low $\ptmiss$ to suppress backgrounds with genuine neutrinos
+\item Zero b-tagged jets
+\end{itemize}
+
+\subsection{Scale Factor Derivation}
+
+The ratio of observed to predicted events in the conversion control region is used to derive scale factors for the conversion background. Separate scale factors are derived for electron and muon conversions:
+
+\textbf{Electron conversions}: The MC simulation is observed to underestimate the electron conversion rate, with data/MC ratios varying between 0.5--0.8 depending on the data-taking period. Scale factors are derived separately for each era to account for different detector conditions.
+
+\textbf{Muon conversions} (internal): The MC simulation overestimates the muon internal conversion rate by approximately 20\% across all eras. A single correlated scale factor is applied, as this disagreement originates from generator-level modeling rather than detector effects.
+
+\subsection{Systematic Uncertainties}
+
+A systematic uncertainty of 20\% is assigned to the conversion background rate based on the agreement between data and prediction in the control region. For electron conversions, this uncertainty is treated as uncorrelated between eras due to its detector-dependent nature. For muon conversions, the uncertainty is fully correlated across eras.
+
+\section{Prompt Backgrounds}
+\label{sec:prompt}
+
+Prompt backgrounds arise from SM processes that produce three or more genuine leptons in the final state. These irreducible backgrounds are estimated from MC simulation.
+
+\subsection{Diboson Production}
+
+The dominant prompt background is \PW\PZ production with both bosons decaying leptonically:
+\begin{equation}
+\PW\PZ \to \ell\nu\ell\ell
+\end{equation}
+
+This process has a similar final state to the signal (three leptons plus $\ptmiss$) but differs in the dimuon invariant mass distribution, which peaks at the \PZ mass rather than at $\mA$.
+
+The \PZ\PZ $\to 4\ell$ process contributes when one lepton fails reconstruction or identification. These backgrounds are simulated at NLO accuracy with NNLO k-factors applied where available.
+
+\subsection{$\ttbar$ + V/H Production}
+
+Top pair production in association with vector bosons (\PW, \PZ) or Higgs bosons produces multilepton final states:
+\begin{itemize}
+\item $\ttbar\PZ \to \ell\nu\PQb\, \Pq\Pq\PQb\, \ell\ell$ and similar final states
+\item $\ttbar\PW \to \ell\nu\PQb\, \Pq\Pq\PQb\, \ell\nu$
+\item $\ttbar\PH$ with $\PH \to \PW\PW^*/\PZ\PZ^*/\tau\tau$
+\end{itemize}
+
+These processes share similar jet and b-jet multiplicity with the signal, making them challenging backgrounds in the signal region.
+
+\subsection{Single Top + Z}
+
+The $\cPqt\PZ\cPq$ process produces events with one top quark and a \PZ boson, contributing to the trilepton final state when the top decays leptonically.
+
+\subsection{Rare Processes}
+
+Several rare processes with small cross sections contribute at the percent level:
+\begin{itemize}
+\item Triboson production ($\PW\PW\PW$, $\PW\PW\PZ$, $\PW\PZ\PZ$, $\PZ\PZ\PZ$)
+\item SM Higgs production through gluon fusion, vector boson fusion, and associated production with $\PH \to \PZ\PZ^* \to 4\ell$
+\item $\ttbar\ttbar$ (four-top) production
+\end{itemize}
+
+A conservative 50\% uncertainty is assigned to these rare backgrounds.
+
+\subsection{Normalization Uncertainties}
+
+Theoretical uncertainties on the prompt background cross sections are taken from calculations in the literature:
+\begin{itemize}
+\item \PW\PZ: 12\% total (including scale variation, PDF, and radiative zero effects)
+\item \PZ\PZ: 6.4\% total
+\item $\ttbar\PZ$: 12\% total
+\item $\ttbar\PW$: 13\% total
+\item $\ttbar\PH$: 10\% total
+\item $\cPqt\PZ\cPq$: 5\% total
+\end{itemize}
+
+\section{Background Validation}
+\label{sec:bkg_validation}
+
+\subsection{Z+Fake Control Region}
+
+The nonprompt background estimation is validated in the \PZ+fake control region, which requires an on-\PZ dimuon pair, at least two jets, and zero b-tagged jets. This region is enriched in events with a genuine \PZ boson plus a nonprompt lepton.
+
+Good agreement between data and prediction is observed, with the nonprompt contribution validated to within the assigned 30\% systematic uncertainty.
+
+\subsection{Conversion Control Region}
+
+The conversion background modeling is validated in the $\PZ\gamma$ control region. The scale factors derived from this region bring the MC prediction into agreement with data within the 20\% systematic uncertainty.
+
+\subsection{WZ Control Region}
+
+For Run~3 data, an additional \PW\PZ control region is used to validate the diboson background modeling following changes in the MC production. Good agreement between data and prediction confirms the validity of the diboson background estimate.
+
+\section{Summary of Background Estimates}
+\label{sec:bkg_summary}
+
+Table~\ref{tab:bkg_summary} summarizes the expected background yields in the signal region for Run~2 data.
+
+\begin{table}[htbp]
+\centering
+\caption{Expected background yields in the signal region for Run~2 data. Uncertainties include statistical uncertainties only.}
+\label{tab:bkg_summary}
+\begin{tabular}{lcc}
+\hline\hline
+Background & $\Pe\Pgm\Pgm$ & $\Pgm\Pgm\Pgm$ \\
+\hline
+Nonprompt & $496 \pm 15$ & $554 \pm 17$ \\
+Diboson & $116 \pm 2$ & $154 \pm 3$ \\
+$\ttbar$+X & $348 \pm 1$ & $383 \pm 1$ \\
+Conversion & $61 \pm 9$ & $17 \pm 4$ \\
+Others & $63 \pm 1$ & $85 \pm 1$ \\
+\hline
+Total & $1083 \pm 17$ & $1193 \pm 18$ \\
+\hline\hline
+\end{tabular}
+\end{table}
+
+The background composition is dominated by nonprompt leptons ($\sim$46\%) and $\ttbar$+X production ($\sim$32\%), followed by diboson production ($\sim$11--13\%) and smaller contributions from conversions and rare processes.

@@ -1,0 +1,284 @@
+\chapter{Systematic Uncertainties}
+\label{ch:systematics}
+
+This chapter describes the systematic uncertainties considered in the analysis. The uncertainties are categorized into several groups: uncertainties related to data-driven background estimation methods, experimental uncertainties on MC corrections and luminosity, and theoretical uncertainties on signal and background modeling. A summary of all systematic uncertainty sources is provided at the end of the chapter.
+
+\section{Overview}
+\label{sec:syst_overview}
+
+Systematic uncertainties are incorporated into the statistical analysis as nuisance parameters that modify either the normalization (rate uncertainties) or the shape (shape uncertainties) of the signal and background templates. These nuisance parameters are constrained by auxiliary measurements or theoretical calculations and are profiled in the maximum likelihood fit.
+
+The correlation structure of systematic uncertainties across data-taking periods is carefully considered. Some uncertainties, such as theoretical cross sections, are fully correlated across all Run~2 data-taking periods (2016, 2017, 2018), while others, such as certain detector-related effects, are treated as uncorrelated due to different detector conditions in each period.
+
+\section{Data-Driven Background Uncertainties}
+\label{sec:syst_datadriven}
+
+\subsection{Nonprompt Lepton Background}
+
+The systematic uncertainty on the nonprompt lepton background estimated using the matrix method is assessed through several complementary studies. A flat uncertainty of 30\% is assigned to the normalization of this background, based on the following considerations:
+
+\textbf{MC closure test}: The matrix method is applied to MC simulation with known composition to validate the method. The fake rate measured in simulation is applied to predict the nonprompt yield, which is then compared to the truth-level expectation. The observed non-closure is typically within 25--35\%.
+
+\textbf{Fake rate variations}: Systematic variations of the measured fake rate are propagated through the background estimation. Sources of fake rate uncertainty include:
+\begin{itemize}
+\item Accuracy of MC simulation in subtracting prompt lepton contamination from the measurement region
+\item Source dependence: the fake rate depends on the parent process (e.g., b-jets versus light-flavor jets)
+\item Jet energy scale: the fake rate depends on the properties of the mother jet
+\end{itemize}
+
+The resulting variation in the fake rate is 10--30\%, and a similar magnitude of variation is observed in the predicted yields in the signal region.
+
+The nonprompt background uncertainty is treated as uncorrelated between data-taking periods. This conservative treatment is motivated by the fact that the fake rate depends on the specific lepton identification criteria, which varied between data-taking eras for both tight and loose definitions. The correlation structure between eras is difficult to determine without using signal region data, and the impact of this nuisance parameter on the signal strength is at the order of 10\%, making detailed correlation studies of secondary importance.
+
+\subsection{Conversion Background}
+
+For the conversion background estimated from MC simulation with data-driven scale factors, an uncertainty of 20\% is assigned based on the agreement between data and prediction in the $\PZ\gamma$ control region.
+
+The correlation structure differs between electron and muon conversions:
+
+\textbf{Electron conversions}: The data/MC agreement varies between 0.5--0.8 depending on the data-taking period, reflecting detector-dependent effects. Since external conversions (the dominant source for electrons) occur in detector material and are sensitive to detector conditions, the uncertainty is treated as uncorrelated between data-taking eras.
+
+\textbf{Muon conversions}: The MC simulation overestimates the internal conversion rate by approximately 20\% consistently across all eras. Since this disagreement originates from generator-level modeling rather than detector effects, the uncertainty is treated as fully correlated across all data-taking eras.
+
+\section{Experimental Uncertainties}
+\label{sec:syst_experimental}
+
+Experimental uncertainties arise from corrections applied to MC simulation to account for differences between data and simulation. These uncertainties are considered for all processes estimated from MC simulation, including prompt backgrounds, signal, and conversion backgrounds.
+
+\subsection{Integrated Luminosity}
+
+The integrated luminosity measurement uncertainty is applied following recommendations from the CMS Luminosity Physics Object Group. The uncertainty has both uncorrelated and correlated components:
+
+\textbf{Uncorrelated components}: Uncertainties of 1.0\%, 2.0\%, and 1.5\% are assigned to the integrated luminosity values in 2016, 2017, and 2018, respectively.
+
+\textbf{Fully correlated components}: Uncertainties of 0.6\%, 0.9\%, and 2.0\% are assigned for 2016, 2017, and 2018, respectively, for sources that are fully correlated across all of Run~2.
+
+\textbf{Partially correlated components}: Additional uncertainties of 0.6\% and 0.2\% are assigned to 2017 and 2018, respectively, for sources related to beam-beam interactions that affect only those data-taking eras.
+
+\subsection{Pileup Reweighting}
+
+The effect of pileup interactions is included through reweighting of the simulated pileup multiplicity distribution to match the expected distribution at a minimum bias cross section of 69.2~mb. An uncertainty of 4.6\% on this cross section is considered, and its effect is evaluated by reweighting to distributions at varied cross section values.
+
+Since the minimum bias cross section is a physics quantity that should be identical across all data-taking periods, this uncertainty is treated as fully correlated between eras.
+
+\subsection{L1 Prefiring}
+
+During 2016 and 2017 data taking, a timing issue in the ECAL trigger primitives caused some events to be incorrectly assigned to the previous bunch crossing, resulting in event losses. Event weights are applied to correct for this L1 prefiring inefficiency.
+
+A systematic uncertainty of 20\% on the prefiring probability per object is considered, along with the statistical uncertainty of the measurement. Since the prefiring effect is related to detector conditions that varied between data-taking periods, this uncertainty is treated as uncorrelated between 2016 and 2017 (the effect was resolved before 2018 data taking).
+
+\subsection{Trigger Efficiency}
+
+The trigger efficiency in simulation is corrected using scale factors measured in Drell-Yan events. The measurement uncertainty is observed to be negligible. Conservatively, a fully correlated uncertainty of 1\% is assigned across all data-taking periods.
+
+\subsection{Lepton Reconstruction and Identification}
+
+\subsubsection{Electron Reconstruction}
+
+The electron reconstruction efficiency is corrected using scale factors provided by the CMS Electron and Photon Physics Object Group. The uncertainty in these corrections is propagated following the group recommendations and is treated as correlated between data-taking eras.
+
+\subsubsection{Muon Reconstruction}
+
+For the muon reconstruction efficiency in the considered $\pT$ and $\eta$ range, the efficiency is close to unity, and no statistically significant difference between data and simulation is observed. Therefore, no uncertainty is assigned for muon reconstruction efficiency.
+
+\subsubsection{Lepton Energy Scale and Resolution}
+
+The lepton energy scale corrections and their uncertainties follow the recommendations from the relevant physics object groups. For electrons, the uncertainty is propagated through the EGM corrections. For muons, the Rochester corrections are applied with their associated uncertainties.
+
+The classifier output distributions are re-evaluated with lepton momenta varied by the correction uncertainties. The nuisance parameters are treated as fully correlated across data-taking eras following official recommendations.
+
+\subsubsection{Lepton Identification}
+
+The lepton identification efficiency is corrected using scale factors measured in Drell-Yan events via the tag-and-probe method. The uncertainty in the measured correction factors ranges from 1--4\% depending on the kinematic region. These uncertainties are treated as fully correlated across data-taking eras.
+
+\subsection{Jet Energy Corrections}
+
+\subsubsection{Jet Energy Scale}
+
+The jet energy scale corrections from the JME Physics Object Group are applied to simulation. The impact of jet energy scale uncertainty is assessed by re-evaluating observables with the jet energy shifted by its uncertainty. This uncertainty is treated as correlated across data-taking periods.
+
+\subsubsection{Jet Energy Resolution}
+
+The jet energy resolution in simulation is smeared to match the resolution observed in data. The uncertainty on the smearing factors is propagated through the analysis. Since the resolution depends on detector conditions, this uncertainty is treated as uncorrelated between data-taking periods.
+
+\subsection{B-Tagging Efficiency}
+
+The b-tagging efficiency corrections and their uncertainties follow the recommendations from the BTV Physics Object Group. The uncertainty is evaluated from variations of the scale factors for each jet flavor:
+
+\textbf{Heavy flavor (b, c)}: The uncertainty on b-tagging efficiency and c-to-b mistag efficiency is treated with 100\% correlation.
+
+\textbf{Light flavor (u, d, s, g)}: The light jet mistag efficiency uncertainty is treated independently.
+
+The uncertainty sources are decomposed into components related to detector conditions and measurement methods (correlated across eras) and components related to statistical uncertainty of the measurement samples (uncorrelated across eras). Both correlated and uncorrelated components are separately considered following the official recommendations.
+
+\subsection{Unclustered Energy}
+
+The uncertainty in the energy scale of particles not clustered into jets or identified as leptons (unclustered energy) affects the $\ptmiss$ calculation. The energy of unclustered particles is varied by their resolution in the tracker, HCAL, ECAL, and HF for charged hadrons, neutral hadrons, photons, and forward particles, respectively.
+
+This uncertainty is treated as uncorrelated between data-taking periods following the POG recommendations.
+
+\section{Theoretical Uncertainties}
+\label{sec:syst_theory}
+
+Theoretical uncertainties affect both the signal acceptance and the normalization of prompt backgrounds estimated from MC simulation. All theoretical uncertainties are treated as fully correlated across all data-taking eras of Run~2.
+
+\subsection{Signal Acceptance Uncertainties}
+
+\subsubsection{Parton Distribution Functions}
+
+The uncertainty on signal acceptance arising from parton distribution function (PDF) uncertainties is evaluated following the PDF4LHC recommendations. The acceptance is calculated for each of the 100 replicas in the PDF set, and the deviations are added in quadrature to obtain the total PDF uncertainty.
+
+\subsubsection{Renormalization and Factorization Scales}
+
+The uncertainty from missing higher-order corrections is estimated by varying the renormalization ($\mu_R$) and factorization ($\mu_F$) scales by factors of 0.5 and 2 relative to the nominal values. The envelope of these variations, excluding anti-correlated variations ($\mu_R/\mu_F = 2/0.5$ or $0.5/2$), is taken as the systematic uncertainty.
+
+Additionally, the scale of strong interaction at additional parton emission vertices is varied by changing the ``alpsfact'' parameter in MadGraph5\_aMC@NLO by factors of 0.5 and 2.
+
+\subsubsection{Parton Shower Modeling}
+
+The signal process involves multiple energetic partons from the cascade decays, and the ParticleNet classifier utilizes various aspects of the resulting jets. The uncertainty in parton shower modeling is evaluated by varying the scale of the strong coupling constant in the parton shower by factors of 0.5 and 2.
+
+Separate variations are performed for Initial State Radiation (ISR) and Final State Radiation (FSR) following the recommendations from the TOP Physics Analysis Group. In these variations, the interaction scale at different splitting types ($\Pg \to \PQq\PAQq$, $\PQq \to \PQq\Pg$, $\Pg \to \Pg\Pg$, and X $\to$ X$\Pg$) are varied simultaneously.
+
+Studies confirm that the parton shower uncertainty is subdominant in this analysis and is not expected to be strongly constrained by the data.
+
+\subsection{Background Cross Section Uncertainties}
+
+Theoretical uncertainties on the cross sections of prompt backgrounds are taken from precision calculations in the literature:
+
+\subsubsection{Diboson Production}
+
+For \PW\PZ production, the cross section uncertainty is derived from NNLO calculations:
+\begin{itemize}
+\item Scale variation ($Q^2$): $+4.9\%$, $-3.9\%$
+\item PDF and $\alpha_S$: $\pm 1.5\%$
+\item Radiative zero interference: $10.9\%$ (from the difference between NNLO and NLO calculations)
+\end{itemize}
+
+The radiative zero effect arises from destructive interference between diagrams $\PW \to \PW\PZ \to \ell\nu\PZ$ and $\PW \to \ell\nu \to \ell\nu\PZ$. This interference diminishes in higher-order QCD due to the presence of additional partons, an effect not captured by standard scale variations. The total \PW\PZ cross section uncertainty, obtained by adding all sources in quadrature, is 12\%.
+
+For \PZ\PZ production:
+\begin{itemize}
+\item Scale variation ($Q^2$): $+4.3\%$, $-6.2\%$
+\item PDF and $\alpha_S$: $\pm 1.7\%$
+\end{itemize}
+The total \PZ\PZ cross section uncertainty is 6.4\%.
+
+\subsubsection{Top Quark Associated Production}
+
+For $\ttbar$+V/H production, uncertainties are taken from the LHC Higgs Cross Section Working Group Yellow Report:
+
+\textbf{$\ttbar\PZ$}:
+\begin{itemize}
+\item Scale variation: $+9.6\%$, $-11.2\%$
+\item PDF: $\pm 2.8\%$
+\item $\alpha_S$: $\pm 2.8\%$
+\item Total: 12\%
+\end{itemize}
+
+\textbf{$\ttbar\PW$}:
+\begin{itemize}
+\item Scale variation: $+12.9\%$, $-11.5\%$
+\item PDF: $\pm 2.0\%$
+\item $\alpha_S$: $\pm 2.7\%$
+\item Total: 13\%
+\end{itemize}
+
+\textbf{$\ttbar\PH$}:
+\begin{itemize}
+\item Scale variation: $+5.8\%$, $-9.2\%$
+\item PDF: $\pm 3.0\%$
+\item $\alpha_S$: $\pm 2.0\%$
+\item Higgs branching fraction: 1.8\%
+\item Total: 10\%
+\end{itemize}
+
+\subsubsection{Single Top + Z}
+
+For $\cPqt\PZ\cPq$ production:
+\begin{itemize}
+\item Scale variation: $+1.1\%$, $-5.1\%$
+\item PDF and $\alpha_S$: $\pm 1.0\%$
+\item Total: 5\%
+\end{itemize}
+
+\subsubsection{Rare Processes}
+
+A conservative uncertainty of 50\% is assigned to rare background processes, including triboson production (\PW\PW\PW, \PW\PW\PZ, \PW\PZ\PZ, \PZ\PZ\PZ), SM Higgs production via gluon fusion, vector boson fusion, and associated production.
+
+For simplicity, asymmetric scale uncertainties are symmetrized using the larger of the upward and downward variations. This simplification has minimal impact on the analysis results due to the relatively small contribution of prompt backgrounds to the total background.
+
+\section{Summary of Systematic Uncertainties}
+\label{sec:syst_summary}
+
+Table~\ref{tab:syst_summary} provides a comprehensive summary of all systematic uncertainty sources considered in this analysis, along with their correlation structure across data-taking eras and the processes to which they apply.
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of systematic uncertainty sources. The ``Correlation'' column indicates whether the uncertainty is correlated (yes) or uncorrelated (no) between data-taking eras. ``Yes/no'' indicates partial correlation where some components are correlated and others are not.}
+\label{tab:syst_summary}
+\begin{tabular}{lcc}
+\hline\hline
+Source & Correlation & Affected Processes \\
+\hline
+\multicolumn{3}{c}{\textit{Luminosity and Pileup}} \\
+\hline
+Integrated luminosity & yes/no & Prompt, signal, conversion \\
+Pileup reweighting & yes & Prompt, signal, conversion \\
+\hline
+\multicolumn{3}{c}{\textit{Trigger and Prefiring}} \\
+\hline
+L1 prefiring rate & no & Prompt, signal, conversion \\
+Trigger efficiency & yes & Prompt, signal, conversion \\
+\hline
+\multicolumn{3}{c}{\textit{Electron Uncertainties}} \\
+\hline
+Reconstruction efficiency & yes & Prompt, signal, conversion \\
+Energy scale & yes & Prompt, signal, conversion \\
+Energy resolution & yes & Prompt, signal, conversion \\
+Identification efficiency & yes & Prompt, signal, conversion \\
+\hline
+\multicolumn{3}{c}{\textit{Muon Uncertainties}} \\
+\hline
+$\pT$ scale and resolution & yes & Prompt, signal, conversion \\
+Identification efficiency & yes & Prompt, signal, conversion \\
+\hline
+\multicolumn{3}{c}{\textit{Jet and MET Uncertainties}} \\
+\hline
+Jet energy scale & yes & Prompt, signal, conversion \\
+Jet energy resolution & no & Prompt, signal, conversion \\
+Unclustered energy scale & no & Prompt, signal, conversion \\
+B-tagging efficiency (b, c) & yes/no & Prompt, signal, conversion \\
+B-tagging efficiency (light) & yes/no & Prompt, signal, conversion \\
+\hline
+\multicolumn{3}{c}{\textit{Data-Driven Background Uncertainties}} \\
+\hline
+Fake rate (nonprompt) & no & Nonprompt background \\
+Conversion rate (electron) & no & Conversion (electron) \\
+Conversion rate (muon) & yes & Conversion (muon) \\
+\hline
+\multicolumn{3}{c}{\textit{Theoretical Uncertainties}} \\
+\hline
+Cross section & yes & Prompt backgrounds \\
+PDF (signal acceptance) & yes & Signal \\
+QCD scales (signal) & yes & Signal \\
+Parton shower modeling & yes & Signal \\
+\hline\hline
+\end{tabular}
+\end{table}
+
+\section{Impact of Systematic Uncertainties}
+\label{sec:syst_impact}
+
+The impact of systematic uncertainties on the final results depends on the signal mass hypothesis and the analysis channel. In general, the dominant systematic uncertainties are:
+
+\textbf{Nonprompt background normalization} (30\%): This is one of the largest systematic uncertainties in the analysis due to the significant contribution of nonprompt leptons to the total background.
+
+\textbf{Prompt background cross sections} (5--13\%): The theoretical uncertainties on diboson and $\ttbar$+X production cross sections contribute to the total uncertainty, particularly in regions where these backgrounds are significant.
+
+\textbf{Conversion background} (20\%): The conversion background uncertainty is important in the $\Pe\Pgm\Pgm$ channel where electron conversions contribute more substantially.
+
+\textbf{Experimental uncertainties}: Among the experimental uncertainties, the b-tagging efficiency and jet energy scale uncertainties have the largest impact due to the analysis requirements on jet multiplicity and b-tagging.
+
+The statistical uncertainty from the limited size of the dataset remains significant across most of the explored mass range, particularly for signal hypotheses at the edges of the kinematically allowed region.
+

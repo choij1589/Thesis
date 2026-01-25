@@ -22,6 +22,7 @@
   \usepackage{multirow} %% -- To use multirow on tables
   \usepackage{Style/pennames} %% -- From CMS note util
   \usepackage{ifthen} %% -- For ptdr-definitions
+  \newcommand{\cmsSymbolFace}[1]{\text{#1}} %% CMS symbol formatting
   \usepackage{Style/ptdr-definitions} %% From CMS note util
 \else
 	\usepackage[dvipdfmx]{graphicx}
@@ -34,25 +35,33 @@
 \hypersetup{}
 \usepackage{lipsum} % lorem ipsum
 
-%% -- You can define any character here for convenience
-\newcommand{\N}{\ensuremath{\mathrm{N}}\xspace}
-\newcommand{\mN}{\ensuremath{m_\mathrm{N}}\xspace}
-\newcommand{\Zp}{\ensuremath{{Z}^{\prime}}\xspace}
-\newcommand{\mZp}{\ensuremath{{m}_\mathrm{{Z}^{\prime}}}\xspace}
-\newcommand{\mWR}{\ensuremath{{m}_\mathrm{{W}_{\mathrm{R}}^{\prime}}}\xspace}
-\newcommand{\WR}{\ensuremath{{\mathrm{W}}_{\mathrm{R}}}\xspace}
-\newcommand{\Ne}{\ensuremath{\mathrm{N}_{\Pe}}\xspace}
-\newcommand{\Nm}{\ensuremath{\mathrm{N}_{\mu}}\xspace}
-\newcommand{\Nt}{\ensuremath{\mathrm{N}_{\tau}}\xspace}
-\newcommand{\WRpm}{\ensuremath{W_{\text{R}}^{\pm}}\xspace}
+%% -- Definitions for Charged Higgs Analysis
+\newcommand{\mt}{\ensuremath{m_{\text{t}}}\xspace}
+\newcommand{\PGtp}{\ensuremath{\tau^+}\xspace}
+\newcommand{\PGtm}{\ensuremath{\tau^-}\xspace}
+\newcommand{\PWpm}{\ensuremath{\text{W}^\pm}\xspace}
+\newcommand{\PHp}{\ensuremath{\text{H}^+}\xspace}
+\newcommand{\PHm}{\ensuremath{\text{H}^-}\xspace}
+\newcommand{\pT}{\ensuremath{p_{\mathrm{T}}}\xspace}
+\newcommand{\mZ}{\ensuremath{m_{\text{Z}}}\xspace}
+\newcommand{\mW}{\ensuremath{m_{\text{W}}}\xspace}
+\newcommand{\mHc}{\ensuremath{m_{\PHc}}\xspace}
+\newcommand{\mA}{\ensuremath{m_{\PA}}\xspace}
+\newcommand{\mH}{\ensuremath{m_{\PH}}\xspace}
+\newcommand{\mh}{\ensuremath{m_{\Ph}}\xspace}
+\newcommand{\PHc}{\ensuremath{\PH^{\pm}}\xspace}
+\renewcommand{\PHpm}{\ensuremath{\PH^{\pm}}\xspace}
+\newcommand{\PA}{\ensuremath{\text{A}}\xspace}
+\renewcommand{\Ph}{\ensuremath{\text{h}}\xspace}
+\renewcommand{\PH}{\ensuremath{\text{H}}\xspace}
+\renewcommand{\fbinv}{\ensuremath{\text{fb}^{-1}}\xspace}
 \newcommand{\SU}{\ensuremath{\mathrm{SU}}\xspace}
 \newcommand{\U}{\ensuremath{\mathrm{U}}\xspace}
-\newcommand{\mZpReco}{\ensuremath{{M}_\mathrm{{Z}^{\prime}}^{\text{Reco}}}\xspace}
 
 %% \title : 22pt로 나오는 큰 제목
 %% \title* : 16pt로 나오는 작은 제목
-\title{Searching for heavy neutrinos using the LHC proton-proton collision data at $\sqrt{s} = 13~\TeV$ collected by the CMS detector.}
-\title*{CMS 검출기로 수집된 거대 강입자 충돌기의 질량중심 에너지 $13~\TeV$ 양성자-양성자 충돌 데이터를 사용한 무거운 중성미자 탐사}
+\title{Search for Light Charged Higgs Bosons Decaying to a W Boson and a CP-Odd Higgs Boson in the $\mu^{+}\mu^{-}$ Final State in Proton-Proton Collisions at $\sqrt{s} = 13~\TeV$}
+\title*{양성자-양성자 충돌에서 뮤온쌍 최종 상태를 통한 W 보존과 CP-홀수 힉스 보존으로 붕괴하는 가벼운 하전 힉스 보존 탐색}
 
 \academicko{이학}
 \schoolen{COLLEGE OF NATURAL SCIENCE}
@@ -106,7 +115,7 @@
 \pagenumbering{roman}
 % 초록 Abstract
 
-\keyword{SNU, High Energy Physics, thesis}
+\keyword{Charged Higgs boson, Two-Higgs-Doublet Model, CMS, LHC, Beyond Standard Model}
 
 \input{Sections/abstract.tex}
 
@@ -117,25 +126,36 @@
 \cleardoublepage
 \pagenumbering{arabic}
 
+%% Main chapters
 \input{Sections/introduction.tex}
+\input{Sections/theory.tex}
+\input{Sections/detector.tex}
+\input{Sections/datasets.tex}
+\input{Sections/objects.tex}
+\input{Sections/selection.tex}
+\input{Sections/background.tex}
+\input{Sections/systematics.tex}
+\input{Sections/results.tex}
+\input{Sections/conclusion.tex}
 
 \printbibliography
 
 \appendix
 \input{Sections/appendices/First.tex}
 
-\keywordalt{서울대학교, 고에너지물리학, 졸업논문}
+\keywordalt{하전 힉스 보존, 이중 힉스 이중항 모형, CMS, LHC, 표준모형 너머 물리}
 \begin{abstractalt}
-  입자물리학은 20세기를 거쳐 눈부신 발전을 이뤄냈지만 여전히 이 우주에는 밝혀지지 않은 수수께끼들이 있다. 그 중에서도 중성미자의 질량과 그것을 생성하는 기작은 표준모형을 넘어서는 이론이 필요하다고
-  주장하는 대표적인 현상 중 하나다. 이에 덧붙여서, 약한상호작용이 가지는 특이한 카이랄성은 반전성 대칭 붕괴에 대해 확실한 근거를 제공하지 못한다는 점에서 자연스럽지 않다.
-  표준모형의 좌우대칭 확장은 이러한 문제를 해결하는 전통적인 방법 중 하나다. 여기에 다소 복잡한 힉스보존 구조를 사용하면, 예를들어 하나의 겹이중항과 두개의 삼중항, 중성미자 질량이
-  다른 페르미 입자들보다 왜 크게 작은지 설명할 수 있는 시소(see-saw)기작이 자연스럽게 적용된다. 이 확장된 모형의 군은 ${SU(2)}_{L} \times {SU(2)}_{R} \times {U(1)}_{B - L}$ 로 표현되며,
-  자발적 대칭성 붕괴를 통해 낮은 에너지 수준에서는 표준모형과 동일한 ${SU(2)}_{L} \times {U(1)}_{Y}$ 군으로 근사된다. 여기서 한번더 자발적 대칭성 붕괴에 의해 ${U(1)}_{em}$ 군으로 표현된다.
+이 논문은 거대 강입자 충돌기(LHC)에서 CMS 검출기를 이용하여 수집한 양성자-양성자 충돌 데이터를 사용하여 가벼운 하전 힉스 보존 탐색을 수행한 결과를 제시한다. 분석에 사용된 데이터는 2016년부터 2018년까지 Run~2 기간 동안 질량중심 에너지 $\sqrt{s} = 13~\TeV$에서 수집되었으며, 총 적분 광도량은 138\fbinv에 해당한다.
 
-  이 논문에서는 질량중심 에너지 13 \TeV 으로 발생시킨 양성자-양성자 충돌에서 위 모형에서 등장하는 새로운 중성 게이지 보존 (\Zp)이 생성되고, 이것이 두개의 무거운 중성미자로 붕괴하는 반응을
-  탐사한 결과를 발표한다. 이 과정에서 두개의 하전 경입자와 네개의 젯들이 형성되는데, 하전 경입자들의 경우 두개의 전자 혹은 두개의 뮤온이 생성되는 과정만 고려되었다. 분석에 사용한 데이터는
-  거대 강입자 가속기에 있는 CMS 검출기로 수집하였으며, 총 $137.4 {\unit{fb}}^{-1}$ 의 총 적분 광도량에 해당한다.
-  
+탐색은 탑 쿼크 붕괴에서 생성되는 하전 힉스 보존을 대상으로 하며, $\PQt \to \PHc\PQb$ 이후 $\PHc \to \PW\PA$, $\PA \to \mu^{+}\mu^{-}$로 이어지는 붕괴 연쇄를 목표로 한다. 여기서 \PHc는 하전 힉스 보존이고 \PA는 이중 힉스 이중항 모형(2HDM)에서 예측되는 CP-홀수 유사스칼라이다. 최종 상태는 세 개의 하전 경입자(전자 하나와 뮤온 둘, 또는 뮤온 셋), 뉴트리노로부터의 결손 횡운동량, 그리고 바닥 쿼크 강입자화로부터의 최소 두 개의 젯으로 구성된다.
+
+이전 탐색들과 비교하여 이 분석의 주요 발전은 비껍질(off-shell) $\PHc \to \PW\PA$ 붕괴의 포함으로, 붕괴가 가상 \PW 보존을 통해 진행되는 질량 배열까지 범위를 확장한다. 탐색은 하전 힉스 보존 질량 70--160\GeV와 유사스칼라 질량 15\GeV에서 $\mHc - 5\GeV$까지의 범위를 다룬다.
+
+ParticleNet 기반 그래프 신경망 분류기가 신호 이뮤온 질량 피크가 \PZ 공명과 겹치는 ``on-Z'' 질량 영역에서 \PZ 보존 관련 배경으로부터 신호 사건을 구별하기 위해 사용된다. 점근적 CL$_s$ 방법을 사용한 이뮤온 불변 질량 분포에 대한 구간화된 최대 우도 맞춤을 통해 신호 추출이 수행된다.
+
+표준모형 예측을 초과하는 통계적으로 유의미한 초과가 관찰되지 않았다. 신호 분기비에 대해 95\% 신뢰 수준에서 상한이 설정되며, 이는 이중 힉스 이중항 모형 시나리오, 특히 보존적 붕괴 모드 $\PHc \to \PW\PA$가 지배적이 될 수 있는 큰 \tanb에서의 Type-I 2HDM에 대한 제약을 제공한다.
+
+이 결과는 비껍질 효과를 포함한 $\PHc \to \PW\PA$ 붕괴에 대한 최초의 탐색을 나타내며, LHC에서 가벼운 하전 힉스 보존에 대해 접근 가능한 2HDM 매개변수 공간의 포괄적인 탐색을 제공한다.
 \end{abstractalt}
 
 \acknowledgement

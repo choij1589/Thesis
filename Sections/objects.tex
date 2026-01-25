@@ -1,0 +1,172 @@
+\chapter{Object Reconstruction and Identification}
+\label{ch:objects}
+
+This chapter describes the reconstruction and identification of physics objects used in this analysis: electrons, muons, jets, b-tagged jets, and missing transverse momentum. The identification criteria are designed to efficiently select prompt leptons from signal processes while suppressing backgrounds from misidentified jets and nonprompt leptons from heavy-flavor decays.
+
+\section{Electrons}
+\label{sec:electron_id}
+
+\subsection{Electron Reconstruction}
+
+Electrons are reconstructed by matching energy clusters in the electromagnetic calorimeter (ECAL) to tracks in the silicon tracker. The reconstruction algorithm begins with ECAL superclusters, which combine energy deposits accounting for bremsstrahlung photon emission. These superclusters are then matched to tracks reconstructed using a Gaussian Sum Filter (GSF) algorithm that accounts for energy loss through bremsstrahlung.
+
+Signal electrons in this analysis typically have transverse momenta between a few \GeV and 100\GeV and are produced in the central detector region. Based on trigger acceptance, electrons with $\pT > 15\GeV$ are considered. The analysis uses electrons reconstructed within the tracker coverage ($|\eta| < 2.5$), excluding the ECAL barrel-endcap transition region ($1.442 < |\eta| < 1.566$) where reconstruction quality is degraded.
+
+\subsection{Electron Identification}
+
+The electron identification employs a boosted decision tree (BDT) discriminant provided by the EGM Physics Object Group~\cite{EGMPOGMVAID}. This multivariate classifier discriminates prompt electrons from misreconstructed objects and nonprompt electrons from photon conversions or heavy-flavor decays. Training is performed separately for three pseudorapidity regions: inner barrel ($|\eta| < 0.8$), outer barrel ($0.8 < |\eta| < 1.47$), and endcap ($|\eta| > 1.47$).
+
+The classifier uses track and shower-shape variables as inputs while excluding isolation variables. This approach provides higher identification efficiency than cut-based selections, particularly for electrons below 40\GeV. The analysis uses the ``wp90'' working point, designed to provide approximately 90\% identification efficiency for electrons from \PW and \PZ boson decays.
+
+\subsection{Isolation and Impact Parameter Requirements}
+
+Additional requirements ensure that electrons originate from the primary vertex and are well-isolated from hadronic activity. The relative mini-isolation variable ($I_{\text{mini}}$) is used to quantify the hadronic activity around the electron:
+\begin{equation}
+I_{\text{mini}} = \frac{1}{\pT^\ell}\left(\sum p_T^{\text{charged}} + \max\left(0, \sum p_T^{\text{neutral}} - \rho \cdot A_{\text{eff}}\right)\right)
+\end{equation}
+where the sums are over charged hadrons, neutral hadrons, and photons within a cone of size $\Delta R$, and the pileup contribution is subtracted using the average transverse momentum density $\rho$ multiplied by an effective area $A_{\text{eff}}$.
+
+The cone size varies with electron $\pT$ to account for the collimation of decay products from boosted particles:
+\begin{equation}
+\Delta R = \begin{cases}
+0.2 & \text{for } \pT < 50\GeV \\
+10\GeV/\pT & \text{for } 50 \leq \pT < 200\GeV \\
+0.05 & \text{for } \pT \geq 200\GeV
+\end{cases}
+\end{equation}
+
+This approach, originally developed for analyses with boosted top quarks~\cite{Rehermann_MiniIso}, proves effective in searches with high jet multiplicity or nonprompt lepton backgrounds from heavy-flavor decays.
+
+The analysis requires $I_{\text{mini}} < 0.1$ for signal electrons, achieving approximately 90\% efficiency for prompt electrons and 15\% efficiency for nonprompt electrons from b jets. Additionally, a tight impact parameter requirement of $|\text{SIP3D}| < 4$ is applied, where SIP3D is the three-dimensional impact parameter significance. This provides approximately 95\% efficiency for prompt electrons and 40\% efficiency for nonprompt electrons.
+
+\subsection{Trigger Emulation Cuts}
+
+To reduce bias in the nonprompt background estimation arising from electron quality requirements in triggers, additional cuts emulating trigger-level selections are applied. These include requirements on shower shape variables ($\sigma_{i\eta i\eta}$), track-cluster matching variables ($\Delta\eta_{\text{in}}$, $\Delta\phi_{\text{in}}$), hadronic energy fraction (H/E), and relative isolation variables.
+
+\subsection{Working Points}
+
+Two working points are defined for electron identification:
+
+\textbf{Tight working point}: Used for signal electron selection, requiring MVANoIso wp90, $I_{\text{mini}} < 0.1$, $|\text{SIP3D}| < 4$, at most one expected missing inner hit, and passing the conversion veto.
+
+\textbf{Loose working point}: Used for background estimation in sideband regions and for vetoing additional low-quality electrons. Requirements are relaxed: MVANoIso $> (0.985, 0.96, 0.85)$ in the three $\eta$ regions, $I_{\text{mini}} < 0.4$, and $|\text{SIP3D}| < 8$.
+
+\subsection{Efficiency Measurement}
+
+Electron identification efficiency is measured using the tag-and-probe method with dielectron Drell-Yan events. Oppositely charged electron pairs with $60 < M(\Pe\Pe) < 120\GeV$ passing single-electron triggers are selected. Tag electrons must match the trigger and have $\pT$ above threshold values that vary by year.
+
+The numbers of passing and failing probes are extracted by fitting the invariant mass distribution. Signal modeling uses a Drell-Yan MC template convolved with a Gaussian, while background is modeled with an empirical shape function. Scale factors are derived as the ratio of efficiencies measured in data and simulation.
+
+Systematic uncertainties are evaluated through alternative signal and background shape models and different MC generators. The typical efficiency uncertainty is 1--2\%, with larger uncertainties in low-$\pT$ and high-$\pT$ regions due to limited statistics and generator dependence.
+
+The electron identification efficiency measurements have been validated and approved by the EGM Physics Object Group~\cite{EGM-IDApproval}.
+
+\section{Muons}
+\label{sec:muon_id}
+
+\subsection{Muon Reconstruction}
+
+Muons are reconstructed by combining tracks in the silicon tracker with track segments in the muon chambers. The CMS muon reconstruction produces several types of muon objects:
+\begin{itemize}
+\item \textbf{Standalone muons}: Reconstructed using only muon chamber information
+\item \textbf{Tracker muons}: Tracker tracks extrapolated to match muon chamber segments
+\item \textbf{Global muons}: Combined fit of tracker and muon chamber hits
+\end{itemize}
+
+Signal muons typically have transverse momenta between a few \GeV and 100\GeV. Based on trigger acceptance, muons with $\pT > 10\GeV$ are considered. The analysis uses muons reconstructed within the full muon system acceptance ($|\eta| < 2.4$).
+
+\subsection{Muon Identification}
+
+The baseline identification uses the medium ID criteria defined by the Muon Physics Object Group~\cite{MuonPOGCBID}. This requires high-quality tracks with few kinks, a large fraction of compatible constituent segments, consistent track parameters between tracker and muon systems, and good global track fit quality. These criteria efficiently discriminate real muons from misreconstructed objects while maintaining high efficiency.
+
+\subsection{Isolation and Impact Parameter Requirements}
+
+To distinguish prompt muons from secondary muons originating from heavy-flavor decays in jets, additional requirements on isolation and impact parameter are applied.
+
+The relative mini-isolation is defined analogously to electrons:
+\begin{equation}
+I_{\text{mini}} = \frac{1}{\pT^\mu}\left(\sum p_T^{\text{charged}} + \max\left(0, \sum p_T^{\text{neutral}} - \rho \cdot A_{\text{eff}}\right)\right)
+\end{equation}
+with the same $\pT$-dependent cone size. The analysis requires $I_{\text{mini}} < 0.1$ for signal muons, achieving approximately 90\% efficiency for prompt muons and only 4\% efficiency for nonprompt muons from b jets. Compared to standard PF isolation with $\Delta R = 0.4$ at the same background efficiency, the mini-isolation approach recovers approximately 10\% identification efficiency per muon.
+
+A tight impact parameter requirement of $|\text{SIP3D}| < 3$ is applied, providing approximately 95\% efficiency for prompt muons and 20\% efficiency for nonprompt muons from b jets.
+
+\subsection{Working Points}
+
+Two working points are defined:
+
+\textbf{Tight working point}: POG medium ID, $I_{\text{mini}} < 0.1$, $|\text{SIP3D}| < 3$, $|d_z| < 0.1$~cm, and relative tracker isolation (R03) $< 0.4$.
+
+\textbf{Loose working point}: POG medium ID, $I_{\text{mini}} < 0.6$, $|\text{SIP3D}| < 5$, with the same $d_z$ and tracker isolation requirements.
+
+\subsection{Momentum Corrections}
+
+Rochester corrections~\cite{RochCorr} are applied to muon momenta to account for possible biases from detector alignment and magnetic field differences between data and simulation. These corrections improve the dimuon mass resolution and reduce systematic effects from momentum scale uncertainties.
+
+\subsection{Efficiency Measurement}
+
+Muon reconstruction and identification efficiency is measured using the tag-and-probe method with dimuon Drell-Yan events. Oppositely charged muon pairs with $70 < M(\mu\mu) < 110\GeV$ are selected. Tag muons must pass POG tight ID and medium isolation criteria and match single-muon triggers.
+
+The efficiency is measured as a function of muon $\pT$ and $|\eta|$. Scale factors are derived by comparing efficiencies in data and simulation. Systematic uncertainties are evaluated by varying tag muon criteria, the number of mass bins, signal and background shapes, alternative generators, and the fitting mass range.
+
+The muon identification efficiency measurements have been validated and approved by the Muon Physics Object Group~\cite{MUO-IDApproval-Run2, MUO-IDApproval-Run3}.
+
+\section{Jets}
+\label{sec:jet_id}
+
+\subsection{Jet Reconstruction}
+
+Jets are reconstructed using the anti-$k_t$ algorithm~\cite{Cacciari:2008gp} with distance parameter $R = 0.4$, using particle-flow candidates as inputs. For Run~2, jets are reconstructed using the charged hadron subtraction (CHS) approach to mitigate pileup effects (AK4PFchs). For Run~3, the pileup per particle identification (PUPPI) weighting scheme is used instead (AK4PFPuppi).
+
+The analysis considers jets with $\pT > 20\GeV$ and $|\eta| < 2.4$ (2.5 for 2017--2023 data). Signal events contain jets from b quarks produced in top decays (typically peaking around 70\GeV) and jets from \PW boson decays (peaking around 40\GeV).
+
+\subsection{Jet Energy Corrections}
+
+Jet energy scale (JES) corrections are applied following the recommendations of the JME Physics Object Group. The corrections include:
+\begin{itemize}
+\item \textbf{L1 pileup correction}: Removes energy from pileup interactions
+\item \textbf{L2L3 MC truth correction}: Corrects jet response based on simulation
+\item \textbf{L2L3 residual correction}: Applied to data to correct for remaining data-simulation differences
+\end{itemize}
+
+Jet energy resolution (JER) corrections are also applied to simulation to match the resolution observed in data. These corrections are provided by the JME POG and are applied using the correctionlib framework~\cite{JERCRecommendation}.
+
+\subsection{Jet Identification and Cleaning}
+
+Jets must pass tight jet ID criteria to reject jets arising from detector noise. The jet identification efficiency exceeds 98\% with background rejection better than 98\%.
+
+For Run~2 data with $\pT < 50\GeV$, additional loose pileup jet ID criteria are applied to reject jets originating from pileup interactions~\cite{PileupJetID}.
+
+Since leptons are included in particle-flow jet reconstruction, jets must be separated from identified leptons by $\Delta R > 0.4$ to avoid double counting. This cleaning procedure also ensures consistent treatment in the nonprompt lepton background estimation.
+
+Additionally, jet veto maps provided by the JME POG~\cite{JetVetoMap} are applied to reject jets or events affected by known detector issues during Run~2 and Run~3.
+
+\section{B-Tagged Jets}
+\label{sec:btag}
+
+\subsection{B-Tagging Algorithm}
+
+Jets originating from b quarks are identified using the DeepJet algorithm~\cite{Bols_DeepJet}, a deep neural network that uses information from all jet constituents. Unlike previous algorithms that relied on a subset of high-level variables related to heavy-flavor decay signatures, DeepJet exploits the full information content of the jet, including track impact parameters, secondary vertex properties, and charged particle kinematics.
+
+\subsection{Working Point}
+
+The analysis uses the medium working point defined by the BTV Physics Object Group~\cite{BTVRecommendation}, providing approximately 80\% efficiency for b jets and 1\% misidentification rate for light-flavor jets. This working point offers a good balance between signal efficiency and background rejection for the $\ttbar$-dominated final state.
+
+\subsection{Efficiency Corrections}
+
+Differences between data and simulation in b-tagging efficiency and mistag rates are corrected using flavor-dependent scale factors measured in QCD multijet events. The corrections are applied on a jet-by-jet basis using the ``method 1a'' approach, accounting for both the tagging efficiency for true b jets and the misidentification probability for other jet flavors.
+
+\section{Missing Transverse Momentum}
+\label{sec:met}
+
+\subsection{Reconstruction}
+
+Missing transverse momentum ($\ptmiss$) is reconstructed as the negative vector sum of the transverse momenta of all particle-flow candidates, weighted using the PUPPI algorithm (PUPPI-MET). The PUPPI weighting suppresses contributions from pileup interactions.
+
+Type-1 corrections are applied to propagate jet energy scale corrections and lepton energy corrections to the $\ptmiss$ calculation. This improves the $\ptmiss$ resolution and reduces systematic effects from object energy scale uncertainties.
+
+\subsection{Event Filters}
+
+Events with anomalous $\ptmiss$ due to detector noise, poorly reconstructed objects, or beam backgrounds are rejected using event noise filters recommended by the JME POG~\cite{METFilters}. These filters include requirements on primary vertex quality, beam halo rejection, HCAL noise rejection, ECAL dead cell handling, and identification of anomalous particle-flow muons.
+
+The complete set of noise filters applied varies between Run~2 and Run~3 data, following the official recommendations for each data-taking period.

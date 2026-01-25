@@ -1,0 +1,219 @@
+\chapter{The LHC and CMS Detector}
+\label{ch:detector}
+
+This chapter provides an overview of the experimental apparatus used to collect the data analyzed in this thesis. We begin with a description of the Large Hadron Collider (LHC), the world's largest and most powerful particle accelerator, followed by a detailed description of the Compact Muon Solenoid (CMS) detector.
+
+\section{The Large Hadron Collider}
+\label{sec:lhc}
+
+The Large Hadron Collider (LHC)~\cite{Evans:2008zzb} is a circular hadron collider located at CERN (European Organization for Nuclear Research) near Geneva, Switzerland. It occupies a 26.7~km circumference tunnel, originally constructed for the Large Electron-Positron Collider (LEP), at depths ranging from 45 to 170 meters below the surface.
+
+\subsection{Accelerator Complex}
+
+The LHC is the final stage of a chain of accelerators that progressively increase the energy of proton beams:
+
+\begin{enumerate}
+\item \textbf{Linac4}: A linear accelerator that produces protons by ionizing hydrogen gas and accelerates them to 160~MeV.
+\item \textbf{Proton Synchrotron Booster (PSB)}: Four superimposed synchrotron rings accelerate protons to 2~GeV.
+\item \textbf{Proton Synchrotron (PS)}: Accelerates protons to 26~GeV, also defining the bunch structure.
+\item \textbf{Super Proton Synchrotron (SPS)}: Accelerates protons to 450~GeV for injection into the LHC.
+\item \textbf{LHC}: Accelerates two counter-rotating proton beams to energies up to 6.5~TeV (Run~2) or 6.8~TeV (Run~3).
+\end{enumerate}
+
+The LHC employs 1232 superconducting dipole magnets operating at 1.9~K to bend the proton beams around the circular path. The dipole magnets use NbTi superconducting cables and can produce magnetic fields up to 8.3~T. Additional superconducting quadrupole and higher-order magnets provide beam focusing and orbit correction.
+
+\subsection{Beam Parameters}
+
+During LHC Run~2 (2015--2018), proton-proton collisions were produced at a center-of-mass energy of $\sqrt{s} = 13\TeV$. Key beam parameters include:
+
+\begin{table}[htbp]
+\centering
+\caption{LHC beam parameters during Run~2 operation.}
+\label{tab:lhc_parameters}
+\begin{tabular}{lc}
+\hline\hline
+Parameter & Value \\
+\hline
+Center-of-mass energy & 13\TeV \\
+Beam energy & 6.5\TeV \\
+Number of bunches per beam & up to 2556 \\
+Protons per bunch & $\sim 1.15 \times 10^{11}$ \\
+Bunch spacing & 25~ns \\
+Peak instantaneous luminosity & $2.1 \times 10^{34}$~cm$^{-2}$s$^{-1}$ \\
+\hline\hline
+\end{tabular}
+\end{table}
+
+\subsection{Luminosity}
+
+The instantaneous luminosity $\mathcal{L}$ characterizes the collision rate capability of a collider:
+\begin{equation}
+\mathcal{L} = \frac{N_1 N_2 n_b f_{\text{rev}}}{4\pi\sigma_x\sigma_y} F
+\end{equation}
+where $N_{1,2}$ are the number of particles per bunch in each beam, $n_b$ is the number of colliding bunches, $f_{\text{rev}}$ is the revolution frequency, $\sigma_{x,y}$ are the transverse beam sizes at the interaction point, and $F$ is a geometric factor accounting for the crossing angle.
+
+The integrated luminosity, obtained by integrating the instantaneous luminosity over time, determines the total amount of collision data collected:
+\begin{equation}
+L = \int \mathcal{L}(t) \, dt
+\end{equation}
+
+During Run~2, the CMS experiment recorded a total integrated luminosity of 138\fbinv, distributed across three data-taking periods: 36.3\fbinv in 2016, 41.5\fbinv in 2017, and 59.7\fbinv in 2018.
+
+\subsection{Pileup}
+
+The high luminosity at the LHC results in multiple proton-proton interactions per bunch crossing, known as ``pileup.'' The average number of pileup interactions $\langle\mu\rangle$ is given by:
+\begin{equation}
+\langle\mu\rangle = \frac{\mathcal{L} \sigma_{\text{inel}}}{n_b f_{\text{rev}}}
+\end{equation}
+where $\sigma_{\text{inel}} \approx 80$~mb is the inelastic proton-proton cross section.
+
+During Run~2, the average pileup ranged from approximately 20 to 50 interactions per bunch crossing. Pileup events contribute additional particles and energy deposits that must be accounted for in physics object reconstruction and calibration.
+
+\section{The Compact Muon Solenoid Detector}
+\label{sec:cms}
+
+The Compact Muon Solenoid (CMS)~\cite{CMS:2008xjf} is a multipurpose particle detector designed to study a wide range of physics processes at the LHC. The detector is characterized by a powerful superconducting solenoid magnet, excellent tracking capabilities, and precise muon detection systems.
+
+\subsection{Coordinate System}
+
+The CMS coordinate system is defined with the origin at the nominal interaction point. The $x$-axis points toward the center of the LHC ring, the $y$-axis points vertically upward, and the $z$-axis points along the beam direction toward the Jura mountains. The azimuthal angle $\phi$ is measured from the $x$-axis in the $x$-$y$ plane, and the polar angle $\theta$ is measured from the $z$-axis.
+
+A commonly used variable is the pseudorapidity:
+\begin{equation}
+\eta = -\ln\left[\tan\left(\frac{\theta}{2}\right)\right]
+\end{equation}
+For massless particles, pseudorapidity equals rapidity, and differences in pseudorapidity are invariant under Lorentz boosts along the beam axis.
+
+The transverse momentum $\pT = p\sin\theta$ and transverse energy $\ET = E\sin\theta$ are defined in the plane perpendicular to the beam axis.
+
+\subsection{Overall Structure}
+
+The CMS detector has a cylindrical geometry with overall dimensions of 21.6~m in length, 14.6~m in diameter, and a total weight of approximately 14,000 tonnes. From inside to outside, the main subsystems are:
+
+\begin{enumerate}
+\item Silicon pixel and strip tracker
+\item Electromagnetic calorimeter (ECAL)
+\item Hadron calorimeter (HCAL)
+\item Superconducting solenoid magnet
+\item Muon detection systems
+\end{enumerate}
+
+The central ``barrel'' region covers $|\eta| < 1.5$, while ``endcap'' detectors extend coverage to $|\eta| < 2.5$ for tracking and $|\eta| < 5.0$ for calorimetry.
+
+\subsection{Silicon Tracker}
+
+The CMS silicon tracker~\cite{CMS:2014pgm} is the innermost detector subsystem, designed to precisely measure the trajectories of charged particles emerging from the collision point.
+
+\subsubsection{Pixel Detector}
+
+The pixel detector consists of silicon sensors with pixel sizes of $100 \times 150~\mu\text{m}^2$. During Run~2, the original 3-layer pixel detector was replaced by an upgraded 4-layer system (Phase-1 upgrade) in early 2017~\cite{CMS:2012sda}, providing improved tracking performance and radiation tolerance.
+
+The upgraded pixel detector contains:
+\begin{itemize}
+\item 4 barrel layers (BPIX) at radii of 3.0, 6.8, 10.9, and 16.0~cm
+\item 3 forward disks (FPIX) on each side at $|z| = 29.1$, 39.6, and 51.6~cm
+\end{itemize}
+
+\subsubsection{Strip Detector}
+
+The silicon strip tracker surrounds the pixel detector and provides tracking coverage up to $|\eta| < 2.5$. It consists of:
+\begin{itemize}
+\item Tracker Inner Barrel (TIB): 4 layers covering $|z| < 65$~cm
+\item Tracker Inner Disks (TID): 3 disks on each side
+\item Tracker Outer Barrel (TOB): 6 layers covering $|z| < 110$~cm
+\item Tracker Endcaps (TEC): 9 disks on each side
+\end{itemize}
+
+The total active silicon area is approximately 200~m$^2$, with about 75 million readout channels. The tracker achieves a transverse momentum resolution of $\sigma(\pT)/\pT \approx 1$--2\% for tracks with $\pT \approx 100\GeV$ in the central region.
+
+\subsection{Electromagnetic Calorimeter}
+
+The electromagnetic calorimeter (ECAL)~\cite{CMS:2013lxn} measures the energies of electrons and photons. It consists of lead tungstate (PbWO$_4$) crystals chosen for their short radiation length (0.89~cm), small Molière radius (2.2~cm), and fast scintillation response (80\% of light within 25~ns).
+
+The ECAL is divided into:
+\begin{itemize}
+\item \textbf{Barrel (EB)}: 61,200 crystals covering $|\eta| < 1.479$, with front face dimensions of $22 \times 22$~mm$^2$
+\item \textbf{Endcaps (EE)}: 7,324 crystals per endcap covering $1.479 < |\eta| < 3.0$, with front face dimensions of $28.6 \times 28.6$~mm$^2$
+\item \textbf{Preshower (ES)}: Silicon strip detectors in front of the endcaps for improved $\pi^0$ rejection
+\end{itemize}
+
+Light from the crystals is detected by avalanche photodiodes (APDs) in the barrel and vacuum phototriodes (VPTs) in the endcaps. The energy resolution is:
+\begin{equation}
+\frac{\sigma(E)}{E} = \frac{2.8\%}{\sqrt{E}} \oplus \frac{12\%}{E} \oplus 0.3\%
+\end{equation}
+where $E$ is in GeV and $\oplus$ denotes addition in quadrature.
+
+\subsection{Hadron Calorimeter}
+
+The hadron calorimeter (HCAL)~\cite{CMS:2012sof} measures the energies of hadrons and contributes to the measurement of jets and missing transverse energy. The HCAL uses brass as the absorber material and plastic scintillator tiles as the active medium.
+
+The HCAL consists of:
+\begin{itemize}
+\item \textbf{Barrel (HB)}: $|\eta| < 1.3$
+\item \textbf{Endcap (HE)}: $1.3 < |\eta| < 3.0$
+\item \textbf{Outer (HO)}: Additional layers outside the solenoid for tail catcher
+\item \textbf{Forward (HF)}: Steel/quartz-fiber calorimeter covering $3.0 < |\eta| < 5.0$
+\end{itemize}
+
+The energy resolution for single hadrons is approximately $\sigma(E)/E \approx 100\%/\sqrt{E} \oplus 5\%$.
+
+\subsection{Superconducting Solenoid}
+
+The CMS solenoid~\cite{CMS:2009nxa} is a superconducting magnet that generates a uniform 3.8~T magnetic field inside its bore. Key parameters include:
+\begin{itemize}
+\item Inner bore diameter: 6.3~m
+\item Length: 12.5~m
+\item Stored energy: 2.6~GJ
+\item Operating current: 18.2~kA
+\end{itemize}
+
+The magnetic flux is returned through an iron yoke that also serves as the structural support for the muon system. The strong magnetic field bends charged particle trajectories, enabling momentum measurements from track curvature.
+
+\subsection{Muon System}
+
+The muon system~\cite{CMS:2018rym} is located outside the solenoid and interleaved with the iron return yoke. It provides muon identification, triggering, and standalone momentum measurement. Three types of gaseous detectors are employed:
+
+\subsubsection{Drift Tubes (DT)}
+
+Drift tube chambers cover the barrel region ($|\eta| < 1.2$), where the muon rate is relatively low and the magnetic field is uniform. Four stations of chambers are embedded in the return yoke, each containing several layers of rectangular drift cells. The single-hit position resolution is approximately 200~$\mu$m.
+
+\subsubsection{Cathode Strip Chambers (CSC)}
+
+CSCs are used in the endcap regions ($0.9 < |\eta| < 2.4$), where the muon rate is higher and the magnetic field is non-uniform. Each CSC consists of six layers of anode wires interleaved with cathode strips. The position resolution is approximately 50--140~$\mu$m depending on the chamber type.
+
+\subsubsection{Resistive Plate Chambers (RPC)}
+
+RPCs provide complementary information in both barrel ($|\eta| < 1.6$) and endcap ($|\eta| < 1.9$) regions. While their spatial resolution is coarser ($\sim$1~cm), they provide excellent time resolution ($\sim$1~ns), making them particularly useful for triggering.
+
+The muon system, combined with the inner tracker, achieves a muon momentum resolution of $\sigma(\pT)/\pT \approx 1$--2\% for $\pT < 100\GeV$ and better than 10\% up to $\pT \approx 1\TeV$.
+
+\subsection{Trigger System}
+
+The LHC bunch crossing rate of 40~MHz produces far more collision data than can be recorded. The CMS trigger system~\cite{CMS:2016ngn,CMS:2020cmk} reduces this rate to approximately 1~kHz of events written to permanent storage.
+
+\subsubsection{Level-1 Trigger (L1)}
+
+The Level-1 trigger is implemented in custom hardware and makes decisions within approximately 4~$\mu$s. It uses coarse-grained information from the calorimeters and muon systems to identify high-$\pT$ electrons, photons, muons, jets, and $\tau$-leptons, as well as global quantities such as total energy and missing transverse energy.
+
+The L1 trigger reduces the event rate from 40~MHz to approximately 100~kHz.
+
+\subsubsection{High-Level Trigger (HLT)}
+
+The High-Level Trigger is a software-based system running on a processor farm. It has access to the full detector information and applies reconstruction algorithms similar to those used in offline analysis. The HLT reduces the rate to approximately 1~kHz.
+
+For this analysis, events are selected using dilepton triggers requiring combinations of electrons and/or muons, as described in detail in Chapter~\ref{ch:selection}.
+
+\section{Particle Flow Reconstruction}
+\label{sec:pf}
+
+The CMS detector employs the particle-flow (PF) algorithm~\cite{CMS:2017yfk} for event reconstruction. This algorithm aims to reconstruct each individual particle in an event by combining information from all detector subsystems.
+
+The PF algorithm proceeds through several steps:
+\begin{enumerate}
+\item Reconstructing tracks in the silicon tracker and standalone segments in the muon system
+\item Clustering energy deposits in the calorimeters
+\item Linking these elements based on geometric compatibility
+\item Identifying individual particles: muons, electrons, photons, charged hadrons, and neutral hadrons
+\end{enumerate}
+
+The output is a comprehensive list of PF candidates that serves as input for jet clustering, missing transverse momentum calculation, and isolation variable computation. The PF approach provides improved energy resolution for jets, better missing transverse momentum measurement, and more accurate lepton isolation compared to using individual detector subsystems alone.

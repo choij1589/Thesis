@@ -1,0 +1,52 @@
+\chapter{Summary and Conclusions}
+\label{ch:conclusion}
+
+\section{Summary}
+
+This thesis has presented a search for light charged Higgs bosons produced in top quark decays at the Large Hadron Collider. The search targets the decay chain $\PQt \to \PHc\PQb$ followed by $\PHc \to \PW\PA$ and $\PA \to \mu^+\mu^-$, where the charged Higgs boson (\PHc) and CP-odd pseudoscalar (\PA) are predicted by Two-Higgs-Doublet Model extensions of the Standard Model.
+
+The analysis uses proton-proton collision data collected by the CMS experiment during LHC Run~2 (2016--2018) at a center-of-mass energy of $\sqrt{s} = 13\TeV$, corresponding to an integrated luminosity of 138\fbinv. Events are selected in two final state channels: the $\Pe\Pgm\Pgm$ channel containing one electron and two muons, and the $\Pgm\Pgm\Pgm$ channel containing three muons. The selection requires at least two jets with at least one identified as originating from a bottom quark, consistent with the $\ttbar$ production topology.
+
+A key advancement of this analysis compared to previous searches is the inclusion of off-shell $\PHc \to \PW\PA$ decays, extending coverage to mass configurations where the decay proceeds through a virtual \PW boson. This significantly expands the accessible region of the 2HDM parameter space. The search covers charged Higgs boson masses from 70 to 160\GeV and pseudoscalar masses from 15\GeV up to $\mHc - 5\GeV$.
+
+The dominant backgrounds arise from nonprompt leptons (from jet misidentification or heavy-flavor decays), photon conversions, and irreducible prompt Standard Model processes including diboson production and $\ttbar$+V/H. The nonprompt lepton background is estimated using a data-driven matrix method, while conversion backgrounds are constrained using control regions enriched in $\PZ\gamma$ events. Prompt backgrounds are estimated from Monte Carlo simulation with appropriate theoretical and experimental systematic uncertainties.
+
+Machine learning techniques play a central role in enhancing the sensitivity of the search. A ParticleNet-based graph neural network classifier is trained to discriminate signal events from \PZ boson associated backgrounds, which become particularly challenging in the ``on-Z'' mass region where the signal dimuon mass peak overlaps with the \PZ resonance. The classifier exploits the distinct kinematic and topological features of the signal process, yielding sensitivity improvements of 25--50\% in the $\Pe\Pgm\Pgm$ channel and 10--20\% in the $\Pgm\Pgm\Pgm$ channel.
+
+Signal extraction is performed through a binned maximum likelihood fit to the dimuon invariant mass distribution using the asymptotic CL$_s$ method. The analysis scans over a two-dimensional grid of mass hypotheses, providing comprehensive coverage of the kinematically accessible parameter space.
+
+\section{Results}
+
+No statistically significant excess above the Standard Model prediction is observed. The data are consistent with the background-only hypothesis across all tested mass configurations. Upper limits at 95\% confidence level are set on the signal branching ratio:
+\begin{equation}
+\mathcal{B}_{\text{sig}} = \mathcal{B}(\PQt \to \PW\PQb) \times \mathcal{B}(\PQt \to \PHc\PQb) \times \mathcal{B}(\PHc \to \PW\PA) \times \mathcal{B}(\PA \to \mu^+\mu^-)
+\end{equation}
+
+These limits provide constraints on Two-Higgs-Doublet Model scenarios, particularly the Type-I 2HDM at large $\tanb$ where the bosonic decay mode $\PHc \to \PW\PA$ can become dominant.
+
+\section{Significance and Impact}
+
+This analysis represents the first search for the decay $\PHc \to \PW\PA$ including off-shell effects. The inclusion of off-shell decays significantly extends the physics reach beyond previous searches that were restricted to on-shell configurations. Combined with the full Run~2 dataset and advanced machine learning techniques, this provides the most comprehensive exploration of this charged Higgs decay channel to date.
+
+The results complement other charged Higgs searches at the LHC that target fermionic decay modes ($\PHc \to \tau\nu$, $\PHc \to \PQt\PQb$, $\PHc \to \PQc\PQs$). Together, these searches probe different regions of the 2HDM parameter space and different mass ranges for the additional Higgs bosons.
+
+\section{Future Prospects}
+
+Several avenues exist for improving the sensitivity of this search in the future:
+
+\textbf{Larger datasets}: The High-Luminosity LHC (HL-LHC) is expected to deliver an integrated luminosity of approximately 3000\fbinv, representing a factor of 20 increase compared to the current analysis. This dramatic increase in statistics will substantially improve the sensitivity to rare processes.
+
+\textbf{Improved machine learning}: The field of machine learning continues to advance rapidly, with new architectures and training techniques offering potential improvements in signal-background discrimination. The graph neural network approach used in this analysis could be further refined or replaced with more sophisticated methods.
+
+\textbf{Additional decay channels}: While this analysis focuses on the $\PA \to \mu^+\mu^-$ decay, other pseudoscalar decay modes such as $\PA \to \tau^+\tau^-$ or $\PA \to \PQb\PAQb$ could provide complementary sensitivity in different mass regions.
+
+\textbf{Combination with other searches}: The combination of results from multiple charged and neutral Higgs searches at ATLAS and CMS will provide the most stringent constraints on extended Higgs sector models.
+
+\section{Conclusions}
+
+The search for new physics beyond the Standard Model remains one of the primary objectives of the LHC physics program. Extended Higgs sectors, such as the Two-Higgs-Doublet Model, represent well-motivated theoretical extensions that predict additional scalar particles potentially accessible at current collider energies.
+
+This thesis has demonstrated that precision searches for charged Higgs bosons in complex final states are feasible with the Run~2 dataset, and that machine learning techniques can significantly enhance sensitivity in challenging background environments. While no evidence for new physics has been observed in this analysis, the comprehensive exploration of the parameter space and the development of advanced analysis techniques provide a foundation for future discoveries.
+
+The absence of a signal at the current sensitivity level places meaningful constraints on 2HDM scenarios and motivates continued searches with larger datasets and improved techniques. The discovery of an extended Higgs sector would fundamentally transform our understanding of electroweak symmetry breaking and provide crucial guidance for physics beyond the Standard Model.
+

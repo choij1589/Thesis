@@ -1,0 +1,183 @@
+\chapter{Results and Interpretation}
+\label{ch:results}
+
+This chapter presents the statistical analysis procedure and results of the search for charged Higgs bosons. The expected and observed limits on the signal cross section are presented as functions of the charged Higgs and pseudoscalar mass hypotheses, and the results are interpreted in the context of the Two-Higgs-Doublet Model.
+
+\section{Statistical Methodology}
+\label{sec:stat_method}
+
+The statistical analysis is performed using the asymptotic CL$_s$ method~\cite{Read:2002hq,Junk:1999kv} implemented in the Combine tool~\cite{CMS-NOTE-2011-005}. This modified frequentist approach provides robust limits by constructing confidence intervals that protect against excluding the signal hypothesis in cases of downward background fluctuations.
+
+\subsection{Test Statistic}
+
+The test statistic is based on the profile likelihood ratio:
+\begin{equation}
+q_\mu = -2 \ln \frac{\mathcal{L}(\mu, \hat{\hat{\boldsymbol{\theta}}})}{\mathcal{L}(\hat{\mu}, \hat{\boldsymbol{\theta}})}
+\end{equation}
+where $\mu$ is the signal strength parameter (the ratio of the observed cross section to the theoretical prediction), $\boldsymbol{\theta}$ represents the nuisance parameters, $\hat{\mu}$ and $\hat{\boldsymbol{\theta}}$ are the values that maximize the likelihood globally, and $\hat{\hat{\boldsymbol{\theta}}}$ are the values that maximize the likelihood for a fixed value of $\mu$.
+
+The likelihood function is constructed from the product of Poisson probabilities over all bins in the fit:
+\begin{equation}
+\mathcal{L}(\mu, \boldsymbol{\theta}) = \prod_i \frac{(\mu s_i(\boldsymbol{\theta}) + b_i(\boldsymbol{\theta}))^{n_i}}{n_i!} e^{-(\mu s_i(\boldsymbol{\theta}) + b_i(\boldsymbol{\theta}))} \cdot \prod_j p_j(\theta_j)
+\end{equation}
+where $n_i$ is the observed count in bin $i$, $s_i$ and $b_i$ are the expected signal and background yields, and $p_j(\theta_j)$ are the constraint terms for the nuisance parameters.
+
+\subsection{CL$_s$ Method}
+
+Upper limits are set using the CL$_s$ criterion:
+\begin{equation}
+\text{CL}_s = \frac{\text{CL}_{s+b}}{\text{CL}_b} = \frac{P(q_\mu \geq q_\mu^{\text{obs}} | s+b)}{P(q_\mu \geq q_\mu^{\text{obs}} | b)}
+\end{equation}
+
+A signal hypothesis is excluded at the 95\% confidence level if CL$_s < 0.05$. The asymptotic approximation, valid for sufficiently large event counts, is used to compute the expected distributions of the test statistic, enabling efficient evaluation of limits across the full mass grid.
+
+\section{Template Construction}
+\label{sec:templates}
+
+Signal extraction is performed through a binned maximum likelihood fit to the dimuon invariant mass distribution. The template construction procedure is optimized separately for the ``off-Z'' and ``on-Z'' mass regions.
+
+\subsection{Mass Window Selection}
+
+For each signal mass hypothesis $\mA$, events are selected within a mass window centered on the signal peak:
+\begin{equation}
+|m(\mu^+\mu^-) - \mA| < 5\sqrt{\Gamma_A^2 + \sigma_A^2}
+\end{equation}
+where $\Gamma_A$ is the natural width of the pseudoscalar \PA and $\sigma_A$ is the detector resolution. These parameters are extracted by fitting a Voigtian function (the convolution of a Breit-Wigner and a Gaussian) to the dimuon mass distribution in simulated signal events. The Gaussian component represents the experimental resolution, while the Breit-Wigner component represents the intrinsic width.
+
+\subsection{Binning Strategy}
+
+Following the recommendations of the Combine framework, signal and background templates are divided into 15 bins within the mass window. This binning preserves the distinctive shape information from the narrow signal resonance while ensuring sufficient statistical precision in each bin.
+
+The autoMCStats method is employed with a threshold of 10 events to automatically account for per-bin statistical fluctuations in both signal and background templates. This approach introduces additional nuisance parameters for bins with limited MC statistics, ensuring robust treatment of template shape uncertainties.
+
+\subsection{Dimuon Pair Selection in the $\Pgm\Pgm\Pgm$ Channel}
+
+In the $\Pgm\Pgm\Pgm$ channel, two opposite-sign dimuon pairs can be formed, introducing ambiguity in identifying the pair originating from the \PA decay. Several selection criteria were studied using truth-matched simulation:
+
+\textbf{Direct mass comparison}: Selecting the pair with the smaller or larger invariant mass based on the mass hypothesis.
+
+\textbf{Gamma factor}: The Lorentz boost factor $\gamma = \pT(\mu\mu)/m(\mu\mu)$ of the dimuon system. For highly boosted \PA bosons (when $\mHc \gg \mA$), the correct pair tends to have a larger $\gamma$ factor.
+
+\textbf{Transverse mass}: The transverse mass of same-sign muon pairs with the missing transverse momentum, exploiting the fact that the ``wrong'' muon originates from the \PW boson decay.
+
+Studies show that direct mass comparison provides the best discrimination. For signal mass points with $\mHc > 110\GeV$ and $\mA > 60\GeV$, the pair with the larger mass is selected, achieving correct assignment in 50--70\% of events. For other mass hypotheses, the pair with the smaller mass is selected, with correct assignment rates of 60--95\%.
+
+\subsection{ParticleNet-Enhanced Templates}
+
+In the on-Z region ($60 < \mA < 120\GeV$), where the signal peak overlaps with abundant \PZ boson backgrounds, the ParticleNet classifier output is used to enhance discrimination. A cross-section-weighted likelihood ratio (LR) score is constructed:
+\begin{equation}
+\text{LR} = \frac{s_{\text{signal}}}{s_{\text{signal}} + w_{\text{nonprompt}} \times s_{\text{nonprompt}} + w_{\text{diboson}} \times s_{\text{diboson}} + w_{\ttbar+X} \times s_{\ttbar+X}}
+\end{equation}
+where $s_i$ are the classifier output scores for each class and $w_i$ are the relative yield weights calculated from the observed event yields in the analysis mass window.
+
+Events are categorized based on the LR score, and a cut value is optimized for each mass hypothesis by maximizing the sensitivity metric:
+\begin{equation}
+\sqrt{2\left[(s+b)\ln\left(1 + \frac{s}{b}\right) - s\right]}
+\end{equation}
+where $s$ and $b$ denote the number of signal and background events within the selected window. This metric is appropriate for scenarios with low background rates.
+
+The optimization yields sensitivity improvements of 25--50\% in the $\Pe\Pgm\Pgm$ channel and 10--20\% in the $\Pgm\Pgm\Pgm$ channel compared to using the dimuon mass distribution alone.
+
+\section{Signal Branching Ratio Definition}
+\label{sec:branching_ratio}
+
+The results are presented in terms of limits on the signal branching ratio, defined as:
+\begin{equation}
+\mathcal{B}_{\text{sig}} = \mathcal{B}(\PQt \to \PW\PQb) \times \mathcal{B}(\PQt \to \PHc\PQb) \times \mathcal{B}(\PHc \to \PW\PA) \times \mathcal{B}(\PA \to \mu^+\mu^-)
+\end{equation}
+
+This definition accounts for the complete decay chain in the signal topology. The relationship between the signal branching ratio and the signal cross section is:
+\begin{equation}
+\sigma_{\text{sig}} = \sigma(\Pp\Pp \to \ttbar) \times \mathcal{B}_{\text{sig}} \times 2
+\end{equation}
+where the factor of 2 accounts for both charge conjugate configurations (either the top or antitop quark can decay via the charged Higgs).
+
+\section{Expected Sensitivity}
+\label{sec:expected}
+
+Before examining the data, the expected sensitivity of the analysis is evaluated using the Asimov dataset, which represents the expected event yields under the background-only hypothesis. The expected upper limits on $\mathcal{B}_{\text{sig}}$ at 95\% confidence level are computed across the full grid of mass hypotheses.
+
+\subsection{Mass Dependence}
+
+The expected sensitivity varies significantly across the $(\mHc, \mA)$ mass plane due to several factors:
+
+\textbf{Signal acceptance}: The signal acceptance depends on the kinematics of the decay products, which varies with the mass splitting between $\mHc$ and $\mA$. Larger mass splittings generally lead to more boosted decay products and higher acceptance.
+
+\textbf{Background levels}: The background composition and rate depend on the dimuon mass region. In the off-Z regions, backgrounds are dominated by nonprompt leptons and continuum processes, while in the on-Z region, resonant \PZ backgrounds become significant.
+
+\textbf{Off-shell effects}: For mass hypotheses where the $\PHc \to \PW\PA$ decay proceeds through an off-shell \PW boson ($\mA > \mHc - m_\PW$), the signal acceptance is reduced due to the suppressed decay rate, partially compensated by softer kinematic distributions.
+
+\subsection{Channel Comparison}
+
+The $\Pe\Pgm\Pgm$ and $\Pgm\Pgm\Pgm$ channels provide complementary sensitivity across the mass plane:
+
+The $\Pgm\Pgm\Pgm$ channel benefits from higher muon reconstruction efficiency and lower conversion backgrounds, providing better sensitivity for most mass hypotheses.
+
+The $\Pe\Pgm\Pgm$ channel provides additional statistical power and cross-checks, with slightly different systematic uncertainty correlations.
+
+The combination of both channels improves the overall sensitivity by approximately 20--40\% compared to the individual channels.
+
+\section{Observed Results}
+\label{sec:observed}
+
+The analysis is performed as a blind search, with the signal region examined only after all selection criteria, background estimation methods, and systematic uncertainties are finalized. The observed data in the signal region are compared to the background predictions, and limits are extracted using the statistical methodology described above.
+
+\subsection{Data-Background Comparison}
+
+Good agreement is observed between the data and the background predictions in the signal region. No statistically significant excess above the Standard Model expectation is observed for any of the tested mass hypotheses.
+
+The largest local deviations from the background-only hypothesis are consistent with statistical fluctuations expected from the large number of mass hypotheses tested (look-elsewhere effect).
+
+\subsection{Upper Limits}
+
+In the absence of a significant signal, upper limits at 95\% confidence level are set on the signal branching ratio $\mathcal{B}_{\text{sig}}$ for each $(\mHc, \mA)$ mass hypothesis. The observed limits are generally consistent with the expected limits within the $\pm 1\sigma$ and $\pm 2\sigma$ uncertainty bands.
+
+The strongest limits are obtained in the off-Z mass regions where backgrounds are lowest. In the on-Z region, the ParticleNet classifier recovers sensitivity that would otherwise be significantly degraded by the resonant \PZ background.
+
+\section{Interpretation in the 2HDM}
+\label{sec:interpretation}
+
+The results can be interpreted in the context of specific Two-Higgs-Doublet Model scenarios by combining the limits on $\mathcal{B}_{\text{sig}}$ with theoretical predictions for the relevant branching ratios.
+
+\subsection{Type-I 2HDM at Large $\tanb$}
+
+In a Type-I 2HDM with large $\tanb$, the decay $\PHc \to \PW\PA$ can become dominant as the fermionic decay modes are suppressed. The branching ratio $\mathcal{B}(\PHc \to \PW\PA)$ approaches unity in this regime, making this search channel particularly sensitive.
+
+The branching ratio $\mathcal{B}(\PA \to \mu^+\mu^-)$ depends on the pseudoscalar mass and the 2HDM type:
+\begin{equation}
+\mathcal{B}(\PA \to \mu^+\mu^-) \propto \frac{m_\mu^2 \tan^2\beta}{\sum_f N_c^f m_f^2 \xi_f^2}
+\end{equation}
+where the sum runs over all kinematically accessible fermions, $N_c^f$ is the color factor, and $\xi_f$ depends on the 2HDM type.
+
+For $\mA < 2m_b \approx 10\GeV$, the dimuon channel provides the dominant sensitivity. For larger $\mA$, the dimuon branching ratio decreases but remains non-negligible.
+
+\subsection{Parameter Space Constraints}
+
+The upper limits on $\mathcal{B}_{\text{sig}}$ can be translated into constraints on the 2HDM parameter space, particularly on:
+
+The branching ratio $\mathcal{B}(\PQt \to \PHc\PQb)$, which is related to $\tanb$ and the charged Higgs mass.
+
+The combination of branching ratios $\mathcal{B}(\PHc \to \PW\PA) \times \mathcal{B}(\PA \to \mu^+\mu^-)$, which depends on the 2HDM type and the masses of the additional Higgs bosons.
+
+These constraints are complementary to those from other charged Higgs searches (e.g., $\PHc \to \tau\nu$, $\PHc \to \PQt\PQb$) and from neutral Higgs searches.
+
+\section{Comparison with Previous Results}
+\label{sec:comparison}
+
+This analysis represents a significant improvement over previous searches for charged Higgs bosons in the $\PHc \to \PW\PA \to \PW\mu^+\mu^-$ channel:
+
+\textbf{Extended mass range}: Previous CMS searches were limited to on-shell $\PHc \to \PW\PA$ decays, requiring $\mA < \mHc - m_\PW$. This analysis extends coverage to the off-shell region, significantly expanding the accessible parameter space.
+
+\textbf{Full Run~2 dataset}: The analysis uses the complete Run~2 dataset corresponding to 138\fbinv, compared to 36\fbinv in the previous CMS publication using 2016 data.
+
+\textbf{Machine learning enhancement}: The ParticleNet-based classifier provides substantially improved sensitivity in the challenging on-Z region where traditional cut-based analyses suffer from large \PZ boson backgrounds.
+
+\textbf{Improved background estimation}: The data-driven methods for nonprompt and conversion backgrounds have been refined with additional control regions and systematic studies.
+
+\section{Summary of Results}
+\label{sec:results_summary}
+
+No significant excess above the Standard Model prediction is observed in the search for charged Higgs bosons produced in top quark decays with subsequent decays $\PHc \to \PW\PA \to \PW\mu^+\mu^-$. Upper limits at 95\% confidence level are set on the signal branching ratio across a two-dimensional grid of charged Higgs masses (70--160\GeV) and pseudoscalar masses (15\GeV to $\mHc - 5\GeV$).
+
+This represents the first search for the decay $\PHc \to \PW\PA$ including off-shell effects, providing comprehensive coverage of the 2HDM parameter space accessible at the LHC for light charged Higgs bosons.
+

@@ -1,0 +1,213 @@
+\chapter{Datasets and Monte Carlo Simulation}
+\label{ch:datasets}
+
+This chapter describes the collision data and Monte Carlo (MC) simulated samples used in this analysis. The data were collected by the CMS experiment during the LHC Run~2 data-taking period (2016--2018) at a center-of-mass energy of $\sqrt{s} = 13\TeV$. MC simulations are used to model signal processes and various Standard Model background contributions.
+
+\section{Data Samples}
+\label{sec:data_samples}
+
+\subsection{Integrated Luminosity}
+
+The analysis uses proton-proton collision data collected during LHC Run~2, corresponding to a total integrated luminosity of 138\fbinv. The data are divided into several data-taking periods with different detector configurations and operating conditions:
+
+\begin{table}[htbp]
+\centering
+\caption{Integrated luminosity for each data-taking period in Run~2.}
+\label{tab:luminosity}
+\begin{tabular}{lc}
+\hline\hline
+Data-taking period & Integrated luminosity (\fbinv) \\
+\hline
+2016 preVFP & 19.5 \\
+2016 postVFP & 16.8 \\
+2017 & 41.5 \\
+2018 & 59.8 \\
+\hline
+Total & 138 \\
+\hline\hline
+\end{tabular}
+\end{table}
+
+The 2016 data are divided into ``preVFP'' and ``postVFP'' periods, corresponding to data taken before and after changes to the silicon strip tracker front-end electronics (VFP = ``Voltage Frontend Processor''). This division accounts for different tracking performance characteristics between the two periods.
+
+\subsection{Data Quality Requirements}
+
+Good quality events are selected using certified ``Golden JSON'' files provided by the CMS Luminosity Physics Object Group (LumiPOG). These files identify run and luminosity section ranges where all detector subsystems were functioning properly. Events outside these certified ranges are excluded from the analysis.
+
+The luminosity measurement is performed using the CMS luminometer systems, primarily the Pixel Luminosity Telescope (PLT) and the Fast Beam Condition Monitor (BCM1F). The luminosity uncertainty is approximately 1--2\% depending on the data-taking year, with correlations between years carefully tracked.
+
+\subsection{Primary Datasets and Trigger Strategy}
+
+Events are collected using unprescaled dilepton triggers that provide high efficiency for the trilepton final states targeted by this analysis. The trigger strategy varies slightly between the two analysis channels:
+
+\textbf{$\Pe\Pgm\Pgm$ channel}: Events are selected from the MuonEG primary dataset using electron-muon cross-triggers. These triggers require the simultaneous presence of an electron and a muon satisfying loose identification and isolation requirements.
+
+\textbf{$\Pgm\Pgm\Pgm$ channel}: Events are selected from the DoubleMuon primary dataset using dimuon triggers. These triggers require two muons with tracking-based isolation requirements.
+
+The specific trigger paths used vary by data-taking year to account for changes in the trigger menu. Representative triggers include:
+\begin{itemize}
+\item \texttt{HLT\_Mu17\_TrkIsoVVL\_Mu8\_TrkIsoVVL\_DZ\_Mass3p8}: Double muon trigger with isolation and invariant mass requirements
+\item \texttt{HLT\_Mu8\_TrkIsoVVL\_Ele23\_CaloIdL\_TrackIdL\_IsoVL\_DZ}: Electron-muon cross trigger
+\item \texttt{HLT\_Mu23\_TrkIsoVVL\_Ele12\_CaloIdL\_TrackIdL\_IsoVL\_DZ}: Muon-electron cross trigger with reversed $\pT$ thresholds
+\end{itemize}
+
+Additional prescaled single-lepton triggers are used for auxiliary measurements, such as the determination of fake rates for the nonprompt lepton background estimation. Unprescaled single-lepton triggers are used for measuring lepton identification and trigger efficiencies.
+
+\section{Monte Carlo Simulation}
+\label{sec:mc_simulation}
+
+Monte Carlo simulations play a crucial role in this analysis, providing modeling of signal processes and irreducible backgrounds, training data for machine learning algorithms, and templates for systematic uncertainty evaluation.
+
+\subsection{Event Generation}
+
+MC samples are generated using various event generators depending on the physics process:
+
+\textbf{\MGvATNLO}~\cite{MG5_aMCatNLO}: Used for processes requiring next-to-leading order (NLO) accuracy with matched parton showers. Version 2.6.5 is used for Run~2 samples. The FxFx~\cite{FXFXMerging} matching scheme is employed for processes with additional jets at the matrix element level.
+
+\textbf{\POWHEG}~\cite{Powheg1,Powheg2,Powheg3}: Used for several processes at NLO accuracy, particularly diboson production, $\ttbar$ production, and Higgs boson production. \POWHEG provides consistent matching of NLO calculations with parton shower algorithms.
+
+\textbf{\PYTHIA}~\cite{Pythia8}: Used for parton shower simulation, hadronization, and underlying event modeling for all samples. The CP5 tune~\cite{CPTunes} is used to describe the underlying event characteristics.
+
+All samples use the NNPDF3.1 NNLO parton distribution function (PDF) set~\cite{NNPDF31}.
+
+\subsection{Detector Simulation}
+
+Generated events are processed through a full simulation of the CMS detector response using \GEANTfour~\cite{Geant4}. This simulation models the passage of particles through detector material, including electromagnetic and hadronic interactions, multiple scattering, and energy deposition in sensitive detector elements.
+
+The simulated detector response is then processed through the same reconstruction algorithms as collision data. Corrections are applied to account for known differences between simulation and data, including lepton identification efficiencies, trigger efficiencies, and energy scale calibrations.
+
+\subsection{Pileup Modeling}
+
+Pileup interactions are included in the simulation using minimum-bias events generated with \PYTHIA. The distribution of pileup multiplicity in simulation is reweighted to match the distribution observed in data, using the recommended minimum-bias cross section value of 69.2~mb.
+
+The pileup reweighting procedure is validated by comparing the distributions of the number of reconstructed primary vertices between data and simulation.
+
+\section{Background Monte Carlo Samples}
+\label{sec:bkg_mc}
+
+\subsection{Prompt Trilepton Backgrounds}
+
+Several SM processes produce three or more prompt leptons in the final state and constitute irreducible backgrounds:
+
+\textbf{Diboson production ($\PW\PZ$, $\PZ\PZ$)}: The dominant irreducible background arises from $\PW\PZ$ production where both bosons decay leptonically ($\PW\PZ \to 3\ell\nu$). The $\PZ\PZ \to 4\ell$ process contributes when one lepton is not reconstructed or fails identification requirements. These processes are simulated at NLO accuracy, with the $\PZ\PZ$ cross section scaled by a k-factor of 1.16 to account for NNLO corrections~\cite{ZZNNLOCalc}.
+
+\textbf{$\ttbar$ + V/H production}: Processes where a top quark pair is produced in association with a \PW boson, \PZ boson, or Higgs boson can produce multilepton final states. The $\ttbar\PZ \to \ell\ell\nu\nu\PQb\PAQb\ell\ell$ process is particularly relevant as it can mimic the signal topology.
+
+\textbf{Single top + Z ($\cPqt\PZ\cPq$)}: Single top production in association with a \PZ boson contributes to the trilepton final state.
+
+\textbf{Triboson production}: Processes such as $\PW\PW\PW$, $\PW\PW\PZ$, $\PW\PZ\PZ$, and $\PZ\PZ\PZ$ have small cross sections but produce multilepton signatures.
+
+\textbf{Higgs boson production}: SM Higgs production through gluon fusion, vector boson fusion, and associated production with vector bosons contributes when the Higgs decays to $\PZ\PZ^* \to 4\ell$.
+
+\subsection{Conversion Backgrounds}
+
+Photon conversions, both external (in detector material) and internal (Dalitz decays), can produce additional leptons that mimic the signal topology:
+
+\textbf{Drell-Yan + $\gamma$ ($\PZ\gamma$)}: Events with a \PZ boson and an associated photon, where the photon converts to an electron-positron pair, can enter the selection if one conversion electron fails identification.
+
+\textbf{$\ttbar\gamma$}: Top pair production with an associated photon can contribute through similar conversion mechanisms.
+
+\subsection{Control Region Samples}
+
+Additional MC samples are used for control region studies and validation:
+
+\textbf{Drell-Yan ($\PZ/\gamma^* \to \ell\ell$)}: Large samples of $\PZ$ boson production are used for lepton efficiency measurements, fake rate validation, and conversion background studies.
+
+\textbf{$\ttbar$}: Top pair production samples are used for validation of the nonprompt lepton estimation method.
+
+\textbf{Single top}: Single top production in various channels (t-channel, s-channel, $\cPqt\PW$) contributes to control region studies.
+
+\section{Signal Monte Carlo Samples}
+\label{sec:signal_mc}
+
+\subsection{Signal Process Generation}
+
+Signal MC samples for the process $\Pp\Pp \to \ttbar \to (\PHc\PQb)(\PW\PQb)$ are generated at leading order using the \MGvATNLO generator in the 5-flavor scheme. The decay chain $\PHc \to \PW\PA \to \PW\mu^+\mu^-$ is also performed within \MGvATNLO.
+
+Key features of the signal generation include:
+
+\begin{itemize}
+\item Top quark mass fixed at $m_t = 172.5\GeV$, consistent with SM MC samples
+\item Narrow width approximation for \PHc and \PA, with widths set to 1~MeV
+\item All \PW boson decay modes included except fully hadronic decays
+\item Both on-shell and off-shell $\PHc \to \PW^{(*)}\PA$ decays considered
+\end{itemize}
+
+\subsection{Signal Mass Points}
+
+Signal samples are generated for a grid of $(\mHc, \mA)$ mass points covering the accessible parameter space. The charged Higgs mass ranges from 70 to 160\GeV, while the pseudoscalar mass ranges from 15\GeV up to $\mHc - 5\GeV$.
+
+\begin{table}[htbp]
+\centering
+\caption{Signal mass points $(\mHc, \mA)$ in GeV used in the analysis.}
+\label{tab:signal_masses}
+\begin{tabular}{cl}
+\hline\hline
+$\mHc$ (\GeVns) & $\mA$ (\GeVns) \\
+\hline
+70 & 15, 18, 40, 55, 65 \\
+100 & 15, 21, 60, 70, 80, 95 \\
+115 & 15, 27, 87, 110 \\
+130 & 15, 30, 55, 83, 90, 100, 125 \\
+145 & 15, 35, 92, 140 \\
+160 & 15, 18, 21, 27, 30, 35, 40, 50, 55, 60, 65, 70, \\
+    & 80, 85, 87, 90, 92, 95, 98, 100, 110, 120, 125, 135, 140, 155 \\
+\hline\hline
+\end{tabular}
+\end{table}
+
+The densest sampling is at $\mHc = 160\GeV$, which is the boundary between the light ($\mHc < m_t$) and heavy ($\mHc > m_t$) charged Higgs regimes. Additional mass points are included in regions where the sensitivity is expected to vary rapidly with mass.
+
+\subsection{Signal Cross Section Definition}
+
+The signal cross section is defined as:
+\begin{equation}
+\sigma_{\text{sig}} = \sigma(\Pp\Pp \to \ttbar) \times \left[\mathcal{B}(\PQt \to \PW\PQb)\mathcal{B}(\PAQt \to \PHm\PAQb)\mathcal{B}(\PHm \to \PWm\PA)\mathcal{B}(\PA \to \Pgmp\Pgmm) + \text{c.c.}\right]
+\end{equation}
+
+The $\ttbar$ production cross section at $\sqrt{s} = 13\TeV$ is taken to be $\sigma_{\ttbar} = 833.9$~pb for $m_t = 172.5\GeV$ and $\alpha_s = 0.118$, following the ATLAS-CMS recommended prediction~\cite{TTbarXsecRecommedation}.
+
+The branching fraction for the \PW boson decays in signal events (excluding fully hadronic decays) is:
+\begin{equation}
+\mathcal{B}(\PW\PW \to \ell\nu\Pq\Pq'/\ell\nu\ell'\nu') = 1 - \mathcal{B}(\PW \to \Pq\Pq')^2 = 1 - 0.6741^2 = 0.5456
+\end{equation}
+
+\subsection{Signal Acceptance and Efficiency}
+
+The signal acceptance and reconstruction efficiency depend on both $\mHc$ and $\mA$. Key features of the signal topology that affect acceptance include:
+
+\begin{itemize}
+\item Harder muon $\pT$ spectrum from \PA decay for larger $\mA$
+\item Softer muon $\pT$ spectrum in the off-shell region ($\mA > \mHc - m_\PW$)
+\item Varying dimuon invariant mass resolution depending on $\mA$
+\item Different jet and $\ptmiss$ characteristics across the mass plane
+\end{itemize}
+
+These variations motivate the mass-dependent optimization of the analysis selection and the scanning approach used for limit setting.
+
+\section{Sample Processing}
+\label{sec:sample_processing}
+
+\subsection{Data Format}
+
+The analysis uses the NanoAOD data format~\cite{NanoAOD}, which provides a compact representation of reconstructed physics objects suitable for analysis-level studies. NanoAODv9 is used for Run~2 data processing.
+
+The NanoAOD format includes high-level physics objects (electrons, muons, jets, $\ptmiss$) with associated identification and isolation variables, generator-level information for MC samples, and trigger decisions and prescale information.
+
+Custom additions to the standard NanoAOD content include variables needed for the ParticleNet classifier and additional generator-level information for signal modeling studies.
+
+\subsection{Event Weights}
+
+MC events are weighted to account for various effects:
+
+\textbf{Cross section normalization}: Events are weighted by $\sigma \times \mathcal{L} / N_{\text{gen}}$, where $\sigma$ is the process cross section, $\mathcal{L}$ is the integrated luminosity, and $N_{\text{gen}}$ is the number of generated events.
+
+\textbf{Pileup reweighting}: Events are reweighted to match the observed pileup distribution in data.
+
+\textbf{Lepton efficiency corrections}: Scale factors are applied to correct for differences in lepton identification, isolation, and trigger efficiencies between data and simulation.
+
+\textbf{b-tagging corrections}: Scale factors account for differences in b-tagging efficiency and mistag rates between data and simulation.
+
+\textbf{L1 prefiring corrections}: For 2016 and 2017 data, corrections are applied to account for the L1 trigger prefiring effect, where spurious triggers from previous bunch crossings can veto real events.
+
+The detailed treatment of these corrections and their associated systematic uncertainties is described in Chapter~\ref{ch:systematics}.
