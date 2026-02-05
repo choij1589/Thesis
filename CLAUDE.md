@@ -6,6 +6,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a LaTeX thesis template for Seoul National University (SNU), specifically configured for a Physics PhD dissertation. The template uses the unofficial `snuthesis.cls` class which supports master's (ms/master) and doctoral (phd/doctor) theses.
 
+## Current Status
+
+**Completed:**
+- Introduction.tex
+- Theory sections 2.1.1-2.1.3 (SM matter content, gauge structure, EWSB) - restructured with principle-based approach
+
+**TODO:**
+- Revisit sections 2.1.1-2.1.3 to make more brief and add citations
+
 ## Build Commands
 
 Build the thesis (requires TexLive):
