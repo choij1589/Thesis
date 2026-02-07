@@ -8,13 +8,32 @@ This chapter provides the theoretical foundation for the search presented in thi
 
 The Standard Model (SM) is a quantum field theory that describes the fundamental particles and their interactions through three of the four known fundamental forces: the electromagnetic, weak, and strong interactions. Gravity, while well-described by general relativity at macroscopic scales, is not incorporated into the SM framework.
 
-\subsection{The Matter Content of the Standard Model}
+\subsection{Spacetime Symmetries and Particle Classification}
+\label{sec:spacetime_symmetries}
 
-The matter content of the SM is not an arbitrary collection of particles, but rather a structure organized by gauge symmetries. Each fermion's interactions are determined by how it transforms under the gauge group $\SU(3)_C \times \SU(2)_L \times \U(1)_Y$. Representation theory provides the organizing principle: fermions that fill $\SU(2)_L$ doublets interact differently from those in singlet representations. This symmetry-first perspective reveals why the observed three-generation pattern has theoretical coherence---each generation replicates the same representation structure under the gauge group, differing only in the Yukawa couplings that determine masses.
+The construction of the Standard Model begins not with a list of particles, but with a principle: the laws of physics must take the same form regardless of where or when an experiment is performed, or which inertial frame the observer occupies. As Weinberg emphasized, the result of an experiment on Earth must be predicted by the same laws that would apply on the Moon---not because of any dynamical mechanism, but because the laws themselves respect the symmetries of spacetime~\cite{Weinberg:1995mt}.
 
-The matter content of the SM consists of twelve spin-$\frac{1}{2}$ fermions, organized into three generations. Each generation contains two quarks and two leptons.
+This requirement of invariance under spacetime transformations is encoded in the Poincar\'{e} group---the group of all isometries of Minkowski spacetime, comprising translations, rotations, and Lorentz boosts. By Noether's theorem, each continuous symmetry implies a conserved quantity: translational invariance in space and time yields conservation of momentum and energy, while rotational invariance yields conservation of angular momentum.
 
-This generational structure was not predicted by theory but emerged from experimental discoveries. The first generation of quarks and leptons, identified in the early development of quantum field theory, formed the foundation for early models of weak interactions. The unexpected discovery of the muon (1936) and strange quark physics in the late 1940s revealed a second generation, prompting the Glashow-Iliopoulos-Maiani (GIM) mechanism and the prediction of the charm quark. The formulation of the electroweak theory by Glashow, Weinberg, and Salam in the 1960s~\cite{Glashow:1961tr,Weinberg:1967tq,Salam:1968rm} unified electromagnetic and weak forces acting on these fermions, incorporating them into the $\SU(2)_L \times \U(1)_Y$ gauge structure. The subsequent discovery of the third generation---the tau lepton (1975), bottom quark (1977), and finally the top quark (1995)---confirmed the pattern, establishing the three-generation framework as a cornerstone of the Standard Model. The fermion content with their electric charges and approximate masses are summarized in Table~\ref{tab:sm_fermions}:
+The most profound consequence of these symmetries for particle physics is Wigner's classification~\cite{Wigner:1939cj}: elementary particles correspond to irreducible unitary representations of the Poincar\'{e} group, labeled by two invariants---mass $m \geq 0$ and spin $s = 0, \frac{1}{2}, 1, \frac{3}{2}, \ldots$. This is not merely a convenient labeling scheme; it is the \emph{definition} of what constitutes an elementary particle.
+
+The structure of the Lorentz group further constrains what types of fields can describe particles. The Lie algebra of the proper orthochronous Lorentz group $\mathrm{SO}^+(3,1)$ admits, upon complexification, a decomposition into two copies of the $\mathfrak{su}(2)$ algebra:
+\begin{equation}
+\mathfrak{so}(3,1)_{\mathbb{C}} \cong \mathfrak{su}(2) \oplus \mathfrak{su}(2)
+\end{equation}
+Finite-dimensional representations are therefore labeled by a pair $(j_L, j_R)$, where each index independently takes values $0, \frac{1}{2}, 1, \ldots$. The familiar fields of particle physics correspond to specific representations in this classification:
+\begin{itemize}
+\item $(0, 0)$: scalar field (e.g., the Higgs boson)
+\item $(\frac{1}{2}, 0)$: left-handed Weyl spinor
+\item $(0, \frac{1}{2})$: right-handed Weyl spinor
+\item $(\frac{1}{2}, 0) \oplus (0, \frac{1}{2})$: Dirac spinor (massive fermions)
+\item $(\frac{1}{2}, \frac{1}{2})$: four-vector field (gauge bosons)
+\end{itemize}
+The existence of two distinct spinor representations---left-handed and right-handed---is not imposed by hand but follows from the structure of spacetime itself. Their physical distinction through the weak interaction is discussed in Section~\ref{sec:gauge_structure}.
+
+The union of quantum mechanics with special relativity carries a further consequence. Consistent quantization of fields on Minkowski spacetime---requiring Lorentz invariance, unitarity, and locality---leads to the CPT theorem: every particle must have a corresponding antiparticle with identical mass and spin but opposite internal quantum numbers. The spin-statistics theorem, arising from the same requirements, dictates that the half-integer-spin fermions described by spinor representations obey Fermi--Dirac statistics, while integer-spin bosons obey Bose--Einstein statistics. Matter and antimatter are thus not independent postulates but inevitable consequences of relativistic quantum field theory~\cite{Streater:1989vi}.
+
+The experimentally observed matter content of the SM consists of twelve spin-$\frac{1}{2}$ fermions organized into three generations, each containing two quarks and two leptons, summarized in Table~\ref{tab:sm_fermions}.
 
 \begin{table}[htbp]
 \centering
@@ -42,11 +61,10 @@ Third & top (\PQt) & quark & $+2/3$ & $\sim$172.8 GeV \\
 \end{tabular}
 \end{table}
 
-Quarks carry color charge and participate in all three SM interactions. Leptons do not carry color charge and thus do not participate in strong interactions. The charged leptons interact electromagnetically and via the weak force, while neutrinos interact only through the weak force.
-
-Fermions are described by both left-handed and right-handed chirality states, which transform differently under the SM gauge group. This difference in transformation properties is not an arbitrary choice---it directly implements the experimentally observed maximal parity violation in weak interactions. The weak interaction couples only to left-handed fermions (and right-handed antifermions), a fact discovered through Wu's experiment on cobalt-60 beta decay in 1956. This experimental observation requires that left-handed and right-handed fermions transform differently under the electroweak gauge group: left-handed fermions form $\SU(2)_L$ doublets and thus ``feel'' weak isospin, while right-handed fermions are $\SU(2)_L$ singlets and do not. The mathematical structure of doublets versus singlets thus implements the physical fact of parity violation. In the minimal SM, only left-handed neutrinos (and right-handed antineutrinos) are observed experimentally; right-handed neutrinos are not included in the particle content.
+Quarks carry color charge and participate in all three SM interactions, while leptons do not carry color charge and are thus absent from the strong interaction. This generational structure was not predicted from first principles but emerged from successive experimental discoveries---from the muon (1936) and strange quark physics, through the electroweak unification by Glashow, Weinberg, and Salam~\cite{Glashow:1961tr,Weinberg:1967tq,Salam:1968rm}, to the third-generation particles discovered between 1975 and 1995.
 
 \subsection{Gauge Structure and Interactions}
+\label{sec:gauge_structure}
 
 The SM is based on the gauge symmetry group:
 \begin{equation}
@@ -60,16 +78,22 @@ Quantum field theory is fundamentally local: the physics at one spacetime point 
 
 The ordinary derivative $\partial_\mu$ fails to be gauge-covariant under local transformations: it cannot distinguish between a change in the field due to dynamics versus a change due to local phase redefinition. The unique solution is to introduce a connection---the covariant derivative $D_\mu$---that parallel-transports symmetry charges between spacetime points. This connection is precisely the gauge field, and the requirement of locality thus mandates the existence of force-carrying gauge bosons. Each generator of the symmetry group requires one gauge boson: three for $\SU(2)_L$ (the $W^1$, $W^2$, $W^3$ bosons) and one for $\U(1)_Y$ (the $B$ boson). Interactions arise not as ad hoc additions to the theory, but as geometric necessities of maintaining local symmetry.
 
-\subsubsection{Fermion Representations and Chirality}
+\subsubsection{Parity Violation and the Chiral Structure of Weak Interactions}
 
-A defining feature of the electroweak theory is its chiral structure: left-handed and right-handed fermions transform differently under the $\SU(2)_L \times \U(1)_Y$ gauge group. This asymmetry connects directly to the parity violation observed in weak interactions, as noted in Section~\ref{sec:theory_sm}.
+As discussed in Section~\ref{sec:spacetime_symmetries}, the Lorentz group admits two distinct spinor representations---left-handed $(\frac{1}{2}, 0)$ and right-handed $(0, \frac{1}{2})$. The electromagnetic and strong interactions treat these identically, preserving parity. It was therefore a profound surprise when Wu's 1957 experiment on cobalt-60 beta decay~\cite{Wu:1957my} demonstrated that the weak interaction maximally violates parity, coupling exclusively to left-handed fermions and right-handed antifermions.
 
-Left-handed fermions are organized into $\SU(2)_L$ doublets:
+This observation was codified in the $V{-}A$ (vector minus axial-vector) theory of Feynman and Gell-Mann~\cite{Feynman:1958ty} and Sudarshan and Marshak~\cite{Sudarshan:1958vf}, which describes the charged weak current as:
+\begin{equation}
+J^\mu_{\text{CC}} \propto \bar{\psi}\gamma^\mu(1 - \gamma^5)\psi
+\end{equation}
+The projection operator $(1 - \gamma^5)/2$ selects only the left-handed component of the fermion field, implementing maximal parity violation. This empirical structure finds its natural explanation in the gauge framework: left-handed fermions transform as $\SU(2)_L$ doublets, while right-handed fermions are $\SU(2)_L$ singlets. The subscript ``$L$'' in $\SU(2)_L$ directly encodes this experimental fact.
+
+Left-handed fermions are thus organized into $\SU(2)_L$ doublets:
 \begin{equation}
 \ell_L = \begin{pmatrix} \nu_e \\ e^- \end{pmatrix}_L, \quad
 q_L = \begin{pmatrix} u \\ d \end{pmatrix}_L
 \end{equation}
-while right-handed fermions are $\SU(2)_L$ singlets: $e_R$, $u_R$, $d_R$ (and similarly for the other generations). In the minimal SM, right-handed neutrinos $\nu_R$ are not included. This chiral structure is central to understanding electroweak interactions. The $\SU(2)_L$ generators act non-trivially only on left-handed doublets, causing the weak charged currents to couple exclusively to left-handed fermions (and right-handed antifermions).
+while right-handed fermions are $\SU(2)_L$ singlets: $e_R$, $u_R$, $d_R$ (and similarly for the other generations). In the minimal SM, right-handed neutrinos $\nu_R$ are not included. The $\SU(2)_L$ generators act non-trivially only on left-handed doublets, so that weak charged currents couple exclusively to left-handed fermions (and right-handed antifermions).
 
 \subsubsection{Quantum Number Assignments}
 
