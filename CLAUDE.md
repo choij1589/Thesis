@@ -10,10 +10,13 @@ This is a LaTeX thesis template for Seoul National University (SNU), specificall
 
 **Completed:**
 - Introduction.tex
-- Theory sections 2.1.1-2.1.3 (SM matter content, gauge structure, EWSB) - restructured with principle-based approach
+- Theory sections 2.1.1-2.1.3 restructured with symmetry-first approach:
+  - 2.1.1: Spacetime symmetries → Poincaré group → Wigner classification → Lorentz algebra → matter/antimatter from CPT
+  - 2.1.2: Gauge principle → V-A theory and parity violation → chiral structure → quantum numbers → gauge bosons
+  - 2.1.3: EWSB and Higgs mechanism
 
 **TODO:**
-- Revisit sections 2.1.1-2.1.3 to make more brief and add citations
+- Add citations throughout sections 2.1.1-2.1.3
 
 ## Build Commands
 
