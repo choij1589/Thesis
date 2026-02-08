@@ -488,183 +488,88 @@ or radiatively through loop corrections. The alignment-without-decoupling scenar
 \subsection{Charged Higgs Boson Phenomenology}
 \label{sec:theory_charged}
 
-\subsubsection{Production Mechanisms}
+The charged Higgs boson is the hallmark of an extended scalar sector---its discovery would unambiguously establish the existence of physics beyond the Standard Model, since no charged fundamental scalar exists in the SM. Given the 2HDM framework developed in Section~\ref{sec:theory_2hdm}, the central phenomenological question becomes: how does $H^\pm$ manifest at the LHC? The answer reveals a deep interplay between Yukawa suppression and gauge-coupling robustness, and points to a decay chain that is uniquely powerful for discovery.
 
-\textbf{Light charged Higgs ($m_{H^\pm} < m_t$):}
-When the charged Higgs mass is below the top quark mass, the dominant production mechanism at hadron colliders is through top quark decay~\cite{Branco:2011iw,Gunion:1990dt}:
-\begin{equation}
-t \to H^+ b
-\end{equation}
-competing with the SM decay $t \to W^+ b$. The partial width is:
+This section focuses on the light charged Higgs scenario, $m_{H^\pm} < m_t$, where top quark decays provide the production mechanism. The discussion proceeds from production, through the competition among decay modes, to the target decay chain $H^\pm \to W^\pm A \to W^\pm \mu^+\mu^-$ that motivates this analysis.
+
+\subsubsection{Production in Top Quark Decays}
+
+At the LHC, top quarks are copiously produced in pairs through $gg \to t\bar{t}$ and $q\bar{q} \to t\bar{t}$, with a cross section $\sigma(pp \to t\bar{t}) \approx 830$\,pb at $\sqrt{s} = 13$\TeV. When $m_{H^\pm} < m_t$, the decay $t \to H^+ b$ competes directly with the SM channel $t \to W^+ b$, providing a copious source of charged Higgs bosons without the need for dedicated production mechanisms. The partial width for this decay is~\cite{Branco:2011iw,Gunion:1990dt}:
 \begin{align}
 \Gamma(t \to H^+ b) &= \frac{G_F m_t^3}{4\sqrt{2}\pi} |\xi_u^A \cot\beta + \xi_d^A \tan\beta|^2 \tilde{\lambda}^{1/2}(r_H^2, r_b^2) \label{eq:Gamma_t_Hb}
 \end{align}
-where $r_i = m_i/m_t$ is the mass ratio, $G_F$ is the Fermi constant, and:
-\begin{equation}
-\tilde{\lambda}^{1/2}(x, y) = \left[(1 - x)^2 + (1 + x)y\right] \lambda^{1/2}(1, x, y)
-\end{equation}
-with $\lambda(a,b,c) = a^2 + b^2 + c^2 - 2ab - 2ac - 2bc$ the Källén function. The branching fraction is:
-\begin{equation}
-\mathcal{B}(t \to H^+ b) = \frac{\Gamma(t \to H^+ b)}{\Gamma(t \to H^+ b) + \Gamma(t \to W^+ b)}
-\end{equation}
-In Type-I, the $\cot^2\beta$ suppression at large $\tan\beta$ strongly reduces the production rate, making this channel challenging for $\tan\beta \gtrsim 5$. In Type-II, the $\tan^2\beta$ enhanced $b$ coupling can compensate, allowing significant branching fractions even at large $\tan\beta$.
+where $r_i = m_i/m_t$, $G_F$ is the Fermi constant, and $\tilde{\lambda}^{1/2}(x, y) = [(1-x)^2 + (1+x)y]\,\lambda^{1/2}(1,x,y)$ with $\lambda(a,b,c) = a^2 + b^2 + c^2 - 2ab - 2ac - 2bc$ the Källén function.
 
-At the LHC, top quarks are copiously produced in pairs through $gg \to t\bar{t}$ and $q\bar{q} \to t\bar{t}$, with cross sections $\sigma(pp \to t\bar{t}) \approx 830$\,pb at $\sqrt{s} = 13$\TeV. The charged Higgs can appear in either or both top decays, leading to final states $t\bar{t} \to H^+ b\, W^- \bar{b}$ or $t\bar{t} \to H^+ b\, H^- \bar{b}$.
+In Type-I models, where $\xi_u^A = \cot\beta$ and $\xi_d^A = -\cot\beta$ (Table~\ref{tab:yukawa_couplings}), the production rate scales as $\cot^2\beta$. At $\tan\beta = 10$, this suppression factor is $\cot^2\beta = 0.01$, yielding $\mathcal{B}(t \to H^\pm b) \sim 0.1\%$. Although small, the enormous $t\bar{t}$ cross section compensates: with 138\fbinv of integrated luminosity, approximately $10^8$ top quark pairs are produced, yielding $\mathcal{O}(10^5)$ charged Higgs bosons even at this suppressed branching fraction.
 
-\textbf{Heavy charged Higgs ($m_{H^\pm} > m_t$):}
-For $m_{H^\pm} > m_t$, top decay is kinematically forbidden. The main production mechanisms are~\cite{Branco:2011iw,Moretti:2016gkr}:
-\begin{itemize}
-\item \textbf{Associated production with top quarks}: $gg, g b \to t b H^\pm$ (and charge conjugate). This process proceeds through $s$-channel $W^\pm$ exchange and $t$-channel top exchange. The cross section scales as $\cot^2\beta$ (Type-I) or $\tan^2\beta$ (Type-II for $b$-associated production).
-\item \textbf{Charged Higgs pair production}: $q\bar{q}' \to H^+ H^-$ via $s$-channel $\gamma/Z$ exchange. This process is model-independent (depends only on $m_{H^\pm}$) but has smaller cross sections, $\sigma \sim 1$--100\,fb for $m_{H^\pm} = 200$--500\GeV.
-\end{itemize}
+A concrete realization in the MSSM illustrates the contrasting phenomenology. The Type-II Yukawa structure gives $\xi_d^A = \tan\beta$, so the bottom quark contribution to Eq.~(\ref{eq:Gamma_t_Hb}) is enhanced at large $\tan\beta$, potentially yielding significant branching fractions. However, the same $\tan\beta$-enhanced $b$--$H^\pm$ coupling drives large contributions to the $b \to s\gamma$ loop, and the resulting constraint $m_{H^\pm} \gtrsim 580$\GeV~\cite{Misiak:2017bgg} pushes the charged Higgs well above the top quark mass, closing the $t \to H^\pm b$ channel entirely. For $m_{H^\pm} > m_t$, associated production $gg, gb \to tbH^\pm$ becomes the primary mechanism, but with cross sections typically one to two orders of magnitude smaller than the $t\bar{t}$ rate.
 
-Representative cross sections at $\sqrt{s} = 13$\TeV are $\sigma(pp \to t b H^\pm) \sim 1$--100\,pb for $m_{H^\pm} = 200$--600\GeV, depending on $\tan\beta$ and 2HDM type.
+\subsubsection{The Decay Landscape---Why $H^\pm \to W^\pm A$ Dominates}
 
-\subsubsection{Decay Modes and Branching Fractions}
+Once produced, which decay mode wins? The answer depends on the model, but the competition between fermionic and bosonic channels has a clear winner in Type-I at large $\tan\beta$.
 
-The charged Higgs boson can decay into fermionic final states (through Yukawa couplings) or bosonic final states (through gauge/scalar couplings). The relative branching fractions depend critically on $m_{H^\pm}$, $m_A$, $\tan\beta$, $\cos(\beta-\alpha)$, and the 2HDM type.
-
-\textbf{Fermionic decays:}
-
-The two-body fermionic decay widths are~\cite{Branco:2011iw,Gunion:1990dt}:
+The fermionic partial widths in Type-I are (shown for the three leading channels)~\cite{Branco:2011iw,Gunion:1990dt}:
 \begin{align}
-\Gamma(H^\pm \to t\bar{b}) &= \frac{3 G_F m_{H^\pm}^3}{4\sqrt{2}\pi} \cot^2\beta \, \tilde{\lambda}^{1/2}(r_t^2, r_b^2) \label{eq:Gamma_Hpm_tb}
-\end{align}
-\begin{align}
-\Gamma(H^\pm \to \tau^\pm \nu) &= \frac{G_F m_{H^\pm}^3}{4\sqrt{2}\pi} \cot^2\beta \, r_\tau^2 (1 - r_\tau^2)^2 \label{eq:Gamma_Hpm_taunu}
-\end{align}
-\begin{align}
+\Gamma(H^\pm \to t\bar{b}) &= \frac{3 G_F m_{H^\pm}^3}{4\sqrt{2}\pi} \cot^2\beta \, \tilde{\lambda}^{1/2}(r_t^2, r_b^2) \label{eq:Gamma_Hpm_tb} \\
+\Gamma(H^\pm \to \tau^\pm \nu) &= \frac{G_F m_{H^\pm}^3}{4\sqrt{2}\pi} \cot^2\beta \, r_\tau^2 (1 - r_\tau^2)^2 \label{eq:Gamma_Hpm_taunu} \\
 \Gamma(H^\pm \to c\bar{s}) &= \frac{3 G_F m_{H^\pm}^3}{4\sqrt{2}\pi} |V_{cs}|^2 \cot^2\beta \, \tilde{\lambda}^{1/2}(r_c^2, r_s^2) \label{eq:Gamma_Hpm_cs}
 \end{align}
-where $r_f = m_f/m_{H^\pm}$ is the mass ratio, $V_{cs} \approx 0.97$ is the CKM matrix element, the factor of 3 accounts for QCD color, $\tilde{\lambda}^{1/2}(x, y)$ is the two-body phase space function defined above, and the Yukawa coupling factors $\xi_f^A$ are given in Table~\ref{tab:yukawa_couplings} (here shown with $\cot^2\beta$ for Type-I).
+where $r_f = m_f/m_{H^\pm}$, the factor of 3 accounts for QCD color, and $V_{cs} \approx 0.97$ is the CKM matrix element. The crucial feature is that \emph{every} fermionic partial width carries the universal $\cot^2\beta$ factor in Type-I. For $\tan\beta = 10$, this amounts to a suppression of $\cot^2\beta = 0.01$ relative to $\tan\beta = 1$, uniformly diminishing all fermionic channels. Among them, $H^\pm \to t\bar{b}$ would dominate when kinematically allowed ($m_{H^\pm} > m_t + m_b \approx 177$\GeV), but for the light charged Higgs regime $m_{H^\pm} < m_t$ relevant here, this channel is closed, leaving $H^\pm \to \tau\nu$ and $H^\pm \to c\bar{s}$ as the leading fermionic modes---both doubly suppressed by small fermion masses and $\cot^2\beta$.
 
-The relative importance of fermionic modes depends on $\tan\beta$ and the 2HDM type. In Type-I, all fermionic widths scale as $\cot^2\beta$; for $\tan\beta = 10$, the suppression factor is $\cot^2\beta = 0.01$, making fermionic decays subdominant if bosonic channels are open. In Type-II, $H^\pm \to \tau\nu$ is enhanced by $\tan^2\beta$, while $H^\pm \to tb$ remains suppressed. The $H^\pm \to t\bar{b}$ channel dominates among fermionic modes when kinematically allowed ($m_{H^\pm} > m_t + m_b \approx 177$\GeV), while $H^\pm \to \tau\nu$ dominates for $m_{H^\pm} < m_t + m_b$.
-
-\textbf{Bosonic decays:}
-
-The charged Higgs can decay to a $W$ boson and a neutral Higgs. The partial widths are~\cite{Branco:2011iw,Gunion:1990dt,Eriksson:2009ws}:
+The bosonic channels tell a different story. The three gauge-coupling decay widths are~\cite{Branco:2011iw,Gunion:1990dt,Eriksson:2009ws}:
 \begin{align}
-\Gamma(H^\pm \to W^\pm h) &= \frac{g^2 m_{H^\pm}^3}{64\pi m_W^2} \sin^2(\beta - \alpha) \, \lambda^{3/2}(1, r_W^2, r_h^2) \label{eq:Gamma_Hpm_Wh}
-\end{align}
-\begin{align}
-\Gamma(H^\pm \to W^\pm H) &= \frac{g^2 m_{H^\pm}^3}{64\pi m_W^2} \cos^2(\beta - \alpha) \, \lambda^{3/2}(1, r_W^2, r_H^2) \label{eq:Gamma_Hpm_WH}
-\end{align}
-\begin{align}
+\Gamma(H^\pm \to W^\pm h) &= \frac{g^2 m_{H^\pm}^3}{64\pi m_W^2} \sin^2(\beta - \alpha) \, \lambda^{3/2}(1, r_W^2, r_h^2) \label{eq:Gamma_Hpm_Wh} \\
+\Gamma(H^\pm \to W^\pm H) &= \frac{g^2 m_{H^\pm}^3}{64\pi m_W^2} \cos^2(\beta - \alpha) \, \lambda^{3/2}(1, r_W^2, r_H^2) \label{eq:Gamma_Hpm_WH} \\
 \Gamma(H^\pm \to W^\pm A) &= \frac{g^2 m_{H^\pm}^3}{64\pi m_W^2} \lambda^{3/2}(1, r_W^2, r_A^2) \label{eq:Gamma_Hpm_WA}
 \end{align}
-where $g = e/\sin\theta_W$ is the $SU(2)_L$ gauge coupling, $r_i = m_i/m_{H^\pm}$ are mass ratios, and the three-half power of the Källén function arises from the $p$-wave nature of vector-scalar final states.
+where $r_i = m_i/m_{H^\pm}$ and the $\lambda^{3/2}$ factor reflects the $p$-wave nature of the vector-scalar final state. The pivotal observation is immediate: the $H^\pm \to W^\pm A$ width carries \emph{no mixing-angle dependence} whatsoever, a direct consequence of the angle-independent $H^\pm W^\mp A$ coupling established in Eq.~(\ref{eq:HWA}). In contrast, $H^\pm \to W^\pm h$ is modulated by $\sin^2(\beta - \alpha)$ and $H^\pm \to W^\pm H$ by $\cos^2(\beta - \alpha)$. In the alignment limit $\cos(\beta - \alpha) \to 0$ required by Higgs precision measurements, the $H^\pm \to W^{(*)} H$ channel vanishes. The $H^\pm \to W^{(*)} h$ channel retains its full $\sin^2(\beta - \alpha) \approx 1$ coupling, but is severely suppressed kinematically: since $m_h = 125$\GeV, the virtual $W^*$ is forced far below its mass shell (for example, $m_{W^*} \leq 25$\GeV at $m_{H^\pm} = 150$\GeV), resulting in a propagator suppression of $\mathcal{O}(10^{-4})$ relative to the on-shell rate. The $H^\pm \to W^{(*)} A$ channel, by contrast, benefits from a light pseudoscalar that keeps $m_{W^*}$ near the $W$ pole, making it the dominant bosonic mode throughout the light charged Higgs regime.
 
-The $H^\pm \to W^\pm A$ channel is the focus of this analysis due to a fundamental advantage: \emph{its coupling strength is independent of both $\tan\beta$ and the mixing angle $\cos(\beta - \alpha)$} (Eq.~\ref{eq:HWA}). This independence has several important consequences:
-\begin{itemize}
-\item \textbf{Robustness to alignment constraints:} In the alignment limit ($\cos(\beta - \alpha) \to 0$) required by Higgs precision measurements, $H^\pm \to W^\pm H$ is suppressed while $H^\pm \to W^\pm h$ competes with other modes. The $H^\pm \to W^\pm A$ width remains unsuppressed regardless of the degree of alignment.
-\item \textbf{Universal across parameter space:} For $\tan\beta \gtrsim 5$ (Type-I), fermionic decays are suppressed by $\cot^2\beta \lesssim 0.04$, allowing $H^\pm \to W^\pm A$ to dominate when kinematically allowed ($m_{H^\pm} - m_A > m_W$).
-\item \textbf{Clean experimental signature:} The $A \to \mu^+\mu^-$ decay provides a distinctive resonance peak, enabling efficient background rejection.
-\end{itemize}
+This competition has a clear winner in Type-I at large $\tan\beta$. With fermionic modes universally suppressed by $\cot^2\beta \sim 0.01$ at $\tan\beta = 10$, and the $H^\pm \to W^\pm A$ coupling at full gauge strength, the bosonic channel dominates whenever it is kinematically accessible. Calculations with the 2HDMC code~\cite{Eriksson:2009ws}, which implements QCD corrections and loop-induced processes, confirm that for Type-I with $\tan\beta \gtrsim 5$ and $|\cos(\beta-\alpha)| \sim 0.05$--$0.15$, the $H^\pm \to W^\pm A$ branching fraction reaches 50\%--90\% when the on-shell decay is open ($m_{H^\pm} - m_A > m_W$).
 
-\textbf{Total width and branching ratios:}
+The MSSM provides an instructive contrast. The tree-level mass relation $m_{H^\pm}^2 = m_A^2 + m_W^2$ (from $\lambda_4 = -g^2/2$, $\lambda_5 = 0$) fixes the mass splitting to $m_{H^\pm} - m_A = m_W^2/(m_{H^\pm} + m_A)$, which is always less than $m_W$. The on-shell decay $H^\pm \to W^\pm A$ is therefore \emph{never} kinematically allowed in the MSSM at tree level---the $W$ is always virtual. Furthermore, the Type-II Yukawa structure means $H^\pm \to \tau\nu$ is enhanced by $\tan^2\beta$ rather than suppressed, providing strong competition with the off-shell bosonic mode. The charged Higgs phenomenology in the MSSM is thus qualitatively different from Type-I: the bosonic channel persists but is subdominant to $\tau\nu$ at large $\tan\beta$.
 
-The total width is the sum of all partial widths:
-\begin{equation}
-\begin{split}
-\Gamma_{\text{tot}}(H^\pm) = &\Gamma(H^\pm \to t\bar{b}) + \Gamma(H^\pm \to \tau\nu) + \Gamma(H^\pm \to c\bar{s}) + \Gamma(H^\pm \to W^\pm h) \\
-&+ \Gamma(H^\pm \to W^\pm H) + \Gamma(H^\pm \to W^\pm A) + \ldots
-\end{split}
-\end{equation}
-Branching fractions are:
-\begin{equation}
-\mathcal{B}(H^\pm \to X) = \frac{\Gamma(H^\pm \to X)}{\Gamma_{\text{tot}}(H^\pm)}
-\end{equation}
+\subsubsection{The Target Decay Chain: $H^\pm \to W^\pm A \to W^\pm \mu^+\mu^-$}
 
-The 2HDMC code~\cite{Eriksson:2009ws} implements these formulas including QCD corrections, three-body decays, and loop-induced processes, providing reliable predictions for branching fractions across the $(m_{H^\pm}, m_A, \tan\beta, \cos(\beta - \alpha))$ parameter space. Typical results show that for Type-I with $\tan\beta \gtrsim 5$ and $|\cos(\beta - \alpha)| \sim 0.05$--0.15, the $H^\pm \to W^\pm A$ branching fraction can reach 50\%--90\% when $m_{H^\pm} - m_A > m_W$.
-
-\subsubsection{The Target Decay Chain: $H^\pm \to W^\pm A \to W^\pm \mu^+ \mu^-$}
-
-This analysis targets the $H^\pm \to W^\pm A$ decay specifically because its coupling is guaranteed by the gauge structure to be independent of the mixing angles and $\tan\beta$ parameters. Unlike competing decay modes---which are either suppressed by the alignment limit ($H^\pm \to W^\pm H$) or by $\cot^2\beta$ factors in Type-I models (fermionic decays)---the $H^\pm W A$ coupling remains at full gauge strength across the parameter space allowed by current experimental constraints. This makes it an ideal channel to probe the charged Higgs sector even in the challenging near-alignment regime.
-
-The search focuses on the cascade decay:
+The preceding discussion establishes $H^\pm \to W^\pm A$ as the dominant decay in Type-I at large $\tan\beta$. This analysis exploits the full cascade from top quark pair production through the pseudoscalar decay to dimuons:
 \begin{equation}
 pp \to t\bar{t} \to (H^\pm b)(W^\mp \bar{b}) \to (W^\pm A\, b)(W^\mp \bar{b}) \to (W^\pm \mu^+ \mu^- b)(W^\mp \bar{b})
 \label{eq:decay_chain}
 \end{equation}
-where one top quark decays to $H^\pm b$, the charged Higgs decays to $W^\pm A$, and the pseudoscalar decays to a dimuon pair.
+where one top quark decays to $H^\pm b$, the charged Higgs decays to $W^\pm A$, and the pseudoscalar produces a dimuon resonance. Each factor in this chain warrants examination.
 
-\textbf{Pseudoscalar decay to fermions:}
-
-The CP-odd pseudoscalar \PA couples to fermions through the axial-vector structure $i\xi_f^A \bar{f} \gamma_5 f$ (Eq.~\ref{eq:yukawa_physical}). The partial width for $A \to f\bar{f}$ is~\cite{Branco:2011iw,Gunion:1990dt}:
+The CP-odd pseudoscalar \PA couples to fermions through the axial-vector structure $i\xi_f^A \bar{f}\gamma_5 f$ (Eq.~\ref{eq:yukawa_physical}), with partial width~\cite{Branco:2011iw,Gunion:1990dt}:
 \begin{equation}
 \Gamma(A \to f\bar{f}) = N_c \frac{G_F m_A^3}{4\sqrt{2}\pi} r_f^2 (\xi_f^A)^2 (1 - 4r_f^2)^{3/2}
 \label{eq:Gamma_A_ff}
 \end{equation}
-where $r_f = m_f/m_A$ is the mass ratio, $N_c = 3$ for quarks and $N_c = 1$ for leptons, and $(1 - 4r_f^2)^{3/2} = \beta_f^{3/2}$ is the $p$-wave phase space suppression near threshold. In Type-I, $\xi_f^A = -\cot\beta$ for all fermions, so the $\tan\beta$ dependence cancels in branching ratios:
-\begin{equation}
-\mathcal{B}(A \to f\bar{f}) = \frac{\Gamma(A \to f\bar{f})}{\sum_{f'} \Gamma(A \to f'\bar{f}')}
-\end{equation}
+where $r_f = m_f/m_A$, $N_c = 3$ for quarks and 1 for leptons, and the $(1 - 4r_f^2)^{3/2}$ factor reflects $p$-wave phase space suppression near threshold. In Type-I, $\xi_f^A = -\cot\beta$ for all fermions, so the $\tan\beta$ dependence cancels in branching ratios, making them functions of $m_A$ alone.
 
-For light pseudoscalars ($0.2\GeV < m_A < 3.6\GeV$), the kinematically accessible final states are $\mu^+\mu^-$, $c\bar{c}$, $s\bar{s}$, and below $2m_\tau$ the $\tau^+\tau^-$ channel is closed. The branching fraction to dimuons is:
+For the mass range $m_A > 2m_b \approx 10$\GeV relevant to this analysis, the $b\bar{b}$ channel dominates the pseudoscalar width, and the dimuon branching fraction is:
 \begin{equation}
-\mathcal{B}(A \to \mu^+\mu^-) = \frac{r_\mu^2 (1 - 4r_\mu^2)^{3/2}}{r_\mu^2 (1 - 4r_\mu^2)^{3/2} + 3r_c^2 (1 - 4r_c^2)^{3/2} + 3r_s^2 (1 - 4r_s^2)^{3/2}}
+\mathcal{B}(A \to \mu^+\mu^-) \approx \frac{m_\mu^2}{3 m_b^2} \sim \mathcal{O}(10^{-3})
 \label{eq:BR_A_mumu}
 \end{equation}
-where $r_f = m_f/m_A$ is the mass ratio.
-For $2m_\mu < m_A < 2m_\tau \approx 3.6$\GeV (below the $\tau$ and $b$ thresholds), Eq.~(\ref{eq:BR_A_mumu}) yields $\mathcal{B}(A \to \mu^+\mu^-) \approx 3\%$. For $m_A > 2m_b \approx 10$\GeV, the $b\bar{b}$ channel dominates and $\mathcal{B}(A \to \mu^+\mu^-) \lesssim 10^{-3}$, making the dimuon signature less favorable.
+where the factor of 3 accounts for the color multiplicity of $b\bar{b}$, and we have neglected phase space corrections that are small for $m_A \gg 2m_b$. Despite this small branching fraction, the dimuon channel remains experimentally powerful for two reasons. First, the CMS muon detector provides excellent dimuon mass resolution of a few percent, enabling a narrow resonance search that strongly rejects the smooth $\mu^+\mu^-$ continuum background. Second, the final signal cross section remains within experimental reach, as the quantitative benchmarks below demonstrate.
 
-\textbf{Combined signal branching fraction:}
+When the mass splitting $m_{H^\pm} - m_A$ is smaller than $m_W$, the $W$ boson in the decay $H^\pm \to W^\pm A$ becomes virtual. This off-shell regime is not a marginal corner of parameter space---it is where custodial symmetry (Eq.~\ref{eq:custodial_constraint}) naturally places much of the viable 2HDM spectrum, and it is \emph{mandatory} in the MSSM at tree level. The differential rate for the three-body decay through $W^*$ is~\cite{Eriksson:2009ws}:
+\begin{equation}
+\frac{d\Gamma(H^\pm \to W^{*\pm} A)}{dm_{W^*}^2} = \frac{g^2}{64\pi^2 m_{H^\pm}} \frac{\lambda^{3/2}(m_{H^\pm}^2, m_{W^*}^2, m_A^2)}{(m_{W^*}^2 - m_W^2)^2 + m_W^2 \Gamma_W^2} \frac{1}{m_{W^*}^2}
+\label{eq:dGamma_Hpm_WstarA}
+\end{equation}
+where $\Gamma_W \approx 2.1$\GeV is the $W$ boson width. Note the absence of any $\cos^2(\beta - \alpha)$ factor---consistent with the angle-independent $H^\pm W^\mp A$ coupling (Eq.~\ref{eq:HWA}). The $W^*$ propagator suppresses the off-shell rate by roughly an order of magnitude relative to the on-shell case, but this suppression is only moderate because the virtual $W$ mass peaks just below the pole. Crucially, the off-shell bosonic mode remains competitive with fermionic channels in Type-I because the total fermionic width is itself suppressed by $\cot^2\beta$.
 
-The full cascade branching fraction in single-top decay is:
+To quantify the experimental reach, consider three representative benchmarks, all with $m_A > 12$\GeV so that $\mathcal{B}(A \to \mu^+\mu^-) \sim 10^{-3}$.
+
+\emph{Type-I on-shell benchmark}: $\tan\beta = 10$, $m_{H^\pm} = 150$\GeV, $m_A = 50$\GeV. The mass splitting $m_{H^\pm} - m_A = 100$\GeV exceeds $m_W$, so the $W$ is on-shell. Production gives $\mathcal{B}(t \to H^\pm b) \sim 0.1\%$ (suppressed by $\cot^2\beta = 0.01$). The bosonic decay dominates with $\mathcal{B}(H^\pm \to W^\pm A) \sim 80\%$. Combined with $\mathcal{B}(A \to \mu^+\mu^-) \sim 10^{-3}$, the cascade branching fraction (Eq.~\ref{eq:cascade_BR}) yields:
 \begin{equation}
 \mathcal{B}_{\text{cascade}} = \mathcal{B}(t \to H^\pm b) \times \mathcal{B}(H^\pm \to W^\pm A) \times \mathcal{B}(A \to \mu^+\mu^-)
 \label{eq:cascade_BR}
 \end{equation}
-This analysis searches for the decay chain and sets model-independent limits on this product of branching fractions. As an illustrative benchmark, consider Type-I 2HDM with $\tan\beta = 10$, $|\cos(\beta - \alpha)| = 0.1$, $m_{H^\pm} = 150$\GeV, and $m_A = 1$\GeV:
-\begin{itemize}
-\item $\mathcal{B}(t \to H^\pm b) \approx 0.1\%$ (suppressed by $\cot^2\beta \approx 0.01$)
-\item $\mathcal{B}(H^\pm \to W^\pm A) \approx 70\%$ (bosonic decay dominates over $\cot^2\beta$-suppressed fermionic modes)
-\item $\mathcal{B}(A \to \mu^+\mu^-) \approx 3\%$
-\end{itemize}
-yielding $\mathcal{B}_{\text{cascade}} \approx 2 \times 10^{-5}$. While small, this is compensated by the large $t\bar{t}$ production cross section ($\sigma(pp \to t\bar{t}) \approx 830$\,pb at $\sqrt{s} = 13$\TeV), leading to $\mathcal{O}(10^3)$ signal events in 138\fbinv of LHC data. The measured limits can then be interpreted in the context of specific 2HDM types to constrain the $(m_{H^\pm}, m_A, \tan\beta, \cos(\beta-\alpha))$ parameter space.
+of order $10^{-6}$. Folding in $\sigma(t\bar{t}) \approx 830$\,pb and accounting for the two top quarks per event gives a signal cross section $\sigma \times \text{BR} \sim \mathcal{O}(1)$\,fb, yielding $\mathcal{O}(100)$ signal events in 138\fbinv. The clean dimuon resonance signature ensures that this rate is well within the sensitivity of the LHC experiments.
 
-\subsubsection{Off-Shell Decays: $H^\pm \to W^{*\pm} A \to \ell^\pm \nu A$}
+\emph{Type-I off-shell benchmark}: $\tan\beta = 10$, $m_{H^\pm} = 130$\GeV, $m_A = 60$\GeV. Now $m_{H^\pm} - m_A = 70$\GeV $< m_W$, so the $W$ is virtual. The off-shell branching fraction is reduced by roughly a factor of 5--10 relative to the on-shell case, but the bosonic channel still dominates over the $\cot^2\beta$-suppressed fermionic modes. The signal cross section is reduced to $\mathcal{O}(0.1)$\,fb, placing it at the edge of Run 2 sensitivity but well within reach of the combined Run 2 + Run 3 dataset.
 
-An important feature of this analysis is sensitivity to off-shell $H^\pm \to W^\pm A$ decays, extending the search to the kinematic region $m_A > m_{H^\pm} - m_W$ where the on-shell decay is forbidden. As discussed in Section~\ref{sec:theory_2hdm}, custodial symmetry constraints [Eq.~(\ref{eq:custodial_constraint})] require $|m_{H^\pm} - m_A| \lesssim 50$--100\GeV, which for typical charged Higgs masses of 100--200\GeV naturally places much of the viable 2HDM parameter space in this off-shell region. Searching only for on-shell decays would miss the majority of the phenomenologically motivated parameter space.
-
-\textbf{Three-body decay through virtual $W$:}
-
-When $m_{H^\pm} - m_A < m_W$, the $W$ boson is off-shell ($W^*$) and the decay proceeds as a three-body process $H^\pm \to A\, \ell^\pm \nu_\ell$. The differential decay rate with respect to the virtual $W$ mass $m_{W^*}$ is~\cite{Eriksson:2009ws}:
-\begin{equation}
-\frac{d\Gamma(H^\pm \to W^{*\pm} A)}{dm_{W^*}^2} = \frac{g^2 \cos^2(\beta - \alpha)}{64\pi^2 m_{H^\pm}} \frac{\lambda^{3/2}(m_{H^\pm}^2, m_{W^*}^2, m_A^2)}{(m_{W^*}^2 - m_W^2)^2 + m_W^2 \Gamma_W^2} \frac{1}{m_{W^*}^2}
-\label{eq:dGamma_Hpm_WstarA}
-\end{equation}
-where $\Gamma_W \approx 2.1$\GeV is the $W$ boson width. The $W^*$ propagator $1/[(m_{W^*}^2 - m_W^2)^2 + m_W^2 \Gamma_W^2]$ suppresses the off-shell contribution, but the suppression is only moderate for $|m_{W^*}^2 - m_W^2| \lesssim m_W \Gamma_W \approx 170$\GeV$^2$.
-
-Including the leptonic $W^*$ decay, the three-body partial width is:
-\begin{equation}
-\Gamma(H^\pm \to A\, \ell^\pm \nu) = \int_{m_\ell^2}^{(m_{H^\pm} - m_A)^2} \frac{d\Gamma(H^\pm \to W^{*\pm} A)}{dm_{W^*}^2} \frac{\Gamma(W^{*\pm} \to \ell^\pm \nu)}{m_{W^*}^2} \, dm_{W^*}^2
-\label{eq:Gamma_Hpm_Alnu}
-\end{equation}
-The integration limits are set by energy-momentum conservation: $m_{W^*} \geq m_\ell$ (lower bound) and $m_{W^*} \leq m_{H^\pm} - m_A$ (upper bound from phase space).
-
-\textbf{Parametric study:}
-
-For a charged Higgs with $m_{H^\pm} = 150$\GeV and pseudoscalar mass $m_A = 60$\GeV (off-shell region, since $m_{H^\pm} - m_A = 90$\GeV $< m_W \approx 80$\GeV), the virtual $W$ mass peaks near $m_{W^*} \approx 70$--80\GeV, only $\sim 10$\GeV below the pole. The propagator suppression is:
-\begin{equation}
-\begin{split}
-\frac{1}{(m_{W^*}^2 - m_W^2)^2 + m_W^2 \Gamma_W^2}\Big|_{m_{W^*} = 70\GeV} &\approx \frac{1}{(70^2 - 80^2)^2 + 80^2 \times 2.1^2} \\
-&\approx \frac{1}{3.3 \times 10^{6}\GeV^4}
-\end{split}
-\end{equation}
-compared to the on-shell value $(m_W \Gamma_W)^{-2} \approx 1/(3 \times 10^{5}\GeV^4)$, implying an order-of-magnitude suppression, not a complete kinematic closure.
-
-Calculations with 2HDMC~\cite{Eriksson:2009ws} show that for Type-I 2HDM with $\tan\beta \gtrsim 5$ and $|\cos(\beta - \alpha)| \sim 0.1$:
-\begin{equation}
-\frac{\mathcal{B}(H^\pm \to A\, \ell\nu)\big|_{\text{off-shell}}}{\mathcal{B}(H^\pm \to W^\pm A)\big|_{\text{on-shell}}} \approx 0.1\text{--}0.3
-\end{equation}
-depending on the mass splitting. While reduced, the off-shell rate is still significant because:
-\begin{enumerate}
-\item Fermionic decays are suppressed by $\cot^2\beta$, so the total width is small, making even the suppressed off-shell bosonic mode competitive.
-\item The off-shell region spans a large mass range: for $m_{H^\pm} = 150$\GeV, $m_A$ can extend from $\sim 70$\GeV (just below $m_{H^\pm} - m_W$) to $m_{H^\pm} - 10$\GeV (near-degenerate), covering tens of GeV in parameter space.
-\end{enumerate}
-
-This analysis explicitly includes off-shell contributions by searching for $A \to \mu^+\mu^-$ resonances in events with leptons and missing transverse energy consistent with $W^* \to \ell\nu$ decays, extending sensitivity beyond the on-shell $m_A < m_{H^\pm} - m_W$ region.
+\emph{MSSM benchmark}: $\tan\beta = 5$, $m_A = 60$\GeV. The tree-level relation gives $m_{H^\pm} \approx \sqrt{m_A^2 + m_W^2} \approx 100$\GeV, with $m_{H^\pm} - m_A \approx 40$\GeV---the $W$ is always off-shell. The Type-II Yukawa structure enhances $\Gamma(H^\pm \to \tau\nu)$ by $\tan^2\beta = 25$ rather than suppressing it, so the $\tau\nu$ channel competes strongly with the off-shell bosonic mode. The resulting $\mathcal{B}(H^\pm \to W^* A)$ is significantly smaller than in Type-I, illustrating the qualitatively different phenomenology: in the MSSM, the bosonic cascade is present but subdominant, while in Type-I it dominates cleanly.
 
 \subsection{Previous Searches and Current Constraints}
 \label{sec:theory_constraints}
