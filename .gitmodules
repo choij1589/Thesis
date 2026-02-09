@@ -1,0 +1,3 @@
+[submodule "2HDMC"]
+	path = 2HDMC
+	url = git@github.com:choij1589/2HDMC.git
