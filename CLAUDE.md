@@ -9,11 +9,15 @@ This is a LaTeX thesis template for Seoul National University (SNU), specificall
 ## Current Status
 
 **Completed:**
-- Introduction.tex
-- Theory sections 2.1.1-2.1.3 restructured with symmetry-first approach:
-  - 2.1.1: Spacetime symmetries → Poincaré group → Wigner classification → Lorentz algebra → matter/antimatter from CPT
-  - 2.1.2: Gauge principle → V-A theory and parity violation → chiral structure → quantum numbers → gauge bosons
-  - 2.1.3: EWSB and Higgs mechanism
+- Chapter 1: Introduction
+- Chapter 2: Theoretical Background (theory.tex) — DONE
+  - Section 2.1 (SM): Symmetry-first approach (spacetime → gauge → EWSB)
+  - Section 2.2 (2HDM): Motivations, scalar potential, mass spectrum, Yukawa types, gauge couplings, alignment limit
+  - Section 2.3 (Charged Higgs phenomenology): Production in top decays, decay landscape, target decay chain H±→W±A→W±μμ, custodial symmetry, off-shell W* regime, three benchmarks (on-shell, off-shell, MSSM)
+  - Section 2.4 (Previous searches): LEP, Tevatron, LHC Run 1/2 for both H± and A; analysis target
+  - Figures: TopBR, HcDecay, ADecay, Bsig — all four 2HDM types shown with `subfloat`
+  - Compacted to ~80% of original length (Section 2.2 reduced from 6040 to ~5000 words)
+  - `snutocstyle.tex` updated for `subfig` compatibility
 
 **TODO:**
 - Add citations throughout sections 2.1.1-2.1.3
