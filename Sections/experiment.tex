@@ -1,7 +1,7 @@
 \chapter{The LHC and CMS Detector}
 \label{ch:detector}
 
-This chapter provides an overview of the experimental apparatus used to collect the data analyzed in this thesis. We begin with a description of the Large Hadron Collider (LHC), the world's largest and most powerful particle accelerator, followed by a detailed description of the Compact Muon Solenoid (CMS) detector.
+This chapter provides an overview of the experimental apparatus used to collect the data analyzed in this thesis. The analysis uses proton-proton collision data recorded during LHC Run~2 (2015--2018) at $\sqrt{s} = 13\TeV$ and Run~3 (2022--2023) at $\sqrt{s} = 13.6\TeV$. We begin with a description of the Large Hadron Collider (LHC), followed by a detailed description of the Compact Muon Solenoid (CMS) detector, the particle-flow event reconstruction, and the general principles of Monte Carlo simulation.
 
 \section{The Large Hadron Collider}
 \label{sec:lhc}
@@ -24,22 +24,22 @@ The LHC employs 1232 superconducting dipole magnets operating at 1.9~K to bend t
 
 \subsection{Beam Parameters}
 
-During LHC Run~2 (2015--2018), proton-proton collisions were produced at a center-of-mass energy of $\sqrt{s} = 13\TeV$. Key beam parameters include:
+During LHC Run~2 (2015--2018), proton-proton collisions were produced at a center-of-mass energy of $\sqrt{s} = 13\TeV$. Following the second long shutdown (LS2, 2019--2021), Run~3 commenced in 2022 with an increased center-of-mass energy of $\sqrt{s} = 13.6\TeV$~\cite{Fartoukh:2790409}. Key beam parameters for both running periods are summarized in Table~\ref{tab:lhc_parameters}.
 
 \begin{table}[htbp]
 \centering
-\caption{LHC beam parameters during Run~2 operation.}
+\caption{LHC beam parameters during Run~2 and Run~3 operation.}
 \label{tab:lhc_parameters}
-\begin{tabular}{lc}
+\begin{tabular}{lcc}
 \hline\hline
-Parameter & Value \\
+Parameter & Run~2 & Run~3 \\
 \hline
-Center-of-mass energy & 13\TeV \\
-Beam energy & 6.5\TeV \\
-Number of bunches per beam & up to 2556 \\
-Protons per bunch & $\sim 1.15 \times 10^{11}$ \\
-Bunch spacing & 25~ns \\
-Peak instantaneous luminosity & $2.1 \times 10^{34}$~cm$^{-2}$s$^{-1}$ \\
+Center-of-mass energy & 13\TeV & 13.6\TeV \\
+Beam energy & 6.5\TeV & 6.8\TeV \\
+Number of bunches per beam & up to 2556 & up to 2400 \\
+Protons per bunch & $\sim 1.15 \times 10^{11}$ & $\sim 1.2 \times 10^{11}$ \\
+Bunch spacing & 25~ns & 25~ns \\
+Peak instantaneous luminosity [cm$^{-2}$s$^{-1}$] & $2.1 \times 10^{34}$ & $2.0 \times 10^{34}$ \\
 \hline\hline
 \end{tabular}
 \end{table}
@@ -57,7 +57,7 @@ The integrated luminosity, obtained by integrating the instantaneous luminosity 
 L = \int \mathcal{L}(t) \, dt
 \end{equation}
 
-During Run~2, the CMS experiment recorded a total integrated luminosity of 138\fbinv, distributed across three data-taking periods: 36.3\fbinv in 2016, 41.5\fbinv in 2017, and 59.7\fbinv in 2018.
+During Run~2, the CMS experiment recorded a total integrated luminosity of 138\fbinv~\cite{CMS:2021xjt,CMS:2018elu,CMS:2019jhp}. An additional 62\fbinv was collected during Run~3 (2022--2023)~\cite{CMS:2024onh}, bringing the combined dataset used in this analysis to approximately 200\fbinv. The per-year luminosity breakdown and associated uncertainties are detailed in Chapter~\ref{ch:datasets}.
 
 \subsection{Pileup}
 
@@ -67,7 +67,7 @@ The high luminosity at the LHC results in multiple proton-proton interactions pe
 \end{equation}
 where $\sigma_{\text{inel}} \approx 80$~mb is the inelastic proton-proton cross section.
 
-During Run~2, the average pileup ranged from approximately 20 to 50 interactions per bunch crossing. Pileup events contribute additional particles and energy deposits that must be accounted for in physics object reconstruction and calibration.
+During Run~2, the average pileup ranged from approximately 20 to 50 interactions per bunch crossing. In Run~3, the average pileup increased to approximately 40--60 interactions per bunch crossing due to higher instantaneous luminosities. Pileup events contribute additional particles and energy deposits that must be accounted for in physics object reconstruction and calibration, as discussed in Sections~\ref{sec:pf} and~\ref{sec:mc_sim}.
 
 \section{The Compact Muon Solenoid Detector}
 \label{sec:cms}
@@ -98,7 +98,7 @@ The CMS detector has a cylindrical geometry with overall dimensions of 21.6~m in
 \item Muon detection systems
 \end{enumerate}
 
-The central ``barrel'' region covers $|\eta| < 1.5$, while ``endcap'' detectors extend coverage to $|\eta| < 2.5$ for tracking and $|\eta| < 5.0$ for calorimetry.
+The central ``barrel'' region covers $|\eta| < 1.5$, while ``endcap'' detectors extend coverage to $|\eta| < 2.5$ for tracking and $|\eta| < 5.0$ for calorimetry. Several subsystem upgrades were performed during LS2 in preparation for Run~3 operation, as described in Ref.~\cite{CMS:2023gfb}.
 
 \subsection{Silicon Tracker}
 
@@ -106,7 +106,7 @@ The CMS silicon tracker~\cite{CMS:2014pgm} is the innermost detector subsystem, 
 
 \subsubsection{Pixel Detector}
 
-The pixel detector consists of silicon sensors with pixel sizes of $100 \times 150~\mu\text{m}^2$. During Run~2, the original 3-layer pixel detector was replaced by an upgraded 4-layer system (Phase-1 upgrade) in early 2017~\cite{CMS:2012sda}, providing improved tracking performance and radiation tolerance.
+The pixel detector consists of silicon sensors with pixel sizes of $100 \times 150~\mu\text{m}^2$. During Run~2, the original 3-layer pixel detector was replaced by an upgraded 4-layer system (Phase-1 upgrade) in early 2017~\cite{TrackerGroupoftheCMS:2020muy}, providing improved tracking performance and radiation tolerance.
 
 The upgraded pixel detector contains:
 \begin{itemize}
@@ -157,6 +157,8 @@ The HCAL consists of:
 
 The energy resolution for single hadrons is approximately $\sigma(E)/E \approx 100\%/\sqrt{E} \oplus 5\%$.
 
+During LS2, the HB and HE photosensors were upgraded from hybrid photodiodes (HPDs) to silicon photomultipliers (SiPMs), and the front-end electronics were replaced to provide finer longitudinal segmentation of hadronic showers~\cite{CMS:2023gfb}. This upgrade improves energy resolution and enables more effective discrimination between electromagnetic and hadronic energy deposits in Run~3.
+
 \subsection{Superconducting Solenoid}
 
 The CMS solenoid~\cite{CMS:2009nxa} is a superconducting magnet that generates a uniform 3.8~T magnetic field inside its bore. Key parameters include:
@@ -185,11 +187,13 @@ CSCs are used in the endcap regions ($0.9 < |\eta| < 2.4$), where the muon rate 
 
 RPCs provide complementary information in both barrel ($|\eta| < 1.6$) and endcap ($|\eta| < 1.9$) regions. While their spatial resolution is coarser ($\sim$1~cm), they provide excellent time resolution ($\sim$1~ns), making them particularly useful for triggering.
 
+For Run~3, triple-foil gas electron multiplier (GEM) chambers (GE1/1) were installed in the first endcap muon station, covering $1.55 < |\eta| < 2.18$~\cite{CMS:2023gfb}. These chambers complement the existing CSCs and improve the muon trigger and reconstruction capabilities in the forward region.
+
 The muon system, combined with the inner tracker, achieves a muon momentum resolution of $\sigma(\pT)/\pT \approx 1$--2\% for $\pT < 100\GeV$ and better than 10\% up to $\pT \approx 1\TeV$.
 
 \subsection{Trigger System}
 
-The LHC bunch crossing rate of 40~MHz produces far more collision data than can be recorded. The CMS trigger system~\cite{CMS:2016ngn,CMS:2020cmk} reduces this rate to approximately 1~kHz of events written to permanent storage.
+The LHC bunch crossing rate of 40~MHz produces far more collision data than can be recorded. The CMS trigger system~\cite{CMS:2016ngn,CMS:2020cmk,CMS:2024aqx} reduces this rate to approximately 1~kHz of events written to permanent storage.
 
 \subsubsection{Level-1 Trigger (L1)}
 
@@ -201,19 +205,44 @@ The L1 trigger reduces the event rate from 40~MHz to approximately 100~kHz.
 
 The High-Level Trigger is a software-based system running on a processor farm. It has access to the full detector information and applies reconstruction algorithms similar to those used in offline analysis. The HLT reduces the rate to approximately 1~kHz.
 
-For this analysis, events are selected using dilepton triggers requiring combinations of electrons and/or muons, as described in detail in Chapter~\ref{ch:selection}.
+For Run~3, the L1 trigger firmware was upgraded with improved algorithms exploiting the finer-granularity inputs from the upgraded HCAL and the new GE1/1 muon chambers~\cite{CMS:2023gfb}. For this analysis, events are selected using dilepton triggers requiring combinations of electrons and/or muons, as described in detail in Chapter~\ref{ch:datasets}.
 
-\section{Particle Flow Reconstruction}
+\section{Particle-Flow Event Reconstruction}
 \label{sec:pf}
 
-The CMS detector employs the particle-flow (PF) algorithm~\cite{CMS:2017yfk} for event reconstruction. This algorithm aims to reconstruct each individual particle in an event by combining information from all detector subsystems.
+The CMS detector employs the particle-flow (PF) algorithm~\cite{CMS:2017yfk} for event reconstruction. Rather than relying on a single subsystem, PF combines information from all detector components to reconstruct each individual particle produced in a collision, exploiting the complementary strengths of the tracker, calorimeters, and muon system.
 
-The PF algorithm proceeds through several steps:
-\begin{enumerate}
-\item Reconstructing tracks in the silicon tracker and standalone segments in the muon system
-\item Clustering energy deposits in the calorimeters
-\item Linking these elements based on geometric compatibility
-\item Identifying individual particles: muons, electrons, photons, charged hadrons, and neutral hadrons
-\end{enumerate}
+The reconstruction begins by building basic elements from each subsystem independently. Charged-particle tracks are reconstructed in the silicon tracker using an iterative algorithm, with successive iterations targeting increasingly displaced or low-\pT tracks. Calorimeter clusters are formed separately in the ECAL and HCAL using a topological clustering algorithm that groups contiguous cells with energy deposits above noise thresholds. In the muon system, standalone muon tracks are built from segments in the DT, CSC, and RPC chambers.
 
-The output is a comprehensive list of PF candidates that serves as input for jet clustering, missing transverse momentum calculation, and isolation variable computation. The PF approach provides improved energy resolution for jets, better missing transverse momentum measurement, and more accurate lepton isolation compared to using individual detector subsystems alone.
+The central step of the PF algorithm is the linking of these elements. Tracks are extrapolated to the calorimeter surfaces and matched to clusters based on geometric proximity. Similarly, ECAL and HCAL clusters are linked when the ECAL cluster position falls within the HCAL cluster boundaries. Tracker tracks are also matched to muon system tracks to form global muon candidates. The linked elements form ``blocks'' that are processed together for particle identification.
+
+Within each block, particles are identified in order of decreasing reconstruction purity. Global muons are identified first, as they leave a distinctive signature spanning the full detector. Electrons and isolated photons are identified next through characteristic patterns of tracker hits and ECAL energy deposits, including bremsstrahlung recovery. The remaining calorimeter energy, after subtracting the contributions from identified muons and electrons, is classified as arising from charged hadrons (when matched to a track), neutral hadrons, or photons.
+
+The output is a comprehensive list of PF candidates, each assigned a particle type and four-momentum. These candidates serve as input for higher-level reconstruction: jets are clustered from PF candidates using the anti-$k_{\mathrm{T}}$ algorithm, the missing transverse momentum $\ptvecmiss$ is computed as the negative vector sum of all PF candidate momenta in the transverse plane, and lepton isolation is evaluated by summing the momenta of nearby PF candidates. The PF approach yields substantially better jet energy resolution, more precise $\ptmiss$ measurement, and more accurate lepton isolation compared to reconstruction based on individual subsystems alone. The specific physics object definitions used in this analysis are described in Chapter~\ref{ch:objects}.
+
+\section{Monte Carlo Simulation}
+\label{sec:mc_sim}
+
+Monte Carlo (MC) simulation provides the theoretical predictions against which collision data are compared. Simulated event samples are used to model both the signal process and Standard Model backgrounds, to optimize event selection criteria, and to evaluate systematic uncertainties. The simulation proceeds through two main stages: event generation, which models the physics of the collision, and detector simulation, which models the response of the CMS detector.
+
+\subsection{Event Generation}
+
+Event generation models the full chain of physical processes that occur in a proton-proton collision. The simulation begins with the \textit{hard scattering}, in which the short-distance interaction between two partons is computed perturbatively as a matrix element at a fixed order in the strong or electroweak coupling constants, typically at leading order (LO) or next-to-leading order (NLO) accuracy. The momenta of the incoming partons are sampled from \textit{parton distribution functions} (PDFs), which encode the probability of finding a parton carrying a given fraction of the proton momentum at a given energy scale.
+
+The outgoing partons from the hard scattering undergo \textit{parton showering}, an iterative process that models the successive emission of gluons and quark-antiquark pairs from the hard-scatter partons. The parton shower resums the dominant soft and collinear logarithms, evolving the parton system from the hard-interaction scale down to a scale of $\mathcal{O}(1\GeV)$, where perturbation theory is no longer applicable. Care must be taken when combining the fixed-order matrix element calculation with the parton shower to avoid double-counting of emissions, a procedure known as matching or merging.
+
+At the hadronization scale, the colored partons undergo \textit{hadronization}, a non-perturbative process that converts them into color-neutral hadrons. Phenomenological models, such as the Lund string model, are used to describe this transition. Unstable hadrons are subsequently decayed according to their measured branching fractions.
+
+In addition to the hard scattering, \textit{multiple parton interactions} (MPI) --- secondary scatterings between partons in the same proton pair --- and \textit{beam remnants} are modeled to describe the underlying event activity that accompanies the hard collision.
+
+\subsection{Detector Simulation}
+
+The stable particles produced by the event generator are propagated through a detailed model of the CMS detector geometry and material budget. This full detector simulation models the passage of particles through matter, including electromagnetic and hadronic interactions, multiple scattering, photon conversions, nuclear interactions, and energy deposition in the active detector elements.
+
+The simulated energy deposits are then processed through a \textit{digitization} step that emulates the detector readout electronics, converting the energy deposits into signals in the same format as real detector data. The digitized events are subsequently processed through the identical reconstruction algorithms applied to collision data, ensuring that the simulated events can be directly compared with the observed data.
+
+\subsection{Pileup Overlay}
+
+To account for the effect of pileup, simulated minimum-bias events are overlaid on each hard-scatter event. The number of overlaid interactions per bunch crossing is drawn from a Poisson distribution with a mean chosen to cover the range of pileup conditions observed in data. After reconstruction, the simulated pileup distribution is reweighted to match the distribution observed in each data-taking period.
+
+The specific event generators, detector simulation toolkit, PDF sets, and generator tunes used in this analysis, as well as the signal and background MC samples, are described in Chapter~\ref{ch:datasets}.
