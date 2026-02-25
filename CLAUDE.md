@@ -13,7 +13,7 @@ This is a LaTeX thesis template for Seoul National University (SNU), specificall
 | — | `abstract.tex` | Abstract | ✅ Done | Short by design |
 | 1 | `introduction.tex` | Introduction | ✅ Done | Short by design |
 | 2 | `theory.tex` | Theoretical Background | ✅ Done | Citations complete |
-| 3 | `experiment.tex` | The LHC and CMS Detector | 🔄 In Progress | 3.1–3.5 written; 3.6 TODO; figures pending |
+| 3 | `experiment.tex` | The LHC and CMS Detector | 🔄 In Progress | 3.1–3.6 written; figures pending |
 | 4 | `datasets.tex` | Datasets & Simulation | 📝 Template | — |
 | 5 | `objects.tex` | Physics Objects | 📝 Template | — |
 | 6 | `selection.tex` | Event Selection | 📝 Template | — |
@@ -35,8 +35,8 @@ This is a LaTeX thesis template for Seoul National University (SNU), specificall
 - Section 3.2 (CMS): Detector overview + coordinate system, silicon tracker, calorimeters (ECAL+HCAL), solenoid, muon system — written
 - Section 3.3 (DAQ & Trigger): L1T, HLT, Run 3 upgrades — written
 - Section 3.4 (Particle-Flow): ✅ 완료 — Element building/linking, particle ID (muon/e/γ/hadron), anti-kT + JES/JER, CHS(Run2)/PUPPI(Run3), DeepCSV→DeepJet, PUPPI MET, lepton isolation/mini-isolation
-- Section 3.5 (Monte Carlo): event generation, detector simulation, pileup overlay — written
-- Section 3.6 (Offline Computing): TODO (lipsum placeholder)
+- Section 3.5 (Monte Carlo Simulation): ✅ 완료 — PDFs (factorization, DGLAP, NNPDF3.1), hard scattering (MadGraph5, Powheg), parton shower (Pythia 8, Herwig 7), matching/merging (MC@NLO, MLM, FxFx), hadronization (Lund string, cluster), UE (CP5 tune); detector sim + digitization + pileup; Run 2 vs Run 3 config comparison table
+- Section 3.6 (Offline Software and Computing): ✅ 완료 — WLCG + Tier-0/1/2, CMSSW framework, data formats (RAW→NanoAOD) + production chain, HL-LHC computing (heterogeneous: Patatrack/SONIC/MG4GPU, ML reconstruction: MLPF, data management: data lakes/analysis facilities)
 - **Pending figures** (all need to be dropped in as PDF files):
   - [ ] `cern_accelerator_complex.pdf` → `fig:cern_complex` (3.1)
   - [ ] `lumi_run2.pdf` + `lumi_run3.pdf` → `fig:lumi_run2run3` (3.1)
@@ -55,7 +55,8 @@ This is a LaTeX thesis template for Seoul National University (SNU), specificall
 
 Build the thesis (requires TexLive):
 ```bash
-./run.sh
+./run.sh           # full build (requires all figure files)
+./run.sh --draft   # draft build (missing figures replaced by placeholders)
 ```
 
 Output PDF is generated at `build/Main.pdf`.
