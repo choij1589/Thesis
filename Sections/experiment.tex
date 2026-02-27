@@ -12,7 +12,7 @@ The LHC is the final stage of a chain of accelerators that progressively boost p
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.85\textwidth]{Figures/cern_accelerator_complex.pdf}
+  \includegraphics[width=0.85\textwidth]{Figures/experiments/CCC-v2017.png}
   \caption{The CERN accelerator complex. Protons are progressively accelerated through Linac4, PSB, PS, and SPS before injection into the LHC~\cite{Mobs:2197559}.}
   \label{fig:cern_complex}
 \end{figure}
@@ -39,33 +39,33 @@ The instantaneous luminosity $\mathcal{L}$ characterizes the collision rate per 
 \begin{equation}
 \mathcal{L} = \frac{N_1 N_2 n_b f_{\text{rev}}}{4\pi\sigma_x\sigma_y} F
 \end{equation}
-where $N_{1,2}$ are the numbers of particles per bunch in each beam, $n_b$ is the number of colliding bunch pairs, $f_{\text{rev}}$ is the revolution frequency, $\sigma_{x,y}$ are the transverse beam sizes at the interaction point, and $F$ is a geometric reduction factor accounting for the crossing angle. The integrated luminosity $L = \int \mathcal{L}(t)\,dt$ quantifies the total collision exposure. During Run~2, CMS recorded a total of 138\fbinv~\cite{CMS:2021xjt,CMS:2018elu,CMS:2019jhp}. Run~3 commenced in 2022 and is ongoing; CMS recorded approximately 300\fbinv through 2025~\cite{CMS:2024onh}, with the full Run~3 dataset projected to reach 500\fbinv by 2026. The cumulative integrated luminosity delivered to CMS is shown in Fig.~\ref{fig:lumi_run2run3}, and the specific dataset used in this analysis is described in Chapter~\ref{ch:datasets}.
+where $N_{1,2}$ are the numbers of particles per bunch in each beam, $n_b$ is the number of colliding bunch pairs, $f_{\text{rev}}$ is the revolution frequency, $\sigma_{x,y}$ are the transverse beam sizes at the interaction point, and $F$ is a geometric reduction factor accounting for the crossing angle. The integrated luminosity $L = \int \mathcal{L}(t)\,dt$ quantifies the total collision exposure. During Run~2, CMS recorded a total of 138\fbinv~\cite{CMS:2021xjt,CMS:2018elu,CMS:2019jhp}. Run~3 commenced in 2022 and is ongoing; through 2025, the LHC has delivered a total of approximately 486\fbinv to CMS, of which 446\fbinv was recorded~\cite{CMS:2024onh}. The cumulative integrated luminosity and per-year luminosity profiles are shown in Figs.~\ref{fig:lumi_run2run3} and~\ref{fig:lumi_peryear}, and the specific dataset used in this analysis is described in Chapter~\ref{ch:datasets}.
 
 The high instantaneous luminosity also produces multiple simultaneous proton-proton interactions per bunch crossing, a phenomenon known as pileup. The mean number of pileup interactions per crossing is:
 \begin{equation}
 \langle\mu\rangle = \frac{\mathcal{L} \sigma_{\text{inel}}}{n_b f_{\text{rev}}}
 \end{equation}
-where $\sigma_{\text{inel}} \approx 80$~mb is the inelastic proton-proton cross section. During Run~2, the average pileup ranged from approximately 20 to 50 interactions per bunch crossing, increasing to 40--60 in Run~3. These additional interactions contribute spurious particles and energy deposits that must be mitigated during physics object reconstruction, as discussed in Section~\ref{sec:pf}.
+where $\sigma_{\text{inel}} \approx 80$~mb is the inelastic proton-proton cross section. During Run~2, the luminosity-weighted mean pileup ranged from $\langle\mu\rangle \approx 14$ in 2015 to $\langle\mu\rangle \approx 38$ in 2017, increasing to $\langle\mu\rangle \approx 46$--$60$ in Run~3 (2022--2025), as shown in Fig.~\ref{fig:pileup}. These additional interactions contribute spurious particles and energy deposits that must be mitigated during physics object reconstruction, as discussed in Section~\ref{sec:pf}.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.48\textwidth]{Figures/lumi_run2.pdf}
-  \includegraphics[width=0.48\textwidth]{Figures/lumi_run3.pdf}
-  \caption{Cumulative integrated luminosity recorded by CMS during Run~2 (left)~\cite{CMS:2021xjt} and Run~3 2022--2025 (right)~\cite{CMS:2024onh}.}
-  \label{fig:lumi_run2run3}
+  \subfloat[Total cumulative]{\includegraphics[width=0.48\textwidth]{Figures/experiments/int_lumi_allcumulative_pp_run2and3.pdf}\label{fig:lumi_run2run3}}
+  \hfill
+  \subfloat[Per-year cumulative]{\includegraphics[width=0.48\textwidth]{Figures/experiments/int_lumi_cumulative_pp_2_run2and3.pdf}\label{fig:lumi_peryear}}
+  \caption{Integrated luminosity recorded by CMS during Run~2 (2015--2018) and Run~3 (2022--2025). (a)~Total cumulative luminosity delivered by the LHC and recorded by CMS. (b)~Cumulative luminosity recorded per year~\cite{CMS:2021xjt,CMS:2024onh}.}
+  \label{fig:lumi_combined}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.48\textwidth]{Figures/inst_lumi_run2.pdf}
-  \includegraphics[width=0.48\textwidth]{Figures/inst_lumi_run3.pdf}
-  \caption{Peak instantaneous luminosity delivered to CMS per day during Run~2 (left)~\cite{CMS:2021xjt} and Run~3 (right)~\cite{CMS:2024onh}.}
+  \includegraphics[width=0.85\textwidth]{Figures/experiments/peak_lumi_pp_run2and3.pdf}
+  \caption{Peak instantaneous luminosity delivered to CMS per day during Run~2 and Run~3~\cite{CMS:2021xjt,CMS:2024onh}.}
   \label{fig:inst_lumi}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.75\textwidth]{Figures/pileup_run2run3.pdf}
+  \includegraphics[width=0.75\textwidth]{Figures/experiments/pileup_allYears_run2and3.pdf}
   \caption{Distribution of the mean number of pileup interactions per bunch crossing for each data-taking year in Run~2 and Run~3~\cite{CMS:2021xjt,CMS:2024onh}.}
   \label{fig:pileup}
 \end{figure}
@@ -75,7 +75,7 @@ where $\sigma_{\text{inel}} \approx 80$~mb is the inelastic proton-proton cross 
 
 The Compact Muon Solenoid (CMS)~\cite{CMS:2008xjf} is a general-purpose particle detector designed to study a wide range of physics processes at the LHC. It is characterized by a powerful superconducting solenoid magnet, fine-grained calorimetry, excellent tracking capabilities, and precise muon detection systems.
 
-\subsection{Detector Overview and Coordinate System}
+\subsection*{Detector Overview and Coordinate System}
 
 The CMS detector has a cylindrical geometry 21.6~m in length and 14.6~m in diameter, with a total weight of approximately 14,000 tonnes. Proceeding from the interaction point outward, the main subsystems are the silicon pixel and strip tracker, the electromagnetic calorimeter (ECAL), the hadron calorimeter (HCAL), the superconducting solenoid magnet, and the muon detection systems. A transverse slice of the detector is shown in Fig.~\ref{fig:cms_slice}.
 
@@ -83,23 +83,16 @@ The CMS coordinate system is right-handed with the origin at the nominal interac
 \begin{equation}
 \eta = -\ln\left[\tan\left(\frac{\theta}{2}\right)\right],
 \end{equation}
-is preferred over the polar angle because differences in $\eta$ are invariant under Lorentz boosts along the beam axis. The angular separation between two objects is expressed as $\Delta R = \sqrt{(\Delta\eta)^2 + (\Delta\phi)^2}$, and is used throughout this analysis for jet clustering, lepton isolation, and object matching. The central barrel region covers $|\eta| < 1.5$, while endcap detectors extend coverage to $|\eta| < 2.5$ for tracking and $|\eta| < 5.0$ for calorimetry, as illustrated in Fig.~\ref{fig:cms_eta}.
+is preferred over the polar angle because differences in $\eta$ are invariant under Lorentz boosts along the beam axis. The angular separation between two objects is expressed as $\Delta R = \sqrt{(\Delta\eta)^2 + (\Delta\phi)^2}$, and is used throughout this analysis for jet clustering, lepton isolation, and object matching. The central barrel region covers $|\eta| < 1.5$, while endcap detectors extend coverage to $|\eta| < 2.5$ for tracking and $|\eta| < 5.0$ for calorimetry.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.85\textwidth]{Figures/cms_detector_slice.pdf}
+  \includegraphics[width=0.85\textwidth]{Figures/experiments/CMS_detector_slice.png}
   \caption{Transverse slice of the CMS detector showing the main subsystems and the response of different particle types~\cite{CMS:2008xjf}.}
   \label{fig:cms_slice}
 \end{figure}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.85\textwidth]{Figures/cms_detector_eta.pdf}
-  \caption{Longitudinal cross-section of one quarter of the CMS detector showing the pseudorapidity coverage of each subsystem~\cite{CMS:2008xjf}.}
-  \label{fig:cms_eta}
-\end{figure}
-
-\subsection{Silicon Tracker}
+\subsection*{Silicon Tracker}
 
 The CMS silicon tracker~\cite{CMS:2014pgm} is the innermost detector subsystem, designed to measure the trajectories of charged particles emerging from the collision point. It consists of two main components: a high-granularity pixel detector at the innermost radii, optimized for precision vertexing near the interaction point, and a surrounding silicon strip tracker providing large-area coverage, as shown in Fig.~\ref{fig:cms_tracker}.
 
@@ -109,12 +102,12 @@ The fine granularity of the pixel detector near the interaction point is essenti
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.85\textwidth]{Figures/cms_tracker_layout.pdf}
+  \includegraphics[width=0.85\textwidth]{Figures/experiments/figs_2011_cmsTracker_TrackerLayout.png}
   \caption{Layout of the CMS silicon tracker showing the pixel detector (innermost layers) and the surrounding silicon strip tracker subsystems~\cite{CMS:2014pgm}.}
   \label{fig:cms_tracker}
 \end{figure}
 
-\subsection{Calorimeter System}
+\subsection*{Calorimeter System}
 
 The CMS calorimeter system consists of two complementary detectors — the electromagnetic calorimeter (ECAL) and the hadron calorimeter (HCAL) — which together measure the energies of electrons, photons, and hadrons produced in pp collisions.
 
@@ -128,29 +121,23 @@ The HCAL~\cite{CMS:2012sof} surrounds the ECAL and measures hadronic shower ener
 
 During LS2, the HB and HE underwent a significant upgrade for Run~3 operation~\cite{CMS:2023gfb}. The photosensors were replaced from hybrid photodiodes (HPDs) to silicon photomultipliers (SiPMs), offering higher photon detection efficiency, lower noise, and improved radiation tolerance. New front-end readout electronics (QIE11) were installed simultaneously to exploit the finer longitudinal segmentation now available: the HB readout was upgraded from a single depth layer to four, and the HE from three to up to seven layers. This enhanced longitudinal segmentation enables more precise shower-profile reconstruction, improving the separation of electromagnetic and hadronic deposits and the jet energy resolution in Run~3.
 
-\subsection{Superconducting Solenoid}
+\subsection*{Superconducting Solenoid}
 
 A strong magnetic field is central to the CMS design, as it curves the trajectories of charged particles and enables momentum measurements from track curvature. The CMS solenoid~\cite{CMS:2009nxa} generates a uniform 3.8~T field inside its bore — among the strongest ever produced in a large detector — with an inner diameter of 6.3~m and a length of 12.5~m. The coil operates at 18.2~kA and stores 2.6~GJ of energy. The magnetic flux is returned through a 12,000-tonne iron yoke, which also serves as the structural support and absorber for the muon detection system described in the following section.
 
-\subsection{Muon System}
+\subsection*{Muon System}
 
 The muon system~\cite{CMS:2018rym} is located outside the solenoid and interleaved with the iron return yoke, providing muon identification, triggering, and standalone momentum measurement. Because muons traverse the full detector with minimal energy loss, they serve as clean signatures of many physics processes relevant to this analysis. The system employs three complementary gaseous detector technologies, each suited to the distinct rate and field conditions in different detector regions, as illustrated in Fig.~\ref{fig:cms_muon}.
 
-In the barrel region ($|\eta| < 1.2$), where the muon rate is low and the solenoidal field is uniform, drift tube (DT) chambers are used. Uniform field conditions make electron drift paths predictable and position measurement via drift time reliable. Four DT stations are embedded in the return yoke, achieving a single-hit position resolution of approximately 200~$\mu$m.
+In the barrel region ($|\eta| < 1.2$), where the muon rate is moderate and the magnetic field is uniform, drift tube (DT) chambers exploit predictable electron drift paths for precise position measurement ($\sim$200~$\mu$m resolution). In the endcap regions ($0.9 < |\eta| < 2.4$), higher rates and a non-uniform field make drift-based detectors impractical; cathode strip chambers (CSCs) are used instead, determining position from the intersection of anode wire and cathode strip signals independently of drift path geometry. Resistive plate chambers (RPCs) complement both barrel and endcap regions, providing excellent timing resolution (${\sim}1$~ns) to unambiguously assign muon candidates to the correct 25~ns-spaced LHC bunch crossing — a capability that the precision chambers alone cannot deliver. In the overlap region ($0.9 < |\eta| < 1.2$), DT and CSC chambers are both present, providing redundant measurements that improve trigger efficiency.
 
-The endcap regions ($0.9 < |\eta| < 2.4$) present more demanding conditions: higher muon rates and a non-uniform, non-axial magnetic field that would distort electron drift paths. Cathode strip chambers (CSCs) are employed instead, determining position from the intersection of anode wire and cathode strip signals and thus insensitive to drift path distortions. Each CSC consists of six layers of anode wires interleaved with cathode strips, providing two-dimensional measurements in a single chamber with a resolution of 50--140~$\mu$m depending on the chamber type.
-
-Resistive plate chambers (RPCs) complement both the barrel ($|\eta| < 1.6$) and endcap ($0.9 < |\eta| < 1.9$) regions with a distinct purpose. While DTs and CSCs provide precise spatial information, their timing resolution is insufficient to unambiguously assign a muon to a specific 25~ns-spaced LHC bunch crossing. RPCs sacrifice spatial resolution (${\sim}1$~cm) for excellent timing resolution (${\sim}1$~ns), providing a reliable bunch-crossing tag that anchors the muon trigger decision.
-
-The three technologies are not mutually exclusive: in the overlap region ($0.9 < |\eta| < 1.2$), both DT and CSC chambers are present, providing redundant measurements that improve reconstruction robustness and trigger efficiency.
-
-For Run~3, two upgrades extended the muon system in the forward region~\cite{CMS:2023gfb}. Additional RPC stations (RE3/1 and RE4/1) were installed in the inner endcap disks, extending RPC timing coverage to $|\eta| < 2.1$. Simultaneously, triple-foil gas electron multiplier (GEM) chambers (GE1/1) were installed in the first endcap muon station, covering $1.55 < |\eta| < 2.18$. The forward region experiences the highest particle rates and radiation doses in the muon system; GEM detectors offer superior radiation hardness and rate capability compared to conventional wire chambers, complementing the existing CSCs and improving muon trigger efficiency and fake-rate rejection in this demanding region.
+For Run~3, the muon system was extended in the forward region~\cite{CMS:2023gfb}: additional RPC stations (RE3/1, RE4/1) were installed in the inner endcap disks, and triple-foil gas electron multiplier (GEM) chambers (GE1/1) were added in the first endcap station ($1.55 < |\eta| < 2.18$), offering superior radiation hardness and rate capability to complement the existing CSCs.
 
 The combined tracker and muon system achieves $\sigma(\pT)/\pT \approx 1$--2\% for $\pT < 100\GeV$ and better than 10\% up to $\pT \approx 1\TeV$.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.85\textwidth]{Figures/cms_muon_system.pdf}
+  \includegraphics[width=0.85\textwidth]{Figures/experiments/CMSMuonSystem.png}
   \caption{Longitudinal cross-section of one quarter of the CMS muon system, showing the locations of the DT (barrel), CSC (endcap), RPC (barrel and endcap), and GEM (forward endcap) detector stations~\cite{CMS:2018rym}.}
   \label{fig:cms_muon}
 \end{figure}
@@ -164,9 +151,25 @@ At the LHC design luminosity, proton bunches cross at a rate of 40~MHz, producin
 
 The first stage, the Level-1 (L1) trigger~\cite{CMS:2020cmk}, is implemented in custom FPGA-based electronics and must reach a decision within a fixed pipeline latency of approximately 4~$\mu$s, during which the full detector data are buffered on-detector. The L1 system receives coarse-grained trigger primitives from the calorimeters and muon detectors and processes them in two layers of programmable electronics. The calorimeter trigger reconstructs jets, electrons, photons, hadronically decaying $\tau$-leptons, and energy sums ($\HT$, $\MET$), while the muon trigger combines information from the DT, CSC, and RPC systems to form muon candidates. A global trigger (GT) then evaluates a configurable trigger menu — consisting of several hundred algorithms based on object multiplicities, transverse momenta, and their topological combinations — and issues a Level-1 Accept (L1A) for selected events. The L1 trigger reduces the rate from 40~MHz to approximately 100~kHz, the maximum sustainable by the CMS front-end readout electronics.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.75\textwidth]{Figures/experiments/Architecture-and-data-flow-in-the-synchronous-pipelined-Level-1-Trigger-system.png}
+  \caption{Architecture and data flow in the CMS Level-1 trigger system. The calorimeter trigger processes energy deposits from the ECAL, HCAL, and HF, while the muon trigger combines information from the DT, CSC, and RPC detectors. Both paths converge at the Global Trigger, which issues the L1 Accept decision within a latency of less than 3.2~$\mu$s~\cite{CMS:2020cmk}.}
+  \label{fig:trigger_arch}
+\end{figure}
+
 Events passing the L1 trigger are fully read out by the DAQ system, which assembles data fragments from all detector subsystems via a high-throughput event-builder network at an aggregate throughput of approximately 100~GB/s. These assembled events are passed to the High-Level Trigger (HLT)~\cite{CMS:2024aqx}, a software-based filter running on a farm of commercial multi-core processors. The HLT executes a streamlined version of the offline reconstruction software (CMSSW) organized into trigger paths: sequences of reconstruction and selection modules applied progressively to each event, with early rejection used to minimize processing time. The HLT has full access to the tracker, calorimeter, and muon system data, enabling offline-quality object reconstruction. The HLT reduces the event rate to approximately 1~kHz for permanent storage and offline reconstruction. A data scouting stream additionally stores events at a higher rate (${\sim}30$~kHz) with reduced event content for specific analyses, and a data parking stream retains additional full events for delayed offline reconstruction.
 
-For Run~3, no major hardware upgrade to the L1 trigger was performed, but significant algorithmic improvements were deployed exploiting the finer longitudinal segmentation of the upgraded HCAL and the new GE1/1 GEM chambers~\cite{CMS:2023gfb}. The L1 output rate was increased to approximately 100--110~kHz to accommodate the higher luminosity. The HLT output rate was similarly increased, with approximately 2.6~kHz stored for prompt reconstruction, ${\sim}3$~kHz for parking, and ${\sim}30$~kHz for scouting. A dedicated 40~MHz scouting system, commissioned in the early part of Run~3, further extends the physics reach by recording trigger primitive information at the full bunch-crossing rate. The specific trigger algorithms and \pT thresholds used to select events for this analysis are described in Chapter~\ref{ch:datasets}.
+\begin{figure}[htbp]
+  \centering
+  \subfloat[Run~2 (2018)]{\includegraphics[width=0.42\textwidth]{Figures/experiments/HLT_rate_2018.png}\label{fig:hlt_rate_run2}}
+  \hfill
+  \subfloat[Run~3 (2025)]{\includegraphics[width=0.55\textwidth]{Figures/experiments/fill25_rates.pdf}\label{fig:hlt_rate_run3}}
+  \caption{HLT output rates in CMS. (a)~Total, shared, and pure HLT rates by physics category at $\mathcal{L} = 2.0 \times 10^{34}\percms$ during 2018 data-taking~\cite{CMS:2024aqx}. (b)~HLT stream rates during a typical Run~3 fill (Fill~10690, June 2025), showing the Standard, Parking, Scouting, Calibration/Monitoring, and Express streams together with the delivered luminosity and L1T rate~\cite{CMS-DP-2025-034}.}
+  \label{fig:hlt_rate}
+\end{figure}
+
+For Run~3, no major hardware upgrade to the L1 trigger was performed, but significant algorithmic improvements were deployed exploiting the finer longitudinal segmentation of the upgraded HCAL and the new GE1/1 GEM chambers~\cite{CMS:2023gfb}. The L1 output rate was increased to approximately 100--110~kHz to accommodate the higher luminosity. The total HLT output rate was similarly increased to approximately 80--90~kHz at peak luminosity, as shown in Fig.~\ref{fig:hlt_rate_run3}, with streams allocated as follows: approximately 3~kHz for standard prompt reconstruction, ${\sim}10$~kHz for parking, and ${\sim}45$~kHz for scouting, with the remainder used for calibration and monitoring. A dedicated 40~MHz scouting system, commissioned in the early part of Run~3, further extends the physics reach by recording trigger primitive information at the full bunch-crossing rate. The specific trigger algorithms and \pT thresholds used to select events for this analysis are described in Chapter~\ref{ch:datasets}.
 
 %% ============================================================
 \section{Particle-Flow Event Reconstruction}
@@ -203,11 +206,9 @@ Before jet clustering, pileup interactions must be mitigated, as they contribute
 
 For Run~3, the significantly higher mean pileup of 40--60 interactions per bunch crossing motivates replacing CHS with a more comprehensive approach. The PUPPI algorithm~\cite{Bertolini:2014bba} assigns each PF candidate a weight between 0 and 1 representing the probability that it originates from the hard interaction, computed from the local charged-to-neutral particle activity around each candidate. Because PUPPI weights are applied particle-by-particle before jet clustering, the algorithm simultaneously suppresses both charged and neutral pileup contributions. Jets are reconstructed from the PUPPI-weighted collection (AK4PFPuppi) for all Run~3 data in this analysis.
 
-Jets originating from b quarks are identified by exploiting the long lifetime of b hadrons ($c\tau \approx 450$--500~$\mu$m), which produces charged tracks with significant impact parameters and secondary vertices displaced from the PV, both resolved by the CMS silicon tracker. The CMS b-tagging algorithm has evolved significantly over the course of Run~2. DeepCSV~\cite{CMS:2017wtu} is a fully connected deep neural network with four hidden layers of 100 nodes each, trained on 68 high-level input features derived from the six most displaced tracks and the most displaced secondary vertex in the jet, together with global jet variables. It outputs simultaneous probabilities for b, c, and light-flavor hypotheses. DeepJet~\cite{Bols:2020bkb} supersedes DeepCSV by replacing the fixed set of high-level features with the full low-level information of all jet constituents. Its architecture consists of three parallel LSTM branches — processing charged particles, neutral particles, and secondary vertices separately — whose outputs are concatenated with global jet variables and passed through a series of fully connected layers, yielding approximately 650 input features in total. This design avoids the information loss inherent in preselecting a fixed number of tracks or vertices, and allows the network to learn displacement and topology signatures directly from the constituent level. At a light-flavor jet misidentification rate of 1\%, DeepCSV achieves a b-jet identification efficiency of approximately 68\%~\cite{CMS:2017wtu}. DeepJet provides a significant improvement over this baseline, with relative efficiency gains of up to 20\% at lower mistag rates~\cite{Bols:2020bkb}. This analysis uses DeepJet for b-tagging across both Run~2 and Run~3.
+Jets originating from b quarks are identified by exploiting the long lifetime of b hadrons ($c\tau \approx 450$--500~$\mu$m), which produces charged tracks with significant impact parameters and secondary vertices displaced from the PV, both resolved by the CMS silicon tracker. DeepCSV~\cite{CMS:2017wtu} uses high-level track and vertex features in a deep neural network, achieving a b-jet identification efficiency of approximately 68\% at a 1\% light-flavor misidentification rate. DeepJet~\cite{Bols:2020bkb} supersedes DeepCSV by operating on the full low-level constituent information via recurrent networks, avoiding the information loss from preselecting a fixed set of features and providing relative efficiency gains of up to 20\%. This analysis uses DeepJet for b-tagging across both Run~2 and Run~3.
 
-The missing transverse momentum $\ptvecmiss$ is computed as the negative vector sum of the transverse momenta of all PF candidates in the event~\cite{CMS:2019ctu}, and serves as the experimental proxy for undetected particles such as neutrinos. Two variants exist depending on the pileup mitigation applied to the PF input collection. CHS-based $\ptvecmiss$ (PF+CHS MET) uses the charged-hadron-subtracted candidate list, which removes charged pileup contributions but leaves neutral pileup particles intact; these residual neutral deposits introduce a stochastic smearing of the true $\ptvecmiss$ that worsens with increasing pileup. PUPPI-based $\ptvecmiss$ (PUPPI MET) instead uses the PUPPI-weighted candidate list, suppressing both charged and neutral pileup contributions and thus providing better $\ptvecmiss$ resolution under high-pileup conditions. This analysis uses PUPPI MET for both Run~2 and Run~3 datasets: while CHS MET is adequate at the moderate pileup levels of early Run~2, the superior neutral pileup suppression of PUPPI MET provides more consistent resolution across the full pileup range of Run~2 and Run~3, and is the CMS standard for analyses requiring precise $\ptvecmiss$ reconstruction.
-
-The JES corrections described above must also be propagated to $\ptvecmiss$ to maintain global transverse momentum conservation. This is achieved through the type-I correction, which replaces the raw jet momenta in the $\ptvecmiss$ sum with their JES-corrected counterparts, ensuring that any shift in jet energy is consistently reflected in the $\ptvecmiss$ measurement.
+The missing transverse momentum $\ptvecmiss$ is computed as the negative vector sum of the transverse momenta of all PF candidates in the event~\cite{CMS:2019ctu}, and serves as the experimental proxy for undetected particles such as neutrinos. This analysis uses PUPPI-based $\ptvecmiss$ (PUPPI MET) for both Run~2 and Run~3 datasets, in which the PUPPI weights suppress both charged and neutral pileup contributions before the vector sum, providing consistent $\ptvecmiss$ resolution across the full pileup range. The JES corrections are propagated to $\ptvecmiss$ via the type-I correction, which replaces raw jet momenta with their corrected counterparts to maintain global transverse momentum conservation.
 
 Lepton isolation quantifies the hadronic and electromagnetic activity in the vicinity of a lepton candidate, and is the primary handle for distinguishing prompt leptons — produced directly in electroweak decays such as $\PW \to \ell\nu$ or $\PZ \to \ell\ell$ — from nonprompt leptons arising from semileptonic heavy-flavor decays inside jets. In the PF framework, isolation is calculated as the scalar sum of the \pT of all PF candidates within a cone of radius $\Delta R$ around the lepton, divided by the lepton \pT, with an explicit subtraction of the pileup contribution estimated from the local energy density $\rho$. A standard fixed-cone approach with $\Delta R = 0.4$ works well for isolated low-\pT leptons, but becomes inefficient for boosted topologies where the decay products of a heavy resonance are collimated: the fixed cone may overlap with jets from the same hard decay, causing genuine prompt leptons to fail isolation. This analysis instead uses a $\pT$-dependent cone — the mini-isolation variable $I_{\text{mini}}$ — in which the cone shrinks as $10\GeV/\pT$ for leptons above $50\GeV$, keeping the isolation region well-separated from the lepton's own radiation while avoiding overlap with nearby jets. The precise definition and working points are given in Chapter~\ref{ch:objects}.
 
@@ -218,87 +219,131 @@ Lepton isolation quantifies the hadronic and electromagnetic activity in the vic
 
 Monte Carlo (MC) simulation provides the theoretical predictions against which collision data are compared. Simulated event samples are used to model both the signal processes and Standard Model backgrounds, to optimize event selection criteria, and to evaluate systematic uncertainties. This section describes the physics modeling underlying MC event generation, the detector simulation and digitization procedures, and the specific software configurations used for the Run~2 and Run~3 simulation campaigns.
 
-\subsection{Event Generation}
-\label{sec:mc_evtgen}
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+    box/.style={draw, rounded corners=3pt, minimum height=0.85cm,
+                minimum width=2.4cm, align=center, font=\small},
+    gen/.style={box, fill=blue!12},
+    step/.style={draw, rounded corners=2pt, minimum height=0.7cm,
+                 minimum width=1.55cm, align=center, font=\scriptsize},
+    r2/.style={step, fill=orange!15},
+    r3/.style={step, fill=green!12},
+    lbl/.style={font=\scriptsize\itshape, text=black!70},
+    rlbl/.style={font=\scriptsize\bfseries, text=black!80},
+    arr/.style={-{Stealth[length=5pt]}, thick},
+    sarr/.style={-{Stealth[length=4pt]}, semithick},
+    node distance=0.5cm and 0.4cm
+  ]
+    % Row 1: Physics event generation
+    \node[gen] (pdf)  {Parton\\Distributions};
+    \node[gen, right=of pdf]  (me)   {Hard\\Scattering};
+    \node[gen, right=of me]   (ps)   {Parton\\Shower};
+    \node[gen, right=of ps]   (had)  {Hadronization\\+ Decays};
 
-Event generation models the full chain of physical processes occurring in a proton-proton collision. The simulation proceeds through several stages: the hard scattering of partons sampled from the proton structure, parton showering, hadronization, and the modeling of the underlying event. Each stage is described below.
+    % Generator labels
+    \node[lbl, below=1pt of pdf]  {NNPDF3.1};
+    \node[lbl, below=1pt of me]   {MadGraph5 / Powheg};
+    \node[lbl, below=1pt of ps]   {Pythia\,8 / Herwig\,7};
+    \node[lbl, below=1pt of had]  {Pythia\,8 + EvtGen};
 
-\subsubsection{Parton Distribution Functions}
+    % Arrows — generation chain
+    \draw[arr] (pdf) -- (me);
+    \draw[arr] (me)  -- (ps);
+    \draw[arr] (ps)  -- (had);
 
-The cross section for a hard-scattering process in proton-proton collisions is computed using the \textit{factorization theorem}~\cite{Collins:1989gx}, which separates the short-distance partonic interaction from the long-distance structure of the proton:
+    % Run 2 chain
+    \node[rlbl, below=1.1cm of pdf.south west, anchor=west] (r2lbl) {Run\,2:};
+    \node[r2, right=0.2cm of r2lbl] (r2a) {wmLHE\\[-1pt]GEN};
+    \node[r2, right=0.25cm of r2a]  (r2b) {SIM};
+    \node[r2, right=0.25cm of r2b]  (r2c) {DIGI\\[-1pt]Premix};
+    \node[r2, right=0.25cm of r2c]  (r2d) {HLT};
+    \node[r2, right=0.25cm of r2d]  (r2e) {RECO};
+    \node[r2, right=0.25cm of r2e]  (r2f) {Mini\\[-1pt]AOD};
+    \node[r2, right=0.25cm of r2f]  (r2g) {Nano\\[-1pt]AOD};
+
+    \draw[sarr] (r2a) -- (r2b);
+    \draw[sarr] (r2b) -- (r2c);
+    \draw[sarr] (r2c) -- (r2d);
+    \draw[sarr] (r2d) -- (r2e);
+    \draw[sarr] (r2e) -- (r2f);
+    \draw[sarr] (r2f) -- (r2g);
+
+    % Run 3 chain
+    \node[rlbl, below=0.55cm of r2lbl] (r3lbl) {Run\,3:};
+    \node[r3, right=0.2cm of r3lbl] (r3a) {wmLHE\\[-1pt]GS};
+    \node[r3, right=0.25cm of r3a]  (r3b) {DG\\[-1pt]Premix};
+    \node[r3, right=0.25cm of r3b]  (r3c) {RECO};
+    \node[r3, right=0.25cm of r3c]  (r3d) {Mini\\[-1pt]AOD};
+    \node[r3, right=0.25cm of r3d]  (r3e) {Nano\\[-1pt]AOD};
+
+    \draw[sarr] (r3a) -- (r3b);
+    \draw[sarr] (r3b) -- (r3c);
+    \draw[sarr] (r3c) -- (r3d);
+    \draw[sarr] (r3d) -- (r3e);
+
+    % Phase labels
+    \node[lbl, rotate=90, anchor=south] at ($(pdf.west)+(-0.5,0)$)
+      {Physics modeling};
+    \node[lbl, rotate=90, anchor=south] at ($(r2lbl.west)+(-0.25,-0.15)$)
+      {CMSSW workflow};
+  \end{tikzpicture}
+  \caption{Schematic overview of the MC event simulation chain. The upper row shows the physics event generation stages: PDFs provide the initial-state parton kinematics, the matrix-element generators compute the hard scattering, the parton shower models QCD radiation, and hadronization converts partons into stable hadrons. The lower rows show the CMSSW production workflow steps for Run~2 and Run~3 simulated samples, from event generation through detector simulation to the analysis-ready NanoAOD format.}
+  \label{fig:mc_flowchart}
+\end{figure}
+
+\subsubsection*{Parton Distribution Functions}
+
+The cross section for a hard-scattering process in proton-proton collisions is computed using the factorization theorem~\cite{Collins:1989gx}, which separates the short-distance partonic interaction from the long-distance structure of the proton:
 \begin{equation}
 \sigma(pp \to X) = \sum_{a,b} \int dx_a\, dx_b\; f_a(x_a, \mu_F^2)\; f_b(x_b, \mu_F^2)\; \hat{\sigma}_{ab \to X}(\mu_F^2, \mu_R^2),
 \label{eq:factorization}
 \end{equation}
-where $f_{a,b}(x, \mu_F^2)$ are the \textit{parton distribution functions} (PDFs) encoding the probability density of finding parton $a$ (or $b$) carrying a momentum fraction $x$ of the proton at the factorization scale $\mu_F$, and $\hat{\sigma}$ is the partonic cross section computed perturbatively at the renormalization scale $\mu_R$.
+where $f_{a,b}(x, \mu_F^2)$ are the parton distribution functions (PDFs) encoding the probability density of finding parton $a$ (or $b$) carrying a momentum fraction $x$ of the proton at the factorization scale $\mu_F$, and $\hat{\sigma}$ is the partonic cross section computed perturbatively at the renormalization scale $\mu_R$.
 
-PDFs are not calculable from first principles and are instead determined from global fits to experimental data spanning deep inelastic scattering, Drell--Yan, and jet production measurements. Their dependence on the energy scale is governed by the Dokshitzer--Gribov--Lipatov--Altarelli--Parisi (DGLAP) evolution equations~\cite{Dokshitzer:1977sg, Gribov:1972ri, Altarelli:1977zs}, which resum collinear logarithms to all orders. The CMS simulation for both Run~2 and Run~3 uses the NNPDF3.1 set at next-to-next-to-leading order (NNLO) accuracy~\cite{NNPDF:2017mvq}, which employs a neural network parameterization and provides PDF uncertainties through a set of Monte Carlo replicas. The PDFs are accessed at runtime via the \textsc{LHAPDF} library~\cite{Buckley:2014ana}.
+PDFs are not calculable from first principles and are instead determined from global fits to experimental data spanning deep inelastic scattering, Drell--Yan, and jet production measurements. Their dependence on the energy scale $\mu_F$ is governed by the Dokshitzer--Gribov--Lipatov--Altarelli--Parisi (DGLAP) evolution equations~\cite{Dokshitzer:1977sg, Gribov:1972ri, Altarelli:1977zs}:
+\begin{equation}
+  \frac{\partial}{\partial \ln\mu_F^2}
+  \begin{pmatrix} \Sigma \\ g \end{pmatrix}
+  = \frac{\alpha_s}{2\pi}
+  \begin{pmatrix} P_{qq} & 2n_f\, P_{qg} \\ P_{gq} & P_{gg} \end{pmatrix}
+  \otimes
+  \begin{pmatrix} \Sigma \\ g \end{pmatrix},
+  \label{eq:dglap}
+\end{equation}
+where $\Sigma(x,\mu_F^2) = \sum_i [q_i(x,\mu_F^2) + \bar{q}_i(x,\mu_F^2)]$ is the singlet quark distribution, $n_f$ is the number of active quark flavors, $(f \otimes g)(x) \equiv \int_x^1 (dz/z)\, f(z)\, g(x/z)$ denotes the convolution, and $P_{ab}(z)$ are the splitting functions giving the probability of parton $b$ emitting parton $a$ carrying momentum fraction $z$. These equations resum collinear logarithms to all orders in $\alpha_s$, enabling the perturbative evolution of PDFs from a fitted boundary condition at an initial scale $\mu_0 \sim \mathcal{O}(1\ \GeV)$ up to the hard-scattering scale. The CMS simulation for both Run~2 and Run~3 uses the NNPDF3.1 set at next-to-next-to-leading order (NNLO) accuracy~\cite{NNPDF:2017mvq}, which employs a neural network parameterization and provides PDF uncertainties via Monte Carlo replicas, accessed through the \textsc{LHAPDF} library~\cite{Buckley:2014ana}.
 
-\subsubsection{Hard Scattering}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.60\textwidth]{Figures/experiments/plots_kin31.png}
+  \caption{Kinematic coverage in the $(x, Q^2)$ plane of the experimental datasets included in the NNPDF3.1 global fit. Data points with black edges indicate datasets new to NNPDF3.1~\cite{NNPDF:2017mvq}.}
+  \label{fig:pdf_nnpdf31}
+\end{figure}
 
-The \textit{hard scattering} is the short-distance interaction between two partons, computed perturbatively as a matrix element (ME) at a fixed order in the strong or electroweak coupling constants, typically at leading order (LO) or next-to-leading order (NLO) accuracy. Two classes of ME generators are widely used in CMS:
-\begin{itemize}
-\item \textsc{MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca} provides automated computation of tree-level and NLO differential cross sections for arbitrary processes in the Standard Model and beyond. It is the primary generator for multileg processes in CMS.
-\item \textsc{Powheg}~\cite{Nason:2004rx, Frixione:2007vw} implements the \textsc{Powheg} method, in which the hardest emission is generated first at NLO accuracy, ensuring a smooth interface with the subsequent parton shower.
-\end{itemize}
-The output of the ME generator is a set of parton-level events, with each event containing the four-momenta and quantum numbers of the outgoing partons, together with an event weight.
+\subsubsection*{Hard Scattering}
 
-\subsubsection{Parton Shower}
+The hard scattering is the short-distance interaction between two partons, computed perturbatively as a matrix element (ME) at a fixed order in the strong or electroweak coupling constants, typically at leading order (LO) or next-to-leading order (NLO) accuracy. The primary ME generator used in CMS is \textsc{MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca}, which provides automated computation of tree-level and NLO differential cross sections for arbitrary processes in the Standard Model and beyond, and is the default choice for multileg processes. An alternative is \textsc{Powheg}~\cite{Nason:2004rx, Frixione:2007vw}, which generates the hardest emission first at NLO accuracy, ensuring a smooth interface with the subsequent parton shower. The output of the ME generator is a set of parton-level events, with each event containing the four-momenta and quantum numbers of the outgoing partons, together with an event weight.
 
-The outgoing partons from the hard scattering undergo \textit{parton showering}, an iterative process that models the successive emission of gluons and quark--antiquark pairs. The parton shower resums the leading soft and collinear logarithms via the DGLAP splitting functions, evolving the parton system from the hard-interaction scale $Q$ down to a cutoff scale of $\mathcal{O}(1\GeV)$, below which perturbation theory ceases to be applicable. Initial-state radiation (ISR) from the incoming partons and final-state radiation (FSR) from the outgoing partons are both modeled.
+\subsubsection*{Parton Shower}
+
+The outgoing partons from the hard scattering undergo parton showering, an iterative process that models the successive emission of gluons and quark--antiquark pairs. The parton shower resums the leading soft and collinear logarithms via the DGLAP splitting functions, evolving the parton system from the hard-interaction scale $Q$ down to a cutoff scale of $\mathcal{O}(1\GeV)$, below which perturbation theory ceases to be applicable. Initial-state radiation (ISR) from the incoming partons and final-state radiation (FSR) from the outgoing partons are both modeled.
 
 The two general-purpose parton shower programs used in CMS are \textsc{Pythia}~8~\cite{Sjostrand:2014zea} and \textsc{Herwig}~7~\cite{Bellm:2015jjp}. \textsc{Pythia}~8 employs a $p_\mathrm{T}$-ordered dipole shower, while \textsc{Herwig}~7 uses an angular-ordered shower as its default algorithm. Both programs also handle the subsequent stages of hadronization, underlying event modeling, and particle decays.
 
-\subsubsection{Matching and Merging}
+\subsubsection*{Matching and Merging}
 
-When the ME calculation includes additional radiated partons, care must be taken to avoid double-counting the same phase-space configurations that are also populated by the parton shower. Two principal approaches are employed in CMS:
-\begin{itemize}
-\item \textit{Matching} combines an NLO ME calculation with the parton shower while preserving the NLO accuracy of inclusive observables. The MC@NLO method~\cite{Frixione:2002ik} and the \textsc{Powheg} method~\cite{Nason:2004rx} are the two standard implementations used in CMS.
-\item \textit{Merging} combines tree-level or NLO ME calculations for different parton multiplicities with the parton shower into a single inclusive sample. The MLM scheme~\cite{Alwall:2007fs} is used for LO multileg merging, while the FxFx scheme~\cite{Frederix:2012ps} extends this to NLO accuracy within the \textsc{MadGraph5\_aMC@NLO} framework.
-\end{itemize}
+When the ME calculation includes additional radiated partons, care must be taken to avoid double-counting the same phase-space configurations that are also populated by the parton shower. Two complementary strategies address this issue. Matching combines a fixed-order ME calculation with the parton shower while preserving the perturbative accuracy of inclusive observables; the MC@NLO method~\cite{Frixione:2002ik} and the \textsc{Powheg} method~\cite{Nason:2004rx} are the two standard NLO matching schemes used in CMS. Merging extends this idea to samples with varying parton multiplicities, combining MEs computed for $n$, $n{+}1$, $n{+}2$, \ldots\ additional jets into a single inclusive sample. At LO, the MLM scheme~\cite{Alwall:2007fs} achieves this by showering each ME-level sample independently and then applying a jet-based matching criterion: events in which a reconstructed jet does not correspond to a ME-level parton are rejected, thereby eliminating the double-counted phase space. The FxFx scheme~\cite{Frederix:2012ps} generalizes this procedure to NLO accuracy within the \textsc{MadGraph5\_aMC@NLO} framework, using a dynamic merging scale and MC@NLO-type subtraction to consistently combine NLO samples of different multiplicities.
 
-\subsubsection{Hadronization and Particle Decays}
+\subsubsection*{Hadronization and Underlying Event}
 
-At the cutoff scale of the parton shower, the colored partons are converted into color-neutral hadrons through \textit{hadronization}, a nonperturbative process described by phenomenological models. \textsc{Pythia}~8 implements the Lund string model~\cite{Andersson:1983ia}, in which color flux tubes stretched between partons fragment into hadron pairs when the string tension exceeds the pair-production threshold. \textsc{Herwig}~7 employs a cluster model~\cite{Webber:1983if}, in which gluons are split into quark--antiquark pairs and neighboring quarks form color-singlet clusters that decay isotropically into hadrons. Subsequent decays of unstable hadrons, including $\tau$ leptons, $b$ and $c$ hadrons, are handled by the generator itself or by the dedicated \textsc{EvtGen} package~\cite{Lange:2001uf} for heavy-flavor decays.
+At the cutoff scale of the parton shower, the colored partons are converted into color-neutral hadrons through hadronization, a nonperturbative process modeled by the Lund string model~\cite{Andersson:1983ia} in \textsc{Pythia}~8 and the cluster model~\cite{Webber:1983if} in \textsc{Herwig}~7. Decays of unstable hadrons, including heavy-flavor hadrons and $\tau$ leptons, are handled by the generator or by the dedicated \textsc{EvtGen} package~\cite{Lange:2001uf}. In addition to the hard scattering, softer interactions among the remaining partons of the colliding protons produce the underlying event (UE), which includes multiple parton interactions and beam-remnant fragmentation. The UE is modeled by \textsc{Pythia}~8 with free parameters fixed by the CMS~CP5 tune~\cite{CMS:2019csb}, the standard configuration for both Run~2 and Run~3 simulation.
 
-\subsubsection{Underlying Event}
-
-In addition to the hard scattering, softer interactions between the remaining partons of the colliding protons give rise to the \textit{underlying event} (UE). This includes \textit{multiple parton interactions} (MPI) and the fragmentation of beam remnants. The UE is modeled by \textsc{Pythia}~8 through a $p_\mathrm{T}$-ordered MPI framework, with free parameters determined by fitting to CMS measurements of charged-particle distributions. The CMS~CP5 tune~\cite{CMS:2019csb} is used as the standard configuration for both Run~2 and Run~3 simulation, based on NNPDF3.1 NNLO PDFs with $\alpha_S(M_Z) = 0.118$.
-
-\subsection{Detector Simulation and Digitization}
+\subsection*{Detector Simulation and Digitization}
 \label{sec:mc_detsim}
 
 The stable particles produced by the event generator are propagated through a detailed model of the CMS detector implemented in the \textsc{Geant4} toolkit~\cite{GEANT4:2002zbu, Allison:2016lfl}. The simulation models the full detector geometry and material budget, including electromagnetic and hadronic interactions, multiple scattering, photon conversions, nuclear interactions, and energy deposition in active detector elements.
 
 The resulting energy deposits are processed through a \textit{digitization} step that emulates the response of the detector readout electronics, producing simulated raw data in the same format as real collision data. To model the effect of pileup, simulated minimum-bias interactions generated with \textsc{Pythia}~8 are overlaid on each hard-scatter event using a premixing technique, in which pre-digitized pileup events are mixed with the signal event at the digitization stage. The number of overlaid interactions per bunch crossing is sampled from a Poisson distribution whose mean is tuned to match the observed pileup profile in data. After event reconstruction---performed with the same algorithms applied to collision data---the residual differences in the pileup distribution are corrected by reweighting simulated events to match the luminosity-weighted pileup distribution observed in each data-taking period.
-
-\subsection{Run~2 and Run~3 Simulation Configurations}
-\label{sec:mc_config}
-
-The detector simulation configurations differ between the two data-taking periods to reflect changes in detector conditions and software. Table~\ref{tab:mc_config} summarizes the key simulation parameters for the Run~2 Ultra Legacy (UL) and Run~3 campaigns.
-
-\begin{table}[htbp]
-\centering
-\caption{Summary of the Monte Carlo simulation configurations for the Run~2 Ultra Legacy and Run~3 campaigns.}
-\label{tab:mc_config}
-\begin{tabular}{lll}
-\hline
-Parameter & Run~2 (Ultra Legacy) & Run~3 (Summer22/23) \\
-\hline
-CMSSW release    & \texttt{10\_6\_X}  & \texttt{12\_4\_X} / \texttt{13\_X} \\
-\textsc{Geant4} version & 10.4--10.6 & 10.7.2 $\to$ 11.1 \\
-Geometry description & DDD (native CMS) & DD4hep + VecGeom \\
-Physics list     & FTFP\_BERT\_EMM    & FTFP\_BERT\_EMM (optimized) \\
-PDF set          & NNPDF3.1 NNLO     & NNPDF3.1 NNLO \\
-UE tune          & CP5               & CP5 \\
-Pileup method    & Premixing         & Premixing \\
-\hline
-\end{tabular}
-\end{table}
-
-For Run~2, the CMS detector geometry is described using the native DDD (Detector Description Database) framework, while for Run~3 the description has been migrated to the community-developed DD4hep toolkit with the VecGeom geometry navigation library~\cite{Ivanchenko:2021epjconf}. The transition to \textsc{Geant4}~10.7 for Run~3 introduced the FTFP\_BERT\_EMM physics list with optimized tracking in the magnetic field, yielding approximately 25\% reduction in CPU time per event compared to the Run~2 configuration. Further improvements in \textsc{Geant4}~11.1, including a new transportation process with built-in multiple scattering and the G4HepEm sub-library, have been deployed for later Run~3 campaigns~\cite{Ivanchenko:2024epjconf}.
-
-Despite these technical differences, the physics modeling is consistent across the two periods: both use the NNPDF3.1 NNLO PDF set~\cite{NNPDF:2017mvq} and the CMS~CP5 underlying-event tune~\cite{CMS:2019csb}. The specific event generators, cross sections, and MC samples used in this analysis are detailed in Chapter~\ref{ch:datasets}.
 
 %% ============================================================
 \section{Offline Software and Computing}
@@ -307,63 +352,30 @@ Despite these technical differences, the physics modeling is consistent across t
 
 The CMS experiment produces data at rates and volumes that require a globally distributed computing infrastructure for processing, storage, and analysis. This section describes the computing model used by CMS, the software framework and data formats, and the ongoing preparations for the computing challenges of the High-Luminosity LHC.
 
-\subsection{The WLCG and CMS Computing Model}
+\subsection*{The WLCG and CMS Computing Model}
 \label{sec:wlcg}
 
-CMS relies on the Worldwide LHC Computing Grid (WLCG)~\cite{WLCG:2005tdr}, a distributed computing infrastructure comprising over 170 computing centers across more than 40 countries. The CMS computing model~\cite{CMS:2005ctr} organizes these resources into a tiered hierarchy:
-\begin{itemize}
-\item \textbf{Tier-0} at CERN performs the first-pass (``prompt'') reconstruction of collision data and archives the RAW data to tape. A secondary Tier-0 facility is hosted at the Wigner Research Centre in Budapest.
-\item \textbf{Tier-1} sites (seven worldwide) store a complete copy of the RAW and reconstructed data, perform large-scale reprocessing campaigns, and host centrally produced MC simulation samples.
-\item \textbf{Tier-2} sites ($\sim$50 worldwide) provide resources for MC production, user analysis, and calibration tasks.
-\end{itemize}
-Workflows are managed by the WMAgent and GlideinWMS systems, which provide automated job submission and workload distribution across the Grid. Data transfers between sites are coordinated by the PhEDEx (Run~2) and Rucio (Run~3) data management systems. Individual users and groups may also exploit opportunistic resources at high-performance computing (HPC) centers and cloud platforms through the HTCondor workload management system~\cite{Thain:2005condor}.
+CMS relies on the Worldwide LHC Computing Grid (WLCG)~\cite{WLCG:2005tdr}, a distributed computing infrastructure comprising over 170 computing centers across more than 40 countries. The CMS computing model~\cite{CMS:2005ctr} organizes these resources into a tiered hierarchy. The Tier-0 facility at CERN performs prompt reconstruction of collision data and archives the RAW data to tape, with a secondary Tier-0 hosted at the Wigner Research Centre in Budapest. Seven Tier-1 sites worldwide store complete copies of the RAW and reconstructed data, carry out large-scale reprocessing campaigns, and host centrally produced MC simulation samples. Approximately 50 Tier-2 sites provide resources for MC production, user analysis, and calibration tasks. Workflows are managed by the WMAgent and GlideinWMS systems, while data transfers between sites are coordinated by the PhEDEx (Run~2) and Rucio (Run~3) data management systems. Individual users and groups may also exploit opportunistic resources at high-performance computing (HPC) centers and cloud platforms through the HTCondor workload management system~\cite{Thain:2005condor}.
 
-\subsection{The CMSSW Framework}
+\subsection*{The CMSSW Framework}
 \label{sec:cmssw}
 
 All CMS data processing---from online high-level trigger reconstruction through offline analysis---is performed within the CMS Software framework (\textsc{CMSSW})~\cite{Jones:2015cmssw, CMS:2024run3dev}. \textsc{CMSSW} is built on a modular, plugin-based architecture using the \textsc{C++} programming language. It employs an event data model in which each event is a container of data products, and processing is organized as a sequence of modules (producers, filters, and analyzers) configured via \textsc{Python} scripts. The \texttt{cmsDriver.py} tool automates the generation of configuration files for standard production workflows.
 
 Since Run~2, \textsc{CMSSW} supports multi-threaded event processing using Intel Threading Building Blocks (TBB), enabling concurrent processing of multiple events and modules within a single process. This is essential for efficient use of modern multi-core architectures and reduces the memory footprint per job. For Run~3, the framework has been extended to support heterogeneous computing, allowing reconstruction modules to offload computationally intensive tasks to GPUs~\cite{Bocci:2020hetero}.
 
-\subsection{Data Formats and Processing Chain}
+\subsection*{Data Formats and Processing Chain}
 \label{sec:datatiers}
 
-CMS defines a hierarchy of data formats (``data tiers'') of decreasing size and increasing abstraction, designed to balance storage cost against the information content needed at each stage of the analysis workflow:
-\begin{itemize}
-\item \textbf{RAW}: The unprocessed detector readout after online formatting and trigger decisions. A typical RAW event occupies $\sim$1--2~MB.
-\item \textbf{RECO}: The output of full event reconstruction, containing all reconstructed physics objects together with the hits and clusters from which they are built. A RECO event is $\sim$2--4~MB.
-\item \textbf{AOD} (Analysis Object Data): A reduced subset of RECO retaining the physics objects and associated metadata needed for most analyses ($\sim$400~kB/event).
-\item \textbf{MiniAOD}~\cite{Petrucciani:2015gjw}: Introduced for Run~2, this format stores high-level physics objects with sufficient information for the majority of analyses at $\sim$40~kB/event, a factor of ten reduction relative to AOD.
-\item \textbf{NanoAOD}~\cite{Rizzi:2019epjconf}: A flat \textsc{ROOT}~\cite{Brun:1997pa} ntuple format containing only scalar and vector branches for reconstructed objects, at $\sim$1--2~kB/event. NanoAOD can be analyzed without the \textsc{CMSSW} framework, enabling the use of lightweight analysis tools.
-\end{itemize}
-For simulated samples, the corresponding tiers are labeled with a ``SIM'' suffix (e.g., MINIAODSIM, NANOAODSIM). The production chain for MC samples proceeds as:
-\begin{equation*}
-\text{GEN-SIM} \to \text{DIGI-RAW} \to \text{RECO} \to \text{MINIAODSIM} \to \text{NANOAODSIM},
-\end{equation*}
-where GEN-SIM combines event generation with \textsc{Geant4} detector simulation, and DIGI-RAW performs digitization with pileup overlay. Each step is executed as a separate campaign managed through the Monte Carlo Management (McM) system. For collision data, the corresponding chain is:
-\begin{equation*}
-\text{RAW} \to \text{RECO} \to \text{AOD} \to \text{MiniAOD} \to \text{NanoAOD}.
-\end{equation*}
+CMS defines a hierarchy of data formats (``data tiers'') of decreasing size and increasing abstraction. The RAW format contains the unprocessed detector readout ($\sim$1--2~MB/event). Successive reconstruction and reduction steps produce the RECO ($\sim$2--4~MB/event), AOD ($\sim$400~kB/event), and MiniAOD~\cite{Petrucciani:2015gjw} ($\sim$40~kB/event) formats. NanoAOD~\cite{Rizzi:2019epjconf} provides a flat \textsc{ROOT}~\cite{Brun:1997pa} ntuple at $\sim$1--2~kB/event, containing only scalar and vector branches for reconstructed objects and analyzable without the \textsc{CMSSW} framework. For simulated samples, the corresponding tiers carry a ``SIM'' suffix (e.g., NANOAODSIM). Each production step is executed as a separate campaign managed through the Monte Carlo Management (McM) system; the detailed workflow steps for Run~2 and Run~3 are illustrated in Fig.~\ref{fig:mc_flowchart}.
 
-\subsection{Computing for the High-Luminosity LHC}
+\subsection*{Computing for the High-Luminosity LHC}
 \label{sec:hllhc_computing}
 
 The High-Luminosity LHC (HL-LHC), expected to begin operations in 2030, will deliver an instantaneous luminosity of up to $7.5 \times 10^{34}\percms$ with an average of approximately 200 simultaneous pileup interactions per bunch crossing~\cite{CMS:2025phase2}. This will increase both the event complexity and the data volume by roughly an order of magnitude relative to Run~3. Current projections indicate that the computing resources required by CMS under the HL-LHC conditions would exceed the expected budget by a factor of 10--20 if no improvements to software efficiency are made~\cite{CMS:2022note008, Albrecht:2018hsf}. Addressing this challenge requires concurrent advances along multiple fronts.
 
-\subsubsection{Heterogeneous Computing}
+A central element of the CMS strategy is the exploitation of heterogeneous architectures, in particular GPUs, to supplement traditional CPU-based processing. The Patatrack project has demonstrated that pixel track and vertex reconstruction can be efficiently offloaded to GPUs~\cite{Bocci:2020patatrack}, and the CMS HLT farm for Run~3 has been equipped with GPU coprocessors for pixel, ECAL, and HCAL reconstruction~\cite{CMS:2024run3dev}. The SONIC framework~\cite{CMS:2024sonic} extends this approach by offloading ML inference to remote GPU servers, decoupling accelerator hardware from processing nodes. On the event generation side, the Madgraph4GPU project~\cite{Valassi:2025cudacpp, Hageboeck:2023mg4gpu} ports the matrix-element computation of \textsc{MadGraph5\_aMC@NLO} to GPUs and vectorized CPUs. The CMS integration of this tool~\cite{Choi:2025mg4gpu} has demonstrated speedups of up to 10$\times$ on GPUs and 3$\times$ on vectorized CPUs for gridpack production, representing one of the first demonstrations of GPU-accelerated MC event generation within a full LHC experiment workflow.
 
-A central element of the CMS computing strategy for the HL-LHC is the exploitation of \textit{heterogeneous architectures}---in particular, Graphics Processing Units (GPUs) and other accelerators---to supplement traditional CPU-based processing.
+Machine learning techniques also offer the potential to improve both the speed and quality of reconstruction. The CMS Machine-Learned Particle-Flow (MLPF) algorithm~\cite{CMS:2026mlpf} replaces the traditional rule-based PF reconstruction with a graph neural network, demonstrating improved jet energy resolution while running efficiently on GPUs. For the Phase-2 high-granularity calorimeter endcap (HGCAL), ML-based clustering and energy regression algorithms are being developed to handle the increased channel count and event complexity~\cite{CMS:2025phase2}.
 
-\paragraph{GPU-accelerated reconstruction.}
-The Patatrack project has demonstrated that pixel track and vertex reconstruction can be efficiently offloaded to GPUs using a cellular automaton algorithm, achieving throughput equivalent to two full CPU nodes on a single NVIDIA T4 GPU~\cite{Bocci:2020patatrack}. Building on this, the CMS high-level trigger farm for Run~3 has been equipped with GPU coprocessors, enabling GPU-based pixel reconstruction, ECAL reconstruction, and HCAL reconstruction to run in production~\cite{CMS:2024run3dev}. The SONIC (Services for Optimized Network Inference on Coprocessors) framework~\cite{CMS:2024sonic} further extends heterogeneous computing by offloading machine-learning inference to remote GPU servers, decoupling the accelerator hardware from the processing nodes.
-
-\paragraph{GPU-accelerated event generation.}
-The Madgraph4GPU project~\cite{Valassi:2025cudacpp, Hageboeck:2023mg4gpu} ports the matrix-element computation engine of \textsc{MadGraph5\_aMC@NLO} to GPUs and vectorized CPUs via the CUDACPP plugin. The CMS integration of this tool~\cite{Choi:2025mg4gpu} has demonstrated speedups of up to 10$\times$ on GPUs and 3$\times$ on vectorized CPUs for gridpack production, and up to 7$\times$ (GPU) and 1.5$\times$ (vectorized CPU) for event generation, benchmarked on Drell--Yan and top quark pair production processes. This work represents one of the first demonstrations of GPU-accelerated Monte Carlo event generation within a full LHC experiment production workflow, and is expected to yield significant resource savings as production campaigns scale toward the HL-LHC era.
-
-\subsubsection{Machine-Learning-Accelerated Reconstruction}
-
-Machine learning (ML) techniques offer the potential to improve both the speed and quality of event reconstruction. The CMS \textit{Machine-Learned Particle-Flow} (MLPF) algorithm~\cite{CMS:2026mlpf} replaces the traditional rule-based particle-flow reconstruction with a unified graph neural network model, demonstrating improved jet energy resolution while running efficiently on GPUs. For the Phase-2 high-granularity calorimeter endcap (HGCAL), ML-based clustering and energy regression algorithms are being developed to handle the significantly increased channel count and event complexity~\cite{CMS:2025phase2}.
-
-\subsubsection{Data Management and Analysis Facilities}
-
-The WLCG storage model is evolving from strict site-based data placement toward a more flexible \textit{data lake} architecture~\cite{Bird:2019datalake}, in which large storage facilities serve data to smaller computing sites through caching layers, reducing the total number of replicas while maintaining data accessibility. The shift toward the compact NanoAOD format has enabled a new paradigm of \textit{analysis facilities}---centralized or federated computing platforms that provide interactive, low-latency access to analysis-ready datasets. These facilities, combined with columnar analysis frameworks and scalable task-based schedulers, aim to reduce the turnaround time for physics analyses from days to minutes, a capability that will be essential for the HL-LHC physics program.
+Finally, the WLCG storage model is evolving toward a data lake architecture~\cite{Bird:2019datalake}, in which large storage facilities serve data to smaller sites through caching layers, reducing the total number of replicas. The shift toward the compact NanoAOD format has enabled analysis facilities---centralized or federated platforms providing interactive, low-latency access to analysis-ready datasets---that aim to reduce the turnaround time for physics analyses from days to minutes.

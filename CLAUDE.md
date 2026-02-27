@@ -13,7 +13,7 @@ This is a LaTeX thesis template for Seoul National University (SNU), specificall
 | — | `abstract.tex` | Abstract | ✅ Done | Short by design |
 | 1 | `introduction.tex` | Introduction | ✅ Done | Short by design |
 | 2 | `theory.tex` | Theoretical Background | ✅ Done | Citations complete |
-| 3 | `experiment.tex` | The LHC and CMS Detector | 🔄 In Progress | 3.1–3.6 written; figures pending |
+| 3 | `experiment.tex` | The LHC and CMS Detector | ✅ Done | All sections written, figures inserted |
 | 4 | `datasets.tex` | Datasets & Simulation | 📝 Template | — |
 | 5 | `objects.tex` | Physics Objects | 📝 Template | — |
 | 6 | `selection.tex` | Event Selection | 📝 Template | — |
@@ -30,24 +30,15 @@ This is a LaTeX thesis template for Seoul National University (SNU), specificall
 - Compacted to ~80% of original length; citations complete
 - `snutocstyle.tex` updated for `subfig` compatibility
 
-### Chapter 3: The LHC and CMS Detector (`experiment.tex`) — 🔄 IN PROGRESS
-- Section 3.1 (LHC): Accelerator chain, beam parameters (Run 2 & 3), luminosity, pileup — written
-- Section 3.2 (CMS): Detector overview + coordinate system, silicon tracker, calorimeters (ECAL+HCAL), solenoid, muon system — written
-- Section 3.3 (DAQ & Trigger): L1T, HLT, Run 3 upgrades — written
-- Section 3.4 (Particle-Flow): ✅ 완료 — Element building/linking, particle ID (muon/e/γ/hadron), anti-kT + JES/JER, CHS(Run2)/PUPPI(Run3), DeepCSV→DeepJet, PUPPI MET, lepton isolation/mini-isolation
-- Section 3.5 (Monte Carlo Simulation): ✅ 완료 — PDFs (factorization, DGLAP, NNPDF3.1), hard scattering (MadGraph5, Powheg), parton shower (Pythia 8, Herwig 7), matching/merging (MC@NLO, MLM, FxFx), hadronization (Lund string, cluster), UE (CP5 tune); detector sim + digitization + pileup; Run 2 vs Run 3 config comparison table
-- Section 3.6 (Offline Software and Computing): ✅ 완료 — WLCG + Tier-0/1/2, CMSSW framework, data formats (RAW→NanoAOD) + production chain, HL-LHC computing (heterogeneous: Patatrack/SONIC/MG4GPU, ML reconstruction: MLPF, data management: data lakes/analysis facilities)
-- **Pending figures** (all need to be dropped in as PDF files):
-  - [ ] `cern_accelerator_complex.pdf` → `fig:cern_complex` (3.1)
-  - [ ] `lumi_run2.pdf` + `lumi_run3.pdf` → `fig:lumi_run2run3` (3.1)
-  - [ ] `inst_lumi_run2.pdf` + `inst_lumi_run3.pdf` → `fig:inst_lumi` (3.1)
-  - [ ] `pileup_run2run3.pdf` → `fig:pileup` (3.1)
-  - [ ] `cms_detector_slice.pdf` → `fig:cms_slice` (3.2.1)
-  - [ ] `cms_detector_eta.pdf` → `fig:cms_eta` (3.2.1)
-  - [ ] `cms_tracker_layout.pdf` → `fig:cms_tracker` (3.2.2)
-  - [ ] `cms_muon_system.pdf` → `fig:cms_muon` (3.2.5)
-  - [ ] `hlt_rate_by_category.pdf` → `fig:hlt_rate` (3.3)
-  - [ ] `cms_trigger_architecture.pdf` → `fig:trigger_arch` (3.3)
+### Chapter 3: The LHC and CMS Detector (`experiment.tex`) — ✅ DONE
+- Section 3.1 (LHC): Accelerator chain, beam parameters (Run 2 & 3), luminosity, pileup
+- Section 3.2 (CMS): Detector overview + coordinate system, silicon tracker, calorimeters (ECAL+HCAL), solenoid, muon system
+- Section 3.3 (DAQ & Trigger): L1T architecture, HLT, Run 3 upgrades
+- Section 3.4 (Particle-Flow): Element building/linking, particle ID, anti-kT + JES/JER, CHS/PUPPI, DeepJet b-tagging, PUPPI MET, mini-isolation
+- Section 3.5 (Monte Carlo Simulation): PDFs (DGLAP, NNPDF3.1), hard scattering (MadGraph5, Powheg), parton shower (Pythia 8, Herwig 7), matching/merging, hadronization, UE (CP5); detector sim + digitization + pileup
+- Section 3.6 (Offline Software and Computing): WLCG, CMSSW, data formats (RAW→NanoAOD), HL-LHC computing
+- Figures: All inserted — lumi/pileup plots (Run 2+3 combined), CMS slice, tracker layout, muon system, L1 trigger architecture, HLT rates (Run 2+3 subfloat), NNPDF kinematic coverage, MC flowchart (TikZ)
+- All figures stored in `Figures/experiments/`; MC flowchart is inline TikZ
 
 ### Chapters 4–9 — 📝 TEMPLATE (not yet started)
 
@@ -73,8 +64,18 @@ Thesis/
 ├── Sections/         # Content files
 │   ├── abstract.tex
 │   ├── introduction.tex
+│   ├── theory.tex
+│   ├── experiment.tex
+│   ├── datasets.tex
+│   ├── objects.tex
+│   ├── selection.tex
+│   ├── systematics.tex
+│   ├── results.tex
+│   ├── conclusion.tex
 │   └── appendices/
 │       └── First.tex
+├── Figures/          # Figure files
+│   └── experiments/  # Chapter 3 figures (lumi, detector, trigger, etc.)
 ├── Style/            # Style/class files
 │   ├── snuthesis.cls
 │   ├── snutocstyle.tex
