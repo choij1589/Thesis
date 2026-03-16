@@ -1,0 +1,174 @@
+\chapter{Event Selection and Signal Extraction Strategy}
+\label{ch:selection}
+
+This chapter describes the event selection criteria used to identify signal candidate events and the strategy employed to extract a potential signal from the dominant backgrounds. The analysis uses two complementary approaches: a baseline selection exploiting the distinctive kinematic features of the signal, and a machine learning-based classifier to enhance discrimination in regions where traditional methods are less effective.
+
+\section{Signal Region Definition}
+\label{sec:signal_region}
+
+The signal region is designed to select events consistent with the charged Higgs boson decay topology while suppressing backgrounds. Events are categorized into two channels based on the lepton flavors: the $\Pe\Pgm\Pgm$ channel (one electron, two oppositely-charged muons) and the $\Pgm\Pgm\Pgm$ channel (three muons with total charge $\pm 1$).
+
+\subsection{Baseline Selection}
+
+The baseline selection optimizes signal sensitivity while maintaining efficiency across the explored mass range. The key selection requirements are:
+
+\textbf{Lepton multiplicity}: Exactly three leptons passing tight identification criteria are required, with no additional leptons passing loose identification. In the $\Pe\Pgm\Pgm$ channel, this requires exactly one electron and two oppositely-charged muons. In the $\Pgm\Pgm\Pgm$ channel, exactly three muons with a charge sum of $\pm 1$ are required.
+
+\textbf{Lepton transverse momentum}: Electrons must have $\pT > 15\GeV$ (10\GeV for loose identification), and muons must have $\pT > 10\GeV$. To ensure high trigger efficiency, additional constraints are applied based on the trigger thresholds.
+
+For the $\Pe\Pgm\Pgm$ channel, events must satisfy either $\pT(\Pgm_1) > 25\GeV$ and $\pT(\Pe) > 15\GeV$, or $\pT(\Pgm_1) > 10\GeV$ and $\pT(\Pe) > 25\GeV$. For the $\Pgm\Pgm\Pgm$ channel, the leading muon must have $\pT > 20\GeV$ and the subleading muon must have $\pT > 10\GeV$.
+
+\textbf{Dimuon invariant mass}: The invariant mass of each opposite-sign muon pair must exceed 12\GeV to suppress backgrounds from low-mass resonances such as $J/\psi$ and $\Upsilon$ mesons, as well as virtual photon contributions.
+
+\textbf{Jet requirements}: At least two jets with $\pT > 20\GeV$ and $|\eta| < 2.4$ are required, consistent with the signal topology containing two b quarks from top decays. Additionally, at least one jet must be b-tagged using the DeepJet medium working point. These requirements strongly suppress diboson and Drell-Yan backgrounds while maintaining good signal efficiency.
+
+\subsection{Trigger Strategy}
+
+Events are collected using unprescaled dilepton triggers designed for trilepton analyses. The $\Pe\Pgm\Pgm$ channel uses electron-muon cross-triggers from the MuonEG primary dataset, while the $\Pgm\Pgm\Pgm$ channel uses dimuon triggers from the DoubleMuon (Run~2) or Muon (Run~3) primary datasets.
+
+Representative trigger paths include:
+\begin{itemize}
+\item \texttt{HLT\_Mu17\_TrkIsoVVL\_Mu8\_TrkIsoVVL\_DZ\_Mass3p8}: Dimuon trigger with isolation and mass requirements
+\item \texttt{HLT\_Mu8\_TrkIsoVVL\_Ele23\_CaloIdL\_TrackIdL\_IsoVL\_DZ}: Electron-muon cross trigger
+\item \texttt{HLT\_Mu23\_TrkIsoVVL\_Ele12\_CaloIdL\_TrackIdL\_IsoVL\_DZ}: Muon-electron cross trigger with reversed thresholds
+\end{itemize}
+
+The trigger efficiency for signal events passing the offline selection exceeds 95\% in both channels.
+
+\section{Control Regions}
+\label{sec:control_regions}
+
+Several control regions are defined orthogonal to the signal region to validate background estimation methods and measure data-driven correction factors.
+
+\subsection{Z+Fake Control Region}
+
+This region is enriched in events containing a genuine \PZ boson decay to muons plus a nonprompt or fake lepton. The selection is identical to the signal region except:
+\begin{itemize}
+\item The opposite-sign dimuon mass must be within 10\GeV of the \PZ mass: $|M(\Pgm^+\Pgm^-) - 91.2\GeV| < 10\GeV$
+\item No b-tagged jets are required ($N_b = 0$)
+\end{itemize}
+
+This control region is used to validate the nonprompt background estimation method and assess the modeling of \PZ boson kinematics.
+
+\subsection{Conversion Control Region}
+
+This region targets events where a photon converts to an electron-positron pair, mimicking the trilepton signature. The selection requires:
+\begin{itemize}
+\item The opposite-sign dimuon mass must be away from the \PZ peak: $|M(\Pgm^+\Pgm^-) - 91.2\GeV| > 10\GeV$
+\item The trilepton mass must be consistent with a \PZ boson: $|M(3\ell) - 91.2\GeV| < 10\GeV$
+\item Low missing transverse momentum: $\ptmiss < 40\GeV$
+\item No b-tagged jets ($N_b = 0$)
+\end{itemize}
+
+This region is dominated by $\PZ\gamma$ events where the photon undergoes external or internal conversion, and is used to derive conversion background scale factors.
+
+\subsection{WZ Control Region}
+
+For Run~3 data, an additional \PW\PZ control region is defined to validate the diboson background modeling following changes in the MC sample production. The selection requires:
+\begin{itemize}
+\item The opposite-sign dimuon mass must be within 10\GeV of the \PZ mass
+\item High missing transverse momentum: $\ptmiss > 40\GeV$ (consistent with a leptonic \PW decay)
+\item No b-tagged jets ($N_b = 0$)
+\end{itemize}
+
+\section{Dimuon Pair Selection in the $\Pgm\Pgm\Pgm$ Channel}
+\label{sec:pair_selection}
+
+In the $\Pgm\Pgm\Pgm$ channel, there are two possible opposite-sign muon pairs that could originate from the pseudoscalar \PA decay. The correct assignment is determined based on studies using signal simulation.
+
+For signal mass hypotheses with $\mHc > 100\GeV$ and $\mA > 60\GeV$, selecting the pair with the larger invariant mass provides the correct assignment in 50--70\% of events. For other mass hypotheses, selecting the pair with the smaller invariant mass yields correct assignments in 60--95\% of events. The analysis uses the optimal assignment strategy determined from simulation for each mass point.
+
+\section{ParticleNet-Based Event Classification}
+\label{sec:particlenet}
+
+The previous CMS search using 2016 data~\cite{CMSRun2ChargedHiggs} relied primarily on the dimuon invariant mass distribution, where the narrow \PA resonance produces a distinct peak. However, when $\mA$ approaches $\mZ$, the signal peak overlaps with the abundant \PZ boson background, significantly reducing the discrimination power.
+
+To address this challenge, this analysis employs a ParticleNet-based~\cite{ParticleNet} event classifier to distinguish signal from \PZ-associated backgrounds. ParticleNet is a graph neural network originally designed for jet tagging but applied here for event-level classification, treating each reconstructed object as a node in a particle cloud.
+
+\subsection{Classifier Architecture}
+
+The ParticleNet model transforms events into particle cloud representations, with each particle type converted into graph nodes with specific features:
+
+\begin{itemize}
+\item \textbf{Muons and electrons}: Four-momentum components ($E$, $p_x$, $p_y$, $p_z$), charge, and one-hot encoded particle type identification
+\item \textbf{Jets}: Four-momentum components and b-tagging information
+\item \textbf{Missing transverse momentum}: Four-momentum representation with $\eta$ and mass set to zero
+\end{itemize}
+
+The network architecture consists of:
+\begin{enumerate}
+\item A graph normalization layer for stable training
+\item Three Dynamic Edge Convolution (EdgeConv) layers that dynamically construct k-nearest neighbor graphs in feature space ($k=4$), with residual connections and dropout regularization
+\item Global mean pooling to aggregate node-level features into graph-level representations
+\item Two fully connected layers with batch normalization and dropout
+\item An output layer producing four class logits: signal, nonprompt background, diboson background, and $\ttbar$+X background
+\end{enumerate}
+
+\subsection{Training Procedure}
+
+The classifier is trained using relaxed event selection criteria to enrich the training dataset and enable validation in regions outside the signal region. The relaxations include loosening lepton identification from tight to loose, removing the trigger requirement, and omitting the b-jet requirement.
+
+Separate classifiers are trained for signal mass points with $60 < \mA < 120\GeV$, where discrimination from \PZ backgrounds is most challenging. For each mass point, a classifier is trained using:
+\begin{itemize}
+\item Signal MC samples at the target mass point
+\item $\ttbar$ MC for the nonprompt background class
+\item $\PW\PZ$ and $\PZ\PZ$ MC for the diboson class
+\item $\ttbar\PZ$ and $\cPqt\PZ\cPq$ MC for the $\ttbar$+X class
+\end{itemize}
+
+Training uses 5-fold cross-validation with a 3:1:1 split for training, validation, and test sets. A weighted cross-entropy loss function accounts for normalization differences among background sources. Hyperparameter optimization is performed using a genetic algorithm, searching over the number of hidden nodes, optimizer choice, learning rate scheduler, initial learning rate, and weight decay.
+
+\subsection{Classifier Output}
+
+The trained classifier produces four softmax-normalized probability scores for each event. For signal extraction, likelihood ratios are constructed:
+\begin{equation}
+\text{LR}(\text{signal vs. background}_i) = \frac{P_{\text{signal}}}{P_{\text{signal}} + P_{\text{background}_i}}
+\end{equation}
+where $P$ denotes the classifier output probability for each class.
+
+These likelihood ratios provide discrimination between signal and specific background categories, with values near 1 indicating signal-like events and values near 0 indicating background-like events.
+
+\subsection{Validation}
+
+The ParticleNet classifier is validated using a $\ttbar$+\PZ control region defined with $\Pe\Pe\Pgm$ lepton configuration. This region is kinematically similar to the signal region but essentially signal-free, as the $\PA \to \Pe\Pe$ decay is suppressed by $(m_e/m_\mu)^2$ due to Yukawa coupling. During inference on this region, electron and muon labels are swapped so the model interprets these events as $\ttbar$+\PZ with $\PZ \to \Pgm\Pgm$.
+
+Good agreement between data and prediction is observed in the classifier output distributions, confirming the validity of the ParticleNet modeling.
+
+\section{Signal Extraction Strategy}
+\label{sec:extraction}
+
+Signal extraction is performed through a binned maximum likelihood fit to the dimuon invariant mass distribution. The fit is performed separately for each $(\mHc, \mA)$ mass hypothesis, using appropriate templates for signal and background contributions.
+
+\subsection{Mass-Dependent Strategy}
+
+The signal extraction strategy varies depending on the \PA mass relative to the \PZ mass:
+
+\textbf{Off-Z region} ($\mA$ far from $\mZ$): For mass points where the signal dimuon mass peak is well-separated from the \PZ peak, the dimuon invariant mass alone provides excellent discrimination. In this region, the analysis relies primarily on the narrow signal resonance structure in the mass distribution.
+
+\textbf{On-Z region} ($\mA$ near $\mZ$): For mass points where the signal overlaps with the \PZ peak, the ParticleNet classifier output is used to enhance discrimination. Events are categorized based on the likelihood ratio value, and the fit is performed in bins of both dimuon mass and classifier score.
+
+\subsection{Template Construction}
+
+Signal templates are constructed from MC simulation, accounting for the narrow intrinsic width of the \PA boson (set to 1~MeV in simulation) and the experimental dimuon mass resolution. Background templates are derived from:
+\begin{itemize}
+\item MC simulation for prompt backgrounds (diboson, $\ttbar$+V/H)
+\item Data-driven methods for nonprompt backgrounds (matrix method)
+\item MC simulation with data-driven scale factors for conversion backgrounds
+\end{itemize}
+
+\subsection{Statistical Analysis}
+
+The statistical analysis uses the asymptotic CL$_s$ method~\cite{Read:2002hq,Junk:1999kv} implemented in the Combine tool~\cite{CMS-NOTE-2011-005}. Upper limits are set at 95\% confidence level on the signal cross section for each $(\mHc, \mA)$ mass hypothesis.
+
+Systematic uncertainties are incorporated as nuisance parameters with appropriate correlations across data-taking periods and channels. The dominant systematic uncertainties include the nonprompt background normalization, theoretical cross sections for prompt backgrounds, and experimental uncertainties on lepton identification and jet energy scale.
+
+\section{Expected Sensitivity}
+\label{sec:sensitivity}
+
+The ParticleNet classifier provides significant sensitivity improvements compared to using the dimuon mass distribution alone, particularly in the on-Z region. The improvement is quantified as the ratio of expected limits with and without the classifier:
+\begin{itemize}
+\item $\Pe\Pgm\Pgm$ channel: 25--50\% improvement in expected limit
+\item $\Pgm\Pgm\Pgm$ channel: 10--20\% improvement in expected limit
+\end{itemize}
+
+The larger improvement in the $\Pe\Pgm\Pgm$ channel reflects the more challenging background composition in this channel, where the classifier provides greater discrimination power.

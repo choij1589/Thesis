@@ -39,7 +39,7 @@ The instantaneous luminosity $\mathcal{L}$ characterizes the collision rate per 
 \begin{equation}
 \mathcal{L} = \frac{N_1 N_2 n_b f_{\text{rev}}}{4\pi\sigma_x\sigma_y} F
 \end{equation}
-where $N_{1,2}$ are the numbers of particles per bunch in each beam, $n_b$ is the number of colliding bunch pairs, $f_{\text{rev}}$ is the revolution frequency, $\sigma_{x,y}$ are the transverse beam sizes at the interaction point, and $F$ is a geometric reduction factor accounting for the crossing angle. The integrated luminosity $L = \int \mathcal{L}(t)\,dt$ quantifies the total collision exposure. During Run~2, CMS recorded a total of 138\fbinv~\cite{CMS:2021xjt,CMS:2018elu,CMS:2019jhp}. Run~3 commenced in 2022 and is ongoing; through 2025, the LHC has delivered a total of approximately 486\fbinv to CMS, of which 446\fbinv was recorded~\cite{CMS:2024onh}. The cumulative integrated luminosity and per-year luminosity profiles are shown in Figs.~\ref{fig:lumi_run2run3} and~\ref{fig:lumi_peryear}, and the specific dataset used in this analysis is described in Chapter~\ref{ch:datasets}.
+where $N_{1,2}$ are the numbers of particles per bunch in each beam, $n_b$ is the number of colliding bunch pairs, $f_{\text{rev}}$ is the revolution frequency, $\sigma_{x,y}$ are the transverse beam sizes at the interaction point, and $F$ is a geometric reduction factor accounting for the crossing angle. The integrated luminosity $L = \int \mathcal{L}(t)\,dt$ quantifies the total collision exposure. During Run~2, CMS recorded a total of 138\fbinv~\cite{CMS:2021xjt,CMS:2018elu,CMS:2019jhp}. Run~3 commenced in 2022 and is ongoing; through 2025, the LHC has delivered a total of approximately 486\fbinv to CMS, of which 446\fbinv was recorded~\cite{CMS:2024onh}. The cumulative integrated luminosity and per-year luminosity profiles are shown in Figs.~\ref{fig:lumi_run2run3} and~\ref{fig:lumi_peryear}, and the specific dataset used in this analysis is described in Section~\ref{sec:datasets}.
 
 The high instantaneous luminosity also produces multiple simultaneous proton-proton interactions per bunch crossing, a phenomenon known as pileup. The mean number of pileup interactions per crossing is:
 \begin{equation}
@@ -169,7 +169,7 @@ Events passing the L1 trigger are fully read out by the DAQ system, which assemb
   \label{fig:hlt_rate}
 \end{figure}
 
-For Run~3, no major hardware upgrade to the L1 trigger was performed, but significant algorithmic improvements were deployed exploiting the finer longitudinal segmentation of the upgraded HCAL and the new GE1/1 GEM chambers~\cite{CMS:2023gfb}. The L1 output rate was increased to approximately 100--110~kHz to accommodate the higher luminosity. The total HLT output rate was similarly increased to approximately 80--90~kHz at peak luminosity, as shown in Fig.~\ref{fig:hlt_rate_run3}, with streams allocated as follows: approximately 3~kHz for standard prompt reconstruction, ${\sim}10$~kHz for parking, and ${\sim}45$~kHz for scouting, with the remainder used for calibration and monitoring. A dedicated 40~MHz scouting system, commissioned in the early part of Run~3, further extends the physics reach by recording trigger primitive information at the full bunch-crossing rate. The specific trigger algorithms and \pT thresholds used to select events for this analysis are described in Chapter~\ref{ch:datasets}.
+For Run~3, no major hardware upgrade to the L1 trigger was performed, but significant algorithmic improvements were deployed exploiting the finer longitudinal segmentation of the upgraded HCAL and the new GE1/1 GEM chambers~\cite{CMS:2023gfb}. The L1 output rate was increased to approximately 100--110~kHz to accommodate the higher luminosity. The total HLT output rate was similarly increased to approximately 80--90~kHz at peak luminosity, as shown in Fig.~\ref{fig:hlt_rate_run3}, with streams allocated as follows: approximately 3~kHz for standard prompt reconstruction, ${\sim}10$~kHz for parking, and ${\sim}45$~kHz for scouting, with the remainder used for calibration and monitoring. A dedicated 40~MHz scouting system, commissioned in the early part of Run~3, further extends the physics reach by recording trigger primitive information at the full bunch-crossing rate. The specific trigger algorithms and \pT thresholds used to select events for this analysis are described in Section~\ref{ssec:triggers}.
 
 %% ============================================================
 \section{Particle-Flow Event Reconstruction}
@@ -210,7 +210,7 @@ Jets originating from b quarks are identified by exploiting the long lifetime of
 
 The missing transverse momentum $\ptvecmiss$ is computed as the negative vector sum of the transverse momenta of all PF candidates in the event~\cite{CMS:2019ctu}, and serves as the experimental proxy for undetected particles such as neutrinos. This analysis uses PUPPI-based $\ptvecmiss$ (PUPPI MET) for both Run~2 and Run~3 datasets, in which the PUPPI weights suppress both charged and neutral pileup contributions before the vector sum, providing consistent $\ptvecmiss$ resolution across the full pileup range. The JES corrections are propagated to $\ptvecmiss$ via the type-I correction, which replaces raw jet momenta with their corrected counterparts to maintain global transverse momentum conservation.
 
-Lepton isolation quantifies the hadronic and electromagnetic activity in the vicinity of a lepton candidate, and is the primary handle for distinguishing prompt leptons — produced directly in electroweak decays such as $\PW \to \ell\nu$ or $\PZ \to \ell\ell$ — from nonprompt leptons arising from semileptonic heavy-flavor decays inside jets. In the PF framework, isolation is calculated as the scalar sum of the \pT of all PF candidates within a cone of radius $\Delta R$ around the lepton, divided by the lepton \pT, with an explicit subtraction of the pileup contribution estimated from the local energy density $\rho$. A standard fixed-cone approach with $\Delta R = 0.4$ works well for isolated low-\pT leptons, but becomes inefficient for boosted topologies where the decay products of a heavy resonance are collimated: the fixed cone may overlap with jets from the same hard decay, causing genuine prompt leptons to fail isolation. This analysis instead uses a $\pT$-dependent cone — the mini-isolation variable $I_{\text{mini}}$ — in which the cone shrinks as $10\GeV/\pT$ for leptons above $50\GeV$, keeping the isolation region well-separated from the lepton's own radiation while avoiding overlap with nearby jets. The precise definition and working points are given in Chapter~\ref{ch:objects}.
+Lepton isolation quantifies the hadronic and electromagnetic activity in the vicinity of a lepton candidate, and is the primary handle for distinguishing prompt leptons — produced directly in electroweak decays such as $\PW \to \ell\nu$ or $\PZ \to \ell\ell$ — from nonprompt leptons arising from semileptonic heavy-flavor decays inside jets. In the PF framework, isolation is calculated as the scalar sum of the \pT of all PF candidates within a cone of radius $\Delta R$ around the lepton, divided by the lepton \pT, with an explicit subtraction of the pileup contribution estimated from the local energy density $\rho$. A standard fixed-cone approach with $\Delta R = 0.4$ works well for isolated low-\pT leptons, but becomes inefficient for boosted topologies where the decay products of a heavy resonance are collimated: the fixed cone may overlap with jets from the same hard decay, causing genuine prompt leptons to fail isolation. This analysis instead uses a $\pT$-dependent cone — the mini-isolation variable $I_{\text{mini}}$ — in which the cone shrinks as $10\GeV/\pT$ for leptons above $50\GeV$, keeping the isolation region well-separated from the lepton's own radiation while avoiding overlap with nearby jets. The precise definition and working points are given in Section~\ref{sec:objects}.
 
 %% ============================================================
 \section{Monte Carlo Simulation}
@@ -225,14 +225,14 @@ Monte Carlo (MC) simulation provides the theoretical predictions against which c
     box/.style={draw, rounded corners=3pt, minimum height=0.85cm,
                 minimum width=2.4cm, align=center, font=\small},
     gen/.style={box, fill=blue!12},
-    step/.style={draw, rounded corners=2pt, minimum height=0.7cm,
+    pstep/.style={draw, rounded corners=2pt, minimum height=0.7cm,
                  minimum width=1.55cm, align=center, font=\scriptsize},
-    r2/.style={step, fill=orange!15},
-    r3/.style={step, fill=green!12},
+    r2/.style={pstep, fill=orange!15},
+    r3node/.style={pstep, fill=green!12},
     lbl/.style={font=\scriptsize\itshape, text=black!70},
-    rlbl/.style={font=\scriptsize\bfseries, text=black!80},
+    rowlbl/.style={font=\scriptsize\bfseries, text=black!80},
     arr/.style={-{Stealth[length=5pt]}, thick},
-    sarr/.style={-{Stealth[length=4pt]}, semithick},
+    sarrow/.style={-{Stealth[length=4pt]}, semithick},
     node distance=0.5cm and 0.4cm
   ]
     % Row 1: Physics event generation
@@ -253,7 +253,7 @@ Monte Carlo (MC) simulation provides the theoretical predictions against which c
     \draw[arr] (ps)  -- (had);
 
     % Run 2 chain
-    \node[rlbl, below=1.1cm of pdf.south west, anchor=west] (r2lbl) {Run\,2:};
+    \node[rowlbl, below=1.1cm of pdf.south west, anchor=west] (r2lbl) {Run\,2:};
     \node[r2, right=0.2cm of r2lbl] (r2a) {wmLHE\\[-1pt]GEN};
     \node[r2, right=0.25cm of r2a]  (r2b) {SIM};
     \node[r2, right=0.25cm of r2b]  (r2c) {DIGI\\[-1pt]Premix};
@@ -262,25 +262,25 @@ Monte Carlo (MC) simulation provides the theoretical predictions against which c
     \node[r2, right=0.25cm of r2e]  (r2f) {Mini\\[-1pt]AOD};
     \node[r2, right=0.25cm of r2f]  (r2g) {Nano\\[-1pt]AOD};
 
-    \draw[sarr] (r2a) -- (r2b);
-    \draw[sarr] (r2b) -- (r2c);
-    \draw[sarr] (r2c) -- (r2d);
-    \draw[sarr] (r2d) -- (r2e);
-    \draw[sarr] (r2e) -- (r2f);
-    \draw[sarr] (r2f) -- (r2g);
+    \draw[sarrow] (r2a) -- (r2b);
+    \draw[sarrow] (r2b) -- (r2c);
+    \draw[sarrow] (r2c) -- (r2d);
+    \draw[sarrow] (r2d) -- (r2e);
+    \draw[sarrow] (r2e) -- (r2f);
+    \draw[sarrow] (r2f) -- (r2g);
 
     % Run 3 chain
-    \node[rlbl, below=0.55cm of r2lbl] (r3lbl) {Run\,3:};
-    \node[r3, right=0.2cm of r3lbl] (r3a) {wmLHE\\[-1pt]GS};
-    \node[r3, right=0.25cm of r3a]  (r3b) {DG\\[-1pt]Premix};
-    \node[r3, right=0.25cm of r3b]  (r3c) {RECO};
-    \node[r3, right=0.25cm of r3c]  (r3d) {Mini\\[-1pt]AOD};
-    \node[r3, right=0.25cm of r3d]  (r3e) {Nano\\[-1pt]AOD};
+    \node[rowlbl, below=0.55cm of r2lbl] (r3lbl) {Run\,3:};
+    \node[r3node, right=0.2cm of r3lbl] (r3a) {wmLHE\\[-1pt]GS};
+    \node[r3node, right=0.25cm of r3a]  (r3b) {DG\\[-1pt]Premix};
+    \node[r3node, right=0.25cm of r3b]  (r3c) {RECO};
+    \node[r3node, right=0.25cm of r3c]  (r3d) {Mini\\[-1pt]AOD};
+    \node[r3node, right=0.25cm of r3d]  (r3e) {Nano\\[-1pt]AOD};
 
-    \draw[sarr] (r3a) -- (r3b);
-    \draw[sarr] (r3b) -- (r3c);
-    \draw[sarr] (r3c) -- (r3d);
-    \draw[sarr] (r3d) -- (r3e);
+    \draw[sarrow] (r3a) -- (r3b);
+    \draw[sarrow] (r3b) -- (r3c);
+    \draw[sarrow] (r3c) -- (r3d);
+    \draw[sarrow] (r3d) -- (r3e);
 
     % Phase labels
     \node[lbl, rotate=90, anchor=south] at ($(pdf.west)+(-0.5,0)$)
