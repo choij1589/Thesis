@@ -1,0 +1,824 @@
+\chapter{Analysis Strategy}
+\label{ch:strategy}
+
+This chapter presents the analysis strategy employed to extract the expected signal from data. The event selection, fit template construction, and ParticleNet-based classification are described in Section~\ref{sec:signal_extraction}. The estimation of Standard Model backgrounds is presented in Section~\ref{sec:background}, and the treatment of systematic uncertainties is discussed in Section~\ref{sec:systematics}.
+
+%% ============================================================
+\section{Signal Extraction Strategy}
+\label{sec:signal_extraction}
+%% ============================================================
+
+\subsection{Baseline Event Selection}
+\label{ssec:baseline_selection}
+
+The baseline selection isolates the trilepton final state from the $\PHp \to \PWp \PA \to \PWp \Pgm\Pgm$ decay chain while suppressing diboson, Drell--Yan, and $\ttbar$-associated backgrounds. The key requirements are listed below.
+
+\begin{itemize}
+\item \textbf{Lepton multiplicity}. Exactly three leptons passing tight ID, with one opposite-sign (OS) muon pair, in either $\Pe\Pgm\Pgm$ or $\Pgm\Pgm\Pgm$ configurations. Events containing additional leptons passing loose ID are vetoed.
+\item \textbf{Lepton \pT thresholds}. The thresholds are $\pT(\Pe) > 15$\GeV and $\pT(\Pgm) > 10$\GeV, with trigger-safe requirements of $\pT > 25$\GeV on the leading lepton in each channel.
+\item \textbf{OS dimuon invariant mass}. Each OS muon pair must satisfy $m(\Pgm^+\Pgm^-) > 12$\GeV to suppress backgrounds from low-mass resonances such as $\PJGy$ and $\PgU$.
+\item \textbf{Jet requirements}. At least two jets ($N_j \geq 2$) and at least one b-tagged jet ($N_b \geq 1$) are required. These requirements effectively suppress diboson and Drell--Yan backgrounds, which typically produce fewer jets and rarely contain b~quarks, while retaining the $\ttbar$-associated signal topology.
+\end{itemize}
+
+Figures~\ref{fig:baseline_emumu} and~\ref{fig:baseline_mumumu} show the OS dimuon invariant mass, jet multiplicity, and b-tagged jet multiplicity after the baseline selection for representative signal mass hypotheses and the dominant background processes. Signal distributions for $(\mHc, \mA)$ values of $(70, 15)$, $(100, 60)$, $(130, 90)$, and $(160, 155)$\GeV illustrate the range of kinematic configurations. A clear signal peak is visible in the dimuon mass spectrum for off-$\PZ$ mass hypotheses, while the $(130, 90)$\GeV point, where $\mA \approx \mZ$, is largely obscured by the $\PZ$-associated backgrounds. This observation motivates the multivariate approach described in Section~\ref{ssec:particlenet}.
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/pair_mass.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/jets_1_pt.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/bjets_1_pt.png}} \\
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/pair_mass.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/jets_1_pt.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/bjets_1_pt.png}}
+  \caption{Distributions of the OS dimuon invariant mass (left), leading jet \pT (center), and leading b-tagged jet \pT (right) in the $\Pe\Pgm\Pgm$ channel after baseline selection, for Run~2 (top row) and Run~3 (bottom row). Distributions are normalized to the respective cross sections, with signal cross sections set to $30\unit{fb}$ at 13 TeV and $33.2\unit{fb}$ at 13.6 TeV. Signal mass points of $(\mHc, \mA) = (70, 15)$, $(100, 60)$, $(130, 90)$, and $(160, 155)$\GeV are shown.}
+  \label{fig:baseline_emumu}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/pair_lowM_mass.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/pair_highM_mass.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/METv_pt.png}} \\
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/pair_lowM_mass.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/pair_highM_mass.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/METv_pt.png}}
+  \caption{Distributions of the lower-mass OS dimuon pair (left), higher-mass OS dimuon pair (center), and \ptmiss (right) in the $\Pgm\Pgm\Pgm$ channel after baseline selection, for Run~2 (top row) and Run~3 (bottom row). Distributions are normalized to the respective cross sections, with signal cross sections set to $30\unit{fb}$ at 13 TeV and $33.2\unit{fb}$ at 13.6 TeV. Signal mass points of $(\mHc, \mA) = (70, 15)$, $(100, 60)$, $(130, 90)$, and $(160, 155)$\GeV are shown.}
+  \label{fig:baseline_mumumu}
+\end{figure}
+
+\subsection{Template construction and statistical inference}
+\label{ssec:templates}
+%% ----------------------------------------------------------
+
+The signal is extracted through a binned maximum likelihood fit to the dimuon invariant mass distribution $m(\Pgm\Pgm)$ using the \textsc{Combine} tool~\cite{combine_tool}. This subsection describes the construction of the fit templates and the statistical framework employed for limit extraction.
+
+\subsubsection{Fit variable and binning}
+
+To maximize the resonance feature, the signal dimuon mass distribution is fitted for each signal mass point and channel to determine the peak position and effective width. Three signal-shape models, a Voigtian, a double Gaussian, and a double-sided Crystal Ball (DCB) function, are tested. Their extracted effective widths agree within 10\%, but the DCB function better describes the distribution tails and is therefore used to define the template window. The DCB fit provides the peak position $x_0$ and separate left and right Gaussian-core widths, $\sigma_L$ and $\sigma_R$. The effective width is defined as $\sigma_{\mathrm{eff}} = \sqrt{(\sigma_L^2 + \sigma_R^2)/2}$, and events within $x_0 \pm 10\sigma_{\mathrm{eff}}$ are retained.
+
+Within this window, the core region, $x_0 \pm 5\sigma_{\mathrm{eff}}$, is divided into uniformly spaced bins, while each sideband between $5\sigma_{\mathrm{eff}}$ and $10\sigma_{\mathrm{eff}}$ is merged into a single bin. The number of core bins is chosen adaptively from 15 to 5 in integer steps by selecting the largest value for which all total-background bins satisfy $n_{\mathrm{eff}} = y^2/\sigma^2 \geq 5$, where $y$ and $\sigma$ are the bin yield and statistical uncertainty. If this condition cannot be met, empty or unstable bins are regularized by the floor, cap, and bin-merging procedures used in the template construction workflow. Residual per-bin statistical uncertainties are included using the Barlow--Beeston-lite implementation.
+
+\subsubsection{Dimuon pair assignment in the $\Pgm\Pgm\Pgm$ channel}
+
+In the $\Pgm\Pgm\Pgm$ channel, two oppositely charged dimuon pairs can be formed, introducing ambiguity in identifying the signal candidate from $\PA \to \Pgmp\Pgmm$. Three selection methods are evaluated using truth-matched signal simulation.
+\begin{itemize}
+  \item Direct mass comparison between the two dimuon pairs.
+  \item The Lorentz $\gamma$ factor of the dimuon system, $\gamma \sim \pT(\Pgmp\Pgmm)/m(\Pgmp\Pgmm)$, which is larger for the correct pair when the \PA boson is highly boosted.
+  \item The transverse mass of the same-sign muon pair and the missing transverse momentum, $M_{\mathrm{T}}(\Pgm^{\pm}\Pgm^{\pm}, \ptmiss)$, which tends to be larger for the incorrect pairing since the wrong muon originates from the \PW boson decay.
+\end{itemize}
+The fraction of correct pair assignments across the $(\mHc, \mA)$ plane is shown in Fig.~\ref{fig:3mu_pair_selection}. Direct mass comparison provides the highest accuracy overall. The $\gamma$ factor method achieves approximately 90\% accuracy at very low \mA but its discrimination power diminishes for $\mA > 40$\GeV. The transverse mass method provides limited separation in the off-shell $\PHp \to \PW\PA$ regime. Based on these studies, for signal mass points with $\mHc > 110$\GeV and $\mA > 60$\GeV the higher-mass pair is selected, while otherwise the lower-mass pair is used.
+
+\begin{figure}[htbp]
+  \centering
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeatmaps/2018/SR3Mu/mass.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeatmaps/2018/SR3Mu/gamma.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeatmaps/2018/SR3Mu/mT.png}}
+  \caption{Fraction of correctly selecting the signal dimuon pair in the $\Pgm\Pgm\Pgm$ channel, shown across the $(\mHc, \mA)$ plane. From left to right, the three panels show selection by lower mass, higher $\gamma$ factor, and smaller transverse mass with \ptmiss. The pair assignment rule is chosen per mass point based on these truth-level studies.}
+  \label{fig:3mu_pair_selection}
+\end{figure}
+
+\subsubsection{Statistical method}
+
+Upper limits on the signal branching ratio, expressed through the signal strength used to scale the signal templates, are computed using the modified frequentist confidence-level method, denoted CL$_s$, with the profile likelihood ratio as the test statistic. The test statistic for an assumed signal strength $\mu$ is defined as
+\begin{equation}
+  \tilde{q}_{\mu} = -2\ln\frac{\mathcal{L}(\mu, \hat{\hat{\boldsymbol{\theta}}}_\mu)}{\mathcal{L}(\hat{\mu}, \hat{\boldsymbol{\theta}})},
+  \quad 0 \leq \hat{\mu} \leq \mu,
+  \label{eq:test_statistic}
+\end{equation}
+where $\hat{\boldsymbol{\theta}}$ and $\hat{\hat{\boldsymbol{\theta}}}_\mu$ denote the unconditionally and conditionally profiled nuisance parameters, respectively. The nuisance parameters encode all systematic uncertainties described in Section~\ref{sec:systematics} and are constrained by auxiliary measurements. The CL$_s$ value is defined as the ratio of $p$-values,
+\begin{equation}
+  \mathrm{CL}_s = \frac{p_{s+b}}{1 - p_b},
+  \label{eq:cls}
+\end{equation}
+where $p_{s+b}$ and $p_b$ are the $p$-values under the signal-plus-background and background-only hypotheses, respectively. A signal hypothesis is excluded at 95\% confidence level when $\mathrm{CL}_s < 0.05$. The asymptotic approximation is used to evaluate the test statistic distributions, following the formalism of Ref.~\cite{combine_tool}.
+
+\subsection{ParticleNet-Based Event Classification}
+\label{ssec:particlenet}
+
+When $\mA$ approaches $\mZ$, the signal dimuon mass peak overlaps with the $\PZ$ resonance (cf.\ Figs.~\ref{fig:baseline_emumu} and~\ref{fig:baseline_mumumu} for $(\mHc, \mA) = (130, 90)$\GeV), rendering a cut-based approach ineffective. The high parton multiplicity and the neutrino from the $\PW$ decay further complicate conventional reconstruction. These challenges motivate a multivariate classifier that exploits the full event topology.
+
+The ParticleNet framework~\cite{ParticleNet}, originally developed for jet tagging using point-cloud representations, is repurposed here for whole-event classification. Each reconstructed object (lepton, jet, \ptmiss) is treated as a node in a particle graph, and the Dynamic Edge Convolution architecture captures inter-object relationships through learned graph connectivity.
+
+\subsubsection{Training dataset and classification scheme}
+
+ParticleNet classifiers are trained for the on-$\PZ$ signal mass points $(\mHc, \mA) = (100, 95)$, $(130, 90)$, and $(160, 85)$\GeV, where the dimuon mass alone provides limited separation from $\PZ$-associated backgrounds. A single classifier is trained for each mass point using the combined $\Pe\Pgm\Pgm$ and $\Pgm\Pgm\Pgm$ channels. Signal and $\ttbar+X$ events are selected with the tight-lepton and b-tagged-jet requirements used in the signal region. The diboson and nonprompt classes have limited simulated event counts after this selection, so dedicated augmentation strategies are used for these categories.
+
+A four-class classification scheme is employed with the following categories.
+\begin{itemize}
+\item \textbf{Signal}. For each $(\mHc, \mA)$ mass hypothesis.
+\item \textbf{Nonprompt}. $\ttbar$ events containing nonprompt leptons from heavy-flavor decays.
+\item \textbf{Diboson}. $\PW\PZ$ and $\PZ\PZ$ events producing prompt trileptons.
+\item \textbf{$\ttbar+X$}. $\ttbar\PZ$, $\PQt\PZ\PQq$, and $\ttbar\PH$ events with genuine additional leptons.
+\end{itemize}
+The nonprompt class is constructed from dileptonic \ttbar samples, including variations of the top quark mass, underlying-event tune, color reconnection, and matrix-element-to-parton-shower matching. Events in which at least one lepton passes the loose but not the tight identification are promoted with fake-rate weights, increasing the available nonprompt training statistics while preserving the kinematic information used by the classifier. The diboson class combines $\PW\PZ$ and $\PZ\PZ$ samples; events without b-tagged jets are statistically promoted by assigning b-jet labels according to the jet multiplicity and jet-\pT rank probabilities measured in the tight b-tagged-jet selection. Additional calibration weights correct the jet multiplicity and b-jet kinematic distributions. For the $\ttbar+X$ class, $\ttbar+\PW$ is excluded because of insufficient Run~3 statistics after the b-tagged-jet selection. Pileup reweighting and L1 prefiring corrections are applied to the Run~2 and Run~3 simulated samples where relevant.
+
+For each class, the training, validation, and test samples contain 150\,000, 50\,000, and 50\,000 events, respectively. The Run~2-to-Run~3 composition is chosen to approximately follow the integrated luminosity ratio. Augmented nonprompt and diboson events are used for training, while genuine tight-lepton and b-tagged-jet events are kept for the final template construction.
+
+\subsubsection{Input features and graph construction}
+
+Each reconstructed object in the event is represented as a graph node with the features listed in Table~\ref{tab:pnet_features}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Node features used in the ParticleNet event classifier.}
+  \label{tab:pnet_features}
+  \begin{tabular}{lll}
+    \hline\hline
+    Object & Node features & Type indicators \\ \hline
+    Muon / Electron & $E,\, p_x,\, p_y,\, p_z$, charge & muon / electron bit \\
+    Jet / b-tagged jet & $E,\, p_x,\, p_y,\, p_z$ & jet bit, b-jet bit \\
+    \ptmiss & $E,\, p_x,\, p_y,\, p_z$ ($\eta = m = 0$) & --- \\ \hline
+    \hline
+  \end{tabular}
+\end{table}
+
+The $k$-nearest-neighbor ($k$-NN) graph is constructed using $\Delta R$ distances in the feature space with $k = 4$ neighbors. To account for differences in detector conditions across data-taking eras, era-encoding bits are included as graph-level features.
+
+\subsubsection{Network architecture}
+
+The ParticleNet model, implemented in PyTorch~\cite{pytorch} and PyTorch Geometric~\cite{torch-geometric}, consists of the following components.
+\begin{enumerate}
+\item A \textbf{graph normalization layer} that standardizes node features within each graph batch.
+\item Three \textbf{Dynamic Edge Convolution (EdgeConv) layers}~\cite{ParticleNet}, each of which dynamically constructs a $k$-NN graph in the learned feature space and applies a multi-layer perceptron (MLP) to concatenated node-pair features $[\mathbf{x}_i,\, \mathbf{x}_j - \mathbf{x}_i]$. Each MLP contains three fully connected layers with Leaky~ReLU activations, batch normalization, and dropout. Residual connections and edge dropout are used to stabilize training.
+\item A \textbf{global mean pooling} operation that aggregates the concatenated outputs of the EdgeConv layers into a single graph-level representation, which is then concatenated with the era-encoding features.
+\item Two \textbf{fully connected layers} with batch normalization and dropout, followed by a four-class softmax output.
+\end{enumerate}
+
+\subsubsection{Hyperparameter optimization and training}
+
+Hyperparameter optimization is performed using a genetic algorithm (GA)~\cite{GeneticAlgorithm}. An initial population of 16 configurations is randomly sampled from the search space, which includes the number of hidden nodes ($\{96, 128, 192, 256\}$), optimizer type ($\{\text{RMSprop, Adam, Adadelta}\}$)~\cite{optimizers}, learning rate scheduler, initial learning rate ($10^{-4}$--$10^{-2}$), and weight decay ($10^{-5}$--$10^{-3}$). Evolution proceeds over four generations with a 70\% replacement rate. Parent selection uses rank-based roulette sampling, offspring are generated by uniform crossover, and displacement mutation is applied with 30\% probability. Training uses a batch size of 512 events for up to 120 epochs, with early stopping triggered if the validation loss does not improve for seven consecutive epochs.
+
+To reduce mass sculpting in the background dimuon spectrum, the weighted cross-entropy loss is supplemented by a distance-correlation penalty between the signal output score and the two OS dimuon masses,
+\begin{equation}
+  \mathcal{L}_\mathrm{total}
+  = \mathcal{L}_\mathrm{CE}
+  + \lambda_\mathrm{decorr}\left[
+      \mathrm{dCor}(s_\mathrm{sig}, m_1)
+      + \mathrm{dCor}(s_\mathrm{sig}, m_2)
+    \right],
+  \label{eq:pnet_decorrelation_loss}
+\end{equation}
+where $s_\mathrm{sig}$ is the signal score, $m_1$ and $m_2$ are the two OS dimuon masses, and $\mathrm{dCor}$ is the weighted distance correlation~\cite{distancecorrelation}. A scan of $\lambda_\mathrm{decorr}$ shows that the signal-vs-background discrimination is stable up to $\lambda_\mathrm{decorr} = 0.2$, while the signal-score correlation with the dimuon masses decreases. The value $\lambda_\mathrm{decorr} = 0.1$ is used for the production models.
+
+The final models use 256 hidden nodes and dropout of 0.4. The optimized models achieve validation multiclass accuracies of about 58--59\%, with no significant overtraining observed from the training and validation loss curves. Representative training curves and receiver operating characteristic (ROC) curves are shown in Figs.~\ref{fig:training_curves} and~\ref{fig:roc_curves}.
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.95\textwidth]{external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc100_MA95/fold-4/best_model/training_curves.png}} \\
+  \subfloat{\includegraphics[width=0.95\textwidth]{external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc130_MA90/fold-4/best_model/training_curves.png}} \\
+  \subfloat{\includegraphics[width=0.95\textwidth]{external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc160_MA85/fold-4/best_model/training_curves.png}}
+  \caption{Training and validation accuracy and loss curves for the ParticleNet models trained on the combined channel with $\lambda_\mathrm{decorr} = 0.1$. From top to bottom, the panels show $(\mHc, \mA) = (100, 95)$, $(130, 90)$, and $(160, 85)$\GeV.}
+  \label{fig:training_curves}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc100_MA95/fold-4/best_model/roc_curves.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc130_MA90/fold-4/best_model/roc_curves.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc160_MA85/fold-4/best_model/roc_curves.png}}
+  \caption{ROC curves comparing signal against each background class on the training and test datasets. From left to right, the panels show $(\mHc, \mA) = (100, 95)$, $(130, 90)$, and $(160, 85)$\GeV. The close agreement between training and test curves confirms the absence of significant overfitting.}
+  \label{fig:roc_curves}
+\end{figure}
+
+\subsubsection{Modified likelihood ratio}
+
+The four softmax output scores of the ParticleNet classifier are combined into a single discriminant using a modified likelihood ratio. According to the Neyman--Pearson lemma, the likelihood ratio provides optimal discrimination between signal and background hypotheses. The modified likelihood ratio is defined as
+\begin{equation}
+  \text{LR}_{\text{modified}} = \frac{P(\text{sig})}{P(\text{sig}) + \sum_{i \in \text{bkg}} w_i\, P(\text{bkg}_i)}\,,
+  \label{eq:modified_lr}
+\end{equation}
+where $P(\text{sig})$ and $P(\text{bkg}_i)$ are the ParticleNet output probabilities for the signal and background class $i$, respectively, and $w_i$ is the sum of event weights for each background process within the signal region acceptance. The signal cross section is normalized to $5\unit{fb}$ for this calculation. The weights $w_i$ account for the relative abundances of the background processes, ensuring that the discriminant is optimized for the expected background composition in the signal region.
+
+\subsubsection{On-$\PZ$ likelihood ratio optimization}
+
+In the on-$\PZ$ region ($85 \le \mA \le 95$\GeV), the signal dimuon mass peak overlaps with the $\PZ$ boson resonance, resulting in large backgrounds from $\PZ$+X processes. To mitigate this, the $\text{LR}_{\text{modified}}$ score is used to further reject background. A cut-and-count optimization is performed by scanning the $\text{LR}_{\text{modified}}$ threshold in steps of 0.01 and maximizing the expected significance defined as
+\begin{equation}
+  \sqrt{2\bigl[(s+b)\ln(1+s/b) - s\bigr]},
+  \label{eq:expected_significance}
+\end{equation}
+where $s$ and $b$ denote the number of signal and background events within the mass window. This metric is preferred over the commonly used $s/\sqrt{b}$ as it provides more accurate sensitivity estimates in the low-background regime.
+
+Depending on the signal mass hypothesis, this optimization yields a 25--65\% improvement in sensitivity in the $\Pe\Pgm\Pgm$ channel and a 10--50\% improvement in the $\Pgm\Pgm\Pgm$ channel. The optimized $\text{LR}_{\text{modified}}$ thresholds for each signal mass point, run period, and signal region are given in Table~\ref{tab:LR_thresholds}, together with the corresponding range of relative improvements in expected significance.
+
+\begin{table}[htbp]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{c|cc|cc|c}
+    \hline
+    \multirow{2}{*}{$(\mHc, \mA)$ [\GeV]}
+      & \multicolumn{2}{c|}{Run 2} & \multicolumn{2}{c|}{Run 3}
+      & \multirow{2}{*}{Improvement [\%]} \\
+    & $\Pe\Pgm\Pgm$ & $\Pgm\Pgm\Pgm$ & $\Pe\Pgm\Pgm$ & $\Pgm\Pgm\Pgm$ & \\
+    \hline
+    (100, 85) & 0.66 & 0.91 & 0.75 & 0.83 & 34.4--37.4 \\
+    (100, 90) & 0.51 & 0.69 & 0.72 & 0.84 & 32.6--38.7 \\
+    (100, 95) & 0.69 & 0.94 & 0.68 & 0.90 & 35.1--49.8 \\
+    (130, 85) & 0.62 & 0.61 & 0.56 & 0.57 & 18.0--41.9 \\
+    (130, 90) & 0.64 & 0.64 & 0.65 & 0.61 & 13.2--47.8 \\
+    (130, 95) & 0.68 & 0.60 & 0.63 & 0.57 & 21.0--53.9 \\
+    (160, 85) & 0.60 & 0.44 & 0.45 & 0.43 & 15.8--29.1 \\
+    (160, 90) & 0.56 & 0.46 & 0.48 & 0.54 & 11.4--28.6 \\
+    (160, 95) & 0.49 & 0.44 & 0.55 & 0.53 & 11.2--31.4 \\
+    \hline
+  \end{tabular}}
+  \caption{Optimized modified LR thresholds for on-$\PZ$ signal mass points. The thresholds are optimized separately for Run 2 and Run 3 and for the $\Pe\Pgm\Pgm$ and $\Pgm\Pgm\Pgm$ signal regions. The improvement column gives the range of relative expected significance gains across the four optimized categories.}
+  \label{tab:LR_thresholds}
+\end{table}
+
+For mass points outside the on-$\PZ$ region, no LR cut is applied and the baseline $m(\Pgm\Pgm)$ distribution is used directly as the fit template.
+
+\subsubsection{Template distributions}
+
+The final signal and background templates after applying the mass window selection and, where applicable, the LR threshold are shown in Fig.~\ref{fig:templates_Run2} and Fig.~\ref{fig:templates_Run3} for three representative mass points spanning the on-$\PZ$ region.
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc100_MA95/Baseline/extended_unblind/validation/SR1E2Mu_Run2/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc130_MA90/Baseline/extended_unblind/validation/SR1E2Mu_Run2/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc160_MA85/Baseline/extended_unblind/validation/SR1E2Mu_Run2/stack_background.png}} \\
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc100_MA95/ParticleNet/extended_unblind/validation/SR1E2Mu_Run2/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc130_MA90/ParticleNet/extended_unblind/validation/SR1E2Mu_Run2/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc160_MA85/ParticleNet/extended_unblind/validation/SR1E2Mu_Run2/stack_background.png}} \\
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc100_MA95/Baseline/extended_unblind/validation/SR3Mu_Run2/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc130_MA90/Baseline/extended_unblind/validation/SR3Mu_Run2/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc160_MA85/Baseline/extended_unblind/validation/SR3Mu_Run2/stack_background.png}} \\
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc100_MA95/ParticleNet/extended_unblind/validation/SR3Mu_Run2/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc130_MA90/ParticleNet/extended_unblind/validation/SR3Mu_Run2/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc160_MA85/ParticleNet/extended_unblind/validation/SR3Mu_Run2/stack_background.png}}
+  \caption{Signal and background dimuon mass templates for the Run~2 dataset at $(\mHc, \mA) = (100, 95)$, $(130, 90)$, and $(160, 85)$\GeV (columns). Rows show the $\Pe\Pgm\Pgm$ and $\Pgm\Pgm\Pgm$ channels before and after the modified LR cut.}
+  \label{fig:templates_Run2}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc100_MA95/Baseline/extended_unblind/validation/SR1E2Mu_Run3/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc130_MA90/Baseline/extended_unblind/validation/SR1E2Mu_Run3/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc160_MA85/Baseline/extended_unblind/validation/SR1E2Mu_Run3/stack_background.png}} \\
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc100_MA95/ParticleNet/extended_unblind/validation/SR1E2Mu_Run3/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc130_MA90/ParticleNet/extended_unblind/validation/SR1E2Mu_Run3/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc160_MA85/ParticleNet/extended_unblind/validation/SR1E2Mu_Run3/stack_background.png}} \\
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc100_MA95/Baseline/extended_unblind/validation/SR3Mu_Run3/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc130_MA90/Baseline/extended_unblind/validation/SR3Mu_Run3/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc160_MA85/Baseline/extended_unblind/validation/SR3Mu_Run3/stack_background.png}} \\
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc100_MA95/ParticleNet/extended_unblind/validation/SR3Mu_Run3/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc130_MA90/ParticleNet/extended_unblind/validation/SR3Mu_Run3/stack_background.png}}
+  \subfloat{\includegraphics[width=0.275\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc160_MA85/ParticleNet/extended_unblind/validation/SR3Mu_Run3/stack_background.png}}
+  \caption{Signal and background dimuon mass templates for the Run~3 dataset at $(\mHc, \mA) = (100, 95)$, $(130, 90)$, and $(160, 85)$\GeV (columns). Rows show the $\Pe\Pgm\Pgm$ and $\Pgm\Pgm\Pgm$ channels before and after the modified LR cut.}
+  \label{fig:templates_Run3}
+\end{figure}
+
+\subsubsection{Validation in the $\Pe\Pe\Pgm$ control region}
+\label{sssec:eemu_validation}
+
+Since the ParticleNet classifiers are trained on simulated samples, their performance must be validated against data. A dedicated $\ttbar+\PZ$ control region is constructed using the $\Pe\Pe\Pgm$ lepton configuration, which is kinematically analogous to the $\Pe\Pgm\Pgm$ signal region but is essentially signal-free. The $\PA \to \Pe\Pe$ decay rate is suppressed relative to $\PA \to \Pgm\Pgm$ by a factor of $(m_\Pe / m_\Pgm)^2 \approx 2 \times 10^{-5}$ due to the Yukawa coupling structure, rendering any signal contribution negligible.
+
+The $\Pe\Pe\Pgm$ control region requires exactly two opposite-sign electrons and one muon passing tight identification, with $60 < m(\Pe\Pe) < 120$\GeV to target $\PZ \to \Pe\Pe$ decays, and $N_j \geq 2$, $N_b \geq 1$. Since the $\Pe\Pe\Pgm$ configuration was not included in the ParticleNet training set, the electron and muon labels are swapped during inference, causing the classifier to interpret the events as $\ttbar+\PZ$ with $\PZ \to \Pgm\Pgm$ decay. This label-swapping technique preserves the kinematic properties while enabling direct evaluation of the classifier response in data. The resulting modified likelihood ratio distributions are shown in Fig.~\ref{fig:eemu_validation} for three representative mass hypotheses, demonstrating good agreement between data and simulation.
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc100_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc100_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc100_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png}} \\
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc130_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc130_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc130_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png}} \\
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc160_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png}} 
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc160_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png}}
+  \subfloat{\includegraphics[width=0.32\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc160_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png}}
+  \caption{Modified likelihood ratio distributions in the $\Pe\Pe\Pgm$ $\ttbar+\PZ$ control region. From top to bottom, the panels show $\mHc = 100$, $130$, and $160$\GeV. From left to right, $\mA = 85$, $90$, and $95$\GeV.}
+  \label{fig:eemu_validation}
+\end{figure}
+
+\clearpage
+
+%% ----------------------------------------------------------
+%% ============================================================
+\section{Background Estimation}
+\label{sec:background}
+%% ============================================================
+
+Backgrounds in this analysis are classified into three categories based on the origin of the final-state leptons: nonprompt leptons from jet activity, photon conversions, and prompt trilepton production. Each category is estimated using a dedicated technique, and its modeling is validated in an independent control region.
+\begin{itemize}
+  \item \textbf{$\PZ$+nonprompt control region}. This region is enriched with $\PZ$+jets events and is used to validate the fake rate method for nonprompt lepton estimation.
+  \item \textbf{$\PZ\Pgg$ control region}. This region is enriched with $\PZ+\Pgg^{(*)}$ events where the radiated photon converts to a lepton pair and is used to measure conversion scale factors.
+  \item \textbf{$\PW\PZ$ control region}. This region is enriched with $\PW\PZ$ events and is used in Run~3 to derive jet multiplicity reweighting factors correcting for the change in the $\PW\PZ$ event generator.
+\end{itemize}
+
+%% ----------------------------------------------------------
+\subsection{Nonprompt lepton background}
+\label{ssec:nonprompt}
+%% ----------------------------------------------------------
+
+The nonprompt lepton background arises from processes that produce fewer than three prompt leptons but pass the trilepton selection owing to the presence of at least one nonprompt lepton originating from jet activity. Misidentified objects produced in jets are also accounted for, although their contribution is minor compared to nonprompt leptons from hadron decays. This category constitutes the largest portion of the total background, contributing approximately 80\% in the off-$\PZ$ region and 40\% in the on-$\PZ$ region. According to simulation studies, the primary source is dileptonic \ttbar production, with additional contributions from Drell--Yan processes in the on-$\PZ$ region.
+
+The estimation is performed using the matrix method~\cite{D0MtxMethod,CMSFRMethod}, which extrapolates lepton identification variables from a loose selection to a tight selection using an extrapolation factor measured in independent control regions. The region where the extrapolation factor is determined is termed the \textit{measurement region}, while the region with the loose selection where it is applied is termed the \textit{application region}. The extrapolation factor is defined as the ratio of objects passing the tight identification to those passing the loose identification. For nonprompt leptons this ratio is referred to as the \textit{fake rate} $\varepsilon(f)$, and for prompt leptons as the \textit{prompt rate} $\varepsilon(p)$.
+
+The observed event counts, categorized by the tight or loose identification status of each lepton ($\vec{N}_{\text{obs}}$), and the underlying prompt or nonprompt composition ($\vec{N}_{\text{origin}}$) are related through a connection matrix $\mathbb{M}$,
+\begin{align}
+  \vec{N}_{\text{obs}}    &= \left( \begin{array}{cccc}N_{TT} & N_{TL} & N_{LT} & N_{LL}\end{array} \right)^{\mathrm{T}}, \nonumber \\
+  \vec{N}_{\text{origin}} &= \left( \begin{array}{cccc}N_{pp} & N_{pf} & N_{fp} & N_{ff}\end{array} \right)^{\mathrm{T}}, \nonumber \\
+  \vec{N}_{\text{obs}}    &= \mathbb{M}\,\vec{N}_{\text{origin}},
+  \label{eq:matrix_method}
+\end{align}
+where the matrix elements connecting the observed identification composition $N_{ID_{1}ID_{2}}$ to the underlying origin composition $N_{o_{1}o_{2}}$ ($ID = T/L$, $o = p/f$) are given by
+\begin{equation}
+  \mathbb{M}(ID_{1},ID_{2},o_{1},o_{2}) = \prod_{n\in\text{pass}\,T}\varepsilon(o_{n})\prod_{m\in\text{fail}\,T}\bigl(1-\varepsilon(o_{m})\bigr).
+  \label{eq:connection_matrix}
+\end{equation}
+The underlying composition is recovered by applying the inverse matrix $\mathbb{M}^{-1}$ to the observed identification composition.
+
+In this analysis, the approximation $\varepsilon(p) = 1$ is adopted. Under this approximation, the sum over all origin configurations with at least one nonprompt lepton simplifies to the analytic expression~\cite{CMSFRMethod}
+\begin{equation}
+  N_{\geq 1f} = -\sum_{\substack{i\in\text{ID config}\\i\neq\text{All T}}}\left[\prod_{n\in\text{fail}\,T}\left(\frac{-\varepsilon(f_{n})}{1-\varepsilon(f_{n})}\right)\right]_{i} N_{\text{obs},\,i},
+  \label{eq:fakerate_sum}
+\end{equation}
+which, for the dilepton case, expands to
+\begin{equation}
+  N_{\geq 1f} = \frac{f_{1}}{1-f_{1}}\,N_{LT} + \frac{f_{2}}{1-f_{2}}\,N_{TL} - \frac{f_{1}\,f_{2}}{(1-f_{1})(1-f_{2})}\,N_{LL},
+  \label{eq:fakerate_dilep}
+\end{equation}
+where $f_{i} \equiv \varepsilon(f_{i})$ for brevity. When the fake rate is parameterized in lepton kinematics, the yield in each bin is obtained as a sum of per-event weights,
+\begin{equation}
+  w_{i} = \frac{f_{1}}{1-f_{1}}\,\delta_{i,LT} + \frac{f_{2}}{1-f_{2}}\,\delta_{i,TL} - \frac{f_{1}\,f_{2}}{(1-f_{1})(1-f_{2})}\,\delta_{i,LL},
+  \label{eq:fakerate_weight}
+\end{equation}
+so that
+\begin{equation}
+  N_{\geq 1f} = \sum_{i} w_{i} = \sum_{i\in LT}\!\left(\frac{f_{1}}{1-f_{1}}\right)_{\!i} + \sum_{i\in TL}\!\left(\frac{f_{2}}{1-f_{2}}\right)_{\!i} + \sum_{i\in LL}\!\left(\frac{-f_{1}\,f_{2}}{(1-f_{1})(1-f_{2})}\right)_{\!i}.
+  \label{eq:fakerate_yield}
+\end{equation}
+Since the formula involves only events in which at least one lepton fails the tight identification, signal region events (where all leptons pass tight identification) are never used in any part of the nonprompt lepton estimation. The application region for a given event selection is therefore the same selection with the identification definition relaxed to the loose working point, excluding events where all leptons pass the tight identification.
+
+For the trilepton final state of this analysis, the per-event weight generalizes to
+\begin{align}
+  w_{i} =\;& \frac{f_{1}}{1{-}f_{1}}\,\delta_{i,LTT} + \frac{f_{2}}{1{-}f_{2}}\,\delta_{i,TLT} + \frac{f_{3}}{1{-}f_{3}}\,\delta_{i,TTL}
+           - \frac{f_{1}f_{2}}{(1{-}f_{1})(1{-}f_{2})}\,\delta_{i,LLT} \nonumber \\
+          &- \frac{f_{2}f_{3}}{(1{-}f_{2})(1{-}f_{3})}\,\delta_{i,TLL}
+           - \frac{f_{3}f_{1}}{(1{-}f_{3})(1{-}f_{1})}\,\delta_{i,LTL}
+           + \frac{f_{1}f_{2}f_{3}}{(1{-}f_{1})(1{-}f_{2})(1{-}f_{3})}\,\delta_{i,LLL}.
+  \label{eq:fakerate_trilep}
+\end{align}
+
+The loose working point for each lepton flavor is designed to minimize the systematic uncertainties of the fake rate arising from the type and energy scale of the parent jet, following the recommendations of Ref.~\cite{SUSYFakeRate}. In particular, the electron loose working point is optimized to reduce the dependence on jet flavor, while for muons the optimization targets the difference between b- and c-jet fake rates. To mitigate the dependence on the energy scale of the parent parton, the fake rate is parameterized using the cone-corrected transverse momentum,
+\begin{equation}
+  \pT^{\text{corr}} = \pT\bigl(1 + \max(0,\, I_{\text{rel}} - I_{\text{rel}}^{\text{Tight}})\bigr),
+  \label{eq:ptcorr}
+\end{equation}
+where $I_{\text{rel}}$ is the relative isolation of the lepton and $I_{\text{rel}}^{\text{Tight}}$ is the isolation threshold of the tight working point. This variable serves as a proxy for the transverse momentum of the parent parton.
+
+Fake rates are measured in QCD multijet events selected with prescaled single-lepton triggers. The measurement region requires exactly one loose-ID lepton, at least one jet with $\pT > 40$\GeV and $\Delta R(\ell, \text{j}) > 0.7$, $\ptmiss < 25$\GeV, and $M_{\mathrm{T}}(\ell, \ptmiss) < 25$\GeV. Residual prompt contributions are estimated from simulation normalized in a $\PZ$-enriched sideband ($|\mathrm{M}(\ell\ell) - 91.2| < 15$\GeV) and subtracted from the fake rate calculation. The measured fake rates in data are shown in Figs.~\ref{fig:fakerate_data_run2} and~\ref{fig:fakerate_data_run3}.
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016preVFP/electron/fakerate.png}}
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016preVFP/muon/fakerate.png}} \\
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016postVFP/electron/fakerate.png}}
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016postVFP/muon/fakerate.png}} \\
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2017/electron/fakerate.png}}
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2017/muon/fakerate.png}} \\
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2018/electron/fakerate.png}}
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2018/muon/fakerate.png}}
+  \caption{Measured fake rates in data for electrons (left) and muons (right) as a function of cone-corrected $\pT$ and $|\eta|$, for the four Run~2 data-taking periods, 2016preVFP, 2016postVFP, 2017, and 2018 (rows 1--4). Error bands represent statistical uncertainties.}
+  \label{fig:fakerate_data_run2}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022/electron/fakerate.png}}
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022/muon/fakerate.png}} \\
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022EE/electron/fakerate.png}}
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022EE/muon/fakerate.png}} \\
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023/electron/fakerate.png}}
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023/muon/fakerate.png}} \\
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023BPix/electron/fakerate.png}}
+  \subfloat{\includegraphics[width=0.40\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023BPix/muon/fakerate.png}}
+  \caption{Measured fake rates in data for electrons (left) and muons (right) as a function of cone-corrected $\pT$ and $|\eta|$, for the four Run~3 data-taking periods, 2022, 2022EE, 2023, and 2023BPix (rows 1--4). Error bands represent statistical uncertainties.}
+  \label{fig:fakerate_data_run3}
+\end{figure}
+
+The systematic uncertainty of the nonprompt lepton estimate and its validation in an independent control region are discussed in Section~\ref{sec:systematics}.
+
+%% ----------------------------------------------------------
+\subsection{Conversion background}
+\label{ssec:conversion}
+%% ----------------------------------------------------------
+
+Conversion backgrounds arise from processes in which a photon, either virtual or real, produces a lepton pair. Internal conversions proceed via a virtual photon ($\Pgg^{*} \to \ell^{+}\ell^{-}$) at the interaction vertex, while external conversions involve an on-shell photon converting within the detector material. As described in Section~\ref{ssec:mc_samples}, lepton-pair production with a virtual mass below $4$\GeV is classified as internal conversion. External conversions are significant only for electrons, where the rate is approximately twice that of internal conversion~\cite{ExtConv}, owing to the inverse-mass-squared dependence. Electrons are required to have no reconstructed conversion vertex and at most one missing pixel hit. For muons, nearly 100\% of simulated conversion events originate from internal conversions. In the case of internal conversions, the process passes the trilepton selection only when one of the two leptons is either not reconstructed or not identified, as opposite-charge lepton pairs are excluded. Simulation studies confirm that these are predominantly highly asymmetric conversions. The relevant MC samples, $\PW\Pgg$, $\PZ\Pgg$, and $\ttbar\Pgg$, are described in Section~\ref{ssec:mc_samples}.
+
+The modeling of conversion backgrounds is tested using the $\PZ\Pgg^{(*)}$ process, in which final-state radiation from $\PZ \to \ell^{+}\ell^{-}\Pgg^{(*)}$ produces a shifted $\PZ$ mass peak in the trilepton invariant mass distribution. A control region enriched in conversion events is defined as follows.
+\begin{itemize}
+  \item exactly three leptons, with no additional lepton passing the loose working point.
+  \item event passes the same triggers and trigger-safe $\pT$ requirements as the analysis.
+  \item all opposite-sign same-flavor (OSSF) pairs satisfy $\mathrm{M}(\ell\ell) > 12$\GeV.
+  \item no OSSF pair within $10$\GeV of the $\PZ$ boson mass.
+  \item $|\mathrm{M}(3\ell) - 91.2| < 10$\GeV.
+  \item $\ptmiss < 40$\GeV.
+  \item no b-tagged jet.
+\end{itemize}
+The measured conversion scale factors and their uncertainties are presented in Section~\ref{sec:systematics}.
+
+%% ----------------------------------------------------------
+\subsection{Prompt lepton background}
+\label{ssec:prompt_bkg}
+%% ----------------------------------------------------------
+
+Prompt lepton backgrounds consist of processes producing three or more genuine leptons from decays of \PW and \PZ bosons, including leptons from leptonic $\Pgt$ decays. The major contributions arise from $\ttbar+V$ ($V = \PW, \PZ$), $\ttbar+\PH$, and diboson ($\PW\PZ$, $\PZ\PZ$) production. Smaller contributions from single top quark production in association with a $\PZ$ boson ($\cPqt\PZ\cPq$), triboson processes ($\PW\PW\PW$, $\PW\PW\PZ$, $\PW\PZ\PZ$, $\PZ\PZ\PZ$), and the SM Higgs boson decaying to four leptons via two $\PZ$ bosons are also included. All prompt backgrounds are estimated from simulation, as described in Section~\ref{ssec:mc_samples}.
+
+In Run~3, the default $\PW\PZ$ simulation was changed from \MGvATNLO, which includes up to two jets in the matrix element calculation, to \POWHEG, which includes up to one jet. Since this analysis requires at least two jets, the \POWHEG generator underestimates the $\PW\PZ$ contribution at higher jet multiplicities. A $\PW\PZ$ control region is defined to measure jet multiplicity reweighting factors.
+\begin{itemize}
+  \item exactly three leptons, with no additional lepton passing the loose working point.
+  \item event passes the same triggers and trigger-safe $\pT$ requirements as the analysis.
+  \item all OSSF pairs satisfy $\mathrm{M}(\ell\ell) > 12$\GeV.
+  \item at least one OSSF pair within $10$\GeV of the $\PZ$ boson mass.
+  \item $\ptmiss > 40$\GeV.
+  \item no b-tagged jet.
+\end{itemize}
+The measured reweighting factors and their validation are presented in Section~\ref{sec:systematics}.
+
+%% ============================================================
+\section{Systematic Uncertainties}
+\label{sec:systematics}
+%% ============================================================
+
+The systematic uncertainties considered in this analysis are grouped into three categories: uncertainties related to the data-driven background estimation methods (Section~\ref{ssec:syst_datadriven}), uncertainties in the experimental corrections applied to simulation (Section~\ref{ssec:syst_experimental}), and theoretical uncertainties on the signal and prompt background predictions (Section~\ref{ssec:syst_theoretical}). The statistical uncertainty arising from the limited size of MC samples is handled via the Barlow--Beeston lite method in the statistical interpretation. All systematic uncertainty sources and their inter-era correlations are summarized in Table~\ref{tab:syst_summary}.
+
+%% ----------------------------------------------------------
+\subsection{Data-driven background uncertainties}
+\label{ssec:syst_datadriven}
+%% ----------------------------------------------------------
+
+\paragraph{Nonprompt lepton background.}
+The systematic uncertainty of the nonprompt lepton estimate is evaluated using a Monte Carlo closure test. Fake rates are measured in simulated QCD multijet events and applied to simulated \ttbar events using the same triggers and event selections as in the baseline signal selection. The QCD-measured fake rates tend to overestimate the \ttbar yield by 10--15\%, reflecting the difference in jet flavor composition between QCD and \ttbar events. The resulting distributions are shown in Fig.~\ref{fig:closure_qcd}. The systematic uncertainty is quantified as the 95th percentile of the absolute bin-by-bin relative differences between the matrix method prediction and the true \ttbar simulation in the dimuon mass distribution. This yields normalization uncertainties of 25\% for the Run~2 $\Pe\Pgm\Pgm$ channel, 30\% for the Run~2 $\Pgm\Pgm\Pgm$ channel, 30\% for the Run~3 $\Pe\Pgm\Pgm$ channel, and 35\% for the Run~3 $\Pgm\Pgm\Pgm$ channel. A flat 30\% normalization uncertainty is assigned to the nonprompt lepton background rate.
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Central/closure_pair_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Central/closure_nonprompt_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Central/closure_nonprompt_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/closure_pair_lowm_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/closure_pair_highm_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/closure_nonprompt_pt.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Central/closure_pair_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Central/closure_nonprompt_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Central/closure_nonprompt_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/closure_pair_lowm_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/closure_pair_highm_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/closure_nonprompt_pt.png}}
+  \caption{MC closure test comparing observed \ttbar simulation distributions (tight ID) with matrix method predictions using QCD-measured fake rates. The four rows show Run~2 $\Pe\Pgm\Pgm$, Run~2 $\Pgm\Pgm\Pgm$, Run~3 $\Pe\Pgm\Pgm$, and Run~3 $\Pgm\Pgm\Pgm$ channels. Normalized $\chi^{2}$/ndf values are indicated.}
+  \label{fig:closure_qcd}
+\end{figure}
+
+Three additional sources of uncertainty affecting the data-measured fake rates are considered, the prompt subtraction normalization (varied by 15\%), the dependence on the jet flavor composition (assessed by requiring a b-tagged jet in the measurement region), and the energy scale of the away-side jet (evaluated by varying the jet $\pT$ threshold by $\pm 10$\GeV for muons, $-10$ and $+20$\GeV for electrons). The resulting variation of the fake rate is 10--30\%, and a similar magnitude of variation is observed in the signal region yields. Since this variation is comparable to the non-closure observed in the MC closure test, no additional systematic uncertainty beyond the 30\% flat rate uncertainty is assigned.
+
+The validity of the fake rate measurement is further verified in the $\PZ$+nonprompt control region defined in Section~\ref{ssec:nonprompt}. The selection requires events enriched with $\PZ$+jets processes, an on-shell $\PZ$ boson candidate ($|\mathrm{M}(\ell\ell) - 91.2| < 10$\GeV), at least two jets, and no b-tagged jet. Good agreement between data and the fake rate prediction is observed, as shown in Fig.~\ref{fig:zfake_cr}.
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/nonprompt_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/nonprompt_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/nonprompt_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/nonprompt_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/nonprompt_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/nonprompt_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/nonprompt_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/nonprompt_eta.png}}
+  \caption{Data and simulation comparison in the $\PZ$+nonprompt control region. The four rows show Run~2 $\Pe\Pgm\Pgm$, Run~3 $\Pe\Pgm\Pgm$, Run~2 $\Pgm\Pgm\Pgm$, and Run~3 $\Pgm\Pgm\Pgm$ channels. The three columns show the $\PZ$ boson candidate mass, nonprompt lepton $\pT$, and nonprompt lepton $\eta$ distributions.}
+  \label{fig:zfake_cr}
+\end{figure}
+
+The nonprompt normalization uncertainty is treated as uncorrelated across data-taking eras. The behavior of the fake rate method depends on the tight and loose lepton identification criteria, which vary between eras for both working points. The exact correlation structure is not directly constrained by the available control information, and the impact of these nuisance parameters on the signal strength is of the order of 10\%.
+
+\paragraph{Conversion background.}
+A conversion scale factor is derived from the data-to-simulation normalization ratio in the $\PZ\Pgg$ control region defined in Section~\ref{ssec:conversion}, separately for each data-taking era and analysis channel. Systematic uncertainties from prompt background variations (lepton and jet energy scales, b-tagging, pileup) and nonprompt background estimation are propagated to the scale factor. The measured conversion scale factors are summarized in Table~\ref{tab:conv_sf}.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{ccccc}
+    \hline
+    Era & Channel & Central SF & Prompt variation & Nonprompt variation \\
+    \hline
+    \multirow{2}{*}{2016preVFP} & $\Pe\Pgm\Pgm$ & 0.546 & $\pm 5.6\%$ & $\pm 9.2\%$ \\
+                                & $\Pgm\Pgm\Pgm$ & 0.910 & $\pm 11.3\%$ & $\pm 17.8\%$ \\
+    \hline
+    \multirow{2}{*}{2016postVFP} & $\Pe\Pgm\Pgm$ & 0.712 & $\pm 6.0\%$ & $\pm 7.0\%$ \\
+                                 & $\Pgm\Pgm\Pgm$ & 1.211 & $\pm 6.3\%$ & $\pm 18.4\%$ \\
+    \hline
+    \multirow{2}{*}{2017} & $\Pe\Pgm\Pgm$ & 0.721 & $\pm 7.1\%$ & $\pm 9.8\%$ \\
+                          & $\Pgm\Pgm\Pgm$ & 1.064 & $\pm 6.9\%$ & $\pm 15.5\%$ \\
+    \hline
+    \multirow{2}{*}{2018} & $\Pe\Pgm\Pgm$ & 0.810 & $\pm 7.0\%$ & $\pm 8.4\%$ \\
+                          & $\Pgm\Pgm\Pgm$ & 1.068 & $\pm 8.7\%$ & $\pm 15.0\%$ \\
+    \hline
+    \multirow{2}{*}{2022} & $\Pe\Pgm\Pgm$ & 0.614 & $\pm 11.4\%$ & $\pm 12.7\%$ \\
+                          & $\Pgm\Pgm\Pgm$ & 0.962 & $\pm 9.6\%$ & $\pm 27.8\%$ \\
+    \hline
+    \multirow{2}{*}{2022EE} & $\Pe\Pgm\Pgm$ & 0.535 & $\pm 8.8\%$ & $\pm 13.1\%$ \\
+                            & $\Pgm\Pgm\Pgm$ & 0.942 & $\pm 11.8\%$ & $\pm 22.0\%$ \\
+    \hline
+    \multirow{2}{*}{2023} & $\Pe\Pgm\Pgm$ & 0.746 & $\pm 6.9\%$ & $\pm 9.8\%$ \\
+                          & $\Pgm\Pgm\Pgm$ & 0.663 & $\pm 7.4\%$ & $\pm 18.6\%$ \\
+    \hline
+    \multirow{2}{*}{2023BPix} & $\Pe\Pgm\Pgm$ & 0.778 & $\pm 8.0\%$ & $\pm 11.5\%$ \\
+                              & $\Pgm\Pgm\Pgm$ & 0.566 & $\pm 12.9\%$ & $\pm 31.3\%$ \\
+    \hline
+  \end{tabular}
+  \caption{Conversion scale factors measured in the $\PZ\Pgg$ control region for the $\Pe\Pgm\Pgm$ and $\Pgm\Pgm\Pgm$ channels. The central values are shown along with prompt and nonprompt systematic variations.}
+  \label{tab:conv_sf}
+\end{table}
+
+Distributions of the $\PZ$ boson candidate mass (defined as the trilepton invariant mass), conversion lepton $\pT$, and conversion lepton $\eta$ in the $\PZ\Pgg$ control region are shown in Figs.~\ref{fig:zg_emu} and~\ref{fig:zg_mumumu}, both before and after the scale factor correction. For $\Pe\Pgm\Pgm$ events the conversion lepton is the electron, while for $\Pgm\Pgm\Pgm$ events it is the muon contributing least to the $\PZ$ boson mass among the two same-sign muons.
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/convLep_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/convLep_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/convLep_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/convLep_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/convLep_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/convLep_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/convLep_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/convLep_eta.png}}
+  \caption{Data and simulation comparison in the $\PZ\Pgg$ control region for $\Pe\Pgm\Pgm$ events. The four rows show Run~2 before conversion SF correction, Run~2 after correction, Run~3 before correction, and Run~3 after correction. The three columns show the $\PZ$ boson candidate mass, conversion electron $\pT$, and conversion electron $\eta$ distributions.}
+  \label{fig:zg_emu}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/convLep_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/convLep_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/convLep_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/convLep_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/convLep_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/convLep_eta.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/convLep_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/convLep_eta.png}}
+  \caption{Data and simulation comparison in the $\PZ\Pgg$ control region for $\Pgm\Pgm\Pgm$ events. The four rows show Run~2 before conversion SF correction, Run~2 after correction, Run~3 before correction, and Run~3 after correction. The three columns show the $\PZ$ boson candidate mass, conversion muon $\pT$, and conversion muon $\eta$ distributions.}
+  \label{fig:zg_mumumu}
+\end{figure}
+
+An overall 20\% rate uncertainty is assigned to the conversion background based on the agreement observed in the $\PZ\Pgg$ control region. For muon internal conversions, the simulation overestimates the conversion event rate by approximately 20\% across all eras. This disagreement originates from the generator modeling and is therefore treated as fully correlated between data-taking eras. For electron external conversions, the scale factors range between 0.5 and 0.8 depending on the data-taking period, reflecting the sensitivity to detector material and conditions. This component is treated as uncorrelated between eras. Despite the limited statistical precision, the characteristic trilepton mass distribution from conversions is consistent with the expectation from simulation. The shift from the $\PZ$ mass is generally smaller for electrons than for muons, because external electron conversion events enter the selection under extreme kinematic conditions where the subleading conversion electron is often not reconstructed, whereas the subleading muon from an internal conversion can have transverse momentum up to $10$\GeV.
+
+\paragraph{Prompt lepton background.}
+The reweighting factor for the Run~3 $\PW\PZ$ background is derived from the data-to-simulation ratio in the $\PW\PZ$ control region defined in Section~\ref{ssec:prompt_bkg} as a function of jet multiplicity, after subtracting non-$\PW\PZ$ backgrounds. Due to limited statistics, data from all Run~3 eras and both channels are combined, and events with $N_{\text{jets}} \geq 3$ are merged into a single bin. Systematic uncertainties from prompt and nonprompt variations are propagated to the scale factors. The measured reweighting factors are summarized in Table~\ref{tab:wz_njet_sf}.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cccc}
+    \hline
+    $N_{\text{jets}}$ & Central SF & Prompt variation & Nonprompt variation \\
+    \hline
+    0        & 0.788 & $\pm 5.1\%$ & $\pm 9.8\%$ \\
+    1        & 0.803 & $\pm 6.6\%$ & $\pm 9.9\%$ \\
+    2        & 1.660 & $\pm 5.5\%$ & $\pm 10.1\%$ \\
+    $\geq 3$ & 5.287 & $\pm 7.1\%$ & $\pm 9.9\%$ \\
+    \hline
+  \end{tabular}
+  \caption{$\PW\PZ$ jet multiplicity reweighting factors measured in the combined $\PW\PZ$ control region for Run~3. The central values are shown along with prompt and nonprompt systematic variations.}
+  \label{tab:wz_njet_sf}
+\end{table}
+
+The $\PZ$ boson candidate mass, leading jet $\pT$, and jet multiplicity distributions in the $\PW\PZ$ control region are shown in Fig.~\ref{fig:wz_cr}, both before and after the reweighting. The large scale factor at $N_{\text{jets}} \geq 2$ confirms the expected underestimation by the \POWHEG generator, and good agreement between data and simulation is recovered after reweighting.
+
+\begin{figure}[p]
+  \centering
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/jets_1_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/jets_size.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/jets_1_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/jets_size.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/jets_1_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/jets_size.png}} \\
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/ZCand_mass.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/jets_1_pt.png}}
+  \subfloat{\includegraphics[width=0.26\textwidth]{external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/jets_size.png}}
+  \caption{Data and simulation comparison in the $\PW\PZ$ control region for Run~3. The four rows show $\Pe\Pgm\Pgm$ before jet multiplicity reweighting, $\Pe\Pgm\Pgm$ after reweighting, $\Pgm\Pgm\Pgm$ before reweighting, and $\Pgm\Pgm\Pgm$ after reweighting. The three columns show the $\PZ$ boson candidate mass, leading jet $\pT$, and jet multiplicity distributions.}
+  \label{fig:wz_cr}
+\end{figure}
+
+The normalization uncertainties for the prompt background processes are determined from theoretical cross section calculations and are discussed in Section~\ref{ssec:syst_theoretical}.
+
+%% ----------------------------------------------------------
+\subsection{Experimental correction uncertainties}
+\label{ssec:syst_experimental}
+%% ----------------------------------------------------------
+
+The uncertainties in this category cover the corrections applied to simulated events to account for differences between data and simulation in detector response, reconstruction efficiency, and data-taking conditions. These uncertainties affect all processes estimated from simulation, prompt backgrounds, conversion backgrounds, and the signal.
+
+\paragraph{Luminosity.}
+The integrated luminosity in each data-taking era carries an uncertainty as measured by the luminosity detector systems~\cite{CMS:2021xjt,CMS:2018elu,CMS:2019jhp,CMS:2024onh,CMS:2024vfh}. The per-era uncertainties are partially correlated, with correlated and uncorrelated components treated separately.
+
+\paragraph{Pileup.}
+The effects of pileup interactions are included by reweighting the simulated pileup multiplicity distribution to that observed in data at a minimum bias $\Pp\Pp$ scattering cross section of 69.2\unit{mb}. A 4.6\% uncertainty on this cross section is considered, and the reweighting is repeated with the varied cross section values. As the cross section is identical across all eras, this uncertainty is treated as fully correlated.
+
+\paragraph{L1 prefiring.}
+In the 2016 and 2017 data-taking periods, the gradual timing shift of the ECAL and muon systems caused a fraction of events to be erroneously vetoed by the Level-1 trigger due to signals from the preceding bunch crossing~\cite{CMS:2020cmk}. A correction weight is applied, including a systematic uncertainty of 20\% on the prefiring probability per object. As the prefiring effect depends on detector conditions that vary between eras, this uncertainty is treated as uncorrelated.
+
+\paragraph{Lepton reconstruction and identification.}
+For the efficiency of electron reconstruction, the uncertainty in the measured corrections is applied following the CMS electron and photon reconstruction performance measurements~\cite{CMS:2020uim}, treated as correlated across eras. For muon reconstruction, the efficiency is close to unity in the considered $\pT$ and $\eta$ region, and no statistically significant difference between data and simulation is observed~\cite{CMS:2018rym}. Therefore, no uncertainty is assigned. For lepton identification, scale factors measured in Drell--Yan events are applied as described in Section~\ref{ssec:eff_corrections}, with uncertainties of 1--4\% depending on the kinematic region, treated as fully correlated across eras. Lepton momentum scale and resolution corrections follow the electron and photon performance measurements and the Rochester muon momentum calibration method~\cite{CMS:2020uim,Bodek:2012id}. The classifier distribution is re-evaluated with the lepton momentum shifted by its uncertainty, treated as correlated across eras.
+
+\paragraph{Trigger efficiency.}
+The difference between the trigger efficiency in data and simulation is corrected using scale factors measured in Drell--Yan events, as described in Section~\ref{ssec:eff_corrections}. The uncertainty in the measurement is observed to be negligible. A conservative flat uncertainty of 1\% is assigned, treated as uncorrelated across eras. The validity of the factorized trigger efficiency approach is confirmed by MC closure tests, comparing the observed trigger efficiency in simulation with the expected efficiency computed from the measured per-leg and pairwise filter efficiencies. The results for dilepton and trilepton events are shown in Tables~\ref{tab:trig_closure_dilep} and~\ref{tab:trig_closure_trilep}, demonstrating agreement at the sub-percent level for Run~2 and at the 1--3\% level for Run~3.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{ccccccc}
+    \hline
+    \multirow{2}{*}{Era} & \multirow{2}{*}{Process} & \multicolumn{2}{c}{$\Pgm\Pgm$ trigger} & & \multicolumn{2}{c}{$\Pe\Pgm$ trigger} \\
+    \cline{3-4} \cline{6-7}
+    & & Obs. & Exp. & & Obs. & Exp. \\
+    \hline
+    \multirow{2}{*}{2016preVFP}  & DY     & 0.933 & 0.934 & & 0.875 & 0.872 \\
+                                 & \ttbar & 0.933 & 0.935 & & 0.903 & 0.902 \\
+    \hline
+    \multirow{2}{*}{2016postVFP} & DY     & 0.936 & 0.936 & & 0.858 & 0.861 \\
+                                 & \ttbar & 0.935 & 0.935 & & 0.893 & 0.893 \\
+    \hline
+    \multirow{2}{*}{2017}        & DY     & 0.894 & 0.894 & & 0.847 & 0.842 \\
+                                 & \ttbar & 0.902 & 0.897 & & 0.887 & 0.876 \\
+    \hline
+    \multirow{2}{*}{2018}        & DY     & 0.926 & 0.927 & & 0.869 & 0.871 \\
+                                 & \ttbar & 0.919 & 0.926 & & 0.902 & 0.902 \\
+    \hline
+    \multirow{2}{*}{2022}        & DY     & 0.941 & 0.948 & & 0.882 & 0.910 \\
+                                 & \ttbar & 0.927 & 0.947 & & 0.918 & 0.931 \\
+    \hline
+    \multirow{2}{*}{2022EE}      & DY     & 0.938 & 0.946 & & 0.878 & 0.907 \\
+                                 & \ttbar & 0.926 & 0.946 & & 0.914 & 0.928 \\
+    \hline
+    \multirow{2}{*}{2023}        & DY     & 0.941 & 0.948 & & 0.862 & 0.894 \\
+                                 & \ttbar & 0.928 & 0.948 & & 0.904 & 0.918 \\
+    \hline
+    \multirow{2}{*}{2023BPix}    & DY     & 0.940 & 0.947 & & 0.851 & 0.892 \\
+                                 & \ttbar & 0.928 & 0.947 & & 0.895 & 0.912 \\
+    \hline
+  \end{tabular}
+  \caption{MC closure test of the factorized trigger efficiency for dilepton events passing dilepton triggers. The observed and expected efficiencies are shown for Drell--Yan and \ttbar simulation in each data-taking era.}
+  \label{tab:trig_closure_dilep}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{ccccccc}
+    \hline
+    \multirow{2}{*}{Era} & \multirow{2}{*}{Process} & \multicolumn{2}{c}{$\Pgm\Pgm\Pgm$ channel} & & \multicolumn{2}{c}{$\Pe\Pgm\Pgm$ channel} \\
+    \cline{3-4} \cline{6-7}
+    & & Obs. & Exp. & & Obs. & Exp. \\
+    \hline
+    \multirow{4}{*}{2016preVFP}  & Signal($\mHc(70), \mA(15)$)   & 0.992 & 0.997 & & 0.954 & 0.947 \\
+                                 & Signal($\mHc(100), \mA(60)$)  & 0.996 & 0.997 & & 0.952 & 0.944 \\
+                                 & $\PW\PZ$                      & 0.995 & 0.997 & & 0.970 & 0.958 \\
+                                 & $\ttbar\PZ$                   & 0.998 & 0.996 & & 0.963 & 0.956 \\
+    \hline
+    \multirow{4}{*}{2016postVFP} & Signal($\mHc(70), \mA(15)$)   & 0.993 & 0.994 & & 0.945 & 0.944 \\
+                                 & Signal($\mHc(100), \mA(60)$)  & 0.996 & 0.994 & & 0.941 & 0.940 \\
+                                 & $\PW\PZ$                      & 0.994 & 0.994 & & 0.950 & 0.956 \\
+                                 & $\ttbar\PZ$                   & 0.998 & 0.994 & & 0.953 & 0.956 \\
+    \hline
+    \multirow{4}{*}{2017}        & Signal($\mHc(70), \mA(15)$)   & 0.985 & 0.988 & & 0.928 & 0.929 \\
+                                 & Signal($\mHc(100), \mA(60)$)  & 0.990 & 0.988 & & 0.930 & 0.927 \\
+                                 & $\PW\PZ$                      & 0.989 & 0.988 & & 0.946 & 0.941 \\
+                                 & $\ttbar\PZ$                   & 0.992 & 0.988 & & 0.942 & 0.941 \\
+    \hline
+    \multirow{4}{*}{2018}        & Signal($\mHc(70), \mA(15)$)   & 0.990 & 0.996 & & 0.941 & 0.939 \\
+                                 & Signal($\mHc(100), \mA(60)$)  & 0.995 & 0.996 & & 0.938 & 0.938 \\
+                                 & $\PW\PZ$                      & 0.993 & 0.996 & & 0.957 & 0.948 \\
+                                 & $\ttbar\PZ$                   & 0.996 & 0.995 & & 0.996 & 0.995 \\
+    \hline
+    \multirow{2}{*}{2022}        & $\PW\PZ$                      & 0.977 & 0.997 & & 0.970 & 0.970 \\
+                                 & $\ttbar\PZ$                   & 0.990 & 0.997 & & 0.960 & 0.966 \\
+    \hline
+    \multirow{2}{*}{2022EE}      & $\PW\PZ$                      & 0.997 & 0.997 & & 0.967 & 0.962 \\
+                                 & $\ttbar\PZ$                   & 0.995 & 0.997 & & 0.956 & 0.963 \\
+    \hline
+    \multirow{2}{*}{2023}        & $\PW\PZ$                      & 0.994 & 0.997 & & 0.966 & 0.956 \\
+                                 & $\ttbar\PZ$                   & 0.993 & 0.997 & & 0.951 & 0.952 \\
+    \hline
+    \multirow{2}{*}{2023BPix}    & $\PW\PZ$                      & 0.995 & 0.997 & & 0.961 & 0.957 \\
+                                 & $\ttbar\PZ$                   & 0.997 & 0.997 & & 0.930 & 0.951 \\
+    \hline
+  \end{tabular}
+  \caption{MC closure test of the factorized trigger efficiency for trilepton events passing dilepton triggers. The observed and expected efficiencies are shown for representative signal mass points, $\PW\PZ$, and $\ttbar\PZ$ simulation in each data-taking era. Signal samples are only available for Run~2.}
+  \label{tab:trig_closure_trilep}
+\end{table}
+
+\paragraph{Jet energy scale and resolution.}
+The jet energy in simulated samples is corrected for both offset scale and resolution using the correction factors provided by the JMET POG, as described in Section~\ref{ssec:jets}. The impact of the jet energy uncertainty is assessed by re-evaluating all observables with the jet energy shifted by its uncertainty. The jet energy scale uncertainty is treated as correlated across eras, while the jet energy resolution uncertainty is treated as uncorrelated.
+
+\paragraph{B-tagging efficiency.}
+The uncertainty in the b-tagging efficiency corrections is evaluated from the variation of scale factors for each jet flavor~\cite{CMS:2017wtu,Bols:2020bkb,CMS-DP-2023-005,CMS-DP-2023-012}. The b-quark and c-quark tagging efficiency uncertainties are treated with 100\% correlation, while the light-jet mistag efficiency is treated independently. Correlated and uncorrelated components are considered separately. Components related to detector conditions, measurement methods, and underlying physics are correlated among eras, while statistical components of the measurement samples are uncorrelated. The pileup jet identification efficiency uncertainty is treated as correlated across eras.
+
+\paragraph{Unclustered energy.}
+The uncertainty in the energy scale of objects not clustered into jets or leptons, which enters the \ptmiss calculation, is considered. The energy of unclustered particles is simultaneously shifted by the energy resolution of the tracker, HCAL, ECAL, and HF for charged hadrons, neutral hadrons, photons, and HF particles, respectively. This uncertainty is treated as uncorrelated across eras.
+
+%% ----------------------------------------------------------
+\subsection{Theoretical uncertainties}
+\label{ssec:syst_theoretical}
+%% ----------------------------------------------------------
+
+Theoretical uncertainties affect the signal acceptance and the normalization of prompt background processes.
+
+\paragraph{Parton distribution functions.}
+The uncertainty arising from PDFs is evaluated using the 100 replicas of the NNPDF3.1 set. The deviations of the signal acceptance across the replicas are added in quadrature, following the PDF4LHC recommendation~\cite{PDF4LHC}.
+
+\paragraph{QCD scales.}
+The uncertainty on the signal acceptance from the renormalization ($\mu_{\mathrm{R}}$) and factorization ($\mu_{\mathrm{F}}$) scales is estimated from the envelope of six variations obtained by scaling each by factors of 0.5 and 2, excluding anti-correlated variations. In \MGvATNLO, the scale variation does not affect the vertex at additional parton emission. Therefore, the impact of the strong coupling at the emission vertex is additionally tested by varying the \texttt{alpsfact} parameter by factors of 0.5 and 2.
+
+\paragraph{Parton shower modeling.}
+The uncertainty in the modeling of parton showers in the simulated signal samples is estimated by varying the strong coupling scale in the shower by factors of 0.5 and 2, separately for ISR and FSR, following the CMS \PYTHIA~8 tune studies~\cite{CMS:2019csb}. The scales at different splitting types ($\Pg \to \PQq\PAQq$, $\PQq \to \PQq\Pg$, $\Pg \to \Pg\Pg$, and $\mathrm{X} \to \mathrm{X}\Pg$) are varied simultaneously. This uncertainty is found to be minor and is not expected to be strongly constrained by the data.
+
+\paragraph{Background cross sections.}
+For the prompt background processes estimated from simulation, cross section uncertainties are applied. For $\PW\PZ$ production, the total theoretical uncertainty is 12\%, combining scale (+4.9\%/$-$3.9\%), PDF+$\alpha_{S}$ ($\pm$1.5\%), and radiative-zero interference (10.9\%) uncertainties~\cite{WZNNLOCalc}. The radiative-zero arises from the destructive interference between the $\PW \to \PW\PZ \to \ell\Pgn\PZ$ and $\PW \to \ell\Pgn \to \ell\Pgn\PZ$ diagrams, whose magnitude decreases with additional partons at higher orders. A conservative 10.9\% uncertainty is assigned from the difference between the NNLO and NLO calculations. For $\PZ\PZ$ production, the total uncertainty is 6.4\% from scale (+4.3\%/$-$6.2\%) and PDF+$\alpha_{S}$ (1.7\%)~\cite{ZZNNLOCalc}. For the $\Pg\Pg \to \PH \to \PZ\PZ \to 4\ell$ process, a 5\% theoretical uncertainty is assigned~\cite{YR4}. For $\ttbar\PZ$, the total uncertainty is 7.5\% covering QCD scale and PDF+$\alpha_{S}$ variations~\cite{ttZaN3LO}. For $\ttbar\PW$, the total uncertainty is 12\%, accounting for the negative NLO electroweak corrections ($\sim$$-$1\%)~\cite{ttWaN3LO,ttWEW}. For $\ttbar\PH$, the total uncertainty is 10\% covering QCD scale (+5.8\%, $-$9.2\%), PDF ($\pm$3.0\%), $\alpha_{S}$ ($\pm$2.0\%), and Higgs branching fraction (1.8\%) uncertainties~\cite{YR4}. For the $\PQt\PZ\Pq$ process, the total uncertainty is 3.5\% covering QCD scale and PDF+$\alpha_{S}$ variations~\cite{tZqNLO}. For simplicity, scale uncertainties are treated symmetrically using the larger of the up and down variations. For rare processes, including triboson, SM Higgs from gluon fusion, vector boson fusion, and associated production with vector bosons, a conservative 50\% uncertainty is assigned.
+
+All theoretical uncertainty sources are treated as fully correlated across all data-taking eras of Run~2 and Run~3.
+
+A summary of all systematic uncertainty sources considered in this analysis is given in Table~\ref{tab:syst_summary}.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{lcc}
+    \hline
+    Source & Era correlation & Affected processes \\
+    \hline
+    \multicolumn{3}{l}{\textit{Data-driven background uncertainties}} \\
+    Nonprompt norm.\ ($\Pe\Pgm\Pgm$)     & uncorrelated     & nonprompt \\
+    Nonprompt norm.\ ($\Pgm\Pgm\Pgm$)    & uncorrelated     & nonprompt \\
+    Conversion norm.\ ($\Pe\Pgm\Pgm$)     & uncorrelated     & conversion (electron) \\
+    Conversion norm.\ ($\Pgm\Pgm\Pgm$)    & correlated       & conversion (muon) \\
+    \hline
+    \multicolumn{3}{l}{\textit{Experimental correction uncertainties}} \\
+    Luminosity                             & partial          & prompt, signal, conversion \\
+    Pileup                                 & correlated       & prompt, signal, conversion \\
+    L1 prefiring                           & uncorrelated     & prompt, signal, conversion \\
+    Trigger efficiency                     & uncorrelated     & prompt, signal, conversion \\
+    Electron reco.\ efficiency             & correlated       & prompt, signal, conversion \\
+    Electron energy scale                  & correlated       & prompt, signal, conversion \\
+    Electron energy resolution             & correlated       & prompt, signal, conversion \\
+    Electron ID efficiency                 & correlated       & prompt, signal, conversion \\
+    Muon $\pT$ scale/resolution            & correlated       & prompt, signal, conversion \\
+    Muon ID efficiency                     & correlated       & prompt, signal, conversion \\
+    Jet energy scale                       & correlated       & prompt, signal, conversion \\
+    Jet energy resolution                  & uncorrelated     & prompt, signal, conversion \\
+    Pileup jet ID efficiency               & correlated       & prompt, signal, conversion \\
+    Unclustered energy scale               & uncorrelated     & prompt, signal, conversion \\
+    B-tagging eff.\ ($\PQb$, $\PQc$)      & partial          & prompt, signal, conversion \\
+    B-tagging eff.\ ($\PQu$, $\PQd$, $\PQs$, $\Pg$) & partial & prompt, signal, conversion \\
+    \hline
+    \multicolumn{3}{l}{\textit{Theoretical uncertainties}} \\
+    Cross section                          & correlated       & prompt \\
+    QCD scales (ME, acceptance)            & correlated       & signal \\
+    PDF (acceptance)                       & correlated       & signal \\
+    Parton shower modeling                 & correlated       & signal \\
+    \hline
+  \end{tabular}
+  \caption{Summary of systematic uncertainty sources considered in this analysis. ``Partial'' in the correlation column indicates that the uncertainty contains both correlated and uncorrelated components across data-taking eras.}
+  \label{tab:syst_summary}
+\end{table}
+
+\subsection{Impact on signal strength}
+\label{ssec:syst_impacts}
+
+The impact of each systematic uncertainty on the signal strength is evaluated using the profiled likelihood ratio framework described in Section~\ref{ssec:templates}. Each nuisance parameter is fixed at its $\pm 1\sigma$ post-fit value and the change in the best-fit signal strength $\hat{\mu}$ is recorded. The resulting impacts are shown in Figs.~\ref{fig:SystImpact_70_15}--\ref{fig:SystImpact_160_155} for four representative mass points spanning the kinematically accessible region. For the low-mass benchmark $(\mHc, \mA) = (70, 15)$\GeV, the dominant uncertainties arise from the nonprompt lepton estimation and the jet energy corrections. At intermediate masses, the b-tagging efficiency and trigger uncertainties become increasingly important. In the on-$\PZ$ region, $(\mHc, \mA) = (130, 90)$\GeV, the prompt background cross sections and the ParticleNet-based selection contribute additional uncertainty. At the high-mass benchmark $(\mHc, \mA) = (160, 155)$\GeV, the limited signal acceptance leads to larger statistical uncertainties overall.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.9\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc70_MA15/Baseline/extended_unblind/combine_output/impacts_obs/condor/impacts.pdf}
+  \caption{Impacts of systematic uncertainties on the signal strength for $(\mHc, \mA) = (70, 15)$\GeV using the baseline selection.}
+  \label{fig:SystImpact_70_15}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.9\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc100_MA60/Baseline/extended_unblind/combine_output/impacts_obs/condor/impacts.pdf}
+  \caption{Impacts of systematic uncertainties on the signal strength for $(\mHc, \mA) = (100, 60)$\GeV using the baseline selection.}
+  \label{fig:SystImpact_100_60}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.9\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc130_MA90/ParticleNet/extended_unblind/combine_output/impacts_obs/condor/impacts.pdf}
+  \caption{Impacts of systematic uncertainties on the signal strength for $(\mHc, \mA) = (130, 90)$\GeV using the ParticleNet-based selection.}
+  \label{fig:SystImpact_130_90}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.9\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc160_MA155/Baseline/extended_unblind/combine_output/impacts_obs/condor/impacts.pdf}
+  \caption{Impacts of systematic uncertainties on the signal strength for $(\mHc, \mA) = (160, 155)$\GeV using the baseline selection.}
+  \label{fig:SystImpact_160_155}
+\end{figure}
+
+%% ============================================================

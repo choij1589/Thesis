@@ -33,6 +33,9 @@
 \addbibresource{Main.bib}
 \usepackage[]{hyperref}
 \hypersetup{}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\do\/\do-\do\_\do\.\do\?\do\&\do\=\do\#}
+\makeatother
 \usepackage{lipsum} % lorem ipsum
 \usepackage{rotating} % sidewaystable
 \usepackage{tikz}
@@ -48,7 +51,7 @@
 \newcommand{\pT}{\ensuremath{p_{\mathrm{T}}}\xspace}
 \newcommand{\mZ}{\ensuremath{m_{\text{Z}}}\xspace}
 \newcommand{\mW}{\ensuremath{m_{\text{W}}}\xspace}
-\newcommand{\mHc}{\ensuremath{m_{\PHc}}\xspace}
+\newcommand{\mHc}{\ensuremath{m_{\PHp}}\xspace}
 \newcommand{\mA}{\ensuremath{m_{\PA}}\xspace}
 \newcommand{\mH}{\ensuremath{m_{\PH}}\xspace}
 \newcommand{\mh}{\ensuremath{m_{\Ph}}\xspace}
@@ -104,7 +107,7 @@
 {양운기}%
 {유종희}%
 {김형도}%
-{홍길동}
+{유재혁}
 %% Length of underline
 %\setlength{\committeenameunderlinelength}{7cm}
 
@@ -133,23 +136,26 @@
 \input{Sections/introduction.tex}
 \input{Sections/theory.tex}
 \input{Sections/experiment.tex}
-\input{Sections/analysis.tex}
-\input{Sections/results.tex}
-%% conclusion.tex content merged into results.tex (now Ch.5: Summary and Conclusions)
-
-\printbibliography
+\input{Sections/dataset.tex}          % Ch.4: Data Samples and Physics Objects
+\input{Sections/strategy.tex}         % Ch.5: Analysis Strategy
+\input{Sections/results.tex}          % Ch.6: Results
+\input{Sections/conclusions.tex}      % Ch.7: Summary and Conclusions
 
 \appendix
-\input{Sections/appendices/triggers.tex}
-\input{Sections/appendices/mc_samples.tex}
+\input{Sections/appendices/datasets.tex}
+\input{Sections/appendices/results.tex}
+
+\begingroup
+\sloppy
+\printbibliography
+\endgroup
 
 \keywordalt{하전 힉스 보존, 이중 힉스 이중항 모형, CMS, LHC, 표준모형 너머 물리}
 \begin{abstractalt}
-이 논문은 LHC의 CMS 검출기에서 수집한 양성자-양성자 충돌 데이터를 사용하여 희귀 탑 쿼크 붕괴에서 가벼운 하전 힉스 보존 탐색을 제시한다. 데이터는 13~\TeV에서 137.6~\fbinv, 13.6~\TeV에서 62.5~\fbinv의 적분 광도량에 해당한다. 탐색은 붕괴 연쇄 $\PQt \to \PHc\PQb$와 이어지는 $\PHc \to \PWp\PA$, $\PA \to \Pgmp\Pgmm$를 대상으로 하며, 여기서 $\PHc$와 $\PA$는 이중 힉스 이중항 모형(2HDM)에서 예측되는 하전 힉스 보존과 CP-홀수 힉스 보존이다. 최종 상태는 세 개의 하전 경입자($\Pe\Pgm\Pgm$ 또는 $\Pgm\Pgm\Pgm$), 결손 횡운동량, 그리고 b-태그된 젯 하나를 포함한 최소 두 개의 젯으로 구성된다. 탐색은 비껍질 $\PHc \to \PWp\PA$ 붕괴를 포함하여 하전 힉스 보존 질량($\mHc$) 70--160\GeV와 CP-홀수 힉스 보존 질량($\mA$) 15\GeV에서 $\mHc - 5\GeV$까지의 범위를 다룬다. ParticleNet 기반 분류기가 \PZ 보존 배경으로부터 신호를 구별하는 데 사용되며, 쌍뮤온 불변 질량 분포에 대한 구간화된 최대 우도 맞춤을 통해 신호가 추출된다. 표준모형 예측을 초과하는 통계적으로 유의미한 초과가 관찰되지 않았으며, 신호 분기비에 대해 95\% 신뢰 수준에서 상한이 설정되었다. 이 결과는 비껍질 효과를 포함한 $\PHc \to \PW\PA$ 붕괴에 대한 최초의 탐색을 나타낸다.
+이 논문은 CERN LHC의 CMS 검출기에서 수집한 양성자-양성자 충돌 데이터를 사용하여 희귀 탑 쿼크 붕괴에서 생성되는 가벼운 하전 힉스 보존 탐색을 제시한다. 데이터는 13~\TeV에서 138~\fbinv, 13.6~\TeV에서 62.5~\fbinv의 적분 광도량에 해당한다. 탐색은 붕괴 연쇄 $\PQt \to \PHp\PQb$와 이어지는 $\PHp \to \PWp\PA$, $\PA \to \Pgmp\Pgmm$를 대상으로 하며, 여기서 \PHp는 하전 힉스 보존이고 \PA는 이중 힉스 이중항 모형에서 예측되는 CP-홀수 힉스 보존이다. 최종 상태는 $\Pe\Pgm\Pgm$ 또는 $\Pgm\Pgm\Pgm$ 구성과 최소 두 개의 젯으로 이루어지며, 그중 하나는 \PQb 쿼크에서 기원한 것으로 식별된다. 탐색은 하전 힉스 보존 질량 $\mHc$ 70--160\GeV와 CP-홀수 힉스 보존 질량 $\mA$ 15\GeV에서 $\mHc - 5\GeV$까지의 범위를 다룬다. ParticleNet 기반 분류기가 \PZ 보존 배경으로부터 신호를 구별하는 데 사용되며, 쌍뮤온 불변 질량 분포에 대한 구간화된 최대 우도 맞춤을 통해 신호가 추출된다. 표준모형 예측을 초과하는 통계적으로 유의미한 초과는 관찰되지 않았으며, 신호 분기비 $\mathcal{B}_{\text{sig}}$에 대해 95\% 신뢰 수준에서 상한이 설정되었다. 이 결과는 비껍질 효과를 포함한 $\PHp \to \PWp\PA$ 붕괴에 대한 최초의 탐색을 나타낸다.
 \end{abstractalt}
 
 \acknowledgement
 Thanks.
 
 \end{document}
-

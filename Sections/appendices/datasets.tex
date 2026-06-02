@@ -1,0 +1,277 @@
+\chapter{Data, Trigger, and Background Monte Carlo Samples}
+\label{app:datasets}
+
+This appendix provides the detailed sample and trigger lists supporting Chapter~\ref{ch:reconstruction}. Tables~\ref{tab:app_datasets_run2} and~\ref{tab:app_datasets_run3} list the Run~2 and Run~3 collision datasets used for the signal selection, fake-rate measurements, and lepton efficiency studies. Table~\ref{tab:app_triggers} gives the analysis, fake-rate, and efficiency-measurement trigger paths used in the corresponding data-taking periods. Tables~\ref{tab:app_mc_run2} and~\ref{tab:app_mc_run3} list the background Monte Carlo simulated samples used for prompt backgrounds, conversion backgrounds, control region studies, and lepton efficiency measurements.
+
+The collision datasets are shown at the MiniAOD level used as input to the NanoAOD-based analysis processing. Curly braces denote multiple run periods or reprocessing versions that share the same dataset version. For the simulated samples, the quoted cross sections include the K-factors used to normalize the generator-level predictions to the perturbative order specified in the tables.
+
+\begin{sidewaystable}[p]
+\centering
+\footnotesize
+\caption{Collision data samples used in Run~2.}
+\label{tab:app_datasets_run2}
+\begin{tabular}{p{3.1cm}p{11.3cm}p{2.8cm}}
+\hline\hline
+Usage & Dataset & Data-taking period \\
+\hline
+\multirow{7}{*}{\shortstack{Analysis,\\Fake rate,\\Trigger efficiency}}
+& \texttt{/DoubleMuon/Run2016B-ver2\_HIPM\_UL2016\_MiniAODv2-v1} & 2016 preVFP \\
+& \texttt{/DoubleMuon/Run2016\{C-F\}-HIPM\_UL2016\_MiniAODv2-v1} & 2016 preVFP \\
+& \texttt{/DoubleMuon/Run2016\{F,G\}-UL2016\_MiniAODv2-v1} & 2016 postVFP \\
+& \texttt{/DoubleMuon/Run2016H-UL2016\_MiniAODv2-v2} & 2016 postVFP \\
+& \texttt{/DoubleMuon/Run2017\{B-D,F\}-UL2017\_MiniAODv2-v1} & 2017 \\
+& \texttt{/DoubleMuon/Run2017E-UL2017\_MiniAODv2-v2} & 2017 \\
+& \texttt{/DoubleMuon/Run2018\{A-D\}-UL2018\_MiniAODv2-v1} & 2018 \\
+\hline
+\multirow{8}{*}{\shortstack{Analysis,\\Trigger efficiency}}
+& \texttt{/MuonEG/Run2016B-ver2\_HIPM\_UL2016\_MiniAODv2-v1} & 2016 preVFP \\
+& \texttt{/MuonEG/Run2016\{C-F\}-HIPM\_UL2016\_MiniAODv2-v1} & 2016 preVFP \\
+& \texttt{/MuonEG/Run2016\{F,G\}-UL2016\_MiniAODv2-v1} & 2016 postVFP \\
+& \texttt{/MuonEG/Run2016H-UL2016\_MiniAODv2-v2} & 2016 postVFP \\
+& \texttt{/MuonEG/Run2017\{B,D,E\}-UL2017\_MiniAODv2-v1} & 2017 \\
+& \texttt{/MuonEG/Run2017\{C,F\}-UL2017\_MiniAODv2-v2} & 2017 \\
+& \texttt{/MuonEG/Run2018\{A-C\}-UL2018\_MiniAODv2-v1} & 2018 \\
+& \texttt{/MuonEG/Run2018D-UL2018\_MiniAODv2-v2} & 2018 \\
+\hline
+\multirow{3}{*}{Fake rate}
+& \texttt{/DoubleEG/Run2016B-ver2\_HIPM\_UL2016\_MiniAODv2-v3} & 2016 preVFP \\
+& \texttt{/DoubleEG/Run2016\{C-F\}-HIPM\_UL2016\_MiniAODv2-v1} & 2016 preVFP \\
+& \texttt{/DoubleEG/Run2016\{F-H\}-UL2016\_MiniAODv2-v1} & 2016 postVFP \\
+\hline
+\multirow{3}{*}{\shortstack{Fake rate,\\ID, trigger efficiency}}
+& \texttt{/SingleElectron/Run2017\{B-F\}-UL2017\_MiniAODv2-v1} & 2017 \\
+& \texttt{/EGamma/Run2018\{A-C\}-UL2018\_MiniAODv2-v1} & 2018 \\
+& \texttt{/EGamma/Run2018D-UL2018\_MiniAODv2-v2} & 2018 \\
+\hline
+\multirow{10}{*}{\shortstack{ID,\\trigger efficiency}}
+& \texttt{/SingleElectron/Run2016B-ver2\_HIPM\_UL2016\_MiniAODv2-v2} & 2016 preVFP \\
+& \texttt{/SingleElectron/Run2016\{C,D,F\}-HIPM\_UL2016\_MiniAODv2-v2} & 2016 preVFP \\
+& \texttt{/SingleElectron/Run2016E-HIPM\_UL2016\_MiniAODv2-v5} & 2016 preVFP \\
+& \texttt{/SingleMuon/Run2016B-ver2\_HIPM\_UL2016\_MiniAODv2-v2} & 2016 preVFP \\
+& \texttt{/SingleMuon/Run2016\{C-F\}-HIPM\_UL2016\_MiniAODv2-v2} & 2016 preVFP \\
+& \texttt{/SingleElectron/Run2016\{F-H\}-UL2016\_MiniAODv2-v2} & 2016 postVFP \\
+& \texttt{/SingleMuon/Run2016\{F-H\}-UL2016\_MiniAODv2-v2} & 2016 postVFP \\
+& \texttt{/SingleMuon/Run2017\{B-F\}-UL2017\_MiniAODv2-v1} & 2017 \\
+& \texttt{/SingleMuon/Run2018\{A,D\}-UL2018\_MiniAODv2-v3} & 2018 \\
+& \texttt{/SingleMuon/Run2018\{B,C\}-UL2018\_MiniAODv2-v2} & 2018 \\
+\hline
+\hline
+\end{tabular}
+\end{sidewaystable}
+
+\begin{sidewaystable}[p]
+\centering
+\footnotesize
+\caption{Collision data samples used in Run~3.}
+\label{tab:app_datasets_run3}
+\begin{tabular}{p{3.1cm}p{11.3cm}p{2.8cm}}
+\hline\hline
+Usage & Dataset & Data-taking period \\
+\hline
+\multirow{16}{*}{\shortstack{Analysis,\\Fake rate,\\ID, trigger efficiency}}
+& \texttt{/DoubleMuon/Run2022C-22Sep2023-v1} & 2022 \\
+& \texttt{/Muon/Run2022\{C-E\}-22Sep2023-v1} & 2022 \\
+& \texttt{/EGamma/Run2022\{C-E\}-22Sep2023-v1} & 2022 \\
+& \texttt{/Muon/Run2022F-22Sep2023-v2} & 2022EE \\
+& \texttt{/Muon/Run2022G-22Sep2023-v1} & 2022EE \\
+& \texttt{/EGamma/Run2022F-22Sep2023-v1} & 2022EE \\
+& \texttt{/EGamma/Run2022G-22Sep2023-v2} & 2022EE \\
+& \texttt{/Muon0/Run2023C-22Sep2023\_v\{1-4\}-v1} & 2023 \\
+& \texttt{/Muon1/Run2023C-22Sep2023\_v\{1-3\}-v1} & 2023 \\
+& \texttt{/Muon1/Run2023C-22Sep2023\_v4-v2} & 2023 \\
+& \texttt{/EGamma0/Run2023C-22Sep2023\_v\{1-4\}-v1} & 2023 \\
+& \texttt{/EGamma1/Run2023C-22Sep2023\_v\{1-4\}-v1} & 2023 \\
+& \texttt{/Muon0/Run2023D-22Sep2023\_v\{1,2\}-v1} & 2023BPix \\
+& \texttt{/Muon1/Run2023D-22Sep2023\_v\{1,2\}-v1} & 2023BPix \\
+& \texttt{/EGamma0/Run2023D-22Sep2023\_v\{1,2\}-v1} & 2023BPix \\
+& \texttt{/EGamma1/Run2023D-22Sep2023\_v\{1,2\}-v1} & 2023BPix \\
+\hline
+\multirow{4}{*}{\shortstack{Analysis,\\Trigger efficiency}}
+& \texttt{/MuonEG/Run2022\{C-E\}-22Sep2023-v1} & 2022 \\
+& \texttt{/MuonEG/Run2022\{F,G\}-22Sep2023-v1} & 2022EE \\
+& \texttt{/MuonEG/Run2023C-22Sep2023\_v\{1-4\}-v1} & 2023 \\
+& \texttt{/MuonEG/Run2023D-22Sep2023\_v\{1,2\}-v1} & 2023BPix \\
+\hline
+ID, trigger efficiency
+& \texttt{/SingleMuon/Run2022C-22Sep2023-v1} & 2022 \\
+\hline\hline
+\end{tabular}
+\end{sidewaystable}
+
+\begin{sidewaystable}[p]
+\centering
+\scriptsize
+\caption{Trigger paths used in Run~2 and Run~3.}
+\label{tab:app_triggers}
+\begin{tabular}{p{3.0cm}p{10.7cm}p{3.5cm}}
+\hline\hline
+Usage & HLT path & Data-taking period \\
+\hline
+\multicolumn{3}{c}{\textbf{Run~2 (2016--2018)}} \\
+\hline
+\multirow{10}{*}{Analysis}
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_TkMu8\_TrkIsoVVL\_v} & 2016 preVFP \\
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_Mu8\_TrkIsoVVL\_v} & 2016 preVFP \\
+& \texttt{HLT\_TkMu17\_TrkIsoVVL\_TkMu8\_TrkIsoVVL\_DZ\_v} & 2016 postVFP \\
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_TkMu8\_TrkIsoVVL\_DZ\_v} & 2016 postVFP \\
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_Mu8\_TrkIsoVVL\_DZ\_v} & 2016 postVFP--2017 \\
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_Mu8\_TrkIsoVVL\_DZ\_Mass3p8\_v} & 2017--2018 \\
+& \texttt{HLT\_Mu8\_TrkIsoVVL\_Ele23\_CaloIdL\_TrackIdL\_IsoVL\_v} & 2016 preVFP \\
+& \texttt{HLT\_Mu23\_TrkIsoVVL\_Ele8\_CaloIdL\_TrackIdL\_IsoVL\_v} & 2016 preVFP \\
+& \texttt{HLT\_Mu8\_TrkIsoVVL\_Ele23\_CaloIdL\_TrackIdL\_IsoVL\_DZ\_v} & 2016 postVFP--2018 \\
+& \texttt{HLT\_Mu23\_TrkIsoVVL\_Ele12\_CaloIdL\_TrackIdL\_IsoVL\_DZ\_v} & 2016 postVFP--2018 \\
+\hline
+\multirow{5}{*}{\shortstack{Fake rate\\measurement}}
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_v} & \multirow{5}{*}{2016--2018} \\
+& \texttt{HLT\_Mu8\_TrkIsoVVL\_v} & \\
+& \texttt{HLT\_Ele23\_CaloIdL\_TrackIdL\_IsoVL\_PFJet30\_v} & \\
+& \texttt{HLT\_Ele12\_CaloIdL\_TrackIdL\_IsoVL\_PFJet30\_v} & \\
+& \texttt{HLT\_Ele8\_CaloIdL\_TrackIdL\_IsoVL\_PFJet30\_v} & \\
+\hline
+\multirow{11}{*}{\shortstack{ID and trigger\\efficiency\\measurement}}
+& \texttt{HLT\_IsoMu24\_v} & 2016, 2018 \\
+& \texttt{HLT\_IsoMu27\_v} & 2017 \\
+& \texttt{HLT\_Ele27\_WPTight\_Gsf\_v} & 2016 \\
+& \texttt{HLT\_Ele32\_WPTight\_Gsf\_L1DoubleEG\_v} & 2017 \\
+& \texttt{HLT\_Ele32\_WPTight\_Gsf\_v} & 2018 \\
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_TkMu8\_TrkIsoVVL\_v} & 2016 postVFP \\
+& \texttt{HLT\_TkMu17\_TrkIsoVVL\_TkMu8\_TrkIsoVVL\_v} & 2016 postVFP \\
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_Mu8\_TrkIsoVVL\_v} & 2016 postVFP--2018 \\
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_Mu8\_TrkIsoVVL\_DZ\_v} & 2017--2018 \\
+& \texttt{HLT\_Mu8\_TrkIsoVVL\_Ele23\_CaloIdL\_TrackIdL\_IsoVL\_v} & 2016 postVFP--2018 \\
+& \texttt{HLT\_Mu23\_TrkIsoVVL\_Ele12\_CaloIdL\_TrackIdL\_IsoVL\_v} & 2016 postVFP--2018 \\
+\hline
+\multicolumn{3}{c}{\textbf{Run~3 (2022--2023)}} \\
+\hline
+\multirow{3}{*}{Analysis}
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_Mu8\_TrkIsoVVL\_DZ\_Mass3p8\_v} & 2022--2023BPix \\
+& \texttt{HLT\_Mu8\_TrkIsoVVL\_Ele23\_CaloIdL\_TrackIdL\_IsoVL\_DZ\_v} & 2022--2023BPix \\
+& \texttt{HLT\_Mu23\_TrkIsoVVL\_Ele12\_CaloIdL\_TrackIdL\_IsoVL\_DZ\_v} & 2022--2023BPix \\
+\hline
+\multirow{4}{*}{\shortstack{Fake rate\\measurement}}
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_v} & \multirow{4}{*}{2022--2023BPix} \\
+& \texttt{HLT\_Mu8\_TrkIsoVVL\_v} & \\
+& \texttt{HLT\_Ele23\_CaloIdL\_TrackIdL\_IsoVL\_PFJet30\_v} & \\
+& \texttt{HLT\_Ele12\_CaloIdL\_TrackIdL\_IsoVL\_PFJet30\_v} & \\
+\hline
+\multirow{5}{*}{\shortstack{ID and trigger\\efficiency\\measurement}}
+& \texttt{HLT\_IsoMu24\_v} & 2022--2023BPix \\
+& \texttt{HLT\_Ele32\_WPTight\_Gsf\_v} & 2022--2023BPix \\
+& \texttt{HLT\_Mu17\_TrkIsoVVL\_Mu8\_TrkIsoVVL\_DZ\_Mass3p8\_v} & 2022--2023BPix \\
+& \texttt{HLT\_Mu8\_TrkIsoVVL\_Ele23\_CaloIdL\_TrackIdL\_IsoVL\_DZ\_v} & 2022--2023BPix \\
+& \texttt{HLT\_Mu23\_TrkIsoVVL\_Ele12\_CaloIdL\_TrackIdL\_IsoVL\_DZ\_v} & 2022--2023BPix \\
+\hline\hline
+\end{tabular}
+\end{sidewaystable}
+
+\begin{sidewaystable}[p]
+\centering
+\tiny
+\caption{Background MC samples used for Run~2. The quoted cross section is the generator-level value corrected by the K-factor to the listed perturbative order.}
+\label{tab:app_mc_run2}
+\begin{tabular}{p{10.1cm}p{2.2cm}p{2.8cm}p{1.8cm}}
+\hline\hline
+MC sample & $\sigma\mathcal{B}\times\text{K-factor}$ [pb] & Order & Group \\
+\hline
+\multicolumn{4}{l}{\textit{Prompt trilepton signal-region backgrounds}} \\
+\hline
+\texttt{/WZTo3LNu\_TuneCP5\_13TeV-amcatnloFXFX-pythia8/} & 5.781 & NNLO QCD & diboson \\
+\texttt{/ZZTo4L\_TuneCP5\_13TeV\_powheg\_pythia8/} & 1.457 & NNLO QCD & diboson \\
+\texttt{/TTWJetsToLNu\_TuneCP5\_13TeV-amcatnloFXFX-madspin-pythia8/} & 0.2349 & aN$^{3}$LO QCD & \ttbar+X \\
+\texttt{/TTZToLLNuNu\_M-10\_TuneCP5\_13TeV-amcatnlo-pythia8/} & 0.2944 & aN$^{3}$LO QCD + NLO EW & \ttbar+X \\
+\texttt{/ttHToNonbb\_M125\_TuneCP5\_13TeV-powheg-pythia8/} & 0.2151 & NLO QCD + NLO EW & \ttbar+X \\
+\texttt{/tZq\_ll\_4f\_ckm\_NLO\_TuneCP5\_13TeV-amcatnlo-pythia8/} & 0.0758 & NLO QCD & other \\
+\texttt{/WWZ\_4F\_TuneCP5\_13TeV-amcatnlo-pythia8/} & 0.1651 & NLO & other \\
+\texttt{/WZZ\_TuneCP5\_13TeV-amcatnlo-pythia8/} & 0.05565 & NLO & other \\
+\texttt{/WWW\_4F\_TuneCP5\_13TeV-amcatnlo-pythia8/} & 0.2086 & NLO & other \\
+\texttt{/ZZZ\_TuneCP5\_13TeV-amcatnlo-pythia8/} & 0.01398 & NLO & other \\
+\texttt{/VBF\_HToZZTo4L\_M125\_TuneCP5\_13TeV\_powheg2\_JHUGenV7011\_pythia8/} & 0.001034 & NNLO QCD + NLO EW & other \\
+\texttt{/GluGluHToZZTo4L\_M125\_TuneCP5\_13TeV\_powheg2\_JHUGenV7011\_pythia8/} & 0.01503 & N$^{3}$LO QCD & other \\
+\texttt{/VHToNonbb\_M125\_TuneCP5\_13TeV-amcatnloFXFX\_madspin\_pythia8/} & 0.952 & NNLO QCD + NLO EW & other \\
+\texttt{/TTTT\_TuneCP5\_13TeV-amcatnlo-pythia8/} & 0.008213 & NLO & other \\
+\hline
+\multicolumn{4}{l}{\textit{Conversion backgrounds}} \\
+\hline
+\texttt{/DYJetsToLL\_M-50\_TuneCP5\_13TeV-amcatnloFXFX-pythia8/} & 6077.22 & NNLO & conversion \\
+\texttt{/DYJetsToLL\_M-10to50\_TuneCP5\_13TeV-amcatnloFXFX-pythia8/} & 18610 & NLO & conversion \\
+\texttt{/TTGJets\_TuneCP\_13TeV-amcatnloFXFX-madspin-pythia8/} & 3.757 & NLO & conversion \\
+\texttt{/WWG\_TuneCP5\_13TeV-amcatnlo-pythia8/} & 0.3369 & NLO & conversion \\
+\hline
+\multicolumn{4}{l}{\textit{Prompt opposite-sign dilepton control-region backgrounds}} \\
+\hline
+\texttt{/DYJetsToLL\_M-50\_TuneCP5\_13TeV-amcatnloFXFX-pythia8/} & 6077.22 & NNLO & Z \\
+\texttt{/DYJetsToLL\_M-10to50\_TuneCP5\_13TeV-amcatnloFXFX-pythia8/} & 18610 & NLO & Z \\
+\texttt{/TTToSemiLeptonic\_TuneCP5\_13TeV-powheg-pythia8/} & 365.34 & NNLO+NNLL & \ttbar \\
+\texttt{/TTTo2L2Nu\_TuneCP5\_13TeV-powheg-pythia8/} & 88.29 & NNLO+NNLL & \ttbar \\
+\texttt{/ST\_tW\_antitop\_5f\_NoFullyHadronicDecays\_TuneCP5\_13TeV-powheg-pythia8/} & 19.56 & approx. NNLO & single top \\
+\texttt{/ST\_tW\_top\_5f\_NoFullyHadronicDecays\_TuneCP5\_13TeV-powheg-pythia8/} & 19.56 & approx. NNLO & single top \\
+\texttt{/ST\_s-channel\_4f\_leptonDecays\_TuneCP5\_13TeV-amcatnlo-pythia8/} & 3.36 & approx. NNLO & single top \\
+\texttt{/ST\_t-channel\_antitop\_4f\_InclusiveDecays\_TuneCP5\_13TeV-powheg-madspin-pythia8/} & 80.95 & approx. NNLO & single top \\
+\texttt{/ST\_t-channel\_top\_4f\_InclusiveDecays\_TuneCP5\_13TeV-powheg-madspin-pythia8/} & 136.02 & approx. NNLO & single top \\
+\texttt{/WW\_TuneCP5\_13TeV-pythia8/} & 117.4 & NNLO QCD $\times$ NLO EW & diboson \\
+\texttt{/WZ\_TuneCP5\_13TeV-pythia8/} & 50.5 & NNLO QCD $\times$ NLO EW & diboson \\
+\texttt{/ZZ\_TuneCP5\_13TeV-pythia8/} & 16.7 & NNLO QCD $\times$ NLO EW & diboson \\
+\hline
+\multicolumn{4}{l}{\textit{Lepton efficiency measurements}} \\
+\hline
+\texttt{/DYJetsToEE\_M-50\_massWgtFix\_TuneCP5\_13TeV-powhegMiNNLO-pythia8-photos/} & 1976.17 & NNLO & Z \\
+\texttt{/DYJetsToMuMu\_M-50\_TuneCP5\_13TeV-powhegMiNNLO-pythia8-photos/} & 1976.17 & NNLO & Z \\
+\hline\hline
+\end{tabular}
+\end{sidewaystable}
+
+\begin{sidewaystable}[p]
+\centering
+\tiny
+\caption{Background MC samples used for Run~3. The quoted cross section is the generator-level value corrected by the K-factor to the listed perturbative order.}
+\label{tab:app_mc_run3}
+\begin{tabular}{p{10.1cm}p{2.2cm}p{2.8cm}p{1.8cm}}
+\hline\hline
+MC sample & $\sigma\mathcal{B}\times\text{K-factor}$ [pb] & Order & Group \\
+\hline
+\multicolumn{4}{l}{\textit{Prompt trilepton signal-region backgrounds}} \\
+\hline
+\texttt{/WZto3LNu\_TuneCP5\_13p6TeV\_powheg-pythia8} & 5.847 & NNLO QCD & diboson \\
+\texttt{/ZZto4L\_TuneCP5\_13p6TeV\_powheg-pythia8/} & 1.774 & NNLO QCD & diboson \\
+\texttt{/TTLNu-1Jets\_TuneCP5\_13p6TeV\_amcatnloFXFX-pythia8/} & 0.2877 & aN$^{3}$LO QCD & \ttbar+X \\
+\texttt{/TTLL\_MLL-50\_TuneCP5\_13p6TeV\_amcatnlo-pythia8/} & 0.1006 & aN$^{3}$LO QCD + NLO EW & \ttbar+X \\
+\texttt{/TTLL\_MLL-4to50\_TuneCP5\_13p6TeV\_amcatnlo-pythia8/} & 0.04597 & aN$^{3}$LO QCD + NLO EW & \ttbar+X \\
+\texttt{/TTHtoNon2B\_M-125\_TuneCP5\_13p6TeV\_powheg-pythia8/} & 0.24111 & NLO QCD + NLO EW & \ttbar+X \\
+\texttt{/TZQB-Zto2L-4FS\_MLL-30\_TuneCP5\_13p6TeV\_amcatnlo-pythia8/} & 0.08 & NLO QCD & other \\
+\texttt{/WWW\_4F\_TuneCP5\_13p6TeV\_amcatnlo-madspin-pythia8/} & 0.2328 & NLO & other \\
+\texttt{/WWZ\_4F\_TuneCP5\_13p6TeV\_amcatnlo-pythia8/} & 0.1851 & NLO & other \\
+\texttt{/WZZ\_TuneCP5\_13p6TeV\_amcatnlo-pythia8/} & 0.06206 & NLO & other \\
+\texttt{/ZZZ\_TuneCP5\_13p6TeV\_amcatnlo-pythia8/} & 0.01591 & NLO & other \\
+\texttt{/GluGluHtoZZto4L\_M-125\_TuneCP5\_13p6TeV\_powheg2-JHUGenV752-pythia8/} & 0.01434 & N$^{3}$LO QCD & other \\
+\texttt{/VBFHto2Zto4L\_M125\_TuneCP5\_13p6TeV\_powheg-jhugenv752-pythia8/} & 0.00112 & NNLO QCD + NLO EW & other \\
+\texttt{/VH\_HtoNonbb\_M-125\_TuneCP5\_13p6TeV\_amcatnloFXFX-madspin-pythia8/} & 1.0132 & NNLO QCD + NLO EW & other \\
+\texttt{/TTTT\_TuneCP5\_13p6TeV\_amcatnlo-pythia8/} & 0.009652 & NLO & other \\
+\hline
+\multicolumn{4}{l}{\textit{Conversion backgrounds}} \\
+\hline
+\texttt{/DYto2L-2Jets\_MLL-50\_TuneCP5\_13p6TeV\_amcatnloFXFX-pythia8/} & 6345.99 & NNLO & conversion \\
+\texttt{/DYto2L-2Jets\_MLL-10to50\_TuneCP5\_13p6TeV\_amcatnloFXFX-pythia8/} & 19982.5 & NNLO (scaled) & conversion \\
+\texttt{/TTG-1Jets\_PTG-10to100\_TuneCP5\_13p6TeV\_amcatnloFXFXold-pythia8/} & 4.216 & NLO & conversion \\
+\texttt{/TTG-1Jets\_PTG-100to200\_TuneCP5\_13p6TeV\_amcatnloFXFXold-pythia8/} & 0.4114 & NLO & conversion \\
+\texttt{/TTG-1Jets\_PTG-200\_TuneCP5\_13p6TeV\_amcatnloFXFXold-pythia8/} & 0.1284 & NLO & conversion \\
+\hline
+\multicolumn{4}{l}{\textit{Prompt opposite-sign dilepton control-region backgrounds}} \\
+\hline
+\texttt{/DYto2L-2Jets\_MLL-50\_TuneCP5\_13p6TeV\_amcatnloFXFX-pythia8/} & 6345.99 & NNLO & Z \\
+\texttt{/DYto2L-2Jets\_MLL-10to50\_TuneCP5\_13p6TeV\_amcatnloFXFX-pythia8/} & 19982.5 & NNLO (scaled) & Z \\
+\texttt{/TTtoLNu2Q\_TuneCP5\_13p6TeV\_powheg-pythia8/} & 405.69 & NNLO+NNLL & \ttbar \\
+\texttt{/TTto2L2Nu\_TuneCP5\_13p6TeV\_powheg-pythia8/} & 98.03 & NNLO+NNLL & \ttbar \\
+\texttt{/TWminustoLNu2Q\_TuneCP5\_13p6TeV\_powheg-pythia8/} & 19.36 & NLO+NNLL & single top \\
+\texttt{/TbarWplustoLNu2Q\_TuneCP5\_13p6TeV\_powheg-pythia8/} & 19.36 & NLO+NNLL & single top \\
+\texttt{/TWminusto2L2Nu\_TuneCP5\_13p6TeV\_powheg-pythia8/} & 4.76 & NLO+NNLL & single top \\
+\texttt{/TbarWplusto2L2Nu\_TuneCP5\_13p6TeV\_powheg-pythia8/} & 4.76 & NLO+NNLL & single top \\
+\texttt{/TBbartoLplusNuBbar-s-channel-4FS\_TuneCP5\_13p6TeV\_amcatnlo-pythia8/} & 3.7 & NNLO QCD & single top \\
+\texttt{/TbarBtoLminusNuB-s-channel-4FS\_TuneCP5\_13p6TeV\_amcatnlo-pythia8/} & 2.322 & NNLO QCD & single top \\
+\texttt{/TBbarQ\_t-channel\_4FS\_TuneCP5\_13p6TeV\_powheg-madspin-pythia8/} & 145.0 & NNLO QCD & single top \\
+\texttt{/TbarBQ\_t-channel\_4FS\_TuneCP5\_13p6TeV\_powheg-madspin-pythia8/} & 87.2 & NNLO QCD & single top \\
+\texttt{/WW\_TuneCP5\_13p6TeV\_pythia8/} & 124.4 & NNLO QCD $\times$ NLO EW & diboson \\
+\texttt{/WZ\_TuneCP5\_13p6TeV\_pythia8/} & 54.1 & NNLO QCD $\times$ NLO EW & diboson \\
+\texttt{/ZZ\_TuneCP5\_13p6TeV\_pythia8/} & 17.6 & NNLO QCD $\times$ NLO EW & diboson \\
+\hline\hline
+\end{tabular}
+\end{sidewaystable}

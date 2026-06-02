@@ -6,38 +6,38 @@ This chapter provides the theoretical foundation for the search presented in thi
 \section{The Standard Model of Particle Physics}
 \label{sec:theory_sm}
 
-The Standard Model (SM) is a quantum field theory that describes the fundamental particles and their interactions through three of the four known fundamental forces: the electromagnetic, weak, and strong interactions. Gravity, while well-described by general relativity at macroscopic scales, is not incorporated into the SM framework.
+The Standard Model of particle physics is a quantum field theory that describes the fundamental particles and their interactions through three of the four known fundamental forces, the electromagnetic, weak, and strong interactions. Gravity, while well-described by general relativity at macroscopic scales, is not incorporated into the SM framework.
 
 \subsection{Spacetime Symmetries and Particle Classification}
 \label{sec:spacetime_symmetries}
 
 \subsubsection{The Poincaré Group and Wigner's Classification}
 
-The construction of the Standard Model begins with a simple rinciple: the laws of physics must take the same form regardless of where or when an experiment is performed, or which inertial frame the observer occupies. As Weinberg emphasized, the result of an experiment on Earth must be predicted by the same laws that would apply on the Moon---not because of any dynamical mechanism, but because the laws themselves respect the symmetries of spacetime~\cite{Weinberg:1995mt}.
+The construction of the Standard Model begins with the principle that the laws of physics must take the same form regardless of where or when an experiment is performed, or which inertial frame the observer occupies. As Weinberg emphasized, the result of an experiment on Earth must be predicted by the same laws that would apply on the Moon, not because of any dynamical mechanism, but because the laws themselves respect the symmetries of spacetime~\cite{Weinberg:1995mt}.
 
-This requirement of invariance under spacetime transformations is encoded in the Poincar\'{e} group---the group of all isometries of Minkowski spacetime, comprising translations, rotations, and Lorentz boosts. By Noether's theorem~\cite{Noether:1918zz}, each continuous symmetry implies a conserved quantity: translational invariance in space and time yields conservation of momentum and energy, while rotational invariance yields conservation of angular momentum.
+This requirement of invariance under spacetime transformations is encoded in the Poincar\'{e} group, the group of all isometries of Minkowski spacetime, comprising translations, rotations, and Lorentz boosts. By Noether's theorem~\cite{Noether:1918zz}, each continuous symmetry implies a conserved quantity. Translational invariance in spacetime yields conservation of momentum and energy, while rotational invariance yields conservation of angular momentum.
 
-The most profound consequence of these symmetries for particle physics is Wigner's classification~\cite{Wigner:1939cj}: elementary particles correspond to irreducible unitary representations of the Poincar\'{e} group, labeled by two invariants---mass $m$ and spin $s$. This is not merely a convenient labeling scheme; it is the \emph{definition} of what constitutes an elementary particle.
+The most profound consequence of these symmetries for particle physics is Wigner's classification~\cite{Wigner:1939cj}. Elementary particles correspond to irreducible unitary representations of the Poincar\'{e} group, labeled by two invariants, mass $m$ and spin $s$. This is not merely a convenient labeling scheme, but the definition of what constitutes an elementary particle.
 
 \subsubsection{Field Representations and the Lorentz Algebra}
 
-The structure of the Lorentz group further constrains what types of fields can describe particles. The Lie algebra of the proper orthochronous Lorentz group $\mathrm{SO}^+(3,1)$ admits, upon complexification, a decomposition into two copies of the $\mathfrak{su}(2)$ algebra~\cite{Weinberg:1995mt}:
+The structure of the Lorentz group further constrains what types of fields can describe particles. The Lie algebra of the proper orthochronous Lorentz group $\mathrm{SO}^+(3,1)$ admits a decomposition into two copies of the $\mathfrak{su}(2)$ algebra~\cite{Weinberg:1995mt},
 \begin{equation}
 \mathfrak{so}(3,1)_{\mathbb{C}} \cong \mathfrak{su}(2) \oplus \mathfrak{su}(2)
 \end{equation}
-Finite-dimensional representations are therefore labeled by a pair $(j_L, j_R)$, where each index independently takes values $0, \frac{1}{2}, 1, \ldots$. The familiar fields of particle physics correspond to specific representations in this classification:
+Finite-dimensional representations are therefore labeled by a pair $(j_L, j_R)$, where each index independently takes values $0, \frac{1}{2}, 1, \ldots$. The familiar fields of particle physics correspond to specific representations in this classification.
 \begin{itemize}
-\item $(0, 0)$: scalar field (e.g., the Higgs boson)
-\item $(\frac{1}{2}, 0)$: left-handed Weyl spinor
-\item $(0, \frac{1}{2})$: right-handed Weyl spinor
-\item $(\frac{1}{2}, 0) \oplus (0, \frac{1}{2})$: Dirac spinor (massive fermions)
-\item $(\frac{1}{2}, \frac{1}{2})$: four-vector field (gauge bosons)
+\item $(0, 0)$, scalar field (e.g., the Higgs boson)
+\item $(\frac{1}{2}, 0)$, left-handed Weyl spinor
+\item $(0, \frac{1}{2})$, right-handed Weyl spinor
+\item $(\frac{1}{2}, 0) \oplus (0, \frac{1}{2})$, Dirac spinor (massive fermions)
+\item $(\frac{1}{2}, \frac{1}{2})$, four-vector field (gauge bosons)
 \end{itemize}
-The existence of two distinct spinor representations---left-handed and right-handed---is not imposed by hand but follows from the structure of spacetime itself. Their physical distinction through the weak interaction is discussed in Section~\ref{sec:gauge_structure}.
+The existence of left-handed and right-handed spinor representations is not imposed by hand but follows from the structure of spacetime itself. Their physical distinction through the weak interaction is discussed in Section~\ref{sec:gauge_structure}.
 
-\subsubsection{CPT Theorem and Matter Content}
+\subsubsection{Matter Content}
 
-The union of quantum mechanics with special relativity carries a further consequence. Consistent quantization of fields on Minkowski spacetime---requiring Lorentz invariance, unitarity, and locality---leads to the CPT theorem: every particle must have a corresponding antiparticle with identical mass and spin but opposite internal quantum numbers. The spin-statistics theorem, arising from the same requirements, dictates that the half-integer-spin fermions described by spinor representations obey Fermi--Dirac statistics, while integer-spin bosons obey Bose--Einstein statistics. Matter and antimatter are thus not independent postulates but inevitable consequences of relativistic quantum field theory~\cite{Streater:1989vi}.
+The union of quantum mechanics with special relativity carries a further consequence. Consistent quantization of fields on Minkowski spacetime, requiring Lorentz invariance, unitarity, and locality, leads to the CPT theorem, under which every particle must have a corresponding antiparticle with identical mass and spin but opposite internal quantum numbers. The spin-statistics theorem, arising from the same requirements, dictates that the half-integer-spin fermions described by spinor representations obey Fermi-Dirac statistics, while integer-spin bosons obey Bose-Einstein statistics.
 
 The experimentally observed matter content of the SM consists of twelve spin-$\frac{1}{2}$ fermions organized into three generations, each containing two quarks and two leptons, summarized in Table~\ref{tab:sm_fermions}.
 
@@ -49,59 +49,59 @@ The experimentally observed matter content of the SM consists of twelve spin-$\f
 \hline\hline
 Generation & Particle & Type & Charge & Mass \\
 \hline
-First & up (\PQu) & quark & $+2/3$ & $\sim$2.2 MeV \\
-      & down (\PQd) & quark & $-1/3$ & $\sim$4.7 MeV \\
-      & electron (\Pe) & lepton & $-1$ & 0.511 MeV \\
-      & $\nu_e$ & neutrino & $0$ & $<$1 eV \\
+First & up (\PQu) & quark & $+2/3$ & $\sim 2.2$\MeV \\
+      & down (\PQd) & quark & $-1/3$ & $\sim 4.7$\MeV \\
+      & electron (\Pe) & lepton & $-1$ & $0.511$\MeV \\
+      & $\nu_e$ & neutrino & $0$ & $<1~\text{eV}$ \\
 \hline
-Second & charm (\PQc) & quark & $+2/3$ & $\sim$1.27 GeV \\
-       & strange (\PQs) & quark & $-1/3$ & $\sim$93 MeV \\
-       & muon (\Pgm) & lepton & $-1$ & 105.7 MeV \\
-       & $\nu_\mu$ & neutrino & $0$ & $<$1 eV \\
+Second & charm (\PQc) & quark & $+2/3$ & $\sim 1.27$\GeV \\
+       & strange (\PQs) & quark & $-1/3$ & $\sim 93$\MeV \\
+       & muon (\Pgm) & lepton & $-1$ & $105.7$\MeV \\
+       & $\nu_\mu$ & neutrino & $0$ & $<1~\text{eV}$ \\
 \hline
-Third & top (\PQt) & quark & $+2/3$ & $\sim$172.8 GeV \\
-      & bottom (\PQb) & quark & $-1/3$ & $\sim$4.18 GeV \\
-      & tau (\Pgt) & lepton & $-1$ & 1.777 GeV \\
-      & $\nu_\tau$ & neutrino & $0$ & $<$1 eV \\
+Third & top (\PQt) & quark & $+2/3$ & $\sim 172.8$\GeV \\
+      & bottom (\PQb) & quark & $-1/3$ & $\sim 4.18$\GeV \\
+      & tau (\Pgt) & lepton & $-1$ & $1.777$\GeV \\
+      & $\nu_\tau$ & neutrino & $0$ & $<1~\text{eV}$ \\
 \hline\hline
 \end{tabular}
 \end{table}
 
-Quarks carry color charge and participate in all three SM interactions, while leptons do not carry color charge and are thus absent from the strong interaction. This generational structure was not predicted from first principles but emerged from successive experimental discoveries---from the muon (1936) and strange quark physics, through the electroweak unification by Glashow, Weinberg, and Salam~\cite{Glashow:1961tr,Weinberg:1967tq,Salam:1968rm}, to the third-generation particles discovered between 1975 and 1995.
+Quarks carry color charge and participate in all three SM interactions, while leptons do not carry color charge and are thus absent from the strong interaction. This generational structure was not predicted from first principles but emerged from successive experimental discoveries, from the muon (1936) and strange quark physics, through the electroweak unification by Glashow, Weinberg, and Salam~\cite{Glashow:1961tr,Weinberg:1967tq,Salam:1968rm}, to the third-generation particles discovered between 1975 and 1995.
 
 \subsection{Gauge Structure and Interactions}
 \label{sec:gauge_structure}
 
-The SM is based on the gauge symmetry group:
+The SM is based on the gauge symmetry group
 \begin{equation}
 G_{\text{SM}} = \SU(3)_C \times \SU(2)_L \times \U(1)_Y
 \end{equation}
-where $\SU(3)_C$ describes the strong interaction (quantum chromodynamics, QCD), and $\SU(2)_L \times \U(1)_Y$ describes the electroweak interaction before symmetry breaking.
+where $\SU(3)_C$ describes QCD, and $\SU(2)_L \times \U(1)_Y$ describes the electroweak interaction before symmetry breaking.
 
 \subsubsection{The Gauge Principle}
 
-The SM interactions follow from a single organizing principle~\cite{Yang:1954ek}: the Lagrangian must be invariant under \emph{local} gauge transformations---independent phase rotations at each spacetime point. The ordinary derivative $\partial_\mu$ is not covariant under such transformations, necessitating a connection---the covariant derivative $D_\mu = \partial_\mu - igA_\mu^a T^a$---that parallel-transports symmetry charges between neighboring points. The connection fields $A_\mu^a$ are precisely the gauge bosons, one for each generator of the symmetry group: eight gluons for $\SU(3)_C$, three weak bosons ($W^1$, $W^2$, $W^3$) for $\SU(2)_L$, and one hypercharge boson ($B$) for $\U(1)_Y$. Force-carrying particles thus arise not as ad hoc additions but as geometric consequences of local symmetry.
+The SM interactions follow from a single organizing principle~\cite{Yang:1954ek}, namely that the Lagrangian must be invariant under local gauge transformations, corresponding to independent phase rotations at each spacetime point. The ordinary derivative $\partial_\mu$ is not covariant under such transformations, necessitating a connection, the covariant derivative $D_\mu = \partial_\mu - igA_\mu^a T^a$, that parallel transports symmetry charges between neighboring points. The connection fields $A_\mu^a$ are precisely the gauge bosons, one for each generator of the symmetry group, with eight gluons for $\SU(3)_C$, three weak bosons ($W^1$, $W^2$, $W^3$) for $\SU(2)_L$, and one hypercharge boson ($B$) for $\U(1)_Y$.
 
 \subsubsection{Parity Violation and the Chiral Structure of Weak Interactions}
 
-As discussed in Section~\ref{sec:spacetime_symmetries}, the Lorentz group admits two distinct spinor representations---left-handed $(\frac{1}{2}, 0)$ and right-handed $(0, \frac{1}{2})$. The electromagnetic and strong interactions treat these identically, preserving parity. It was therefore a profound surprise when Wu's 1957 experiment on cobalt-60 beta decay~\cite{Wu:1957my} demonstrated that the weak interaction maximally violates parity, coupling exclusively to left-handed fermions and right-handed antifermions.
+As discussed in Section~\ref{sec:spacetime_symmetries}, the Lorentz group admits two distinct spinor representations, left-handed $(\frac{1}{2}, 0)$ and right-handed $(0, \frac{1}{2})$. The electromagnetic and strong interactions treat these identically, preserving parity. It was therefore a profound surprise when Wu's 1957 experiment on cobalt-60 beta decay~\cite{Wu:1957my} demonstrated that the weak interaction maximally violates parity, coupling exclusively to left-handed fermions and right-handed antifermions.
 
-This observation was codified in the $V{-}A$ (vector minus axial-vector) theory of Feynman and Gell-Mann~\cite{Feynman:1958ty} and Sudarshan and Marshak~\cite{Sudarshan:1958vf}, which describes the charged weak current as:
+This observation was codified in the $V{-}A$ (vector minus axial-vector) theory of Feynman and Gell-Mann~\cite{Feynman:1958ty} and Sudarshan and Marshak~\cite{Sudarshan:1958vf}, which describes the charged weak current as
 \begin{equation}
 J^\mu_{\text{CC}} \propto \bar{\psi}\gamma^\mu(1 - \gamma^5)\psi
 \end{equation}
-The projection operator $(1 - \gamma^5)/2$ selects only the left-handed component of the fermion field, implementing maximal parity violation. This empirical structure finds its natural explanation in the gauge framework: left-handed fermions transform as $\SU(2)_L$ doublets, while right-handed fermions are $\SU(2)_L$ singlets. The subscript ``$L$'' in $\SU(2)_L$ directly encodes this experimental fact.
+The projection operator $(1 - \gamma^5)/2$ selects only the left-handed component of the fermion field, implementing maximal parity violation. This empirical structure finds its natural explanation in the gauge framework, where left-handed fermions transform as $\SU(2)_L$ doublets while right-handed fermions are $\SU(2)_L$ singlets. The subscript ``$L$'' in $\SU(2)_L$ directly encodes this experimental fact.
 
-Left-handed fermions are thus organized into $\SU(2)_L$ doublets:
+Left-handed fermions are thus organized into $\SU(2)_L$ doublets,
 \begin{equation}
 \ell_L = \begin{pmatrix} \nu_e \\ e^- \end{pmatrix}_L, \quad
 q_L = \begin{pmatrix} u \\ d \end{pmatrix}_L
 \end{equation}
-while right-handed fermions are $\SU(2)_L$ singlets: $e_R$, $u_R$, $d_R$ (and similarly for the other generations). In the minimal SM, right-handed neutrinos $\nu_R$ are not included. The $\SU(2)_L$ generators act non-trivially only on left-handed doublets, so that weak charged currents couple exclusively to left-handed fermions (and right-handed antifermions).
+while right-handed fermions are $\SU(2)_L$ singlets, $e_R$, $u_R$, $d_R$ (and similarly for the other generations). In the SM, right-handed neutrinos $\nu_R$ are not included. The $\SU(2)_L$ generators act non-trivially only on left-handed doublets, so that weak charged currents couple exclusively to left-handed fermions and right-handed antifermions.
 
 \subsubsection{Quantum Number Assignments}
 
-Each fermion chirality state carries conserved charges associated with the gauge symmetries. The weak isospin $I_3$ is the eigenvalue of the $\SU(2)_L$ generator $T^3$, and the weak hypercharge $Y$ is the $\U(1)_Y$ charge. After electroweak symmetry breaking, the unbroken $\U(1)_{\text{em}}$ subgroup defines the electric charge through the Gell-Mann--Nishijima relation~\cite{Nakano:1953zz,GellMann:1956iw}:
+Each fermion chirality state carries conserved charges associated with the gauge symmetries. The weak isospin $I_3$ is the eigenvalue of the $\SU(2)_L$ generator $T^3$, and the weak hypercharge $Y$ is the $\U(1)_Y$ charge. After electroweak symmetry breaking, the unbroken $\U(1)_{\text{em}}$ subgroup defines the electric charge through the Gell-Mann-Nishijima relation~\cite{Nakano:1953zz,GellMann:1956iw},
 \begin{equation}
 Q = I_3 + Y
 \label{eq:gellmann_nishijima}
@@ -122,7 +122,6 @@ $e^-$ & Left & $-1/2$ & $-1/2$ & $-1$ & \\
 $u$ & Left & $+1/2$ & $+1/6$ & $+2/3$ & \multirow{2}{*}{$\SU(2)_L$ doublet} \\
 $d$ & Left & $-1/2$ & $+1/6$ & $-1/3$ & \\
 \hline
-$\nu_e$ & Right & $0$ & $0$ & $0$ & $\SU(2)_L$ singlet \\
 $e^-$ & Right & $0$ & $-1$ & $-1$ & $\SU(2)_L$ singlet \\
 $u$ & Right & $0$ & $+2/3$ & $+2/3$ & $\SU(2)_L$ singlet \\
 $d$ & Right & $0$ & $-1/3$ & $-1/3$ & $\SU(2)_L$ singlet \\
@@ -130,22 +129,22 @@ $d$ & Right & $0$ & $-1/3$ & $-1/3$ & $\SU(2)_L$ singlet \\
 \end{tabular}
 \end{table}
 
-Note that left-handed fermions have $I_3 = \pm 1/2$ (doublet members), while right-handed fermions have $I_3 = 0$ (singlets). The hypercharge $Y$ differs from the electric charge $Q$; for example, the left-handed electron has $Y = -1/2$ but $Q = -1$.
+Note that left-handed fermions have $I_3 = \pm 1/2$ (doublet members), while right-handed fermions have $I_3 = 0$ (singlets). The hypercharge $Y$ differs from the electric charge $Q$; for example, the left-handed electron has $Y = -1/2$ but $Q = -1$. Since $\nu_R$ would be a complete gauge singlet with no SM interactions, it is omitted from the field content, and neutrinos cannot acquire a Dirac mass.
 
 \subsubsection{Gauge Bosons and Couplings}
 
-The gauge principle predicts massless gauge bosons in the gauge eigenstate basis: three fields $A^1_\mu$, $A^2_\mu$, $A^3_\mu$ for $\SU(2)_L$ and one field $B_\mu$ for $\U(1)_Y$. However, the observed physical spectrum---the massive $\PW^\pm$ and $\PZ$ bosons alongside the massless photon $\Pgg$---requires a mechanism to generate masses while preserving gauge invariance. This mechanism, electroweak symmetry breaking, is the subject of Section~\ref{sec:ewsb}.
+The gauge principle predicts massless gauge bosons in the gauge eigenstate basis, with three fields $A^1_\mu$, $A^2_\mu$, $A^3_\mu$ for $\SU(2)_L$ and one field $B_\mu$ for $\U(1)_Y$. However, the observed physical spectrum, the massive $\PW^\pm$ and $\PZ$ bosons alongside the massless photon $\Pgg$, requires a mechanism to generate masses while preserving gauge invariance. This mechanism, electroweak symmetry breaking, is the subject of Section~\ref{sec:ewsb}.
 
-The physical mass eigenstates arise from mixing between the gauge eigenstates. The charged $\PWpm$ bosons are combinations of $A^1_\mu$ and $A^2_\mu$, while the neutral $\PZ$ boson and photon $\Pgg$ are rotations of $A^3_\mu$ and $B_\mu$ through the weak mixing angle $\theta_W$:
+The physical mass eigenstates arise from mixing between the gauge eigenstates. The charged $\PWpm$ bosons are combinations of $A^1_\mu$ and $A^2_\mu$, while the neutral $\PZ$ boson and photon $\Pgg$ are rotations of $A^3_\mu$ and $B_\mu$ through the weak mixing angle $\theta_W$,
 \begin{equation}
 \tan\theta_W = \frac{g'}{g}
 \end{equation}
-where $g$ and $g'$ are the $\SU(2)_L$ and $\U(1)_Y$ coupling constants, with the experimentally measured value $\swsq \approx 0.23$~\cite{PDG2024}. The elementary electric charge is:
+where $g$ and $g'$ are the $\SU(2)_L$ and $\U(1)_Y$ coupling constants, with the experimentally measured value $\swsq \approx 0.23$~\cite{PDG2024}. The elementary electric charge is
 \begin{equation}
 e = g \sin\theta_W = g' \cos\theta_W
 \label{eq:electric_charge}
 \end{equation}
-The photon couples universally to electric charge $Q$, while the $\PZ$ boson couples to the combination:
+The photon couples universally to electric charge $Q$, while the $\PZ$ boson couples to the combination
 \begin{equation}
 Q_Z = I_3 - \swsq Q
 \label{eq:z_coupling}
@@ -155,62 +154,62 @@ which differs between fermion species depending on their quantum numbers as show
 \subsection{Electroweak Symmetry Breaking and the Higgs Mechanism}
 \label{sec:ewsb}
 
-Direct mass terms such as $\frac{1}{2}m^2 W_\mu W^\mu$ explicitly break gauge invariance, destroying the cancellations that ensure renormalizability. The Brout--Englert--Higgs mechanism~\cite{Englert:1964et,Higgs:1964pj,Guralnik:1964eu} resolves this through spontaneous symmetry breaking: the gauge symmetry is preserved in the Lagrangian but broken by the vacuum state, generating gauge boson masses dynamically while maintaining renormalizability~\cite{tHooft:1971qjg}.
+Direct mass terms such as $\frac{1}{2}m^2 W_\mu W^\mu$ explicitly break gauge invariance, destroying the cancellations that ensure renormalizability. The Brout-Englert-Higgs mechanism~\cite{Englert:1964et,Higgs:1964pj,Guralnik:1964eu} resolves this through spontaneous symmetry breaking. The gauge symmetry is preserved in the Lagrangian but broken by the vacuum state, generating gauge boson masses dynamically~\cite{tHooft:1971qjg}.
 
 \subsubsection{The Higgs Doublet and Spontaneous Symmetry Breaking}
 
-The SM introduces a complex scalar $\SU(2)_L$ doublet with hypercharge $Y = +1/2$:
+The SM introduces a complex scalar $\SU(2)_L$ doublet with hypercharge $Y = +1/2$,
 \begin{equation}
 \Phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}
 \end{equation}
-with four real degrees of freedom. The most general renormalizable scalar potential is:
+with four real degrees of freedom. The most general renormalizable scalar potential is
 \begin{equation}
 V(\Phi) = -\mu^2 \Phi^\dagger\Phi + \lambda(\Phi^\dagger\Phi)^2
 \label{eq:higgs_potential}
 \end{equation}
-For $\mu^2 > 0$ and $\lambda > 0$, the minimum is not at $\Phi = 0$ but on a circle of degenerate vacua with $|\Phi|^2 = \mu^2/(2\lambda)$. The system selects one vacuum, spontaneously breaking $\SU(2)_L \times \U(1)_Y$ to $\U(1)_{\text{em}}$:
+For $\mu^2 > 0$ and $\lambda > 0$, the minimum is not at $\Phi = 0$ but on a circle of degenerate vacua with $|\Phi|^2 = \mu^2/(2\lambda)$. The system selects one vacuum, spontaneously breaking $\SU(2)_L \times \U(1)_Y$ to $\U(1)_{\text{em}}$,
 \begin{equation}
-\langle\Phi\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v \end{pmatrix}, \quad v = \frac{\mu}{\sqrt{\lambda}} \approx 246\GeV
+\langle\Phi\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v \end{pmatrix}, \quad v = \frac{\mu}{\sqrt{\lambda}} \approx 246~\GeV
 \label{eq:higgs_vev}
 \end{equation}
 
-Of the four generators of $\SU(2)_L \times \U(1)_Y$, three are broken by this vacuum. By Goldstone's theorem~\cite{Goldstone:1961eq,Goldstone:1962es}, each broken generator produces a massless scalar---three Goldstone bosons in total. In a gauge theory, these are not physical particles: they are absorbed (``eaten'') by the $\PW^\pm$ and $\PZ$ bosons, providing the longitudinal polarization states required by massive vector bosons. In the unitary gauge, the Higgs field reduces to:
+Of the four generators of $\SU(2)_L \times \U(1)_Y$, three are broken by this vacuum. By Goldstone's theorem~\cite{Goldstone:1961eq,Goldstone:1962es}, each broken generator produces a massless scalar, giving three Goldstone bosons in total. In a gauge theory, these are not physical particles. They are absorbed (``eaten'') by the $\PW^\pm$ and $\PZ$ bosons, providing the longitudinal polarization states required by massive vector bosons. In the unitary gauge, the Higgs field reduces to
 \begin{equation}
 \Phi(x) = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v + h(x) \end{pmatrix}
 \label{eq:unitary_gauge}
 \end{equation}
-where $h(x)$ is the physical Higgs boson with mass $m_h = \sqrt{2\lambda}\,v \approx 125\GeV$~\cite{ATLAS:2012yda,CMS:2012qbp}. The four degrees of freedom of the original doublet thus rearrange into three longitudinal gauge boson polarizations plus one physical scalar.
+where $h(x)$ is the physical Higgs boson with mass $m_h = \sqrt{2\lambda}\,v \approx 125$\GeV~\cite{ATLAS:2012yda,CMS:2012qbp}. The four degrees of freedom of the original doublet thus rearrange into three longitudinal gauge boson polarizations plus one physical scalar.
 
 \subsubsection{Gauge Boson Mass Generation}
 
-Gauge boson masses emerge from the kinetic term $|D_\mu\Phi|^2$ evaluated at the vacuum. The covariant derivative acting on the Higgs doublet is:
+Gauge boson masses emerge from the kinetic term $|D_\mu\Phi|^2$ evaluated at the vacuum. The covariant derivative acting on the Higgs doublet is
 \begin{equation}
 D_\mu\Phi = \left(\partial_\mu - ig\frac{\sigma^a}{2}A^a_\mu - ig'Y B_\mu\right)\Phi
 \label{eq:covariant_derivative}
 \end{equation}
 where $\sigma^a$ ($a = 1, 2, 3$) are the Pauli matrices, the generators of $\SU(2)_L$ in the fundamental representation.
 
-Substituting the vacuum expectation value $\langle\Phi\rangle = (0, v/\sqrt{2})^T$ with hypercharge $Y = +1/2$, the covariant derivative becomes:
+Substituting the vacuum expectation value $\langle\Phi\rangle = (0, v/\sqrt{2})^T$ with hypercharge $Y = +1/2$, the covariant derivative becomes
 \begin{equation}
 D_\mu\langle\Phi\rangle = -i\frac{v}{2\sqrt{2}}\begin{pmatrix} g(A^1_\mu - iA^2_\mu) \\ g A^3_\mu - g' B_\mu \end{pmatrix}
 \end{equation}
-The kinetic term then yields:
+The kinetic term then yields
 \begin{equation}
 |D_\mu\langle\Phi\rangle|^2 = \frac{v^2}{8}\left[g^2(A^1_\mu A^{1\mu} + A^2_\mu A^{2\mu}) + (gA^3_\mu - g'B_\mu)^2\right]
 \end{equation}
-These are precisely mass terms for the gauge bosons. The charged combinations $W^\pm_\mu = (A^1_\mu \mp i A^2_\mu)/\sqrt{2}$ acquire mass:
+These are precisely mass terms for the gauge bosons. The charged combinations $W^\pm_\mu = (A^1_\mu \mp i A^2_\mu)/\sqrt{2}$ acquire mass,
 \begin{equation}
 m_W = \frac{gv}{2}
 \label{eq:w_mass}
 \end{equation}
-The neutral fields $A^3_\mu$ and $B_\mu$ mix through the weak mixing angle $\theta_W$ to form the photon $A_\mu$ and $Z$ boson:
+The neutral fields $A^3_\mu$ and $B_\mu$ mix through the weak mixing angle $\theta_W$ to form the photon $A_\mu$ and $Z$ boson,
 \begin{equation}
 \begin{pmatrix} A_\mu \\ Z_\mu \end{pmatrix} =
 \begin{pmatrix} \cos\theta_W & \sin\theta_W \\ -\sin\theta_W & \cos\theta_W \end{pmatrix}
 \begin{pmatrix} B_\mu \\ A^3_\mu \end{pmatrix}
 \label{eq:neutral_mixing}
 \end{equation}
-The photon remains massless, coupling to the unbroken $\U(1)_{\text{em}}$ generator, while the $\PZ$ boson acquires mass:
+The photon remains massless, coupling to the unbroken $\U(1)_{\text{em}}$ generator, while the $\PZ$ boson acquires mass,
 \begin{equation}
 m_Z = \frac{v\sqrt{g^2 + g'^2}}{2} = \frac{m_W}{\cos\theta_W}
 \label{eq:z_mass}
@@ -219,18 +218,18 @@ The relation $m_Z = m_W/\cos\theta_W$ is a prediction of the symmetry breaking m
 
 \subsubsection{Physical Interactions and Fermion Masses}
 
-In the mass eigenstate basis, the electroweak covariant derivative takes the form:
+In the mass eigenstate basis, the electroweak covariant derivative takes the form
 \begin{equation}
 D_\mu = \partial_\mu - ieA_\mu Q - i\frac{g}{\cos\theta_W}Z_\mu Q_Z - ig\left(W^+_\mu T^+ + W^-_\mu T^-\right)
 \label{eq:covariant_mass_basis}
 \end{equation}
 where $T^\pm = (T^1 \pm iT^2)/\sqrt{2}$ are the weak isospin raising and lowering operators. The photon couples to electric charge $Q$, the $\PZ$ boson to $Q_Z = I_3 - \swsq Q$ (see Table~\ref{tab:fermion_quantum_numbers}), and the $\PWpm$ bosons mediate transitions between doublet partners ($u \leftrightarrow d$, $\nu_e \leftrightarrow e^-$).
 
-Fermion masses cannot arise from direct mass terms $m\bar{\psi}\psi$, which would connect left-handed doublets to right-handed singlets and thus violate gauge invariance. Instead, they are generated through Yukawa couplings to the Higgs doublet:
+Fermion masses cannot arise from direct mass terms $m\bar{\psi}\psi$, which would connect left-handed doublets to right-handed singlets and thus violate gauge invariance. Instead, they are generated through Yukawa couplings to the Higgs doublet,
 \begin{equation}
 \mathcal{L}_{\text{Yukawa}} = -y_f \bar{\psi}_L \Phi \psi_R + \text{h.c.}
 \end{equation}
-After symmetry breaking, these yield fermion masses $m_f = y_f v / \sqrt{2}$. Unlike gauge boson masses, which are predicted by $v$, $g$, and $g'$, the Yukawa couplings $y_f$ are free parameters spanning six orders of magnitude---from $y_e \sim 3 \times 10^{-6}$ to $y_t \sim 1$~\cite{PDG2024}. This unexplained ``flavor hierarchy'' motivates many extensions of the SM.
+After symmetry breaking, these yield fermion masses $m_f = y_f v / \sqrt{2}$. Unlike gauge boson masses, which are predicted by $v$, $g$, and $g'$, the Yukawa couplings $y_f$ are free parameters spanning six orders of magnitude, from $y_e \sim 3 \times 10^{-6}$ to $y_t \sim 1$~\cite{PDG2024}. This unexplained ``flavor hierarchy'' motivates many extensions of the SM.
 
 \section{The Two-Higgs-Doublet Model}
 \label{sec:theory_2hdm}
@@ -238,33 +237,33 @@ After symmetry breaking, these yield fermion masses $m_f = y_f v / \sqrt{2}$. Un
 \subsection{Motivations for an Extended Scalar Sector}
 \label{sec:theory_bsm}
 
-The SM Higgs sector is minimal by construction, but the gauge symmetry permits arbitrarily many scalar multiplets. Extending the scalar sector preserves the gauge structure while addressing multiple outstanding problems.
+The SM Higgs sector is minimal by construction, but the gauge symmetry permits arbitrarily many scalar multiplets. Extending the scalar sector preserves the gauge structure.
 
 Several observed phenomena motivate additional scalars. In supersymmetry~\cite{Martin:1997ns}, holomorphy of the superpotential $W = y_u \hat{Q}\hat{H}_u\hat{u}^c + y_d \hat{Q}\hat{H}_d\hat{d}^c + \mu\hat{H}_u\hat{H}_d$ forbids the conjugate $\hat{H}_u^*$ from appearing, necessitating a second doublet $\hat{H}_d$.
 
 Neutrino oscillations demand non-zero neutrino masses~\cite{SuperK:1998kpq,SNO:2002tuh} that the minimal SM cannot generate. In the type-II seesaw mechanism~\cite{Minkowski:1977sc,Mohapatra:1979ia}, an $\SU(2)_L$ scalar triplet $\Delta$ generates naturally suppressed Majorana masses $m_\nu = y_\nu \langle\Delta\rangle$, where $\langle\Delta\rangle = \mu_\Delta v^2/M_\Delta^2 \ll v$ is controlled by the heavy triplet mass $M_\Delta$.
 
-The QCD Lagrangian permits a CP-violating term $\mathcal{L}_{\theta} = \frac{\theta g_s^2}{32\pi^2}G^a_{\mu\nu}\tilde{G}^{a\mu\nu}$, yet the neutron electric dipole moment constrains $|\bar{\theta}| < 10^{-10}$~\cite{Abel:2020pzs}. The Peccei--Quinn mechanism~\cite{Peccei:1977hh} resolves this by introducing a global $\U(1)_{\text{PQ}}$ symmetry whose spontaneous breaking yields the axion $a$, dynamically relaxing the $\theta$ parameter:
+The QCD Lagrangian permits a CP-violating term $\mathcal{L}_{\theta} = \frac{\theta g_s^2}{32\pi^2}G^a_{\mu\nu}\tilde{G}^{a\mu\nu}$, yet the neutron electric dipole moment constrains $|\bar{\theta}| < 10^{-10}$~\cite{Abel:2020pzs}. The Peccei-Quinn mechanism~\cite{Peccei:1977hh} resolves this by introducing a global $\U(1)_{\text{PQ}}$ symmetry whose spontaneous breaking yields the axion $a$, dynamically relaxing the $\theta$ parameter,
 \begin{equation}
 \bar{\theta}_{\text{eff}} = \bar{\theta} + \frac{a}{f_a} \to 0
 \end{equation}
 Many implementations of this mechanism require extended Higgs sectors carrying the PQ charges.
 
-The observed baryon asymmetry requires CP violation beyond the CKM phase~\cite{Sakharov:1967dj}. Extended Higgs sectors introduce new CP-violating phases that can drive electroweak baryogenesis~\cite{Morrissey:2012db}, provided the basis-invariant quantity $\text{Im}[m_{12}^2 \lambda_5^*] \neq 0$.
+The observed baryon asymmetry requires CP violation beyond the Cabibbo-Kobayashi-Maskawa (CKM) phase~\cite{Sakharov:1967dj}. Extended Higgs sectors introduce new CP-violating phases that can drive electroweak baryogenesis~\cite{Morrissey:2012db}, provided the basis-invariant quantity $\text{Im}[m_{12}^2 \lambda_5^*] \neq 0$.
 
 Non-baryonic dark matter~\cite{Planck:2018vyg} finds a natural candidate in the inert doublet model~\cite{Deshpande:1977rw}, where an unbroken $\mathbb{Z}_2$ symmetry ($\Phi_2 \to -\Phi_2$) stabilizes the lightest neutral component of a second scalar doublet, with relic density controlled by the portal coupling $\lambda_L = \lambda_3 + \lambda_4 + \lambda_5$.
 
-The simplest extension preserving the SM gauge structure is the Two-Higgs-Doublet Model (2HDM)~\cite{Branco:2011iw}, which introduces one additional $\SU(2)_L$ doublet and can address multiple outstanding problems simultaneously.
+The simplest extension preserving the SM gauge structure is the Two-Higgs-Doublet Model (2HDM)~\cite{Branco:2011iw}, which introduces one additional $\SU(2)_L$ doublet and can address multiple problems simultaneously.
 
 \subsection{General 2HDM}
 
 \subsubsection{The Scalar Potential}
 
-The 2HDM introduces two complex $\SU(2)_L$ doublets $\Phi_1$ and $\Phi_2$, each with hypercharge $Y = +1/2$:
+The 2HDM introduces two complex $\SU(2)_L$ doublets $\Phi_1$ and $\Phi_2$, each with hypercharge $Y = +1/2$,
 \begin{equation}
 \Phi_i = \begin{pmatrix} \phi_i^+ \\ \phi_i^0 \end{pmatrix}, \quad i = 1,2
 \end{equation}
-providing eight real scalar degrees of freedom before symmetry breaking. The most general gauge-invariant renormalizable potential contains fourteen independent real parameters~\cite{Branco:2011iw,Gunion:1990dt}:
+providing eight real scalar degrees of freedom before symmetry breaking. The most general gauge-invariant renormalizable potential contains fourteen independent real parameters~\cite{Branco:2011iw,Gunion:1990dt},
 \begin{gather}
 V(\Phi_1, \Phi_2) = m_{11}^2 \Phi_1^\dagger\Phi_1 + m_{22}^2 \Phi_2^\dagger\Phi_2 - \left[m_{12}^2(\Phi_1^\dagger\Phi_2) + \text{h.c.}\right] \nonumber\\
 + \frac{\lambda_1}{2}(\Phi_1^\dagger\Phi_1)^2 + \frac{\lambda_2}{2}(\Phi_2^\dagger\Phi_2)^2 + \lambda_3(\Phi_1^\dagger\Phi_1)(\Phi_2^\dagger\Phi_2) + \lambda_4(\Phi_1^\dagger\Phi_2)(\Phi_2^\dagger\Phi_1) \nonumber\\
@@ -273,86 +272,86 @@ V(\Phi_1, \Phi_2) = m_{11}^2 \Phi_1^\dagger\Phi_1 + m_{22}^2 \Phi_2^\dagger\Phi_
 \end{gather}
 This potential is progressively constrained by three physically motivated requirements.
 
-First, \emph{CP conservation} demands that all parameters be real, reducing the count from fourteen to ten. Complex couplings would provide additional CP violation relevant for baryogenesis but are not pursued in this analysis.
+First, \emph{CP conservation} demands that all parameters be real, reducing the count from fourteen to ten. Complex couplings would provide additional CP violation relevant for baryogenesis but are not a scope in this analysis.
 
-Second, the suppression of tree-level flavor-changing neutral currents (FCNCs), which are severely constrained by $K^0$--$\bar{K}^0$ and $B^0$--$\bar{B}^0$ mixing, motivates a discrete $\mathbb{Z}_2$ symmetry~\cite{Branco:2011iw}:
+Second, the suppression of tree-level flavor-changing neutral currents (FCNCs), which are severely constrained by $K^0$-$\bar{K}^0$ and $B^0$-$\bar{B}^0$ mixing, motivates a discrete $\mathbb{Z}_2$ symmetry~\cite{Branco:2011iw},
 \begin{equation}
-\mathbb{Z}_2: \quad \Phi_1 \to \Phi_1, \quad \Phi_2 \to -\Phi_2
+\mathbb{Z}_2,\quad \Phi_1 \to \Phi_1, \quad \Phi_2 \to -\Phi_2
 \label{eq:z2_symmetry}
 \end{equation}
-Under this transformation, the terms proportional to $\lambda_6$ and $\lambda_7$ are odd and therefore forbidden, eliminating two more parameters. The $\mathbb{Z}_2$ symmetry extends to the Yukawa sector, where it ensures that each fermion type couples to only one doublet---the mechanism behind the four 2HDM types discussed in Section~\ref{sec:2hdm_yukawa}.
+Under this transformation, the terms proportional to $\lambda_6$ and $\lambda_7$ are odd and therefore forbidden, eliminating two more parameters. The $\mathbb{Z}_2$ symmetry extends to the Yukawa sector, where it ensures that each fermion type couples to only one doublet. This is the mechanism behind the four 2HDM types discussed in Section~\ref{sec:2hdm_yukawa}.
 
-Third, the $m_{12}^2(\Phi_1^\dagger\Phi_2 + \text{h.c.})$ term \emph{softly breaks} the $\mathbb{Z}_2$ symmetry: this avoids a massless pseudoscalar Goldstone boson while preserving FCNC suppression, since dimension-two breaking cannot generate $\lambda_6$ and $\lambda_7$ through renormalization.
+Third, the $m_{12}^2(\Phi_1^\dagger\Phi_2 + \text{h.c.})$ term softly breaks the $\mathbb{Z}_2$ symmetry. This avoids a massless pseudoscalar Goldstone boson while preserving FCNC suppression, since dimension-two breaking cannot generate $\lambda_6$ and $\lambda_7$ through renormalization.
 
-The resulting CP-conserving, softly broken $\mathbb{Z}_2$-symmetric potential is:
+The resulting CP-conserving, softly broken $\mathbb{Z}_2$-symmetric potential is
 \begin{gather}
 V(\Phi_1, \Phi_2) = m_{11}^2 \Phi_1^\dagger\Phi_1 + m_{22}^2 \Phi_2^\dagger\Phi_2 - m_{12}^2(\Phi_1^\dagger\Phi_2 + \text{h.c.}) \nonumber\\
 + \frac{\lambda_1}{2}(\Phi_1^\dagger\Phi_1)^2 + \frac{\lambda_2}{2}(\Phi_2^\dagger\Phi_2)^2 + \lambda_3(\Phi_1^\dagger\Phi_1)(\Phi_2^\dagger\Phi_2) \nonumber\\
 + \lambda_4(\Phi_1^\dagger\Phi_2)(\Phi_2^\dagger\Phi_1) + \frac{\lambda_5}{2}\left[(\Phi_1^\dagger\Phi_2)^2 + \text{h.c.}\right]
 \label{eq:2hdm_potential}
 \end{gather}
-characterized by eight real parameters: $m_{11}^2$, $m_{22}^2$, $m_{12}^2$, $\lambda_1$, $\lambda_2$, $\lambda_3$, $\lambda_4$, $\lambda_5$.
+characterized by eight real parameters, $m_{11}^2$, $m_{22}^2$, $m_{12}^2$, $\lambda_1$, $\lambda_2$, $\lambda_3$, $\lambda_4$, and $\lambda_5$.
 
-The quartic couplings $\lambda_i$ are subject to theoretical consistency conditions~\cite{Branco:2011iw}: vacuum stability (potential bounded from below), perturbativity ($|\lambda_i| \lesssim 4\pi$), and tree-level unitarity of scalar-scalar scattering amplitudes.
+The quartic couplings $\lambda_i$ are subject to theoretical consistency conditions~\cite{Branco:2011iw}, including vacuum stability (potential bounded from below), perturbativity ($|\lambda_i| \lesssim 4\pi$), and tree-level unitarity of scalar-scalar scattering amplitudes.
 
-In the MSSM, supersymmetry fixes the quartic couplings at tree level: $\lambda_1 = \lambda_2 = (g^2 + g'^2)/4$, $\lambda_3 = (g^2 - g'^2)/4$, $\lambda_4 = -g^2/2$, $\lambda_5 = 0$~\cite{Martin:1997ns}, automatically satisfying all theoretical bounds.
+In the Minimal Supersymmetric Standard Model (MSSM), supersymmetry fixes the quartic couplings at tree level, $\lambda_1 = \lambda_2 = (g^2 + g'^2)/4$, $\lambda_3 = (g^2 - g'^2)/4$, $\lambda_4 = -g^2/2$, and $\lambda_5 = 0$~\cite{Martin:1997ns}, automatically satisfying all theoretical bounds.
 
 \subsubsection{Electroweak Symmetry Breaking and the Mass Spectrum}
 
-After electroweak symmetry breaking, both doublets acquire vacuum expectation values:
+After electroweak symmetry breaking, both doublets acquire vacuum expectation values,
 \begin{equation}
-\langle\Phi_i\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v_i \end{pmatrix}, \quad v^2 = v_1^2 + v_2^2 = (246\GeV)^2
+\langle\Phi_i\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v_i \end{pmatrix}, \quad v^2 = v_1^2 + v_2^2 = (246~\GeV)^2
 \label{eq:2hdm_vevs}
 \end{equation}
-The ratio of vacuum expectation values defines a key parameter:
+The ratio of vacuum expectation values defines a key parameter,
 \begin{equation}
 \tan\beta \equiv \frac{v_2}{v_1}, \quad 0 < \beta < \frac{\pi}{2}
 \label{eq:tanbeta}
 \end{equation}
 which controls the relative contributions of the two doublets and strongly influences Yukawa couplings (Section~\ref{sec:2hdm_yukawa}). The potential parameters $m_{11}^2$, $m_{22}^2$, and $m_{12}^2$ are determined by the minimization conditions $\partial V/\partial v_i = 0$.
 
-Of the eight real degrees of freedom, three become Goldstone bosons absorbed by the $\PWpm$ and $\PZ$, leaving five physical states: two CP-even scalars (\Ph, \PH), one CP-odd pseudoscalar (\PA), and a charged pair (\PHpm).
+Of the eight real degrees of freedom, three become Goldstone bosons absorbed by the $\PWpm$ and $\PZ$, leaving five physical states, two CP-even scalars (\Ph, \PH), one CP-odd pseudoscalar (\PA), and a charged pair (\PHpm).
 
-In the CP-even sector, the neutral fields $\rho_1$ and $\rho_2$---the real parts of $\phi_1^0$ and $\phi_2^0$ oscillating around $v_1$ and $v_2$---mix through a $2\times2$ mass matrix:
+In the CP-even sector, the neutral fields $\rho_1$ and $\rho_2$, the real parts of $\phi_1^0$ and $\phi_2^0$ oscillating around $v_1$ and $v_2$, mix through a $2\times2$ mass matrix,
 \begin{equation}
 \mathcal{M}^2_{\text{CP-even}} = \begin{pmatrix} A_{11} & A_{12} \\ A_{12} & A_{22} \end{pmatrix}
 \label{eq:cpeven_mass_matrix}
 \end{equation}
-with elements~\cite{Branco:2011iw,Gunion:1990dt}:
+with elements~\cite{Branco:2011iw,Gunion:1990dt},
 \begin{gather}
 A_{11} = \lambda_1 v_1^2 + \frac{m_{12}^2 v_2}{v_1} = \lambda_1 v^2 \cos^2\beta + m_{12}^2 \tan\beta \\
 A_{22} = \lambda_2 v_2^2 + \frac{m_{12}^2 v_1}{v_2} = \lambda_2 v^2 \sin^2\beta + m_{12}^2 \cot\beta \\
 A_{12} = -m_{12}^2 + (\lambda_3 + \lambda_4 + \lambda_5) v_1 v_2 = -m_{12}^2 + \frac{(\lambda_3 + \lambda_4 + \lambda_5) v^2}{2} \sin(2\beta)
 \end{gather}
-Diagonalization yields the physical mass eigenstates \Ph and \PH through a rotation by angle $\alpha$:
+Diagonalization yields the physical mass eigenstates \Ph and \PH through a rotation by angle $\alpha$,
 \begin{equation}
-\begin{pmatrix} \Ph \\ \PH \end{pmatrix} = \begin{pmatrix} \cos\alpha & \sin\alpha \\ -\sin\alpha & \cos\alpha \end{pmatrix} \begin{pmatrix} \rho_1 \\ \rho_2 \end{pmatrix}
+\begin{pmatrix} \Ph \\ \PH \end{pmatrix} = \begin{pmatrix} -\sin\alpha & \cos\alpha \\ \cos\alpha & \sin\alpha \end{pmatrix} \begin{pmatrix} \rho_1 \\ \rho_2 \end{pmatrix}
 \label{eq:cpeven_rotation}
 \end{equation}
-By convention, $\mh < \mH$ and the lighter state \Ph is identified with the observed 125\GeV Higgs boson. The mixing angle $\alpha$ is determined by:
+By convention, $\mh < \mH$ and the lighter state \Ph is identified with the observed 125\GeV Higgs boson. The mixing angle $\alpha$ is determined by
 \begin{equation}
 \tan(2\alpha) = \frac{2A_{12}}{A_{11} - A_{22}}
 \label{eq:alpha_definition}
 \end{equation}
-and the eigenvalues (squared masses) are:
+and the eigenvalues (squared masses) are
 \begin{equation}
 m_{h,H}^2 = \frac{1}{2}\left[(A_{11} + A_{22}) \mp \sqrt{(A_{11} - A_{22})^2 + 4A_{12}^2}\right]
 \label{eq:cpeven_masses}
 \end{equation}
 
-The CP-odd and charged scalar masses are determined by the soft-breaking parameter $m_{12}^2$ and the quartic couplings $\lambda_4$, $\lambda_5$:
+The CP-odd and charged scalar masses are determined by the soft-breaking parameter $m_{12}^2$ and the quartic couplings $\lambda_4$, $\lambda_5$,
 \begin{gather}
 m_\PA^2 = \frac{m_{12}^2}{\sin\beta\cos\beta} - \lambda_5 v^2 = m_{12}^2 \left(\frac{1 + \tan^2\beta}{\tan\beta}\right) - \lambda_5 v^2 \label{eq:mA}
 \end{gather}
 \begin{gather}
 m_{\PHpm}^2 = m_\PA^2 + \frac{1}{2}(\lambda_5 - \lambda_4)v^2 \label{eq:mHpm}
 \end{gather}
-The \PHc--\PA mass splitting is governed by $(\lambda_5 - \lambda_4)$; in the MSSM ($\lambda_4 = -g^2/2$, $\lambda_5 = 0$), this gives $\mHc^2 = \mA^2 + m_W^2$.
+The \PHc-\PA mass splitting is governed by $(\lambda_5 - \lambda_4)$. In the MSSM ($\lambda_4 = -g^2/2$, $\lambda_5 = 0$), this gives $\mHc^2 = \mA^2 + m_W^2$.
 
 \subsubsection{Yukawa Couplings and the Four Types}
 \label{sec:2hdm_yukawa}
 
-With two doublets, the most general Yukawa Lagrangian is~\cite{Branco:2011iw}:
+With two doublets, the most general Yukawa Lagrangian is~\cite{Branco:2011iw}
 \begin{equation}
 \begin{split}
 -\mathcal{L}_Y = &\bar{Q}_L \left(Y_1^d \Phi_1 + Y_2^d \Phi_2\right) d_R + \bar{Q}_L \left(Y_1^u \widetilde{\Phi}_1 + Y_2^u \widetilde{\Phi}_2\right) u_R \\
@@ -360,71 +359,60 @@ With two doublets, the most general Yukawa Lagrangian is~\cite{Branco:2011iw}:
 \end{split}
 \label{eq:yukawa_general}
 \end{equation}
-where $\widetilde{\Phi}_i = i\sigma_2 \Phi_i^*$ and $Y_i^f$ are $3\times3$ matrices in flavor space. After symmetry breaking, the fermion mass matrices $M_f = (v_1 Y_1^f + v_2 Y_2^f)/\sqrt{2}$ generically produce tree-level FCNCs through misaligned combinations of $Y_1^f$ and $Y_2^f$, severely constrained by $K^0$--$\bar{K}^0$ and $B^0$--$\bar{B}^0$ mixing.
-
-The $\mathbb{Z}_2$ symmetry in Eq.~(\ref{eq:z2_symmetry}) extends to the fermion sector, ensuring that each fermion type couples to only one doublet~\cite{Branco:2011iw,Gunion:1990dt}. Depending on the charge assignments, four distinct Yukawa structures (``types'') arise:
+where $\widetilde{\Phi}_i = i\sigma_2 \Phi_i^*$ and $Y_i^f$ are $3\times3$ matrices in flavor space. After symmetry breaking, the fermion mass matrices $M_f = (v_1 Y_1^f + v_2 Y_2^f)/\sqrt{2}$ generically produce tree-level FCNCs through misaligned combinations of $Y_1^f$ and $Y_2^f$, severely constrained by $K^0$-$\bar{K}^0$ and $B^0$-$\bar{B}^0$ mixing. The $\mathbb{Z}_2$ symmetry in Eq.~(\ref{eq:z2_symmetry}) extends to the fermion sector, ensuring that each fermion type couples to only one doublet~\cite{Branco:2011iw,Gunion:1990dt}. Depending on the charge assignments, four distinct Yukawa structures (``types'') arise.
 
 \begin{table}[htbp]
 \centering
 \caption{Yukawa coupling structure in the four types of 2HDM. Each fermion type couples exclusively to one doublet, enforced by the $\mathbb{Z}_2$ symmetry, thereby avoiding tree-level FCNCs.}
 \label{tab:2hdm_types}
 \small
-\begin{tabular}{lcccl}
+\begin{tabular}{lccc}
 \hline\hline
-Type & Up-type & Down-type & Charged & Motivated by \\
-     & quarks & quarks & leptons & \\
+Type & Up-type quarks & Down-type quarks & Charged leptons \\
 \hline
-Type-I & $\Phi_2$ & $\Phi_2$ & $\Phi_2$ & Simplest FCNC suppression \\
-Type-II & $\Phi_2$ & $\Phi_1$ & $\Phi_1$ & MSSM \\
-Type-X & $\Phi_2$ & $\Phi_2$ & $\Phi_1$ & Lepton-specific models \\
-Type-Y & $\Phi_2$ & $\Phi_1$ & $\Phi_2$ & Alternative MSSM-like \\
+Type-I & $\Phi_2$ & $\Phi_2$ & $\Phi_2$ \\
+Type-II & $\Phi_2$ & $\Phi_1$ & $\Phi_1$ \\
+Type-X & $\Phi_2$ & $\Phi_2$ & $\Phi_1$ \\
+Type-Y & $\Phi_2$ & $\Phi_1$ & $\Phi_2$ \\
 \hline\hline
 \end{tabular}
 \end{table}
 
-After diagonalizing the fermion mass matrices, the Yukawa couplings of the physical Higgs bosons to fermions in the mass eigenstate basis are~\cite{Branco:2011iw}:
+After diagonalizing the fermion mass matrices, the Yukawa couplings of the physical Higgs bosons to fermions in the mass eigenstate basis are~\cite{Branco:2011iw}
 \begin{gather}
 -\mathcal{L}_Y^{\text{phys}} = \sum_f \frac{m_f}{v} \left[\xi_f^h \bar{f} f \, h + \xi_f^H \bar{f} f \, H - i \xi_f^A \bar{f} \gamma_5 f \, A\right] \nonumber\\
 + \frac{\sqrt{2}}{v} \bar{u} \left(m_u \xi_u^A P_L + m_d \xi_d^A P_R\right) V_{\text{CKM}} d \, H^+ \nonumber\\
 + \frac{\sqrt{2} m_\ell}{v} \xi_\ell^A \bar{\nu}_L \ell_R \, H^+ + \text{h.c.}
 \label{eq:yukawa_physical}
 \end{gather}
-where $P_{L/R} = (1 \mp \gamma_5)/2$ are chiral projectors and $V_{\text{CKM}}$ is the Cabibbo--Kobayashi--Maskawa matrix. The coupling modifiers $\xi_f^{\Phi}$ relative to the SM are given in Table~\ref{tab:yukawa_couplings} for each 2HDM type.
+where $P_{L/R} = (1 \mp \gamma_5)/2$ are chiral projectors and $V_{\text{CKM}}$ is the CKM matrix. The coupling modifiers $\xi_f^{\Phi}$ relative to the SM are given in Table~\ref{tab:yukawa_couplings} for each 2HDM type.
 
 \begin{table}[htbp]
 \centering
 \caption{Yukawa coupling modifiers $\xi_f^{\Phi}$ for the four types of 2HDM. The SM values are $\xi_f = 1$ for all fermions coupling to the Higgs doublet. Here $c_\alpha = \cos\alpha$, $s_\alpha = \sin\alpha$, $c_\beta = \cos\beta$, $s_\beta = \sin\beta$, and $t_\beta = \tan\beta$.}
 \label{tab:yukawa_couplings}
 \small
-\begin{tabular}{lcccccc}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccc}
 \hline\hline
-Type & $\xi_u^h$ & $\xi_d^h$ & $\xi_\ell^h$ & $\xi_u^H$ & $\xi_d^H$ & $\xi_\ell^H$ \\
+Type & $(\xi_u^h, \xi_d^h, \xi_\ell^h)$ & $(\xi_u^H, \xi_d^H, \xi_\ell^H)$ & $(\xi_u^A, \xi_d^A, \xi_\ell^A)$ \\
 \hline
-Type-I & $c_\alpha / s_\beta$ & $c_\alpha / s_\beta$ & $c_\alpha / s_\beta$ & $s_\alpha / s_\beta$ & $s_\alpha / s_\beta$ & $s_\alpha / s_\beta$ \\
-Type-II & $c_\alpha / s_\beta$ & $-s_\alpha / c_\beta$ & $-s_\alpha / c_\beta$ & $s_\alpha / s_\beta$ & $c_\alpha / c_\beta$ & $c_\alpha / c_\beta$ \\
-Type-X & $c_\alpha / s_\beta$ & $c_\alpha / s_\beta$ & $-s_\alpha / c_\beta$ & $s_\alpha / s_\beta$ & $s_\alpha / s_\beta$ & $c_\alpha / c_\beta$ \\
-Type-Y & $c_\alpha / s_\beta$ & $-s_\alpha / c_\beta$ & $c_\alpha / s_\beta$ & $s_\alpha / s_\beta$ & $c_\alpha / c_\beta$ & $s_\alpha / s_\beta$ \\
-\hline\hline
-\multicolumn{7}{c}{} \\
-\hline\hline
-Type & $\xi_u^A$ & $\xi_d^A$ & $\xi_\ell^A$ & & & \\
-\hline
-Type-I & $\cot\beta$ & $-\cot\beta$ & $-\cot\beta$ & & & \\
-Type-II & $\cot\beta$ & $\tan\beta$ & $\tan\beta$ & & & \\
-Type-X & $\cot\beta$ & $-\cot\beta$ & $\tan\beta$ & & & \\
-Type-Y & $\cot\beta$ & $\tan\beta$ & $-\cot\beta$ & & & \\
+Type-I & $(c_\alpha/s_\beta, c_\alpha/s_\beta, c_\alpha/s_\beta)$ & $(s_\alpha/s_\beta, s_\alpha/s_\beta, s_\alpha/s_\beta)$ & $(\cot\beta, -\cot\beta, -\cot\beta)$ \\
+Type-II & $(c_\alpha/s_\beta, -s_\alpha/c_\beta, -s_\alpha/c_\beta)$ & $(s_\alpha/s_\beta, c_\alpha/c_\beta, c_\alpha/c_\beta)$ & $(\cot\beta, \tan\beta, \tan\beta)$ \\
+Type-X & $(c_\alpha/s_\beta, c_\alpha/s_\beta, -s_\alpha/c_\beta)$ & $(s_\alpha/s_\beta, s_\alpha/s_\beta, c_\alpha/c_\beta)$ & $(\cot\beta, -\cot\beta, \tan\beta)$ \\
+Type-Y & $(c_\alpha/s_\beta, -s_\alpha/c_\beta, c_\alpha/s_\beta)$ & $(s_\alpha/s_\beta, c_\alpha/c_\beta, s_\alpha/s_\beta)$ & $(\cot\beta, \tan\beta, -\cot\beta)$ \\
 \hline\hline
 \end{tabular}
 \end{table}
 
-In Type-I, all fermions couple to $\Phi_2$, so fermionic partial widths of \PA and \PHpm scale as $\cot^2\beta$ (e.g., $\cot^2\beta = 0.01$ at $\tan\beta = 10$). When bosonic channels such as $\PHc \to W^\pm \PA$ are kinematically open, they easily dominate over these suppressed fermionic modes.
+In Type-I, all fermions couple to $\Phi_2$, so fermionic partial widths of \PA and \PHpm scale as $\cot^2\beta$. When bosonic channels such as $\PHc \to W^\pm \PA$ are kinematically open, they easily dominate over these suppressed fermionic modes in high $\tan\beta$ region.
 
-Type-II, characteristic of the MSSM, assigns $\Phi_1$ to down-type fermions and leptons, leading to $\tan\beta$-enhanced $b$ and $\tau$ couplings. The $b \to s\gamma$ constraint requires $\mHc \gtrsim 580\GeV$~\cite{Misiak:2017bgg} in Type-II, closing the $t \to \PHp b$ channel entirely and making the light charged Higgs phenomenology inaccessible. The bosonic decay $\PHc \to W^\pm \PA$ thus requires a non-Type-II structure---Type-I being the primary benchmark.
+Type-II, characteristic of the MSSM, assigns $\Phi_1$ to down-type fermions and leptons, leading to $\tan\beta$-enhanced $b$ and $\tau$ couplings. The $b \to s\gamma$ constraint requires $\mHc \gtrsim 580$\GeV~\cite{Misiak:2017bgg} in Type-II, closing the $t \to \PHp b$ channel entirely and making the light charged Higgs phenomenology inaccessible. The bosonic decay $\PHc \to \PWpm \PA$ thus requires a non-Type-II structure, with Type-I serving as the primary benchmark.
 
 \subsubsection{Gauge Couplings and the Alignment Limit}
 \label{sec:gauge_couplings}
 
-Unlike Yukawa couplings, the couplings of Higgs bosons to gauge bosons depend only on $\alpha$ and $\beta$, a consequence of gauge invariance. From the kinetic terms $|D_\mu \Phi_i|^2$:
+Unlike Yukawa couplings, the couplings of Higgs bosons to gauge bosons depend only on $\alpha$ and $\beta$, a consequence of gauge invariance. From the kinetic terms $|D_\mu \Phi_i|^2$,
 \begin{equation}
 \mathcal{L}_{hVV} \supset \frac{g^2 v^2}{4} \left[
   \sin^2(\beta - \alpha) \, h V_\mu V^\mu
@@ -432,99 +420,95 @@ Unlike Yukawa couplings, the couplings of Higgs bosons to gauge bosons depend on
 \right]
 \label{eq:gauge_lagrangian}
 \end{equation}
-where $V = W, Z$. The corresponding coupling strengths, normalized to the SM coupling $g_{\text{SM}} = gm_V/v$, are:
+where $V = W, Z$. The corresponding coupling strengths, normalized to the SM coupling $g_{\text{SM}} = gm_V/v$, are
 \begin{gather}
 g_{hVV} = g_{\text{SM}} \left(c_\alpha s_\beta + s_\alpha c_\beta\right) = g_{\text{SM}} \sin(\beta - \alpha) \label{eq:ghVV} \\
 g_{HVV} = g_{\text{SM}} \left(c_\alpha c_\beta - s_\alpha s_\beta\right) = g_{\text{SM}} \cos(\beta - \alpha) \label{eq:gHVV}
 \end{gather}
 These couplings are identical for $W$ and $Z$ bosons and satisfy the sum rule $g_{hVV}^2 + g_{HVV}^2 = g_{\text{SM}}^2$. For $\sin(\beta - \alpha) \to 1$, the lighter state \Ph becomes SM-like, while the heavier \PH decouples from vector bosons.
 
-The CP-odd state \PA, by contrast, has no tree-level couplings to pairs of vector bosons:
+The CP-odd state \PA, by contrast, has no tree-level couplings to pairs of vector bosons,
 \begin{equation}
 \mathcal{L}_{AVV} = 0 \quad \text{(tree level)}
 \label{eq:A_no_VV}
 \end{equation}
-This CP selection rule distinguishes \PA from the CP-even states and is only circumvented by loop-induced processes~\cite{Gunion:1990dt}. The charged Higgs \PHpm couples to the $W^\pm$ boson and neutral scalars through the kinetic terms~\cite{Branco:2011iw}:
+This CP selection rule distinguishes \PA from the CP-even states and is only circumvented by loop-induced processes~\cite{Gunion:1990dt}. The charged Higgs \PHpm couples to the $W^\pm$ boson and neutral scalars through the kinetic terms~\cite{Branco:2011iw},
 \begin{gather}
-g(H^\pm W^\mp h) = \frac{ig}{2} \sin(\beta - \alpha) \label{eq:HWh} \\
-g(H^\pm W^\mp H) = \frac{ig}{2} \cos(\beta - \alpha) \label{eq:HWH} \\
+g(H^\pm W^\mp h) = \frac{ig}{2} \cos(\beta - \alpha) \label{eq:HWh} \\
+g(H^\pm W^\mp H) = \frac{ig}{2} \sin(\beta - \alpha) \label{eq:HWH} \\
 g(H^\pm W^\mp A) = \frac{g}{2} \label{eq:HWA}
 \end{gather}
-The $\PHc W^\mp \PA$ coupling is \emph{independent of the mixing angles} $\alpha$ and $\beta$, since \PA does not participate in CP-even mixing. These couplings determine the bosonic decay widths discussed in Section~\ref{sec:theory_charged}.
+The $\PHc W^\mp \PA$ coupling is independent of the mixing angles $\alpha$ and $\beta$, since \PA does not participate in CP-even mixing. These couplings determine the bosonic decay widths discussed in Section~\ref{sec:theory_charged}.
 
-Precision measurements of the 125\GeV Higgs boson~\cite{ATLAS:2012yda,CMS:2012qbp,ATLAS:2022vkf,CMS:2022dwd} require \Ph to have nearly SM-like couplings---the \emph{alignment limit}~\cite{Branco:2011iw}:
+Precision measurements of the 125\GeV Higgs boson~\cite{ATLAS:2012yda,CMS:2012qbp,ATLAS:2022vkf,CMS:2022dwd} require \Ph to have nearly SM-like couplings, corresponding to the \emph{alignment limit}~\cite{Branco:2011iw},
 \begin{equation}
 \cos(\beta - \alpha) \to 0 \quad \Leftrightarrow \quad \sin(\beta - \alpha) \to 1
 \label{eq:alignment}
 \end{equation}
-In this limit, $g_{hVV} \to g_{\text{SM}}$ and $g_{HVV} \to 0$. The Yukawa couplings in Table~\ref{tab:yukawa_couplings} similarly simplify; for Type-I:
+In this limit, $g_{hVV} \to g_{\text{SM}}$ and $g_{HVV} \to 0$. The Yukawa couplings in Table~\ref{tab:yukawa_couplings} similarly simplify; for Type-I,
 \begin{equation}
 \cos(\beta - \alpha) \to 0 \quad \Rightarrow \quad \xi_f^h \to 1, \quad \xi_f^H \to \cot\beta \quad (\text{Type-I})
 \end{equation}
-so that \Ph acquires SM-like fermion couplings while \PH couplings are suppressed at large $\tan\beta$. Current experimental constraints yield $|\cos(\beta - \alpha)| < 0.1$--$0.2$ at 95\% CL~\cite{ATLAS:2022vkf,CMS:2022dwd}.
+so that \Ph acquires SM-like fermion couplings while \PH couplings are suppressed at large $\tan\beta$. Current experimental constraints yield approximately $|\cos(\beta - \alpha)| < 0.1$ to $0.2$ at 95\% CL~\cite{ATLAS:2022vkf,CMS:2022dwd}.
 
-The consequences for charged Higgs phenomenology are immediate. Consider a Type-I benchmark with $\mHc = 220\GeV$, $\mA = 200\GeV$, $\cos(\beta - \alpha) = 0.05$, and $\tan\beta = 10$. The $\PHc \to W^\pm \PH$ coupling is suppressed by $\cos^2(\beta - \alpha) = 0.0025$; $\PHc \to W^\pm \Ph$ is barely kinematically accessible; $\PHc \to t\bar{b}$ is forbidden; and $\PHc \to \tau\nu$ is suppressed by $\cot^2\beta = 0.01$. In contrast, $\PHc \to W^\pm \PA$ proceeds with full gauge coupling strength (Eq.~\ref{eq:HWA}) via an off-shell $W^*$, making it the dominant channel and a robust signature across the 2HDM parameter space.
-
-Crucially, alignment does not require decoupling. It can be achieved at tree level when $m_H^2 - m_h^2 = (\lambda_1 - \lambda_2) v^2 \cos(2\beta)$~\cite{Branco:2011iw}, or radiatively through loop corrections, allowing relatively light additional Higgs bosons accessible at the LHC.
+The consequences for charged Higgs phenomenology are immediate. In the alignment limit, $\PHp \to \PWp \Ph$ is forbidden by the $\cos(\beta - \alpha)$ suppression of Eq.~(\ref{eq:HWh}). Assuming the conventional mass ordering $\mh < \mH$, the phase space for $\PHp \to \PWp \PH$ is limited by construction in the light charged Higgs regime. The channel can nevertheless be relevant when $\mh < \mH < \mHc$, where $t \to \PHp b \to \PWp \PH b$ provides a possible scenario that can be reinterpreted using the off-shell region targeted in this analysis. In contrast, $\PHp \to \PWp \PA$ proceeds with full gauge coupling strength (Eq.~\ref{eq:HWA}), making it a robust signature across the 2HDM parameter space.
 
 \subsection{Charged Higgs Boson Phenomenology}
 \label{sec:theory_charged}
 
-The charged Higgs boson is the hallmark of an extended scalar sector---no charged fundamental scalar exists in the SM. This section focuses on the light charged Higgs scenario ($\mHc < m_t$), proceeding from production in top quark decays, through the competition among decay modes, to the target decay chain $\PHc \to W^\pm \PA \to W^\pm \mu^+\mu^-$.
+The charged Higgs boson is the hallmark of an extended scalar sector, since no charged fundamental scalar exists in the SM. This section focuses on the light charged Higgs scenario ($\mHc < m_t$), proceeding from production in top quark decays, through the competition among decay modes, to the target decay chain $\PHc \to \PWpm \PA \to \PWpm \Pgmp\Pgmm$.
 
 \subsubsection{Production in Top Quark Decays}
 
-At the LHC, top quarks are copiously produced in pairs with $\sigma(pp \to t\bar{t}) \approx 830$\,pb at $\sqrt{s} = 13$\TeV. When $\mHc < m_t$, the decay $t \to \PHp b$ competes with the SM channel $t \to W^+ b$. The SM partial width at tree level is~\cite{Jezabek:1988iv}:
+At the LHC, top quarks are copiously produced in pairs with $\sigma(\Pp\Pp \to t\bar{t}) \approx 830~\text{pb}$ at $\sqrt{s} = 13~\TeV$. When $\mHc < m_t$, the decay $t \to \PHp b$ competes with the SM channel $t \to \PWp b$. The SM partial width at tree level is~\cite{Jezabek:1988iv}
 \begin{gather}
-\Gamma(t \to W^+ b) = \frac{G_F m_t^3}{8\sqrt{2}\pi} |V_{tb}|^2 (1 - r_W^2)^2 (1 + 2r_W^2) \label{eq:Gamma_t_Wb}
+\Gamma(t \to \PWp b) = \frac{G_F m_t^3}{8\sqrt{2}\pi} |V_{tb}|^2 (1 - r_W^2)^2 (1 + 2r_W^2) \label{eq:Gamma_t_Wb}
 \end{gather}
-where $r_W = m_W/m_t$. The BSM partial width for the competing charged Higgs channel is~\cite{Branco:2011iw,Gunion:1990dt}:
+where $r_W = m_W/m_t$. The BSM partial width for the competing charged Higgs channel is~\cite{Branco:2011iw,Gunion:1990dt}
 \begin{gather}
 \Gamma(t \to H^+ b) = \frac{G_F m_t^3}{4\sqrt{2}\pi} |\xi_u^A \cot\beta + \xi_d^A \tan\beta|^2 \tilde{\lambda}^{1/2}(r_H^2, r_b^2) \label{eq:Gamma_t_Hb}
 \end{gather}
 where $r_i = m_i/m_t$, $G_F$ is the Fermi constant, and $\tilde{\lambda}^{1/2}(x, y) = [(1-x)^2 + (1+x)y]\,\lambda^{1/2}(1,x,y)$ with $\lambda(a,b,c) = a^2 + b^2 + c^2 - 2ab - 2ac - 2bc$ the Källén function.
 
-The ratio $R_b \equiv \mathcal{B}(t \to Wb)/\mathcal{B}(t \to Wq)$ provides a model-independent constraint:
+The ratio $R_b \equiv \mathcal{B}(t \to Wb)/\mathcal{B}(t \to Wq)$ provides a model-independent constraint,
 \begin{gather}
-R_b = \frac{\Gamma(t \to W^+ b)}{\Gamma(t \to W^+ b) + \Gamma(t \to H^+ b)} \,.
+R_b = \frac{\Gamma(t \to \PWp b)}{\Gamma(t \to \PWp b) + \Gamma(t \to \PHp b)} \,.
 \label{eq:Rb_definition}
 \end{gather}
 The CMS measurement $R_b = |V_{tb}|^2 = 0.976 \pm 0.047$~\cite{CMS:2020vac} constrains $\mathcal{B}(t \to \PHc b) \lesssim 5\%$ at 95\% CL.
 
-In Type-I, the production rate scales as $\cot^2\beta$ (Section~\ref{sec:2hdm_yukawa}), yielding $\mathcal{B}(t \to \PHc b) \sim 0.1\%$ at $\tan\beta = 10$. Although small, the enormous $t\bar{t}$ cross section compensates: with 138~\fbinv, approximately $10^8$ top quark pairs are produced, yielding $\mathcal{O}(10^5)$ charged Higgs bosons even at this suppressed branching fraction.
+In Type-I, the production rate scales as $\cot^2\beta$ (Section~\ref{sec:2hdm_yukawa}), yielding $\mathcal{B}(t \to \PHc b) \sim 0.1\%$ at $\tan\beta = 10$. Although small, the enormous $t\bar{t}$ cross section compensates. With 138~\fbinv, approximately $10^8$ top quark pairs are produced, yielding $\mathcal{O}(10^5)$ charged Higgs bosons even at this suppressed branching fraction.
 
 \begin{figure}[htbp]
 \centering
 \subfloat[$\mathcal{B}(t \to \PHc b)$ vs.\ \mHc for several $\tan\beta$ values]{\includegraphics[width=0.48\textwidth]{2HDMC/outputs/plots/type1/TopBR.png}\label{fig:TopBR_1d}}
 \hfill
 \subfloat[$\mathcal{B}(t \to \PHc b)$ in the $(\mHc, \tan\beta)$ plane]{\includegraphics[width=0.48\textwidth]{2HDMC/outputs/plots/type1/TopBR2D.png}\label{fig:TopBR_2d}}
-\caption{Branching fraction $\mathcal{B}(t \to \PHc b)$ in the Type-I 2HDM (2HDMC~v1.8.0): (a) vs.\ \mHc for $\tan\beta = 1$--$5$; (b) in the $(\mHc, \tan\beta)$ plane, showing the $\cot^2\beta$ suppression.}
+\caption{Branching fraction $\mathcal{B}(t \to \PHc b)$ in the Type-I 2HDM (2HDMC~v1.8.0). Panel (a) shows the dependence on \mHc for $\tan\beta = 1$ to 5, while panel (b) shows the $(\mHc, \tan\beta)$ plane and the $\cot^2\beta$ suppression.}
 \label{fig:TopBR}
 \end{figure}
 
-In the MSSM (Type-II), the $\tan\beta$-enhanced $b$--\PHc coupling drives large contributions to the $b \to s\gamma$ loop, and the resulting constraint $\mHc \gtrsim 580$\GeV~\cite{Misiak:2017bgg} closes the $t \to \PHc b$ channel entirely.
-
-\subsubsection{The Decay Landscape---Why $\PHc \to W^\pm \PA$ Dominates}
+\subsubsection{Decay Modes Motivating $\PHp \to \PWp \PA$}
 
 Once produced, which decay mode wins? The answer depends on the model, but the competition between fermionic and bosonic channels has a clear winner in Type-I at large $\tan\beta$.
 
-The fermionic partial widths in Type-I are (shown for the three leading channels)~\cite{Branco:2011iw,Gunion:1990dt}:
+The fermionic partial widths in Type-I are shown for the three leading channels~\cite{Branco:2011iw,Gunion:1990dt},
 \begin{gather}
-\Gamma(H^\pm \to t\bar{b}) = \frac{3 G_F m_{H^\pm}^3}{4\sqrt{2}\pi} \cot^2\beta \, \tilde{\lambda}^{1/2}(r_t^2, r_b^2) \label{eq:Gamma_Hpm_tb} \\
-\Gamma(H^\pm \to \tau^\pm \nu) = \frac{G_F m_{H^\pm}^3}{4\sqrt{2}\pi} \cot^2\beta \, r_\tau^2 (1 - r_\tau^2)^2 \label{eq:Gamma_Hpm_taunu} \\
-\Gamma(H^\pm \to c\bar{s}) = \frac{3 G_F m_{H^\pm}^3}{4\sqrt{2}\pi} |V_{cs}|^2 \cot^2\beta \, \tilde{\lambda}^{1/2}(r_c^2, r_s^2) \label{eq:Gamma_Hpm_cs}
+\Gamma(\PHp \to t\bar{b}) = \frac{3 G_F \mHc^3}{4\sqrt{2}\pi} \cot^2\beta \, \tilde{\lambda}^{1/2}(r_t^2, r_b^2) \label{eq:Gamma_Hpm_tb} \\
+\Gamma(\PHp \to \Pgt^\pm \Pgngt) = \frac{G_F \mHc^3}{4\sqrt{2}\pi} \cot^2\beta \, r_\tau^2 (1 - r_\tau^2)^2 \label{eq:Gamma_Hpm_taunu} \\
+\Gamma(\PHp \to c\bar{s}) = \frac{3 G_F \mHc^3}{4\sqrt{2}\pi} |V_{cs}|^2 \cot^2\beta \, \tilde{\lambda}^{1/2}(r_c^2, r_s^2) \label{eq:Gamma_Hpm_cs}
 \end{gather}
-where $r_f = m_f/\mHc$, the factor of 3 accounts for QCD color, and $V_{cs} \approx 0.97$ is the CKM matrix element. Every fermionic partial width carries the universal $\cot^2\beta$ suppression in Type-I (Section~\ref{sec:2hdm_yukawa}). For $\mHc < m_t$, the dominant $\PHc \to t\bar{b}$ channel is kinematically closed, leaving $\PHc \to \tau\nu$ and $\PHc \to c\bar{s}$---both doubly suppressed by small fermion masses and $\cot^2\beta$.
+where $r_f = m_f/\mHc$, the factor of 3 accounts for QCD color, and $V_{cs} \approx 0.97$ is the CKM matrix element. Every fermionic partial width carries the universal $\cot^2\beta$ suppression in Type-I (Section~\ref{sec:2hdm_yukawa}). For $\mHc < m_t$, the dominant $\PHp \to t\bar{b}$ channel is kinematically closed, leaving $\PHp \to \Pgt^\pm\Pgngt$ and $\PHp \to c\bar{s}$, both doubly suppressed by small fermion masses and $\cot^2\beta$.
 
-The bosonic channels tell a different story. The three gauge-coupling decay widths are~\cite{Branco:2011iw,Gunion:1990dt,Eriksson:2009ws}:
+The bosonic channels tell a different story. The three gauge-coupling decay widths are~\cite{Branco:2011iw,Gunion:1990dt,Eriksson:2009ws}
 \begin{gather}
-\Gamma(H^\pm \to W^\pm h) = \frac{g^2 m_{H^\pm}^3}{64\pi m_W^2} \sin^2(\beta - \alpha) \, \lambda^{3/2}(1, r_W^2, r_h^2) \label{eq:Gamma_Hpm_Wh} \\
-\Gamma(H^\pm \to W^\pm H) = \frac{g^2 m_{H^\pm}^3}{64\pi m_W^2} \cos^2(\beta - \alpha) \, \lambda^{3/2}(1, r_W^2, r_H^2) \label{eq:Gamma_Hpm_WH} \\
-\Gamma(H^\pm \to W^\pm A) = \frac{g^2 m_{H^\pm}^3}{64\pi m_W^2} \lambda^{3/2}(1, r_W^2, r_A^2) \label{eq:Gamma_Hpm_WA}
+\Gamma(\PHp \to \PWp \Ph) = \frac{g^2 \mHc^3}{64\pi \mW^2} \cos^2(\beta - \alpha) \, \lambda^{3/2}(1, r_W^2, r_h^2) \label{eq:Gamma_Hpm_Wh} \\
+\Gamma(\PHp \to \PWp \PH) = \frac{g^2 \mHc^3}{64\pi \mW^2} \sin^2(\beta - \alpha) \, \lambda^{3/2}(1, r_W^2, r_\PH^2) \label{eq:Gamma_Hpm_WH} \\
+\Gamma(\PHp \to \PWp \PA) = \frac{g^2 \mHc^3}{64\pi \mW^2} \lambda^{3/2}(1, r_W^2, r_\PA^2) \label{eq:Gamma_Hpm_WA}
 \end{gather}
-where $r_i = m_i/\mHc$. The $\PHc \to W^\pm \PA$ width carries \emph{no mixing-angle dependence}, a direct consequence of Eq.~(\ref{eq:HWA}). In the alignment limit (Section~\ref{sec:gauge_couplings}), $\PHc \to W^{(*)} \PH$ vanishes, while $\PHc \to W^{(*)} \Ph$ is severely suppressed kinematically by the large $\mh = 125$\GeV, forcing the virtual $W^*$ far below its mass shell. The $\PHc \to W^{(*)} \PA$ channel, by contrast, benefits from a light pseudoscalar that keeps $m_{W^*}$ near the $W$ pole, making it the dominant bosonic mode throughout the light charged Higgs regime.
+where $r_i = m_i/\mHc$. The $\PHp \to \PWp \PA$ width carries no mixing-angle dependence, a direct consequence of Eq.~\ref{eq:HWA}. In the alignment limit (Section~\ref{sec:gauge_couplings}), $\PHp \to \PWp^{(*)} \Ph$ is forbidden by the $\cos(\beta-\alpha)$ suppression, while $\PHp \to \PWp^{(*)} \PH$ remains allowed by mixing but is phase-space limited in the light charged Higgs regime when $\mh < \mH$. The $\PHp \to \PWp^{(*)} \PA$ channel, by contrast, benefits from a light pseudoscalar that keeps $m_{\PW^*}$ near the \PW pole, making it the dominant bosonic mode throughout the light charged Higgs regime.
 
-Calculations with the 2HDMC~v1.8.0 library~\cite{Eriksson:2009ws} confirm this picture. The scan uses $\mh = 125$\GeV, $\mH = 500$\GeV, $\sin(\beta - \alpha) = 0.999$, $\lambda_6 = \lambda_7 = 0$, $m_{12}^2 = \mA^2 \tan\beta / (1 + \tan^2\beta)$, varying $\mHc \in [80, 160]$\GeV, $\mA \in [10, 155]$\GeV, and $\tan\beta \in \{1, \ldots, 10\}$.\footnote{The scan fixes $\mH = 500$\GeV for simplicity; at $\tan\beta \geq 2$ this violates perturbativity bounds, but the decay widths of \PHc, \PA, and $t \to \PHc b$ are independent of \mH. Valid \mH values satisfying all constraints exist at lower \mH.} For Type-I with $\tan\beta \gtrsim 5$, $\mathcal{B}(\PHc \to W^\pm \PA)$ reaches 50\%--90\% when the on-shell decay is open.
+Calculations with 2HDMC~\cite{Eriksson:2009ws} confirm this picture. The scan uses $\mh = 125$\GeV, $\mH = 500$\GeV, $\sin(\beta - \alpha) = 0.999$, $\lambda_6 = \lambda_7 = 0$, $m_{12}^2 = \mA^2 \tan\beta / (1 + \tan^2\beta)$, varying $\mHc \in [80, 160]$\GeV, $\mA \in [10, 155]$\GeV, and $\tan\beta = 1$ or $5$.\footnote{The scan fixes $\mH = 500$\GeV for simplicity; at $\tan\beta \geq 2$ this violates perturbativity bounds, but the decay widths of \PHp, \PA, and $t \to \PHp b$ are independent of \mH. Valid \mH values satisfying all constraints exist at lower \mH.} For Type-I with $\tan\beta \gtrsim 5$, $\mathcal{B}(\PHp \to \PWp \PA)$ reaches 50\% to 90\% when the on-shell decay is open.
 
 \begin{figure}[htbp]
 \centering
@@ -536,33 +520,31 @@ Calculations with the 2HDMC~v1.8.0 library~\cite{Eriksson:2009ws} confirm this p
 \subfloat[Type-II, $\tan\beta = 5$]{\includegraphics[width=0.24\textwidth]{2HDMC/outputs/plots/type2/HcDecay_tanb5.png}}
 \subfloat[Type-X, $\tan\beta = 5$]{\includegraphics[width=0.24\textwidth]{2HDMC/outputs/plots/type3/HcDecay_tanb5.png}}
 \subfloat[Type-Y, $\tan\beta = 5$]{\includegraphics[width=0.24\textwidth]{2HDMC/outputs/plots/type4/HcDecay_tanb5.png}}
-\caption{Partial widths of \PHc vs.\ \mHc (2HDMC~v1.8.0) in the four 2HDM types at $\tan\beta = 1$ and 5, for three representative $\mA$ values. In Type-I and Type-X at larger $\tan\beta$, the bosonic channel $\PHc \to W^\pm \PA$ dominates over $\cot^2\beta$-suppressed fermionic modes. In Type-II and Type-Y, fermionic modes are $\tan\beta$-enhanced, but this mass range is excluded by $b \to s\gamma$ ($\mHc \gtrsim 580$\GeV).}
+\caption{Partial widths of $\PHp$ vs. $\mHc$ in the four 2HDM types at $\tan\beta = 1$ and 5, for three representative $\mA$ values. In Type-I and Type-X at larger $\tan\beta$, the bosonic channel $\PHp \to \PWp \PA$ dominates over $\cot^2\beta$-suppressed fermionic modes. In Type-II and Type-Y, fermionic modes are $\tan\beta$-enhanced, but this mass range is excluded by $b \to s\gamma$ ($\mHc \gtrsim 580$\GeV). The calculation is performed with the 2HDMC~v1.8.0 library.}
 \label{fig:HcDecay}
 \end{figure}
 
-In the MSSM, the tree-level relation $\mHc^2 = \mA^2 + m_W^2$ (Eq.~\ref{eq:mHpm}) ensures the on-shell decay $\PHc \to W^\pm \PA$ is never kinematically allowed---the $W$ is always virtual. Combined with the Type-II $\tan^2\beta$ enhancement of $\PHc \to \tau\nu$, the bosonic channel persists but is subdominant at large $\tan\beta$.
+\subsubsection{Target Decay Chain, $\PHp \to \PWp \PA \to \PWp \Pgmp\Pgmm$}
 
-\subsubsection{The Target Decay Chain: $\PHc \to W^\pm \PA \to W^\pm \mu^+\mu^-$}
-
-This analysis exploits the full cascade:
+This analysis exploits the full cascade,
 \begin{equation}
-pp \to t\bar{t} \to (H^\pm b)(W^\mp \bar{b}) \to (W^\pm A\, b)(W^\mp \bar{b}) \to (W^\pm \mu^+ \mu^- b)(W^\mp \bar{b})
+\Pp\Pp \to t\bar{t} \to (\PHp b)(\PWm \bar{b}) \to (\PWp \PA\, b)(\PWm \bar{b}) \to (\PWp \Pgmp\Pgmm b)(\PWm \bar{b})
 \label{eq:decay_chain}
 \end{equation}
 
-The CP-odd pseudoscalar \PA couples to fermions through the axial-vector structure $i\xi_f^A \bar{f}\gamma_5 f$ (Eq.~\ref{eq:yukawa_physical}), with partial width~\cite{Branco:2011iw,Gunion:1990dt}:
+The CP-odd pseudoscalar \PA couples to fermions through the axial-vector structure $i\xi_f^A \bar{f}\gamma_5 f$ (Eq.~\ref{eq:yukawa_physical}), with partial width~\cite{Branco:2011iw,Gunion:1990dt}
 \begin{equation}
 \Gamma(A \to f\bar{f}) = N_c \frac{G_F m_A^3}{4\sqrt{2}\pi} r_f^2 (\xi_f^A)^2 (1 - 4r_f^2)^{3/2}
 \label{eq:Gamma_A_ff}
 \end{equation}
 where $r_f = m_f/\mA$, $N_c = 3$ for quarks and 1 for leptons, and the $(1 - 4r_f^2)^{3/2}$ factor reflects $p$-wave phase space suppression near threshold. In Type-I, $\xi_f^A = -\cot\beta$ for all fermions, so the $\tan\beta$ dependence cancels in branching ratios, making them functions of \mA alone.
 
-For the mass range $\mA > 2m_b \approx 10$\GeV relevant to this analysis, the $b\bar{b}$ channel dominates the pseudoscalar width, and the dimuon branching fraction is:
+For the mass range $\mA > 2m_b \approx 10$\GeV relevant to this analysis, the $b\bar{b}$ channel dominates the pseudoscalar width, and the dimuon branching fraction is
 \begin{equation}
-\mathcal{B}(A \to \mu^+\mu^-) \approx \frac{m_\mu^2}{3 m_b^2} \sim \mathcal{O}(10^{-3})
+\mathcal{B}(\PA \to \Pgmp\Pgmm) \approx \frac{m_\mu^2}{3 m_b^2} \sim \mathcal{O}(10^{-3})
 \label{eq:BR_A_mumu}
 \end{equation}
-where the factor of 3 accounts for the color multiplicity of $b\bar{b}$. Despite this small branching fraction, the dimuon channel is experimentally powerful: the CMS muon detector provides excellent mass resolution, enabling a narrow resonance search that strongly rejects the smooth continuum background.
+where the factor of 3 accounts for the color multiplicity of $b\bar{b}$. Despite this small branching fraction, the dimuon channel is experimentally powerful because the CMS muon detector provides excellent mass resolution, enabling a narrow resonance search that strongly rejects the smooth continuum background.
 
 \begin{figure}[htbp]
 \centering
@@ -574,36 +556,40 @@ where the factor of 3 accounts for the color multiplicity of $b\bar{b}$. Despite
 \subfloat[Type-II, $\tan\beta = 5$]{\includegraphics[width=0.24\textwidth]{2HDMC/outputs/plots/type2/ADecay_tanb5_mHc160.png}}
 \subfloat[Type-X, $\tan\beta = 5$]{\includegraphics[width=0.24\textwidth]{2HDMC/outputs/plots/type3/ADecay_tanb5_mHc160.png}}
 \subfloat[Type-Y, $\tan\beta = 5$]{\includegraphics[width=0.24\textwidth]{2HDMC/outputs/plots/type4/ADecay_tanb5_mHc160.png}}
-\caption{Branching ratios of \PA vs.\ \mA for $\mHc = 160$\GeV (2HDMC~v1.8.0) in the four 2HDM types at $\tan\beta = 1$ and 5. The $b\bar{b}$ channel dominates above $2m_b$; $\mathcal{B}(\PA \to \mu^+\mu^-) \sim 10^{-3}$ is approximately constant. In Type-X, the $\tau^+\tau^-$ channel is enhanced at large $\tan\beta$ due to the lepton-specific coupling structure.}
+\caption{Branching ratios of $\PA$ vs. $\mA$ for $\mHc = 160$\GeV in the four 2HDM types at $\tan\beta = 1$ and 5. The $b\bar{b}$ channel dominates above $2m_b$; $\mathcal{B}(\PA \to \Pgmp\Pgmm) \sim 10^{-3}$ is approximately constant. In Type-X, the $\PGtp\PGtm$ channel is enhanced at large $\tan\beta$ due to the lepton-specific coupling structure. The calculation is performed with the 2HDMC~v1.8.0 library.}
 \label{fig:ADecay}
 \end{figure}
 
-Custodial symmetry---an approximate global $\mathrm{SU}(2)$~\cite{Branco:2011iw}---protects the tree-level relation
+Custodial symmetry, an approximate global $\mathrm{SU}(2)$~\cite{Branco:2011iw}, protects the tree-level relation
 \begin{equation}
 \rho = \frac{m_W^2}{m_Z^2 \cos^2\theta_W} = 1
 \end{equation}
-Precision electroweak data ($\rho = 1.00038 \pm 0.00020$) constrain the 2HDM mass spectrum~\cite{Branco:2011iw}:
+Precision electroweak data ($\rho = 1.00038 \pm 0.00020$) constrain the 2HDM mass spectrum~\cite{Branco:2011iw},
 \begin{gather}
-m_{H^\pm}^2 \approx m_A^2 \quad \text{or} \quad m_{H^\pm}^2 \approx m_H^2 \label{eq:custodial_relation} \\
-|m_{H^\pm} - m_A| \lesssim 50\text{--}100\GeV \label{eq:custodial_constraint}
+\mHc^2 \approx \mA^2 \quad \text{or} \quad \mHc^2 \approx \mH^2 \label{eq:custodial_relation} \\
+|\mHc - \mA| \lesssim 50\text{ to }100~\GeV \label{eq:custodial_constraint}
 \end{gather}
-Since the on-shell decay $\PHc \to W^\pm \PA$ requires $\mHc - \mA > m_W$, custodial symmetry places much of the viable parameter space in the off-shell region where the $W$ boson is virtual.
+Since the on-shell decay $\PHp \to \PWp \PA$ requires $\mHc - \mA > m_W$, custodial symmetry places much of the viable parameter space in the off-shell region where the $W$ boson is virtual.
 
-When $\mHc - \mA < m_W$, the $W$ boson becomes virtual---a regime that custodial symmetry naturally favors and that is mandatory in the MSSM at tree level. The differential rate for the three-body decay through $W^*$ is~\cite{Eriksson:2009ws}:
+When $\mHc - \mA < m_W$, the $W$ boson becomes virtual. This regime is naturally favored by custodial symmetry and is mandatory in the MSSM at tree level. The differential rate for the three-body decay through $W^*$ is~\cite{Eriksson:2009ws}
 \begin{equation}
 \frac{d\Gamma(H^\pm \to W^{*\pm} A)}{dm_{W^*}^2} = \frac{g^2}{64\pi^2 m_{H^\pm}} \frac{\lambda^{3/2}(m_{H^\pm}^2, m_{W^*}^2, m_A^2)}{(m_{W^*}^2 - m_W^2)^2 + m_W^2 \Gamma_W^2} \frac{1}{m_{W^*}^2}
 \label{eq:dGamma_Hpm_WstarA}
 \end{equation}
 where $\Gamma_W \approx 2.1$\GeV. The $W^*$ propagator suppresses the off-shell rate by roughly an order of magnitude, but the off-shell bosonic mode remains competitive in Type-I because the total fermionic width is itself suppressed by $\cot^2\beta$.
 
-To quantify the experimental reach, consider three representative benchmarks, all with $\mA > 12$\GeV so that $\mathcal{B}(\PA \to \mu^+\mu^-) \sim 10^{-3}$.
+To quantify the experimental reach, consider three representative benchmarks, all with $\mA > 12$\GeV so that $\mathcal{B}(\PA \to \Pgmp\Pgmm) \sim 10^{-3}$.
 
-\emph{Type-I on-shell benchmark}: $\tan\beta = 10$, $\mHc = 150$\GeV, $\mA = 50$\GeV. The on-shell $W$ yields $\mathcal{B}(\PHc \to W^\pm \PA) \sim 80\%$. The cascade branching fraction
+\emph{Type-I on-shell benchmark}, with $\tan\beta = 10$, $\mHc = 150$\GeV, and $\mA = 50$\GeV. The on-shell $\PW$ yields $\mathcal{B}(\PHp \to \PWp \PA) \sim 80\%$. The signal branching fraction
 \begin{equation}
-\mathcal{B}_{\text{cascade}} = \mathcal{B}(t \to H^\pm b) \times \mathcal{B}(H^\pm \to W^\pm A) \times \mathcal{B}(A \to \mu^+\mu^-)
-\label{eq:cascade_BR}
+\mathcal{B}_{\text{sig}} = \mathcal{B}(t \to \PHp b) \times \mathcal{B}(\PHp \to \PWp \PA) \times \mathcal{B}(\PA \to \Pgmp\Pgmm)
+\label{eq:sig_BR}
 \end{equation}
 is of order $10^{-6}$, giving $\sigma \times \text{BR} \sim \mathcal{O}(1)$\,fb and $\mathcal{O}(100)$ signal events in 138~\fbinv.
+
+\emph{Type-I off-shell benchmark}, with $\tan\beta = 10$, $\mHc = 130$\GeV, and $\mA = 60$\GeV. The virtual $\PW^*$ reduces the bosonic branching fraction by a factor of 5 to 10, but it still dominates over $\cot^2\beta$-suppressed fermionic modes. The signal cross section of $\mathcal{O}(0.1)~\text{fb}$ is within reach of the combined Run~2 + Run~3 dataset.
+
+\emph{MSSM benchmark}, with $\tan\beta = 5$ and $\mA = 60$\GeV, giving $\mHc \approx 100$\GeV from the tree-level relation. The Type-II $\tan^2\beta$ enhancement of $\PHc \to \Pgt\Pgngt$ competes strongly with the off-shell bosonic mode, making the cascade subdominant, unlike the clean dominance in Type-I.
 
 \begin{figure}[htbp]
 \centering
@@ -615,45 +601,41 @@ is of order $10^{-6}$, giving $\sigma \times \text{BR} \sim \mathcal{O}(1)$\,fb 
 \subfloat[Type-II, $\tan\beta = 5$]{\includegraphics[width=0.24\textwidth]{2HDMC/outputs/plots/type2/Bsig_tanb5.png}}
 \subfloat[Type-X, $\tan\beta = 5$]{\includegraphics[width=0.24\textwidth]{2HDMC/outputs/plots/type3/Bsig_tanb5.png}}
 \subfloat[Type-Y, $\tan\beta = 5$]{\includegraphics[width=0.24\textwidth]{2HDMC/outputs/plots/type4/Bsig_tanb5.png}}
-\caption{Cascade branching fraction $\mathcal{B}_{\text{cascade}}$ (Eq.~\ref{eq:cascade_BR}) in the $(\mHc, \mA)$ plane (2HDMC~v1.8.0) at $\tan\beta = 1$ and 5 for the four 2HDM types. Type-I and Type-X share the same $\cot^2\beta$ suppression pattern, while Type-II and Type-Y are similar but excluded by $b \to s\gamma$ in this mass range.}
+\caption{Signal branching fraction $\mathcal{B}_{\text{sig}}$ (Eq.~\ref{eq:sig_BR}) in the $(\mHc, \mA)$ plane at $\tan\beta = 1$ and 5 for the four 2HDM types. Type-I and Type-X share the same $\cot^2\beta$ suppression pattern, while Type-II and Type-Y are similar but excluded by $b \to s\gamma$ in this mass range. The calculation is performed with the 2HDMC~v1.8.0 library.}
 \label{fig:Bsig}
 \end{figure}
-
-\emph{Type-I off-shell benchmark}: $\tan\beta = 10$, $\mHc = 130$\GeV, $\mA = 60$\GeV. The virtual $W^*$ reduces the bosonic branching fraction by a factor of 5--10, but it still dominates over $\cot^2\beta$-suppressed fermionic modes. The signal cross section of $\mathcal{O}(0.1)$\,fb is within reach of the combined Run~2 + Run~3 dataset.
-
-\emph{MSSM benchmark}: $\tan\beta = 5$, $\mA = 60$\GeV, giving $\mHc \approx 100$\GeV from the tree-level relation. The Type-II $\tan^2\beta$ enhancement of $\PHc \to \tau\nu$ competes strongly with the off-shell bosonic mode, making the cascade subdominant---in contrast to the clean dominance in Type-I.
 
 \subsection{Previous Searches and Current Constraints}
 \label{sec:theory_constraints}
 
-Searches for charged Higgs bosons have spanned from LEP through the Tevatron to the LHC, focusing almost exclusively on fermionic channels ($\PHc \to \tau\nu$, $c\bar{s}$, $tb$), while the bosonic mode $\PHc \to W^\pm \PA$---the ``forgotten channel''~\cite{Bahl:2021str}---was first probed only in LHC Run~2, and exclusively in the on-shell $W$ regime.
+Searches for charged Higgs bosons have spanned from LEP through the Tevatron to the LHC, focusing almost exclusively on fermionic channels ($\PHp \to \Pgt\Pgngt$, $c\bar{s}$, $t\bar{b}$), while the bosonic mode $\PHp \to \PWp \PA$, the ``forgotten channel''~\cite{Bahl:2021str}, was first probed only in LHC Run~2 and exclusively in the on-shell $W$ regime.
 
 \subsubsection{Searches for the Charged Higgs Boson}
 
-At LEP, the four experiments ALEPH, DELPHI, L3, and OPAL searched for pair-produced charged Higgs bosons in $e^+e^- \to \PHp\PHm$ at center-of-mass energies up to 209\GeV. The combined analysis~\cite{LEPChargedHiggs:2013bka} established lower mass bounds of $\mHc > 80$\GeV in the Type-II scenario (assuming $\mathcal{B}(\PHc \to \tau\nu) + \mathcal{B}(\PHc \to c\bar{s}) = 1$) and $\mHc > 72.5$\GeV in Type-I (for $\mA > 12$\GeV, including the bosonic decay $\PHc \to W^* \PA$ searched by DELPHI and OPAL) at 95\% CL. These limits establish the lower mass boundary for all subsequent charged Higgs searches.
+At LEP, the four experiments ALEPH, DELPHI, L3, and OPAL searched for pair-produced charged Higgs bosons in $e^+e^- \to \PHp\PHm$ at center-of-mass energies up to 209~\GeV. The combined analysis~\cite{LEPChargedHiggs:2013bka} established lower mass bounds of $\mHc > 80$\GeV in the Type-II scenario (assuming $\mathcal{B}(\PHp \to \Pgt\Pgngt) + \mathcal{B}(\PHp \to c\bar{s}) = 1$) and $\mHc > 72.5$\GeV in Type-I (for $\mA > 12$\GeV, including the bosonic decay $\PHp \to \PW^* \PA$ searched by DELPHI and OPAL) at 95\% CL. These limits establish the lower mass boundary for all subsequent charged Higgs searches.
 
-At the Tevatron, CDF and D0 searched for light charged Higgs bosons produced in top quark decays across multiple channels. In the $\PHp \to \tau^+\nu$ channel, the combined CDF result using 9.0~\fbinv excluded $\mathcal{B}(t \to \PHp b) > 5.9\%$~\cite{CDF:2014pib}, while D0 obtained comparable limits with 0.9~\fbinv~\cite{D0:2009gla}. CDF also searched in the $\PHp \to c\bar{s}$ channel using 2.2~\fbinv, excluding $\mathcal{B}(t \to \PHp b) < 8\%$--$32\%$ depending on \mHc~\cite{CDF:2009bms}. Both results assume unit branching fraction for the respective \PHp decay mode.
+At the Tevatron, CDF and D0 searched for light charged Higgs bosons produced in top quark decays across multiple channels. In the $\PHp \to \PGtp\Pgngt$ channel, the combined CDF result using 9.0~\fbinv excluded $\mathcal{B}(t \to \PHp b) > 5.9\%$~\cite{CDF:2014pib}, while D0 obtained comparable limits with 0.9~\fbinv~\cite{D0:2009gla}. CDF also searched in the $\PHp \to c\bar{s}$ channel using 2.2~\fbinv, excluding $\mathcal{B}(t \to \PHp b)$ between 8\% and 32\%, depending on \mHc~\cite{CDF:2009bms}. Both results assume unit branching fraction for the respective \PHp decay mode.
 
-Notably, the Tevatron produced the first hadron-collider searches to include bosonic charged Higgs decays. A CDF analysis using 193~\pbinv considered four decay modes simultaneously---$\tau\nu$, $c\bar{s}$, $t^*\bar{b}$, and $W^+ h^0$ (with $W^+ A^0$ folded in assuming identical kinematics when $m_{h^0} \approx m_{A^0}$)---scanning 1771 branching ratio combinations to set model-independent limits~\cite{CDF:2005kth}. Subsequently, CDF performed the first dedicated search for the bosonic decay chain $\PHp \to W^{(*)+} a_1^0 \to W^{(*)+} \tau^+\tau^-$ using 2.7~\fbinv in the NMSSM context, excluding $\mathcal{B}(t \to \PHp b) > 20\%$ for $m_{a_1^0} = 9$\GeV~\cite{CDF:2011bqh}. For heavy charged Higgs bosons ($\mHc > m_t$), D0 searched in the $\PHp \to t\bar{b}$ channel, probing masses from 180 to 300\GeV~\cite{D0:2008xjp}.
+Notably, the Tevatron produced the first hadron-collider searches to include bosonic charged Higgs decays. A CDF analysis using 193~\pbinv considered four decay modes simultaneously, $\Pgt\Pgngt$, $c\bar{s}$, $t^*\bar{b}$, and $\PWp h^0$ (with $\PWp A^0$ folded in assuming identical kinematics when $m_{h^0} \approx m_{A^0}$), scanning 1771 branching ratio combinations to set model-independent limits~\cite{CDF:2005kth}. Subsequently, CDF performed the first dedicated search for the bosonic decay chain $\PHp \to \PW^{(*)+} a_1^0 \to \PW^{(*)+} \PGtp\PGtm$ using 2.7~\fbinv in the NMSSM context, excluding $\mathcal{B}(t \to \PHp b) > 20\%$ for $m_{a_1^0} = 9$\GeV~\cite{CDF:2011bqh}. For heavy charged Higgs bosons ($\mHc > m_t$), D0 searched in the $\PHp \to t\bar{b}$ channel, probing masses from 180 to $300$\GeV~\cite{D0:2008xjp}.
 
-At the LHC, Run~1 searches covered all major fermionic channels. ATLAS and CMS both searched for $\PHp \to \tau^+\nu$, with CMS using 19.7~\fbinv at 8\TeV to set limits of $\mathcal{B}(t \to \PHp b) \times \mathcal{B}(\PHp \to \tau^+\nu) = 0.15\%$--$1.2\%$ for $\mHc = 80$--$160$\GeV~\cite{CMS:2015lsf}. ATLAS searched for $\PHp \to c\bar{s}$ at 7\TeV, excluding $\mathcal{B}(t \to \PHp b) = 1\%$--$5\%$ assuming $\mathcal{B}(\PHp \to c\bar{s}) = 1$~\cite{ATLAS:2013uxj}, and CMS extended this to 8\TeV with limits of $1.2\%$--$6.5\%$~\cite{CMS:2015yvc}. CMS also performed the first search for $\PHp \to c\bar{b}$ at 8\TeV, excluding $\mathcal{B}(t \to \PHp b) = 0.5\%$--$0.8\%$ assuming $\mathcal{B}(\PHp \to c\bar{b}) = 1$~\cite{CMS:2018dzl}. For heavy charged Higgs bosons, both ATLAS~\cite{ATLAS:2015nkq} and CMS~\cite{CMS:2015lsf} searched in the $\PHp \to t\bar{b}$ channel. Despite this breadth of fermionic searches, no Run~1 search probed any bosonic \PHc decay channel at the LHC---the \emph{forgotten channel} remained unexplored.
+At the LHC, Run~1 searches covered all major fermionic channels. ATLAS and CMS both searched for $\PHp \to \PGtp\Pgngt$, with CMS using 19.7~\fbinv at 8~\TeV to set limits of $\mathcal{B}(t \to \PHp b) \times \mathcal{B}(\PHp \to \PGtp\Pgngt)$ between 0.15\% and 1.2\% for $\mHc = 80$ to $160$\GeV~\cite{CMS:2015lsf}. ATLAS searched for $\PHp \to c\bar{s}$ at 7~\TeV, excluding $\mathcal{B}(t \to \PHp b)$ between 1\% and 5\% assuming $\mathcal{B}(\PHp \to c\bar{s}) = 1$~\cite{ATLAS:2013uxj}, and CMS extended this to 8~\TeV with limits of 1.2\% to 6.5\%~\cite{CMS:2015yvc}. CMS also performed the first search for $\PHp \to c\bar{b}$ at 8~\TeV, excluding $\mathcal{B}(t \to \PHp b)$ between 0.5\% and 0.8\% assuming $\mathcal{B}(\PHp \to c\bar{b}) = 1$~\cite{CMS:2018dzl}. For heavy charged Higgs bosons, both ATLAS~\cite{ATLAS:2015nkq} and CMS~\cite{CMS:2015lsf} searched in the $\PHp \to t\bar{b}$ channel. Despite this breadth of fermionic searches, no Run~1 search probed any bosonic \PHc decay channel at the LHC, and the forgotten channel remained unexplored.
 
-At the LHC Run~2, brought major advances in both fermionic and bosonic channels. In the $\PHp \to \tau^+\nu$ channel, both CMS~\cite{CMS:2019bfg} and ATLAS searched, with ATLAS achieving the most stringent limits using the full 140~\fbinv dataset, excluding $\mathcal{B}(t \to \PHp b) \times \mathcal{B}(\PHp \to \tau^+\nu)$ down to $0.02\%$ for light charged Higgs masses~\cite{ATLAS:2024tnv}. These limits strongly constrain Type-II models at large $\tan\beta$ but have reduced sensitivity in Type-I due to the universal $\cot^2\beta$ suppression. In the $\PHp \to c\bar{s}$ channel, both CMS with 35.9~\fbinv~\cite{CMS:2020osd} and ATLAS searched, with ATLAS setting the strongest limits using 140~\fbinv: $\mathcal{B}(t \to \PHp b) = 0.066\%$--$3.6\%$ assuming $\mathcal{B}(\PHp \to c\bar{s}) = 1$~\cite{ATLAS:2024oqu}. ATLAS also searched for $\PHp \to c\bar{b}$ with 139~\fbinv, setting limits of $\mathcal{B}(t \to \PHp b) \times \mathcal{B}(\PHp \to c\bar{b}) = 0.15\%$--$0.42\%$~\cite{ATLAS:2023bzb}. For heavy charged Higgs bosons, ATLAS searched in $\PHp \to t\bar{b}$ using 139~\fbinv~\cite{ATLAS:2021upq}.
+The LHC Run~2 brought major advances in both fermionic and bosonic channels. In the $\PHp \to \PGtp\Pgngt$ channel, both CMS~\cite{CMS:2019bfg} and ATLAS searched, with ATLAS achieving the most stringent limits using the full 140~\fbinv dataset and excluding $\mathcal{B}(t \to \PHp b) \times \mathcal{B}(\PHp \to \PGtp\Pgngt)$ down to $0.02\%$ for light charged Higgs masses~\cite{ATLAS:2024tnv}. These limits strongly constrain Type-II models at large $\tan\beta$ but have reduced sensitivity in Type-I due to the universal $\cot^2\beta$ suppression. In the $\PHp \to c\bar{s}$ channel, both CMS with 35.9~\fbinv~\cite{CMS:2020osd} and ATLAS searched, with ATLAS setting the strongest limits using 140~\fbinv. The excluded values of $\mathcal{B}(t \to \PHp b)$ range from 0.066\% to 3.6\%, assuming $\mathcal{B}(\PHp \to c\bar{s}) = 1$~\cite{ATLAS:2024oqu}. ATLAS also searched for $\PHp \to c\bar{b}$ with 139~\fbinv, setting limits of $\mathcal{B}(t \to \PHp b) \times \mathcal{B}(\PHp \to c\bar{b})$ between 0.15\% and 0.42\%~\cite{ATLAS:2023bzb}. For heavy charged Higgs bosons, ATLAS searched in $\PHp \to t\bar{b}$ using 139~\fbinv~\cite{ATLAS:2021upq}.
 
-The bosonic decay $\PHc \to W^\pm \PA \to W^\pm \mu^+\mu^-$---the target channel of this thesis---was searched for the first time at the LHC during Run~2. CMS performed the first search using 35.9~\fbinv of 2016 data in the $e\mu\mu$ and $\mu\mu\mu$ final states~\cite{CMS:2019gfz}. The search required an on-shell $W$ boson ($\mHc - \mA \geq m_W$) and probed $\mHc = 100$--$160$\GeV, $\mA = 15$--$75$\GeV, setting upper limits on the cascade branching fraction $\mathcal{B}_{\text{cascade}} < (1.9$--$8.6) \times 10^{-6}$ at 95\% CL. ATLAS subsequently searched in the same final states using the full Run~2 dataset of 139~\fbinv~\cite{ATLAS:2023ght}, also requiring an on-shell $W$, probing three discrete charged Higgs mass values ($\mHc = 120$, 140, 160\GeV) with $\mA = 15$--$72$\GeV and yielding limits of $\mathcal{B}_{\text{cascade}} < (0.9$--$3.9) \times 10^{-6}$. Both searches were restricted to the on-shell $W$ regime. The off-shell region---where custodial symmetry naturally places much of the viable parameter space (Section~\ref{sec:theory_charged})---remained entirely unexplored.
+The bosonic decay $\PHp \to \PWp \PA \to \PWp \Pgmp\Pgmm$, the target channel of this thesis, was searched for the first time at the LHC during Run~2. CMS performed the first search using 35.9~\fbinv of 2016 data in the $\Pe\Pgm\Pgm$ and $\Pgm\Pgm\Pgm$ final states~\cite{CMS:2019gfz}. The search required an on-shell $W$ boson ($\mHc - \mA > m_W$) and probed $\mHc = 100$ to $160$\GeV and $\mA = 15$ to $75$\GeV, setting upper limits on the signal branching fraction $\mathcal{B}_{\text{sig}} < (1.9$ to $8.6) \times 10^{-6}$ at 95\% CL. ATLAS subsequently searched in the same final states using the full Run~2 dataset of 139~\fbinv~\cite{ATLAS:2023ght}, also requiring an on-shell $W$, probing three discrete charged Higgs mass values ($\mHc = 120$, 140, $160$\GeV) with $\mA = 15$ to $72$\GeV and yielding limits of $\mathcal{B}_{\text{sig}} < (0.9$ to $3.9) \times 10^{-6}$. Both searches were restricted to the on-shell $W$ regime. The off-shell region, where custodial symmetry naturally places much of the viable parameter space (Section~\ref{sec:theory_charged}), remained entirely unexplored.
 
 \subsubsection{Searches for the CP-odd Higgs Boson}
 
-At BaBar and CLEO, radiative $\Upsilon$ decays $\Upsilon(nS) \to \gamma \PA$ were used to search for light pseudoscalars with $\mA < 2m_b \approx 10$\GeV. BaBar constrained $\mathcal{B}(\Upsilon \to \gamma \PA) \times \mathcal{B}(\PA \to \mu^+\mu^-)$ at the $10^{-6}$ level~\cite{BaBar:2009lbr}, while CLEO set similar limits via $\Upsilon(1S) \to \gamma \PA$ with $\PA \to \tau^+\tau^-$ and $\mu^+\mu^-$~\cite{CLEO:2008phs}. These results close the very low-mass corner below the \mA range of 15--75\GeV relevant to this analysis.
+At BaBar and CLEO, radiative $\Upsilon$ decays $\Upsilon(nS) \to \gamma \PA$ were used to search for light pseudoscalars with $\mA < 2m_b \approx 10$\GeV. BaBar constrained $\mathcal{B}(\Upsilon \to \gamma \PA) \times \mathcal{B}(\PA \to \Pgmp\Pgmm)$ at the $10^{-6}$ level~\cite{BaBar:2009lbr}, while CLEO set similar limits via $\Upsilon(1S) \to \gamma \PA$ with $\PA \to \PGtp\PGtm$ and $\Pgmp\Pgmm$~\cite{CLEO:2008phs}. These results close the very low-mass corner below the \mA range of 15 to $75$\GeV relevant to this analysis.
 
 The combined LEP experiments searched for associated neutral Higgs production $e^+e^- \to Z^* \to \Ph\PA$ (the Bjorken process), excluding $\mh > 92.8$\GeV and $\mA > 93.4$\GeV in MSSM benchmark scenarios~\cite{LEPHiggs:2006drw}. In the general 2HDM with alignment ($\sin(\beta - \alpha) \approx 1$), these limits are substantially relaxed because the $Z\Ph\PA$ coupling depends on $\cos(\beta - \alpha)$.
 
-At the LHC Run~1, CMS searched for $\PA \to \mu^+\mu^-$ in standalone production at 7\TeV in the mass range 5.5--14\GeV~\cite{CMS:2012fgd} and in $b\bar{b}$-associated production at 8\TeV for $\mA = 25$--$60$\GeV~\cite{CMS:2017dmg}. The MSSM neutral Higgs $\phi \to \tau^+\tau^-$ was searched by both ATLAS and CMS~\cite{CMS:2014cdp}. ATLAS also performed an early exotic Higgs decay search $\Ph(125) \to aa \to \mu\mu\tau\tau$ at 8\TeV~\cite{ATLAS:2015unc}.
+At the LHC Run~1, CMS searched for $\PA \to \Pgmp\Pgmm$ in standalone production at 7~\TeV in the mass range 5.5 to $14$\GeV~\cite{CMS:2012fgd} and in $b\bar{b}$-associated production at 8~\TeV for $\mA = 25$ to $60$\GeV~\cite{CMS:2017dmg}. The MSSM neutral Higgs $\phi \to \PGtp\PGtm$ was searched by both ATLAS and CMS~\cite{CMS:2014cdp}. ATLAS also performed an early exotic Higgs decay search $\Ph(125) \to aa \to \Pgmp\Pgmm\PGtp\PGtm$ at 8~\TeV~\cite{ATLAS:2015unc}.
 
-At the LHC Run~2, CMS exploited the data scouting technique to search for narrow dimuon resonances in 137~\fbinv, covering the mass range 11.5--200\GeV~\cite{CMS:2019lwf}. This search probes gluon-fusion and $b\bar{b}$-associated production of \PA, but does \emph{not} constrain the $t \to \PHc b$ cascade because the production mechanism is different. The $\Ph(125) \to aa$ program expanded significantly in Run~2, with over a dozen final states explored. A notable result is the ATLAS search in the $bb\mu\mu$ channel using 139~\fbinv, which observed a $3.3\sigma$ local excess at $m_a = 52$\GeV~\cite{ATLAS:2021hbr}.
+At the LHC Run~2, CMS exploited the data scouting technique to search for narrow dimuon resonances in 137~\fbinv, covering the mass range 11.5 to $200$\GeV~\cite{CMS:2019lwf}. This search probes gluon-fusion and $b\bar{b}$-associated production of \PA, but does not constrain the $t \to \PHp b$ cascade because the production mechanism is different. The $\Ph(125) \to aa$ program expanded significantly in Run~2, with over a dozen final states explored. A notable result is the ATLAS search in the $bb\mu\mu$ channel using 139~\fbinv, which observed a $3.3\sigma$ local excess at $m_a = 52$\GeV~\cite{ATLAS:2021hbr}.
 
-Standalone \PA searches constrain direct production but do not limit the $t \to \PHc b$ cascade branching fraction. The $\Ph \to aa$ program probes a different production mode and requires $\mA < \mh/2$.
+Standalone \PA searches constrain direct production but do not limit the $t \to \PHp b$ cascade branching fraction. The $\Ph \to aa$ program probes a different production mode and requires $\mA < \mh/2$.
 
 \subsubsection{Analysis Target}
 
-In Type-I, all indirect constraints---$b \to s\gamma$, custodial symmetry, $R_b$, and alignment---are simultaneously satisfied for $\mHc = 80$--$160$\GeV at moderate-to-large $\tan\beta$. This analysis extends the CMS search for $\PHc \to W^\pm \PA \to W^\pm \mu^+\mu^-$ to a combined dataset of 200~\fbinv (Run~2 plus Run~3 2022--2023 data), covering charged Higgs masses $\mHc = 80$--$160$\GeV and pseudoscalar masses $\mA = 15$--$75$\GeV. For the first time, the search includes the off-shell $W^*$ regime ($\mHc - \mA < m_W$), where custodial symmetry places much of the viable 2HDM parameter space. Results are presented as model-independent upper limits on the cascade branching fraction $\mathcal{B}_{\text{cascade}}$ (Eq.~\ref{eq:cascade_BR}), allowing reinterpretation in any 2HDM type or extended scalar sector.
+In Type-I, all indirect constraints, including $b \to s\gamma$, custodial symmetry, $R_b$, and alignment, are simultaneously satisfied for $\mHc = 80$ to $160$\GeV at small-to-moderate $\tan\beta$. This analysis extends the CMS search for $\PHp \to \PWp \PA \to \PWp \Pgmp\Pgmm$ to a combined dataset of 200~\fbinv, covering charged Higgs masses $\mHc = 70$ to $160$\GeV and pseudoscalar masses $\mA = 15$ to $\mHc - 5$\GeV. For the first time, the search includes the off-shell $W^*$ regime ($\mHc - \mA < m_W$), where custodial symmetry places much of the viable 2HDM parameter space. Results are presented as model-independent upper limits on the signal branching fraction $\mathcal{B}_{\text{sig}}$ (Eq.~\ref{eq:sig_BR}), allowing reinterpretation in any 2HDM type or extended scalar sector.

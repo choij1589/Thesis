@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="520" viewBox="0 0 1320 520">
+  <defs>
+    <style>
+      .title { font-family: Helvetica, Arial, sans-serif; font-size: 34px; font-weight: 700; fill: #111; }
+      .head { font-family: Helvetica, Arial, sans-serif; font-size: 34px; font-weight: 700; fill: #111; }
+      .sub { font-family: Helvetica, Arial, sans-serif; font-size: 22px; fill: #444; }
+      .txt { font-family: Helvetica, Arial, sans-serif; font-size: 25px; fill: #111; }
+      .small { font-family: Helvetica, Arial, sans-serif; font-size: 20px; fill: #444; }
+      .math { font-family: "Times New Roman", Times, serif; font-style: italic; }
+      .card { fill: #fff; stroke-width: 3; rx: 18; }
+      .cardSM { stroke: #6b7280; }
+      .card2HDM { stroke: #0b5fa5; }
+      .doublet { fill: #f8fafc; stroke: #222; stroke-width: 2.4; rx: 12; }
+      .doublet2 { fill: #eef6ff; stroke: #0b5fa5; stroke-width: 2.4; rx: 12; }
+      .gold { fill: #f4f4f5; stroke: #777; stroke-width: 2.2; rx: 12; }
+      .phys { fill: #fff7ed; stroke: #f59e0b; stroke-width: 2.2; rx: 12; }
+      .red { fill: #d71920; font-weight: 700; }
+      .blue { fill: #0b5fa5; font-weight: 700; }
+      .arrow { stroke: #222; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .arrowBlue { stroke: #0b5fa5; stroke-width: 3; fill: none; marker-end: url(#arrowBlue); }
+    </style>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9.5" refY="5.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L9.5,5.5 L2,9 Z" fill="#222"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="11" markerHeight="11" refX="9.5" refY="5.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L9.5,5.5 L2,9 Z" fill="#0b5fa5"/>
+    </marker>
+  </defs>
+
+  <rect width="1320" height="520" fill="#ffffff"/>
+  <text x="38" y="48" class="title">Scalar sector after EWSB</text>
+  <line x1="38" y1="67" x2="1282" y2="67" stroke="#c9c9c9" stroke-width="2.5"/>
+
+  <!-- Left card: SM -->
+  <rect x="40" y="96" width="596" height="374" class="card cardSM"/>
+  <text x="76" y="148" class="head">Standard Model</text>
+  <text x="76" y="181" class="sub">one Higgs doublet</text>
+
+  <rect x="96" y="226" width="150" height="128" class="doublet"/>
+  <text x="171" y="277" text-anchor="middle" class="head math">Φ</text>
+  <text x="171" y="318" text-anchor="middle" class="small">4 real d.o.f.</text>
+
+  <path d="M274 290 H362" class="arrow"/>
+  <text x="318" y="270" text-anchor="middle" class="small">EWSB</text>
+
+  <rect x="394" y="202" width="178" height="72" class="gold"/>
+  <text x="483" y="232" text-anchor="middle" class="txt">3 Goldstones</text>
+  <text x="483" y="259" text-anchor="middle" class="small">G±, G0 → W±, Z</text>
+
+  <text x="470" y="315" text-anchor="middle" class="head">+</text>
+
+  <rect x="394" y="336" width="178" height="72" class="phys"/>
+  <text x="483" y="366" text-anchor="middle" class="txt">1 scalar</text>
+  <text x="483" y="393" text-anchor="middle" class="small">h</text>
+
+  <!-- Right card: 2HDM -->
+  <rect x="684" y="96" width="596" height="374" class="card card2HDM"/>
+  <text x="720" y="148" class="head">Two-Higgs-Doublet Model</text>
+  <text x="720" y="181" class="sub">one additional Higgs doublet</text>
+
+  <rect x="714" y="226" width="122" height="128" class="doublet2"/>
+  <text x="775" y="277" text-anchor="middle" class="head math">Φ₁</text>
+  <text x="775" y="318" text-anchor="middle" class="small">4 real</text>
+
+  <text x="858" y="299" text-anchor="middle" class="head blue">+</text>
+
+  <rect x="880" y="226" width="122" height="128" class="doublet2"/>
+  <text x="941" y="277" text-anchor="middle" class="head math">Φ₂</text>
+  <text x="941" y="318" text-anchor="middle" class="small">4 real</text>
+
+  <path d="M1028 290 H1094" class="arrowBlue"/>
+  <text x="1061" y="270" text-anchor="middle" class="small">EWSB</text>
+
+  <rect x="1120" y="170" width="136" height="72" class="gold"/>
+  <text x="1188" y="199" text-anchor="middle" class="txt">3 Goldstones</text>
+  <text x="1188" y="226" text-anchor="middle" class="small">→ W±, Z</text>
+
+  <text x="1188" y="282" text-anchor="middle" class="head">+</text>
+
+  <rect x="1120" y="308" width="136" height="96" class="phys"/>
+  <text x="1188" y="337" text-anchor="middle" class="txt">5 scalars</text>
+  <text x="1188" y="374" text-anchor="middle" class="txt">
+    <tspan>h, H, A, </tspan><tspan class="red">H±</tspan>
+  </text>
+
+  <text x="720" y="440" class="small"><tspan class="red">H±</tspan><tspan>: direct signature of an extended scalar sector</tspan></text>
+</svg>

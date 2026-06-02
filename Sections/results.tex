@@ -1,51 +1,72 @@
-\chapter{Summary and Conclusions}
-\label{ch:conclusion}
+\chapter{Results}
+\label{ch:results}
 
-\section{Summary}
+This chapter presents the statistical interpretation of the search. The signal branching ratio used for limit setting is defined first, followed by prefit and background-only postfit distributions from the simultaneous likelihood fit. The final upper limits on the signal branching ratio are then shown for representative charged Higgs boson mass hypotheses using the dimuon mass templates described in Section~\ref{ssec:templates}.
 
-This thesis has presented a search for light charged Higgs bosons produced in top quark decays at the Large Hadron Collider. The search targets the decay chain $\PQt \to \PHc\PQb$ followed by $\PHc \to \PW\PA$ and $\PA \to \mu^+\mu^-$, where the charged Higgs boson (\PHc) and CP-odd pseudoscalar (\PA) are predicted by Two-Higgs-Doublet Model extensions of the Standard Model.
+\section{Signal branching ratio}
 
-The analysis uses proton-proton collision data collected by the CMS experiment during LHC Run~2 (2016--2018) at a center-of-mass energy of $\sqrt{s} = 13\TeV$, corresponding to an integrated luminosity of $137.6\fbinv$, and Run~3 (2022--2023) at $\sqrt{s} = 13.6\TeV$, corresponding to $62.5\fbinv$, for a combined total of $200.1\fbinv$. Events are selected in two final state channels: the $\Pe\Pgm\Pgm$ channel containing one electron and two muons, and the $\Pgm\Pgm\Pgm$ channel containing three muons. The selection requires at least two jets with at least one identified as originating from a bottom quark, consistent with the $\ttbar$ production topology.
-
-A key advancement of this analysis compared to previous searches is the inclusion of off-shell $\PHc \to \PW\PA$ decays, extending coverage to mass configurations where the decay proceeds through a virtual \PW boson. This significantly expands the accessible region of the 2HDM parameter space. The search covers charged Higgs boson masses from 70 to 160\GeV and pseudoscalar masses from 15\GeV up to $\mHc - 5\GeV$.
-
-The dominant backgrounds arise from nonprompt leptons (from jet misidentification or heavy-flavor decays), photon conversions, and irreducible prompt Standard Model processes including diboson production and $\ttbar$+V/H. The nonprompt lepton background is estimated using a data-driven matrix method, while conversion backgrounds are constrained using control regions enriched in $\PZ\gamma$ events. Prompt backgrounds are estimated from Monte Carlo simulation with appropriate theoretical and experimental systematic uncertainties.
-
-Machine learning techniques play a central role in enhancing the sensitivity of the search. A ParticleNet-based graph neural network classifier is trained to discriminate signal events from \PZ boson associated backgrounds, which become particularly challenging in the ``on-Z'' mass region where the signal dimuon mass peak overlaps with the \PZ resonance. The classifier exploits the distinct kinematic and topological features of the signal process, yielding sensitivity improvements of 25--65\% in the $\Pe\Pgm\Pgm$ channel and 5--50\% in the $\Pgm\Pgm\Pgm$ channel.
-
-Signal extraction is performed through a binned maximum likelihood fit to the dimuon invariant mass distribution using the asymptotic CL$_s$ method. The analysis scans over a two-dimensional grid of mass hypotheses, providing comprehensive coverage of the kinematically accessible parameter space.
-
-\section{Results}
-
-No statistically significant excess above the Standard Model prediction is observed. The data are consistent with the background-only hypothesis across all tested mass configurations in both the Run~2 and Run~3 datasets. Upper limits at 95\% confidence level are set on the signal branching ratio:
+The signal branching ratio is defined as
 \begin{equation}
-\mathcal{B}_{\text{sig}} = \mathcal{B}(\PQt \to \PW\PQb) \times \mathcal{B}(\PQt \to \PHc\PQb) \times \mathcal{B}(\PHc \to \PW\PA) \times \mathcal{B}(\PA \to \mu^+\mu^-)
+\mathcal{B}_{\text{sig}} =
+\mathcal{B}(\PQt \to \PHp\PQb)
+\times
+\mathcal{B}(\PHp \to \PWp\PA)
+\times
+\mathcal{B}(\PA \to \Pgmp\Pgmm).
+\label{eq:bsig_results}
 \end{equation}
+The corresponding signal cross section is
+\begin{equation}
+\sigma_{\text{sig}} =
+2 \, \sigma(\Pp\Pp \to \ttbar) \, \mathcal{B}_{\text{sig}},
+\label{eq:sigxsec_results}
+\end{equation}
+where the factor of two accounts for either the top quark or antiquark decaying through the charged Higgs boson cascade.
 
-These limits provide constraints on Two-Higgs-Doublet Model scenarios, particularly the Type-I 2HDM at large $\tanb$ where the bosonic decay mode $\PHc \to \PW\PA$ can become dominant.
+\section{Prefit and postfit distributions}
 
-\section{Significance and Impact}
+The agreement between the observed data and the background model is summarized with prefit and background-only postfit distributions. The prefit distributions use the nominal background predictions before the nuisance parameters are constrained by the likelihood fit. The background-only postfit distributions are obtained after the simultaneous fit with the signal strength fixed to zero, and therefore show the background model after the constraints from the data are applied.
 
-This analysis represents the first search for the decay $\PHc \to \PW\PA$ including off-shell effects, performed using the combined Run~2 and Run~3 datasets corresponding to $200.1\fbinv$ of proton-proton collision data. The inclusion of off-shell decays significantly extends the physics reach beyond previous searches that were restricted to on-shell configurations. Combined with advanced machine learning techniques, this provides the most comprehensive exploration of this charged Higgs decay channel to date.
+Figures~\ref{fig:postfit_summary_mhc160_eemu}--\ref{fig:postfit_summary_mhc160_opt} show the prefit and background-only postfit summaries at $\mHc = 160$\GeV. This mass hypothesis has the widest \mA range, so the $\Pe\Pgm\Pgm$ and $\Pgm\Pgm\Pgm$ signal regions are shown separately for the standard signal-region selection. The combined fit is shown for the classifier-based modified LR optimization. The optimization is applied only to the on-\PZ mass hypotheses, $85 \leq \mA \leq 95$\GeV, where the signal dimuon mass peak overlaps with the \PZ boson resonance. The corresponding summaries for lower \mHc hypotheses are provided in Appendix~\ref{app:results}.
 
-The addition of Run~3 data at $\sqrt{s} = 13.6\TeV$ extends the dataset by approximately 45\% relative to Run~2 alone, improving the sensitivity through both increased statistics and the higher $\ttbar$ production cross section at the elevated center-of-mass energy. The results complement other charged Higgs searches at the LHC that target fermionic decay modes ($\PHc \to \tau\nu$, $\PHc \to \PQt\PQb$, $\PHc \to \PQc\PQs$). Together, these searches probe different regions of the 2HDM parameter space and different mass ranges for the additional Higgs bosons.
+\begin{figure}[p]
+  \centering
+  \subfloat[Prefit]{\includegraphics[width=0.95\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR1E2Mu.Baseline.prefit.unblind.png}} \\
+  \subfloat[Background-only postfit]{\includegraphics[width=0.95\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR1E2Mu.Baseline.postfit_b.unblind.png}}
+  \caption{Prefit and background-only postfit summaries in the $\Pe\Pgm\Pgm$ signal region for the standard signal-region selection at $\mHc = 160$\GeV.}
+  \label{fig:postfit_summary_mhc160_eemu}
+\end{figure}
 
-\section{Future Prospects}
+\begin{figure}[p]
+  \centering
+  \subfloat[Prefit]{\includegraphics[width=0.95\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR3Mu.Baseline.prefit.unblind.png}} \\
+  \subfloat[Background-only postfit]{\includegraphics[width=0.95\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR3Mu.Baseline.postfit_b.unblind.png}}
+  \caption{Prefit and background-only postfit summaries in the $\Pgm\Pgm\Pgm$ signal region for the standard signal-region selection at $\mHc = 160$\GeV.}
+  \label{fig:postfit_summary_mhc160_3mu}
+\end{figure}
 
-Several avenues exist for improving the sensitivity of this search in the future:
+\begin{figure}[p]
+  \centering
+  \subfloat[Prefit]{\includegraphics[width=0.95\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summary/extended/mHc160/ParticleNet/postfit_summary.mHc160.All.Combined.ParticleNet.prefit.unblind.png}} \\
+  \subfloat[Background-only postfit]{\includegraphics[width=0.95\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summary/extended/mHc160/ParticleNet/postfit_summary.mHc160.All.Combined.ParticleNet.postfit_b.unblind.png}}
+  \caption{Prefit and background-only postfit summaries for the fit with classifier-based LR optimization at $\mHc = 160$\GeV, combining the $\Pe\Pgm\Pgm$ and $\Pgm\Pgm\Pgm$ signal regions. The optimization is applied only to the on-\PZ mass hypotheses, $85 \leq \mA \leq 95$\GeV.}
+  \label{fig:postfit_summary_mhc160_opt}
+\end{figure}
 
-\textbf{Larger datasets}: The High-Luminosity LHC (HL-LHC) is expected to deliver an integrated luminosity of approximately 3000\fbinv, representing a factor of 15 increase compared to the current combined dataset. This dramatic increase in statistics will substantially improve the sensitivity to rare processes.
+\section{Limits}
 
-\textbf{Improved machine learning}: The field of machine learning continues to advance rapidly, with new architectures and training techniques offering potential improvements in signal-background discrimination. The graph neural network approach used in this analysis could be further refined or replaced with more sophisticated methods.
+Upper limits at 95\% confidence level are set on $\mathcal{B}_{\text{sig}}$ using the modified frequentist CL$_s$ method described in Section~\ref{ssec:templates}. The limits for the Run~2 and Run~3 combined dataset are shown in Fig.~\ref{fig:limits}. The $\mHc = 70$\GeV result is shown together with the fits in which the classifier-based LR requirement is applied to the on-\PZ hypotheses, $85 \leq \mA \leq 95$\GeV, for $\mHc = 100$, $130$, and $160$\GeV. The corresponding standard-selection limits for these higher \mHc hypotheses are provided in Appendix~\ref{app:results}.
 
-\textbf{Additional decay channels}: While this analysis focuses on the $\PA \to \mu^+\mu^-$ decay, other pseudoscalar decay modes such as $\PA \to \tau^+\tau^-$ or $\PA \to \PQb\PAQb$ could provide complementary sensitivity in different mass regions.
+The standard signal-region selection is used for the full mass-point scan in the off-\PZ regions. The observed limits on $\mathcal{B}_{\text{sig}}$ are $(0.60\text{--}2.81) \times 10^{-6}$ below the \PZ resonance, $\mA < 85$\GeV, and $(0.90\text{--}2.98) \times 10^{-6}$ above the \PZ resonance, $\mA > 95$\GeV. For the nine on-\PZ mass points shown at $\mHc = 100$, $130$, and $160$\GeV with $85 \leq \mA \leq 95$\GeV, the observed limits on $\mathcal{B}_{\text{sig}}$ are $(1.80\text{--}5.64) \times 10^{-6}$ with the standard selection and $(1.85\text{--}3.89) \times 10^{-6}$ with the classifier-based LR optimized fit. The largest local significances in the scans considered here are $2.17\sigma$ for $(\mHc,\mA)=(70,18)$\GeV with the standard selection and $2.36\sigma$ for $(\mHc,\mA)=(160,85)$\GeV with the classifier-based LR optimized fit.
 
-\textbf{Combination with other searches}: The combination of results from multiple charged and neutral Higgs searches at ATLAS and CMS will provide the most stringent constraints on extended Higgs sector models.
+\begin{figure}[p]
+  \centering
+  \subfloat[$\mHc = 70$\GeV]{\includegraphics[width=0.48\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit.All.Asymptotic.Baseline.MHc70.unblind.png}}
+  \subfloat[On-\PZ optimized, $100$\GeV]{\includegraphics[width=0.48\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit.All.Asymptotic.ParticleNet.MHc100.unblind.png}} \\
+  \subfloat[On-\PZ optimized, $130$\GeV]{\includegraphics[width=0.48\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit.All.Asymptotic.ParticleNet.MHc130.unblind.png}}
+  \subfloat[On-\PZ optimized, $160$\GeV]{\includegraphics[width=0.48\textwidth]{external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit.All.Asymptotic.ParticleNet.MHc160.unblind.png}}
+  \caption{Upper limits at 95\% confidence level on $\mathcal{B}_{\text{sig}}$ for the Run~2 and Run~3 combined dataset. The limits are shown as functions of \mA for selected \mHc hypotheses. The optimized results apply the classifier-based LR requirement only for the on-\PZ mass hypotheses, $85 \leq \mA \leq 95$\GeV.}
+  \label{fig:limits}
+\end{figure}
 
-\section{Conclusions}
-
-The search for new physics beyond the Standard Model remains one of the primary objectives of the LHC physics program. Extended Higgs sectors, such as the Two-Higgs-Doublet Model, represent well-motivated theoretical extensions that predict additional scalar particles potentially accessible at current collider energies.
-
-This thesis has demonstrated that precision searches for charged Higgs bosons in complex final states are feasible with the combined Run~2 and Run~3 datasets totalling $200.1\fbinv$, and that machine learning techniques can significantly enhance sensitivity in challenging background environments. While no evidence for new physics has been observed in this analysis, the comprehensive exploration of the parameter space and the development of advanced analysis techniques provide a foundation for future discoveries.
-
-The absence of a signal at the current sensitivity level places meaningful constraints on 2HDM scenarios and motivates continued searches with larger datasets and improved techniques. The discovery of an extended Higgs sector would fundamentally transform our understanding of electroweak symmetry breaking and provide crucial guidance for physics beyond the Standard Model.
+\clearpage

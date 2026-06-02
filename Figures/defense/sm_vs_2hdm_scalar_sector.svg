@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="720" viewBox="0 0 1320 720">
+  <defs>
+    <style>
+      .title { font-family: Helvetica, Arial, sans-serif; font-size: 42px; font-weight: 700; fill: #111; }
+      .label { font-family: Helvetica, Arial, sans-serif; font-size: 31px; font-weight: 700; fill: #111; }
+      .text { font-family: Helvetica, Arial, sans-serif; font-size: 26px; fill: #111; }
+      .small { font-family: Helvetica, Arial, sans-serif; font-size: 22px; fill: #333; }
+      .tiny { font-family: Helvetica, Arial, sans-serif; font-size: 19px; fill: #555; }
+      .math { font-family: "Times New Roman", Times, serif; font-style: italic; }
+      .card { fill: #fff; stroke: #222; stroke-width: 3.2; rx: 14; }
+      .sm { stroke: #6b7280; }
+      .thdm { stroke: #0b5fa5; }
+      .doublet { fill: #f8fafc; stroke: #222; stroke-width: 2.4; rx: 10; }
+      .doublet2 { fill: #eef6ff; stroke: #0b5fa5; stroke-width: 2.4; rx: 10; }
+      .gold { fill: #f4f4f5; stroke: #777; stroke-width: 2.2; rx: 10; }
+      .phys { fill: #fff7ed; stroke: #f59e0b; stroke-width: 2.2; rx: 10; }
+      .charged { fill: #d71920; font-weight: 700; }
+      .blue { fill: #0b5fa5; font-weight: 700; }
+      .arrow { stroke: #222; stroke-width: 3.2; fill: none; marker-end: url(#arrow); }
+      .arrowBlue { stroke: #0b5fa5; stroke-width: 3.2; fill: none; marker-end: url(#arrowBlue); }
+      .dash { stroke: #999; stroke-width: 2.2; stroke-dasharray: 8 7; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#222"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#0b5fa5"/>
+    </marker>
+  </defs>
+
+  <rect width="1320" height="720" fill="#ffffff"/>
+
+  <text x="54" y="68" class="title">Scalar sector after electroweak symmetry breaking</text>
+  <line x1="54" y1="92" x2="1266" y2="92" stroke="#c7c7c7" stroke-width="3"/>
+
+  <!-- SM card -->
+  <rect x="58" y="134" width="1204" height="236" class="card sm"/>
+  <text x="92" y="188" class="label">Standard Model</text>
+  <text x="92" y="225" class="small">one scalar doublet</text>
+
+  <rect x="330" y="166" width="166" height="142" class="doublet"/>
+  <text x="412" y="221" text-anchor="middle" class="label math">Φ</text>
+  <text x="412" y="263" text-anchor="middle" class="small">4 real d.o.f.</text>
+
+  <path d="M520 237 H670" class="arrow"/>
+  <text x="595" y="218" text-anchor="middle" class="small">EWSB</text>
+
+  <rect x="704" y="154" width="214" height="78" class="gold"/>
+  <text x="811" y="187" text-anchor="middle" class="text">3 Goldstones</text>
+  <text x="811" y="216" text-anchor="middle" class="tiny">G±, G0 → W±, Z</text>
+
+  <text x="950" y="202" class="label">+</text>
+
+  <rect x="992" y="154" width="192" height="78" class="phys"/>
+  <text x="1088" y="187" text-anchor="middle" class="text">1 Higgs boson</text>
+  <text x="1088" y="216" text-anchor="middle" class="tiny">h</text>
+
+  <path d="M704 276 H1184" class="dash"/>
+  <text x="944" y="314" text-anchor="middle" class="small">only one physical scalar remains</text>
+
+  <!-- 2HDM card -->
+  <rect x="58" y="414" width="1204" height="236" class="card thdm"/>
+  <text x="92" y="468" class="label">Two-Higgs-Doublet Model</text>
+  <text x="92" y="505" class="small">one additional scalar doublet</text>
+
+  <rect x="300" y="446" width="150" height="142" class="doublet2"/>
+  <text x="375" y="501" text-anchor="middle" class="label math">Φ₁</text>
+  <text x="375" y="543" text-anchor="middle" class="small">4 real d.o.f.</text>
+
+  <text x="468" y="526" text-anchor="middle" class="label blue">+</text>
+
+  <rect x="486" y="446" width="150" height="142" class="doublet2"/>
+  <text x="561" y="501" text-anchor="middle" class="label math">Φ₂</text>
+  <text x="561" y="543" text-anchor="middle" class="small">4 real d.o.f.</text>
+
+  <path d="M662 517 H756" class="arrowBlue"/>
+  <text x="709" y="498" text-anchor="middle" class="small">EWSB</text>
+
+  <rect x="790" y="434" width="214" height="78" class="gold"/>
+  <text x="897" y="467" text-anchor="middle" class="text">3 Goldstones</text>
+  <text x="897" y="496" text-anchor="middle" class="tiny">G±, G0 → W±, Z</text>
+
+  <text x="1036" y="482" class="label">+</text>
+
+  <rect x="1078" y="434" width="164" height="132" class="phys"/>
+  <text x="1160" y="466" text-anchor="middle" class="text">5 Higgs bosons</text>
+  <text x="1160" y="506" text-anchor="middle" class="text">
+    <tspan>h, H, A, </tspan><tspan class="charged">H±</tspan>
+  </text>
+  <text x="1160" y="538" text-anchor="middle" class="tiny">physical scalars</text>
+
+  <path d="M1090 590 C1120 622, 1190 622, 1226 588" class="arrowBlue"/>
+  <text x="1040" y="628" class="small charged">charged Higgs: direct sign of an extended scalar sector</text>
+</svg>

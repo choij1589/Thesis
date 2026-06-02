@@ -41,13 +41,13 @@ This is a distinguishing feature of the writing style — generic detector descr
 ## 3. LaTeX Conventions
 
 ### Formatting
-- Units: `\GeV`, `\TeV`, `\fbinv`, `\percms` (CMS macros). Always `~` between number and unit: `13~\TeV`, `138\fbinv`
+- Units: use CMS macros such as `\GeV`, `\TeV`, `\fbinv`, and `\percms`. For energy units, keep the number in math mode followed directly by the unit macro, e.g. `$100$\GeV`, `$13$\TeV`, and `$0.9$\GeV`. For integrated luminosity, keep the existing nonbreaking-space convention, e.g. `138~\fbinv` and `200~\fbinv`.
 - Particles: CMS penname macros — `\PQt`, `\PQb`, `\PHc`, `\PA`, `\PW`, `\PZ`, `\Pgm`, `\Pe`, `\Pgt`, `\PAQt`
   - Single penname doesn't need math mode; multiple pennames do: `$\Pp\Pp$ collisions`
 - Observables: `\pT`, `\ptvecmiss`, `\MET`, `\HT`, `\ET`
 - Subscripts: Roman for abbreviations (`\text{T}`, `\text{miss}`), italic for math indices ($i$, $j$)
 - Cross-references: `Chapter~\ref{ch:...}`, `Section~\ref{sec:...}`, `Fig.~\ref{fig:...}`, `Table~\ref{tab:...}`, `Eq.~\ref{eq:...}`
-- Use `~` (non-breaking space) before `\ref`, `\cite`, units, and between `Fig.` and ref
+- Use `~` (non-breaking space) before `\ref`, `\cite`, integrated luminosity units, and between `Fig.` and ref. Do not use `~` between numbers and `\GeV` or `\TeV` in this thesis.
 - Software: `\textsc{MadGraph5\_aMC@NLO}`, `\textsc{Pythia}~8`, `\textsc{Geant4}`, `\textsc{CMSSW}`
 
 ### Labels
@@ -71,7 +71,7 @@ This is a distinguishing feature of the writing style — generic detector descr
 ## 4. Equations
 
 - Numbered equations for important results that are referenced elsewhere: `\begin{equation}...\end{equation}`
-- Inline math for short expressions: `$\pT > 20\GeV$`
+- Inline math for short expressions: `$\pT > 20$\GeV`
 - Multi-line with `\begin{align}`: use `&` for alignment at `=` signs
 - Define all symbols on first use, either inline or in a "where" clause after the equation:
   > "where $N_{1,2}$ are the numbers of particles per bunch in each beam, $n_b$ is the number of colliding bunch pairs..."
