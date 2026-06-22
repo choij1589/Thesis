@@ -95,7 +95,7 @@
 \contentsline {section}{\numberline {6.1}Signal branching ratio}{141}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Prefit and postfit distributions}{142}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Limits}{142}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Summary and Conclusions}{148}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Summary}{148}{chapter.7}%
 \settowidth {\mytmplen }{\bfseries \cftchappresnum \cftchapaftersnum }\advance \cftchapnumwidth -\mytmplen \relax \renewcommand {\cftchappresnum }{Appendix\nobreakspace {}}\renewcommand {\cftchapaftersnum }{}\settowidth {\mytmplen }{\bfseries \cftchappresnum \cftchapaftersnum }\advance \cftchapnumwidth \mytmplen \relax 
 \contentsline {chapter}{\numberline {A}Data, Trigger, and Background Monte Carlo Samples}{150}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Additional Result Figures}{156}{appendix.B}%

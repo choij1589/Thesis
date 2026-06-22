@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.13)  2 JUN 2026 16:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.13)  4 JUN 2026 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1162,7 +1162,7 @@ LaTeX Font Info:    Calculating math sizes for size <14> on input line 118.
 ]
 Overfull \hbox (5.20456pt too wide) in paragraph at lines 24--24
  [][] [][]\OT1/cmr/m/n/10.95 Signal branch-ing frac-tion $\OMS/cmsy/m/n/10.95 B
-[]$ \OT1/cmr/m/n/10.95 (Eq. []2.64[]) in the $(\OML/cmm/m/it/10.95 m[]; m[]\OT1
+[]$ \OT1/cmr/m/n/10.95 (Eq. []2.66[]) in the $(\OML/cmm/m/it/10.95 m[]; m[]\OT1
 /cmr/m/n/10.95 )$ 
  []
 
@@ -1309,20 +1309,20 @@ cmsy/m/n/10.95 j \U/msa/m/n/10.95 .
  []
 
 [18] [19] [20] [21] [22] [23] [24]
-<2HDMC/outputs/plots/type1/TopBR.png, id=1141, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type1/TopBR.png, id=1143, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type1/TopBR.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type1/TopBR.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type1/TopBR.png  used on input lin
-e 484.
+e 515.
 (pdftex.def)             Requested size: 180.27504pt x 173.01576pt.
-<2HDMC/outputs/plots/type1/TopBR2D.png, id=1142, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type1/TopBR2D.png, id=1144, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type1/TopBR2D.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type1/TopBR2D.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type1/TopBR2D.png  used on input l
-ine 486.
+ine 517.
 (pdftex.def)             Requested size: 180.27504pt x 173.01576pt.
 
-Underfull \hbox (badness 3396) in paragraph at lines 487--487
+Underfull \hbox (badness 3396) in paragraph at lines 518--518
 []\OT1/cmr/m/n/10.95 Figure 2.1: |Branch-ing frac-tion $\OMS/cmsy/m/n/10.95 B\O
 T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t \OMS/cmsy/m/n/10.95 ! [][]\OML/cmm/m/it
 /10.95 b\OT1/cmr/m/n/10.95 )$ in the Type-I 2HDM
@@ -1330,122 +1330,122 @@ T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t \OMS/cmsy/m/n/10.95 ! [][]\OML/cmm/m/it
 
 [25] [26 <./2HDMC/outputs/plots/type1/TopBR.png> <./2HDMC/outputs/plots/type1/T
 opBR2D.png>] [27]
-<2HDMC/outputs/plots/type1/HcDecay_tanb1.png, id=1186, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type1/HcDecay_tanb1.png, id=1189, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type1/HcDecay_tanb1.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type1/HcDecay_tanb1.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type1/HcDecay_tanb1.png  used on i
-nput line 515.
+nput line 546.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type2/HcDecay_tanb1.png, id=1187, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type2/HcDecay_tanb1.png, id=1190, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type2/HcDecay_tanb1.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type2/HcDecay_tanb1.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type2/HcDecay_tanb1.png  used on i
-nput line 516.
+nput line 547.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type3/HcDecay_tanb1.png, id=1188, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type3/HcDecay_tanb1.png, id=1191, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type3/HcDecay_tanb1.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type3/HcDecay_tanb1.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type3/HcDecay_tanb1.png  used on i
-nput line 517.
+nput line 548.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type4/HcDecay_tanb1.png, id=1189, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type4/HcDecay_tanb1.png, id=1192, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type4/HcDecay_tanb1.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type4/HcDecay_tanb1.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type4/HcDecay_tanb1.png  used on i
-nput line 518.
+nput line 549.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type1/HcDecay_tanb5.png, id=1190, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type1/HcDecay_tanb5.png, id=1193, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type1/HcDecay_tanb5.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type1/HcDecay_tanb5.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type1/HcDecay_tanb5.png  used on i
-nput line 519.
+nput line 550.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type2/HcDecay_tanb5.png, id=1191, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type2/HcDecay_tanb5.png, id=1194, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type2/HcDecay_tanb5.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type2/HcDecay_tanb5.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type2/HcDecay_tanb5.png  used on i
-nput line 520.
+nput line 551.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type3/HcDecay_tanb5.png, id=1192, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type3/HcDecay_tanb5.png, id=1195, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type3/HcDecay_tanb5.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type3/HcDecay_tanb5.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type3/HcDecay_tanb5.png  used on i
-nput line 521.
+nput line 552.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type4/HcDecay_tanb5.png, id=1193, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type4/HcDecay_tanb5.png, id=1196, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type4/HcDecay_tanb5.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type4/HcDecay_tanb5.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type4/HcDecay_tanb5.png  used on i
-nput line 522.
+nput line 553.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
  [28] [29 <./2HDMC/outputs/plots/type1/HcDecay_tanb1.png> <./2HDMC/outputs/plot
 s/type2/HcDecay_tanb1.png> <./2HDMC/outputs/plots/type3/HcDecay_tanb1.png> <./2
 HDMC/outputs/plots/type4/HcDecay_tanb1.png> <./2HDMC/outputs/plots/type1/HcDeca
 y_tanb5.png> <./2HDMC/outputs/plots/type2/HcDecay_tanb5.png> <./2HDMC/outputs/p
 lots/type3/HcDecay_tanb5.png> <./2HDMC/outputs/plots/type4/HcDecay_tanb5.png>]
-<2HDMC/outputs/plots/type1/ADecay_tanb1_mHc160.png, id=1219, 598.235pt x 574.14
+<2HDMC/outputs/plots/type1/ADecay_tanb1_mHc160.png, id=1222, 598.235pt x 574.14
 5pt>
 File: 2HDMC/outputs/plots/type1/ADecay_tanb1_mHc160.png Graphic file (type png)
 
 <use 2HDMC/outputs/plots/type1/ADecay_tanb1_mHc160.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type1/ADecay_tanb1_mHc160.png  use
-d on input line 551.
+d on input line 582.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type2/ADecay_tanb1_mHc160.png, id=1220, 598.235pt x 574.14
+<2HDMC/outputs/plots/type2/ADecay_tanb1_mHc160.png, id=1223, 598.235pt x 574.14
 5pt>
 File: 2HDMC/outputs/plots/type2/ADecay_tanb1_mHc160.png Graphic file (type png)
 
 <use 2HDMC/outputs/plots/type2/ADecay_tanb1_mHc160.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type2/ADecay_tanb1_mHc160.png  use
-d on input line 552.
+d on input line 583.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type3/ADecay_tanb1_mHc160.png, id=1221, 598.235pt x 574.14
+<2HDMC/outputs/plots/type3/ADecay_tanb1_mHc160.png, id=1224, 598.235pt x 574.14
 5pt>
 File: 2HDMC/outputs/plots/type3/ADecay_tanb1_mHc160.png Graphic file (type png)
 
 <use 2HDMC/outputs/plots/type3/ADecay_tanb1_mHc160.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type3/ADecay_tanb1_mHc160.png  use
-d on input line 553.
+d on input line 584.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type4/ADecay_tanb1_mHc160.png, id=1222, 598.235pt x 574.14
+<2HDMC/outputs/plots/type4/ADecay_tanb1_mHc160.png, id=1225, 598.235pt x 574.14
 5pt>
 File: 2HDMC/outputs/plots/type4/ADecay_tanb1_mHc160.png Graphic file (type png)
 
 <use 2HDMC/outputs/plots/type4/ADecay_tanb1_mHc160.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type4/ADecay_tanb1_mHc160.png  use
-d on input line 554.
+d on input line 585.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type1/ADecay_tanb5_mHc160.png, id=1223, 598.235pt x 574.14
+<2HDMC/outputs/plots/type1/ADecay_tanb5_mHc160.png, id=1226, 598.235pt x 574.14
 5pt>
 File: 2HDMC/outputs/plots/type1/ADecay_tanb5_mHc160.png Graphic file (type png)
 
 <use 2HDMC/outputs/plots/type1/ADecay_tanb5_mHc160.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type1/ADecay_tanb5_mHc160.png  use
-d on input line 555.
+d on input line 586.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type2/ADecay_tanb5_mHc160.png, id=1224, 598.235pt x 574.14
+<2HDMC/outputs/plots/type2/ADecay_tanb5_mHc160.png, id=1227, 598.235pt x 574.14
 5pt>
 File: 2HDMC/outputs/plots/type2/ADecay_tanb5_mHc160.png Graphic file (type png)
 
 <use 2HDMC/outputs/plots/type2/ADecay_tanb5_mHc160.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type2/ADecay_tanb5_mHc160.png  use
-d on input line 556.
+d on input line 587.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type3/ADecay_tanb5_mHc160.png, id=1225, 598.235pt x 574.14
+<2HDMC/outputs/plots/type3/ADecay_tanb5_mHc160.png, id=1228, 598.235pt x 574.14
 5pt>
 File: 2HDMC/outputs/plots/type3/ADecay_tanb5_mHc160.png Graphic file (type png)
 
 <use 2HDMC/outputs/plots/type3/ADecay_tanb5_mHc160.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type3/ADecay_tanb5_mHc160.png  use
-d on input line 557.
+d on input line 588.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type4/ADecay_tanb5_mHc160.png, id=1226, 598.235pt x 574.14
+<2HDMC/outputs/plots/type4/ADecay_tanb5_mHc160.png, id=1229, 598.235pt x 574.14
 5pt>
 File: 2HDMC/outputs/plots/type4/ADecay_tanb5_mHc160.png Graphic file (type png)
 
 <use 2HDMC/outputs/plots/type4/ADecay_tanb5_mHc160.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type4/ADecay_tanb5_mHc160.png  use
-d on input line 558.
+d on input line 589.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
  [30 <./2HDMC/outputs/plots/type1/ADecay_tanb1_mHc160.png> <./2HDMC/outputs/plo
 ts/type2/ADecay_tanb1_mHc160.png> <./2HDMC/outputs/plots/type3/ADecay_tanb1_mHc
@@ -1453,53 +1453,53 @@ ts/type2/ADecay_tanb1_mHc160.png> <./2HDMC/outputs/plots/type3/ADecay_tanb1_mHc
 /plots/type1/ADecay_tanb5_mHc160.png> <./2HDMC/outputs/plots/type2/ADecay_tanb5
 _mHc160.png> <./2HDMC/outputs/plots/type3/ADecay_tanb5_mHc160.png> <./2HDMC/out
 puts/plots/type4/ADecay_tanb5_mHc160.png>] [31]
-<2HDMC/outputs/plots/type1/Bsig_tanb1.png, id=1250, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type1/Bsig_tanb1.png, id=1253, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type1/Bsig_tanb1.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type1/Bsig_tanb1.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type1/Bsig_tanb1.png  used on inpu
-t line 596.
+t line 627.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type2/Bsig_tanb1.png, id=1251, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type2/Bsig_tanb1.png, id=1254, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type2/Bsig_tanb1.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type2/Bsig_tanb1.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type2/Bsig_tanb1.png  used on inpu
-t line 597.
+t line 628.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type3/Bsig_tanb1.png, id=1252, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type3/Bsig_tanb1.png, id=1255, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type3/Bsig_tanb1.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type3/Bsig_tanb1.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type3/Bsig_tanb1.png  used on inpu
-t line 598.
+t line 629.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type4/Bsig_tanb1.png, id=1253, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type4/Bsig_tanb1.png, id=1256, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type4/Bsig_tanb1.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type4/Bsig_tanb1.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type4/Bsig_tanb1.png  used on inpu
-t line 599.
+t line 630.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type1/Bsig_tanb5.png, id=1254, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type1/Bsig_tanb5.png, id=1257, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type1/Bsig_tanb5.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type1/Bsig_tanb5.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type1/Bsig_tanb5.png  used on inpu
-t line 600.
+t line 631.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type2/Bsig_tanb5.png, id=1255, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type2/Bsig_tanb5.png, id=1258, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type2/Bsig_tanb5.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type2/Bsig_tanb5.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type2/Bsig_tanb5.png  used on inpu
-t line 601.
+t line 632.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type3/Bsig_tanb5.png, id=1256, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type3/Bsig_tanb5.png, id=1259, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type3/Bsig_tanb5.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type3/Bsig_tanb5.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type3/Bsig_tanb5.png  used on inpu
-t line 602.
+t line 633.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
-<2HDMC/outputs/plots/type4/Bsig_tanb5.png, id=1257, 598.235pt x 574.145pt>
+<2HDMC/outputs/plots/type4/Bsig_tanb5.png, id=1260, 598.235pt x 574.145pt>
 File: 2HDMC/outputs/plots/type4/Bsig_tanb5.png Graphic file (type png)
 <use 2HDMC/outputs/plots/type4/Bsig_tanb5.png>
 Package pdftex.def Info: 2HDMC/outputs/plots/type4/Bsig_tanb5.png  used on inpu
-t line 603.
+t line 634.
 (pdftex.def)             Requested size: 90.14038pt x 86.5035pt.
  [32 <./2HDMC/outputs/plots/type1/Bsig_tanb1.png> <./2HDMC/outputs/plots/type2/
 Bsig_tanb1.png> <./2HDMC/outputs/plots/type3/Bsig_tanb1.png> <./2HDMC/outputs/p
@@ -1512,7 +1512,7 @@ Chapter 3.
 [37
 
 ]
-<Figures/experiments/CCC-v2017.png, id=1364, 804.00375pt x 492.84125pt>
+<Figures/experiments/CCC-v2017.png, id=1367, 804.00375pt x 492.84125pt>
 File: Figures/experiments/CCC-v2017.png Graphic file (type png)
 <use Figures/experiments/CCC-v2017.png>
 Package pdftex.def Info: Figures/experiments/CCC-v2017.png  used on input line 
@@ -1524,7 +1524,7 @@ Overfull \hbox (12.99408pt too wide) in paragraph at lines 44--45
 -ti-ple si-mul-ta-ne-ous proton-
  []
 
-<Figures/experiments/int_lumi_allcumulative_pp_run2and3.pdf, id=1382, 578.16pt 
+<Figures/experiments/int_lumi_allcumulative_pp_run2and3.pdf, id=1385, 578.16pt 
 x 433.62pt>
 File: Figures/experiments/int_lumi_allcumulative_pp_run2and3.pdf Graphic file (
 type pdf)
@@ -1532,7 +1532,7 @@ type pdf)
 Package pdftex.def Info: Figures/experiments/int_lumi_allcumulative_pp_run2and3
 .pdf  used on input line 52.
 (pdftex.def)             Requested size: 180.27504pt x 135.20155pt.
-<Figures/experiments/int_lumi_cumulative_pp_2_run2and3.pdf, id=1383, 578.16pt x
+<Figures/experiments/int_lumi_cumulative_pp_2_run2and3.pdf, id=1386, 578.16pt x
  433.62pt>
 File: Figures/experiments/int_lumi_cumulative_pp_2_run2and3.pdf Graphic file (t
 ype pdf)
@@ -1541,13 +1541,13 @@ Package pdftex.def Info: Figures/experiments/int_lumi_cumulative_pp_2_run2and3.
 pdf  used on input line 54.
 (pdftex.def)             Requested size: 180.27504pt x 135.20155pt.
 [39]
-<Figures/experiments/peak_lumi_pp_run2and3.pdf, id=1398, 1084.05pt x 433.62pt>
+<Figures/experiments/peak_lumi_pp_run2and3.pdf, id=1401, 1084.05pt x 433.62pt>
 File: Figures/experiments/peak_lumi_pp_run2and3.pdf Graphic file (type pdf)
 <use Figures/experiments/peak_lumi_pp_run2and3.pdf>
 Package pdftex.def Info: Figures/experiments/peak_lumi_pp_run2and3.pdf  used on
  input line 61.
 (pdftex.def)             Requested size: 375.57637pt x 150.22763pt.
-<Figures/experiments/pileup_allYears_run2and3.pdf, id=1403, 578.16pt x 433.62pt
+<Figures/experiments/pileup_allYears_run2and3.pdf, id=1406, 578.16pt x 433.62pt
 >
 File: Figures/experiments/pileup_allYears_run2and3.pdf Graphic file (type pdf)
 <use Figures/experiments/pileup_allYears_run2and3.pdf>
@@ -1565,14 +1565,14 @@ un2and3.pdf): PDF inclusion: multiple pdfs with page group included in a single
 pdfTeX warning: pdflatex (file ./Figures/experiments/peak_lumi_pp_run2and3.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >] [41 <./Figures/experiments/pileup_allYears_run2and3.pdf>]
-<Figures/experiments/CMS_detector_slice.png, id=1502, 995.72pt x 511.9125pt>
+<Figures/experiments/CMS_detector_slice.png, id=1505, 995.72pt x 511.9125pt>
 File: Figures/experiments/CMS_detector_slice.png Graphic file (type png)
 <use Figures/experiments/CMS_detector_slice.png>
 Package pdftex.def Info: Figures/experiments/CMS_detector_slice.png  used on in
 put line 90.
 (pdftex.def)             Requested size: 319.2422pt x 164.12779pt.
  [42 <./Figures/experiments/CMS_detector_slice.png>]
-<Figures/experiments/figs_2011_cmsTracker_TrackerLayout.png, id=1516, 482.80376
+<Figures/experiments/figs_2011_cmsTracker_TrackerLayout.png, id=1519, 482.80376
 pt x 241.90375pt>
 File: Figures/experiments/figs_2011_cmsTracker_TrackerLayout.png Graphic file (
 type png)
@@ -1582,7 +1582,7 @@ Package pdftex.def Info: Figures/experiments/figs_2011_cmsTracker_TrackerLayout
 (pdftex.def)             Requested size: 319.2422pt x 159.95964pt.
  [43] [44 <./Figures/experiments/figs_2011_cmsTracker_TrackerLayout.png (PNG co
 py)>] [45] [46]
-<Figures/experiments/CMSMuonSystem.png, id=1551, 555.0336pt x 365.6862pt>
+<Figures/experiments/CMSMuonSystem.png, id=1554, 555.0336pt x 365.6862pt>
 File: Figures/experiments/CMSMuonSystem.png Graphic file (type png)
 <use Figures/experiments/CMSMuonSystem.png>
 Package pdftex.def Info: Figures/experiments/CMSMuonSystem.png  used on input l
@@ -1590,7 +1590,7 @@ ine 140.
 (pdftex.def)             Requested size: 319.2422pt x 210.3293pt.
  [47 <./Figures/experiments/CMSMuonSystem.png>]
 <Figures/experiments/Architecture-and-data-flow-in-the-synchronous-pipelined-Le
-vel-1-Trigger-system.png, id=1565, 264.32083pt x 200.08083pt>
+vel-1-Trigger-system.png, id=1568, 264.32083pt x 200.08083pt>
 File: Figures/experiments/Architecture-and-data-flow-in-the-synchronous-pipelin
 ed-Level-1-Trigger-system.png Graphic file (type png)
 <use Figures/experiments/Architecture-and-data-flow-in-the-synchronous-pipeline
@@ -1598,13 +1598,13 @@ d-Level-1-Trigger-system.png>
 Package pdftex.def Info: Figures/experiments/Architecture-and-data-flow-in-the-
 synchronous-pipelined-Level-1-Trigger-system.png  used on input line 156.
 (pdftex.def)             Requested size: 281.68227pt x 213.22647pt.
-<Figures/experiments/HLT_rate_2018.png, id=1569, 604.8999pt x 522.0303pt>
+<Figures/experiments/HLT_rate_2018.png, id=1572, 604.8999pt x 522.0303pt>
 File: Figures/experiments/HLT_rate_2018.png Graphic file (type png)
 <use Figures/experiments/HLT_rate_2018.png>
 Package pdftex.def Info: Figures/experiments/HLT_rate_2018.png  used on input l
 ine 165.
 (pdftex.def)             Requested size: 157.74138pt x 136.1309pt.
-<Figures/experiments/fill25_rates.pdf, id=1570, 1156.32pt x 722.7pt>
+<Figures/experiments/fill25_rates.pdf, id=1573, 1156.32pt x 722.7pt>
 File: Figures/experiments/fill25_rates.pdf Graphic file (type pdf)
 <use Figures/experiments/fill25_rates.pdf>
 Package pdftex.def Info: Figures/experiments/fill25_rates.pdf  used on input li
@@ -1619,7 +1619,7 @@ adrons. Charged hadrons
  []
 
 [53] [54] [55] [56] [57]
-<Figures/experiments/plots_kin31.png, id=1742, 448.67625pt x 689.57625pt>
+<Figures/experiments/plots_kin31.png, id=1745, 448.67625pt x 689.57625pt>
 File: Figures/experiments/plots_kin31.png Graphic file (type png)
 <use Figures/experiments/plots_kin31.png>
 Package pdftex.def Info: Figures/experiments/plots_kin31.png  used on input lin
@@ -1648,97 +1648,97 @@ Overfull \hbox (15.12617pt too wide) in paragraph at lines 189--190
  []
 
 [74]
-<Figures/analysis/EleID_eff_2016preVFP.png, id=1962, 698.61pt x 752.8125pt>
+<Figures/analysis/EleID_eff_2016preVFP.png, id=1965, 698.61pt x 752.8125pt>
 File: Figures/analysis/EleID_eff_2016preVFP.png Graphic file (type png)
 <use Figures/analysis/EleID_eff_2016preVFP.png>
 Package pdftex.def Info: Figures/analysis/EleID_eff_2016preVFP.png  used on inp
 ut line 197.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/EleID_eff_2016postVFP.png, id=1963, 698.61pt x 752.8125pt>
+<Figures/analysis/EleID_eff_2016postVFP.png, id=1966, 698.61pt x 752.8125pt>
 File: Figures/analysis/EleID_eff_2016postVFP.png Graphic file (type png)
 <use Figures/analysis/EleID_eff_2016postVFP.png>
 Package pdftex.def Info: Figures/analysis/EleID_eff_2016postVFP.png  used on in
 put line 199.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/EleID_eff_2017.png, id=1964, 698.61pt x 752.8125pt>
+<Figures/analysis/EleID_eff_2017.png, id=1967, 698.61pt x 752.8125pt>
 File: Figures/analysis/EleID_eff_2017.png Graphic file (type png)
 <use Figures/analysis/EleID_eff_2017.png>
 Package pdftex.def Info: Figures/analysis/EleID_eff_2017.png  used on input lin
 e 200.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/EleID_eff_2018.png, id=1965, 698.61pt x 752.8125pt>
+<Figures/analysis/EleID_eff_2018.png, id=1968, 698.61pt x 752.8125pt>
 File: Figures/analysis/EleID_eff_2018.png Graphic file (type png)
 <use Figures/analysis/EleID_eff_2018.png>
 Package pdftex.def Info: Figures/analysis/EleID_eff_2018.png  used on input lin
 e 202.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/EleID_eff_2022.png, id=1966, 698.61pt x 752.8125pt>
+<Figures/analysis/EleID_eff_2022.png, id=1969, 698.61pt x 752.8125pt>
 File: Figures/analysis/EleID_eff_2022.png Graphic file (type png)
 <use Figures/analysis/EleID_eff_2022.png>
 Package pdftex.def Info: Figures/analysis/EleID_eff_2022.png  used on input lin
 e 209.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/EleID_eff_2022EE.png, id=1967, 698.61pt x 752.8125pt>
+<Figures/analysis/EleID_eff_2022EE.png, id=1970, 698.61pt x 752.8125pt>
 File: Figures/analysis/EleID_eff_2022EE.png Graphic file (type png)
 <use Figures/analysis/EleID_eff_2022EE.png>
 Package pdftex.def Info: Figures/analysis/EleID_eff_2022EE.png  used on input l
 ine 211.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/EleID_eff_2023.png, id=1968, 698.61pt x 752.8125pt>
+<Figures/analysis/EleID_eff_2023.png, id=1971, 698.61pt x 752.8125pt>
 File: Figures/analysis/EleID_eff_2023.png Graphic file (type png)
 <use Figures/analysis/EleID_eff_2023.png>
 Package pdftex.def Info: Figures/analysis/EleID_eff_2023.png  used on input lin
 e 212.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/EleID_eff_2023BPix.png, id=1969, 698.61pt x 752.8125pt>
+<Figures/analysis/EleID_eff_2023BPix.png, id=1972, 698.61pt x 752.8125pt>
 File: Figures/analysis/EleID_eff_2023BPix.png Graphic file (type png)
 <use Figures/analysis/EleID_eff_2023BPix.png>
 Package pdftex.def Info: Figures/analysis/EleID_eff_2023BPix.png  used on input
  line 214.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/MuID_eff_2016preVFP.png, id=1970, 698.61pt x 752.8125pt>
+<Figures/analysis/MuID_eff_2016preVFP.png, id=1973, 698.61pt x 752.8125pt>
 File: Figures/analysis/MuID_eff_2016preVFP.png Graphic file (type png)
 <use Figures/analysis/MuID_eff_2016preVFP.png>
 Package pdftex.def Info: Figures/analysis/MuID_eff_2016preVFP.png  used on inpu
 t line 221.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/MuID_eff_2016postVFP.png, id=1971, 698.61pt x 752.8125pt>
+<Figures/analysis/MuID_eff_2016postVFP.png, id=1974, 698.61pt x 752.8125pt>
 File: Figures/analysis/MuID_eff_2016postVFP.png Graphic file (type png)
 <use Figures/analysis/MuID_eff_2016postVFP.png>
 Package pdftex.def Info: Figures/analysis/MuID_eff_2016postVFP.png  used on inp
 ut line 223.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/MuID_eff_2017.png, id=1972, 698.61pt x 752.8125pt>
+<Figures/analysis/MuID_eff_2017.png, id=1975, 698.61pt x 752.8125pt>
 File: Figures/analysis/MuID_eff_2017.png Graphic file (type png)
 <use Figures/analysis/MuID_eff_2017.png>
 Package pdftex.def Info: Figures/analysis/MuID_eff_2017.png  used on input line
  224.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/MuID_eff_2018.png, id=1973, 698.61pt x 752.8125pt>
+<Figures/analysis/MuID_eff_2018.png, id=1976, 698.61pt x 752.8125pt>
 File: Figures/analysis/MuID_eff_2018.png Graphic file (type png)
 <use Figures/analysis/MuID_eff_2018.png>
 Package pdftex.def Info: Figures/analysis/MuID_eff_2018.png  used on input line
  226.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/MuID_eff_2022.png, id=1974, 698.61pt x 752.8125pt>
+<Figures/analysis/MuID_eff_2022.png, id=1977, 698.61pt x 752.8125pt>
 File: Figures/analysis/MuID_eff_2022.png Graphic file (type png)
 <use Figures/analysis/MuID_eff_2022.png>
 Package pdftex.def Info: Figures/analysis/MuID_eff_2022.png  used on input line
  233.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/MuID_eff_2022EE.png, id=1975, 698.61pt x 752.8125pt>
+<Figures/analysis/MuID_eff_2022EE.png, id=1978, 698.61pt x 752.8125pt>
 File: Figures/analysis/MuID_eff_2022EE.png Graphic file (type png)
 <use Figures/analysis/MuID_eff_2022EE.png>
 Package pdftex.def Info: Figures/analysis/MuID_eff_2022EE.png  used on input li
 ne 235.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/MuID_eff_2023.png, id=1976, 698.61pt x 752.8125pt>
+<Figures/analysis/MuID_eff_2023.png, id=1979, 698.61pt x 752.8125pt>
 File: Figures/analysis/MuID_eff_2023.png Graphic file (type png)
 <use Figures/analysis/MuID_eff_2023.png>
 Package pdftex.def Info: Figures/analysis/MuID_eff_2023.png  used on input line
  236.
 (pdftex.def)             Requested size: 169.00821pt x 182.11456pt.
-<Figures/analysis/MuID_eff_2023BPix.png, id=1977, 698.61pt x 752.8125pt>
+<Figures/analysis/MuID_eff_2023BPix.png, id=1980, 698.61pt x 752.8125pt>
 File: Figures/analysis/MuID_eff_2023BPix.png Graphic file (type png)
 <use Figures/analysis/MuID_eff_2023BPix.png>
 Package pdftex.def Info: Figures/analysis/MuID_eff_2023BPix.png  used on input 
@@ -1753,7 +1753,7 @@ VFP.png> <./Figures/analysis/MuID_eff_2016postVFP.png> <./Figures/analysis/MuID
 _eff_2017.png> <./Figures/analysis/MuID_eff_2018.png>] [79 <./Figures/analysis/
 MuID_eff_2022.png> <./Figures/analysis/MuID_eff_2022EE.png> <./Figures/analysis
 /MuID_eff_2023.png> <./Figures/analysis/MuID_eff_2023BPix.png>] [80]
-<Figures/analysis/DblMu_MU17Leg_eff_2016preVFP.png, id=2028, 698.61pt x 752.812
+<Figures/analysis/DblMu_MU17Leg_eff_2016preVFP.png, id=2031, 698.61pt x 752.812
 5pt>
 File: Figures/analysis/DblMu_MU17Leg_eff_2016preVFP.png Graphic file (type png)
 
@@ -1761,7 +1761,7 @@ File: Figures/analysis/DblMu_MU17Leg_eff_2016preVFP.png Graphic file (type png)
 Package pdftex.def Info: Figures/analysis/DblMu_MU17Leg_eff_2016preVFP.png  use
 d on input line 272.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU17Leg_eff_2016postVFP.png, id=2029, 698.61pt x 752.81
+<Figures/analysis/DblMu_MU17Leg_eff_2016postVFP.png, id=2032, 698.61pt x 752.81
 25pt>
 File: Figures/analysis/DblMu_MU17Leg_eff_2016postVFP.png Graphic file (type png
 )
@@ -1769,26 +1769,26 @@ File: Figures/analysis/DblMu_MU17Leg_eff_2016postVFP.png Graphic file (type png
 Package pdftex.def Info: Figures/analysis/DblMu_MU17Leg_eff_2016postVFP.png  us
 ed on input line 274.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU17Leg_eff_2017.png, id=2030, 698.61pt x 752.8125pt>
+<Figures/analysis/DblMu_MU17Leg_eff_2017.png, id=2033, 698.61pt x 752.8125pt>
 File: Figures/analysis/DblMu_MU17Leg_eff_2017.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU17Leg_eff_2017.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU17Leg_eff_2017.png  used on i
 nput line 276.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU17Leg_eff_2018.png, id=2031, 698.61pt x 752.8125pt>
+<Figures/analysis/DblMu_MU17Leg_eff_2018.png, id=2034, 698.61pt x 752.8125pt>
 File: Figures/analysis/DblMu_MU17Leg_eff_2018.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU17Leg_eff_2018.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU17Leg_eff_2018.png  used on i
 nput line 278.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU8Leg_eff_2016preVFP.png, id=2032, 698.61pt x 752.8125
+<Figures/analysis/DblMu_MU8Leg_eff_2016preVFP.png, id=2035, 698.61pt x 752.8125
 pt>
 File: Figures/analysis/DblMu_MU8Leg_eff_2016preVFP.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU8Leg_eff_2016preVFP.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU8Leg_eff_2016preVFP.png  used
  on input line 280.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU8Leg_eff_2016postVFP.png, id=2033, 698.61pt x 752.812
+<Figures/analysis/DblMu_MU8Leg_eff_2016postVFP.png, id=2036, 698.61pt x 752.812
 5pt>
 File: Figures/analysis/DblMu_MU8Leg_eff_2016postVFP.png Graphic file (type png)
 
@@ -1796,70 +1796,70 @@ File: Figures/analysis/DblMu_MU8Leg_eff_2016postVFP.png Graphic file (type png)
 Package pdftex.def Info: Figures/analysis/DblMu_MU8Leg_eff_2016postVFP.png  use
 d on input line 282.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU8Leg_eff_2017.png, id=2034, 698.61pt x 752.8125pt>
+<Figures/analysis/DblMu_MU8Leg_eff_2017.png, id=2037, 698.61pt x 752.8125pt>
 File: Figures/analysis/DblMu_MU8Leg_eff_2017.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU8Leg_eff_2017.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU8Leg_eff_2017.png  used on in
 put line 284.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU8Leg_eff_2018.png, id=2035, 698.61pt x 752.8125pt>
+<Figures/analysis/DblMu_MU8Leg_eff_2018.png, id=2038, 698.61pt x 752.8125pt>
 File: Figures/analysis/DblMu_MU8Leg_eff_2018.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU8Leg_eff_2018.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU8Leg_eff_2018.png  used on in
 put line 286.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU17Leg_eff_2022.png, id=2036, 698.61pt x 752.8125pt>
+<Figures/analysis/DblMu_MU17Leg_eff_2022.png, id=2039, 698.61pt x 752.8125pt>
 File: Figures/analysis/DblMu_MU17Leg_eff_2022.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU17Leg_eff_2022.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU17Leg_eff_2022.png  used on i
 nput line 293.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU17Leg_eff_2022EE.png, id=2037, 698.61pt x 752.8125pt>
+<Figures/analysis/DblMu_MU17Leg_eff_2022EE.png, id=2040, 698.61pt x 752.8125pt>
 
 File: Figures/analysis/DblMu_MU17Leg_eff_2022EE.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU17Leg_eff_2022EE.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU17Leg_eff_2022EE.png  used on
  input line 295.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU17Leg_eff_2023.png, id=2038, 698.61pt x 752.8125pt>
+<Figures/analysis/DblMu_MU17Leg_eff_2023.png, id=2041, 698.61pt x 752.8125pt>
 File: Figures/analysis/DblMu_MU17Leg_eff_2023.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU17Leg_eff_2023.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU17Leg_eff_2023.png  used on i
 nput line 297.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU17Leg_eff_2023BPix.png, id=2039, 698.61pt x 752.8125p
+<Figures/analysis/DblMu_MU17Leg_eff_2023BPix.png, id=2042, 698.61pt x 752.8125p
 t>
 File: Figures/analysis/DblMu_MU17Leg_eff_2023BPix.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU17Leg_eff_2023BPix.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU17Leg_eff_2023BPix.png  used 
 on input line 299.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU8Leg_eff_2022.png, id=2040, 698.61pt x 752.8125pt>
+<Figures/analysis/DblMu_MU8Leg_eff_2022.png, id=2043, 698.61pt x 752.8125pt>
 File: Figures/analysis/DblMu_MU8Leg_eff_2022.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU8Leg_eff_2022.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU8Leg_eff_2022.png  used on in
 put line 301.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU8Leg_eff_2022EE.png, id=2041, 698.61pt x 752.8125pt>
+<Figures/analysis/DblMu_MU8Leg_eff_2022EE.png, id=2044, 698.61pt x 752.8125pt>
 File: Figures/analysis/DblMu_MU8Leg_eff_2022EE.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU8Leg_eff_2022EE.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU8Leg_eff_2022EE.png  used on 
 input line 303.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU8Leg_eff_2023.png, id=2042, 698.61pt x 752.8125pt>
+<Figures/analysis/DblMu_MU8Leg_eff_2023.png, id=2045, 698.61pt x 752.8125pt>
 File: Figures/analysis/DblMu_MU8Leg_eff_2023.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU8Leg_eff_2023.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU8Leg_eff_2023.png  used on in
 put line 305.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/DblMu_MU8Leg_eff_2023BPix.png, id=2043, 698.61pt x 752.8125pt
+<Figures/analysis/DblMu_MU8Leg_eff_2023BPix.png, id=2046, 698.61pt x 752.8125pt
 >
 File: Figures/analysis/DblMu_MU8Leg_eff_2023BPix.png Graphic file (type png)
 <use Figures/analysis/DblMu_MU8Leg_eff_2023BPix.png>
 Package pdftex.def Info: Figures/analysis/DblMu_MU8Leg_eff_2023BPix.png  used o
 n input line 307.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu23El12_muon_eff_2016preVFP.png, id=2044, 698.61pt x 752.812
+<Figures/analysis/Mu23El12_muon_eff_2016preVFP.png, id=2047, 698.61pt x 752.812
 5pt>
 File: Figures/analysis/Mu23El12_muon_eff_2016preVFP.png Graphic file (type png)
 
@@ -1867,7 +1867,7 @@ File: Figures/analysis/Mu23El12_muon_eff_2016preVFP.png Graphic file (type png)
 Package pdftex.def Info: Figures/analysis/Mu23El12_muon_eff_2016preVFP.png  use
 d on input line 314.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu23El12_muon_eff_2016postVFP.png, id=2045, 698.61pt x 752.81
+<Figures/analysis/Mu23El12_muon_eff_2016postVFP.png, id=2048, 698.61pt x 752.81
 25pt>
 File: Figures/analysis/Mu23El12_muon_eff_2016postVFP.png Graphic file (type png
 )
@@ -1875,19 +1875,19 @@ File: Figures/analysis/Mu23El12_muon_eff_2016postVFP.png Graphic file (type png
 Package pdftex.def Info: Figures/analysis/Mu23El12_muon_eff_2016postVFP.png  us
 ed on input line 316.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu23El12_muon_eff_2017.png, id=2046, 698.61pt x 752.8125pt>
+<Figures/analysis/Mu23El12_muon_eff_2017.png, id=2049, 698.61pt x 752.8125pt>
 File: Figures/analysis/Mu23El12_muon_eff_2017.png Graphic file (type png)
 <use Figures/analysis/Mu23El12_muon_eff_2017.png>
 Package pdftex.def Info: Figures/analysis/Mu23El12_muon_eff_2017.png  used on i
 nput line 318.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu23El12_muon_eff_2018.png, id=2047, 698.61pt x 752.8125pt>
+<Figures/analysis/Mu23El12_muon_eff_2018.png, id=2050, 698.61pt x 752.8125pt>
 File: Figures/analysis/Mu23El12_muon_eff_2018.png Graphic file (type png)
 <use Figures/analysis/Mu23El12_muon_eff_2018.png>
 Package pdftex.def Info: Figures/analysis/Mu23El12_muon_eff_2018.png  used on i
 nput line 320.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu23El12_electron_eff_2016preVFP.png, id=2048, 698.61pt x 752
+<Figures/analysis/Mu23El12_electron_eff_2016preVFP.png, id=2051, 698.61pt x 752
 .8125pt>
 File: Figures/analysis/Mu23El12_electron_eff_2016preVFP.png Graphic file (type 
 png)
@@ -1895,7 +1895,7 @@ png)
 Package pdftex.def Info: Figures/analysis/Mu23El12_electron_eff_2016preVFP.png 
  used on input line 322.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu23El12_electron_eff_2016postVFP.png, id=2049, 698.61pt x 75
+<Figures/analysis/Mu23El12_electron_eff_2016postVFP.png, id=2052, 698.61pt x 75
 2.8125pt>
 File: Figures/analysis/Mu23El12_electron_eff_2016postVFP.png Graphic file (type
  png)
@@ -1903,54 +1903,54 @@ File: Figures/analysis/Mu23El12_electron_eff_2016postVFP.png Graphic file (type
 Package pdftex.def Info: Figures/analysis/Mu23El12_electron_eff_2016postVFP.png
   used on input line 324.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu23El12_electron_eff_2017.png, id=2050, 698.61pt x 752.8125p
+<Figures/analysis/Mu23El12_electron_eff_2017.png, id=2053, 698.61pt x 752.8125p
 t>
 File: Figures/analysis/Mu23El12_electron_eff_2017.png Graphic file (type png)
 <use Figures/analysis/Mu23El12_electron_eff_2017.png>
 Package pdftex.def Info: Figures/analysis/Mu23El12_electron_eff_2017.png  used 
 on input line 326.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu23El12_electron_eff_2018.png, id=2051, 698.61pt x 752.8125p
+<Figures/analysis/Mu23El12_electron_eff_2018.png, id=2054, 698.61pt x 752.8125p
 t>
 File: Figures/analysis/Mu23El12_electron_eff_2018.png Graphic file (type png)
 <use Figures/analysis/Mu23El12_electron_eff_2018.png>
 Package pdftex.def Info: Figures/analysis/Mu23El12_electron_eff_2018.png  used 
 on input line 328.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu23El12_muon_eff_2022.png, id=2052, 698.61pt x 752.8125pt>
+<Figures/analysis/Mu23El12_muon_eff_2022.png, id=2055, 698.61pt x 752.8125pt>
 File: Figures/analysis/Mu23El12_muon_eff_2022.png Graphic file (type png)
 <use Figures/analysis/Mu23El12_muon_eff_2022.png>
 Package pdftex.def Info: Figures/analysis/Mu23El12_muon_eff_2022.png  used on i
 nput line 335.
 (pdftex.def)             Requested size: 114.72517pt x 123.62286pt.
-<Figures/analysis/Mu23El12_muon_eff_2022EE.png, id=2053, 698.61pt x 752.8125pt>
+<Figures/analysis/Mu23El12_muon_eff_2022EE.png, id=2056, 698.61pt x 752.8125pt>
 
 File: Figures/analysis/Mu23El12_muon_eff_2022EE.png Graphic file (type png)
 <use Figures/analysis/Mu23El12_muon_eff_2022EE.png>
 Package pdftex.def Info: Figures/analysis/Mu23El12_muon_eff_2022EE.png  used on
  input line 337.
 (pdftex.def)             Requested size: 114.72517pt x 123.62286pt.
-<Figures/analysis/Mu23El12_muon_eff_2023.png, id=2054, 698.61pt x 752.8125pt>
+<Figures/analysis/Mu23El12_muon_eff_2023.png, id=2057, 698.61pt x 752.8125pt>
 File: Figures/analysis/Mu23El12_muon_eff_2023.png Graphic file (type png)
 <use Figures/analysis/Mu23El12_muon_eff_2023.png>
 Package pdftex.def Info: Figures/analysis/Mu23El12_muon_eff_2023.png  used on i
 nput line 339.
 (pdftex.def)             Requested size: 114.72517pt x 123.62286pt.
-<Figures/analysis/Mu23El12_muon_eff_2023BPix.png, id=2055, 698.61pt x 752.8125p
+<Figures/analysis/Mu23El12_muon_eff_2023BPix.png, id=2058, 698.61pt x 752.8125p
 t>
 File: Figures/analysis/Mu23El12_muon_eff_2023BPix.png Graphic file (type png)
 <use Figures/analysis/Mu23El12_muon_eff_2023BPix.png>
 Package pdftex.def Info: Figures/analysis/Mu23El12_muon_eff_2023BPix.png  used 
 on input line 341.
 (pdftex.def)             Requested size: 114.72517pt x 123.62286pt.
-<Figures/analysis/Mu23El12_electron_eff_2022.png, id=2056, 698.61pt x 752.8125p
+<Figures/analysis/Mu23El12_electron_eff_2022.png, id=2059, 698.61pt x 752.8125p
 t>
 File: Figures/analysis/Mu23El12_electron_eff_2022.png Graphic file (type png)
 <use Figures/analysis/Mu23El12_electron_eff_2022.png>
 Package pdftex.def Info: Figures/analysis/Mu23El12_electron_eff_2022.png  used 
 on input line 343.
 (pdftex.def)             Requested size: 114.72517pt x 123.62286pt.
-<Figures/analysis/Mu23El12_electron_eff_2022EE.png, id=2057, 698.61pt x 752.812
+<Figures/analysis/Mu23El12_electron_eff_2022EE.png, id=2060, 698.61pt x 752.812
 5pt>
 File: Figures/analysis/Mu23El12_electron_eff_2022EE.png Graphic file (type png)
 
@@ -1958,14 +1958,14 @@ File: Figures/analysis/Mu23El12_electron_eff_2022EE.png Graphic file (type png)
 Package pdftex.def Info: Figures/analysis/Mu23El12_electron_eff_2022EE.png  use
 d on input line 345.
 (pdftex.def)             Requested size: 114.72517pt x 123.62286pt.
-<Figures/analysis/Mu23El12_electron_eff_2023.png, id=2058, 698.61pt x 752.8125p
+<Figures/analysis/Mu23El12_electron_eff_2023.png, id=2061, 698.61pt x 752.8125p
 t>
 File: Figures/analysis/Mu23El12_electron_eff_2023.png Graphic file (type png)
 <use Figures/analysis/Mu23El12_electron_eff_2023.png>
 Package pdftex.def Info: Figures/analysis/Mu23El12_electron_eff_2023.png  used 
 on input line 347.
 (pdftex.def)             Requested size: 114.72517pt x 123.62286pt.
-<Figures/analysis/Mu23El12_electron_eff_2023BPix.png, id=2059, 698.61pt x 752.8
+<Figures/analysis/Mu23El12_electron_eff_2023BPix.png, id=2062, 698.61pt x 752.8
 125pt>
 File: Figures/analysis/Mu23El12_electron_eff_2023BPix.png Graphic file (type pn
 g)
@@ -1973,14 +1973,14 @@ g)
 Package pdftex.def Info: Figures/analysis/Mu23El12_electron_eff_2023BPix.png  u
 sed on input line 349.
 (pdftex.def)             Requested size: 114.72517pt x 123.62286pt.
-<Figures/analysis/Mu8El23_muon_eff_2016preVFP.png, id=2060, 698.61pt x 752.8125
+<Figures/analysis/Mu8El23_muon_eff_2016preVFP.png, id=2063, 698.61pt x 752.8125
 pt>
 File: Figures/analysis/Mu8El23_muon_eff_2016preVFP.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_muon_eff_2016preVFP.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_muon_eff_2016preVFP.png  used
  on input line 356.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_muon_eff_2016postVFP.png, id=2061, 698.61pt x 752.812
+<Figures/analysis/Mu8El23_muon_eff_2016postVFP.png, id=2064, 698.61pt x 752.812
 5pt>
 File: Figures/analysis/Mu8El23_muon_eff_2016postVFP.png Graphic file (type png)
 
@@ -1988,19 +1988,19 @@ File: Figures/analysis/Mu8El23_muon_eff_2016postVFP.png Graphic file (type png)
 Package pdftex.def Info: Figures/analysis/Mu8El23_muon_eff_2016postVFP.png  use
 d on input line 358.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_muon_eff_2017.png, id=2062, 698.61pt x 752.8125pt>
+<Figures/analysis/Mu8El23_muon_eff_2017.png, id=2065, 698.61pt x 752.8125pt>
 File: Figures/analysis/Mu8El23_muon_eff_2017.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_muon_eff_2017.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_muon_eff_2017.png  used on in
 put line 360.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_muon_eff_2018.png, id=2063, 698.61pt x 752.8125pt>
+<Figures/analysis/Mu8El23_muon_eff_2018.png, id=2066, 698.61pt x 752.8125pt>
 File: Figures/analysis/Mu8El23_muon_eff_2018.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_muon_eff_2018.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_muon_eff_2018.png  used on in
 put line 362.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_electron_eff_2016preVFP.png, id=2064, 698.61pt x 752.
+<Figures/analysis/Mu8El23_electron_eff_2016preVFP.png, id=2067, 698.61pt x 752.
 8125pt>
 File: Figures/analysis/Mu8El23_electron_eff_2016preVFP.png Graphic file (type p
 ng)
@@ -2008,7 +2008,7 @@ ng)
 Package pdftex.def Info: Figures/analysis/Mu8El23_electron_eff_2016preVFP.png  
 used on input line 364.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_electron_eff_2016postVFP.png, id=2065, 698.61pt x 752
+<Figures/analysis/Mu8El23_electron_eff_2016postVFP.png, id=2068, 698.61pt x 752
 .8125pt>
 File: Figures/analysis/Mu8El23_electron_eff_2016postVFP.png Graphic file (type 
 png)
@@ -2016,67 +2016,67 @@ png)
 Package pdftex.def Info: Figures/analysis/Mu8El23_electron_eff_2016postVFP.png 
  used on input line 366.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_electron_eff_2017.png, id=2066, 698.61pt x 752.8125pt
+<Figures/analysis/Mu8El23_electron_eff_2017.png, id=2069, 698.61pt x 752.8125pt
 >
 File: Figures/analysis/Mu8El23_electron_eff_2017.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_electron_eff_2017.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_electron_eff_2017.png  used o
 n input line 368.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_electron_eff_2018.png, id=2067, 698.61pt x 752.8125pt
+<Figures/analysis/Mu8El23_electron_eff_2018.png, id=2070, 698.61pt x 752.8125pt
 >
 File: Figures/analysis/Mu8El23_electron_eff_2018.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_electron_eff_2018.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_electron_eff_2018.png  used o
 n input line 370.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_muon_eff_2022.png, id=2068, 698.61pt x 752.8125pt>
+<Figures/analysis/Mu8El23_muon_eff_2022.png, id=2071, 698.61pt x 752.8125pt>
 File: Figures/analysis/Mu8El23_muon_eff_2022.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_muon_eff_2022.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_muon_eff_2022.png  used on in
 put line 377.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_muon_eff_2022EE.png, id=2069, 698.61pt x 752.8125pt>
+<Figures/analysis/Mu8El23_muon_eff_2022EE.png, id=2072, 698.61pt x 752.8125pt>
 File: Figures/analysis/Mu8El23_muon_eff_2022EE.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_muon_eff_2022EE.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_muon_eff_2022EE.png  used on 
 input line 379.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_muon_eff_2023.png, id=2070, 698.61pt x 752.8125pt>
+<Figures/analysis/Mu8El23_muon_eff_2023.png, id=2073, 698.61pt x 752.8125pt>
 File: Figures/analysis/Mu8El23_muon_eff_2023.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_muon_eff_2023.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_muon_eff_2023.png  used on in
 put line 381.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_muon_eff_2023BPix.png, id=2071, 698.61pt x 752.8125pt
+<Figures/analysis/Mu8El23_muon_eff_2023BPix.png, id=2074, 698.61pt x 752.8125pt
 >
 File: Figures/analysis/Mu8El23_muon_eff_2023BPix.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_muon_eff_2023BPix.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_muon_eff_2023BPix.png  used o
 n input line 383.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_electron_eff_2022.png, id=2072, 698.61pt x 752.8125pt
+<Figures/analysis/Mu8El23_electron_eff_2022.png, id=2075, 698.61pt x 752.8125pt
 >
 File: Figures/analysis/Mu8El23_electron_eff_2022.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_electron_eff_2022.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_electron_eff_2022.png  used o
 n input line 385.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_electron_eff_2022EE.png, id=2073, 698.61pt x 752.8125
+<Figures/analysis/Mu8El23_electron_eff_2022EE.png, id=2076, 698.61pt x 752.8125
 pt>
 File: Figures/analysis/Mu8El23_electron_eff_2022EE.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_electron_eff_2022EE.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_electron_eff_2022EE.png  used
  on input line 387.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_electron_eff_2023.png, id=2074, 698.61pt x 752.8125pt
+<Figures/analysis/Mu8El23_electron_eff_2023.png, id=2077, 698.61pt x 752.8125pt
 >
 File: Figures/analysis/Mu8El23_electron_eff_2023.png Graphic file (type png)
 <use Figures/analysis/Mu8El23_electron_eff_2023.png>
 Package pdftex.def Info: Figures/analysis/Mu8El23_electron_eff_2023.png  used o
 n input line 389.
 (pdftex.def)             Requested size: 125.64502pt x 135.38553pt.
-<Figures/analysis/Mu8El23_electron_eff_2023BPix.png, id=2075, 698.61pt x 752.81
+<Figures/analysis/Mu8El23_electron_eff_2023BPix.png, id=2078, 698.61pt x 752.81
 25pt>
 File: Figures/analysis/Mu8El23_electron_eff_2023BPix.png Graphic file (type png
 )
@@ -2121,219 +2121,219 @@ muon_eff_2023.png> <./Figures/analysis/Mu8El23_muon_eff_2023BPix.png> <./Figure
 s/analysis/Mu8El23_electron_eff_2022.png> <./Figures/analysis/Mu8El23_electron_
 eff_2022EE.png> <./Figures/analysis/Mu8El23_electron_eff_2023.png> <./Figures/a
 nalysis/Mu8El23_electron_eff_2023BPix.png>] [88]
-<Figures/analysis/DiMu_Run2_muons_1_pt.png, id=2168, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run2_muons_1_pt.png, id=2171, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run2_muons_1_pt.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run2_muons_1_pt.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run2_muons_1_pt.png  used on inp
 ut line 462.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run2_muons_2_pt.png, id=2169, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run2_muons_2_pt.png, id=2172, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run2_muons_2_pt.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run2_muons_2_pt.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run2_muons_2_pt.png  used on inp
 ut line 463.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run2_pair_mass.png, id=2170, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run2_pair_mass.png, id=2173, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run2_pair_mass.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run2_pair_mass.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run2_pair_mass.png  used on inpu
 t line 464.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run2_muons_1_eta.png, id=2171, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run2_muons_1_eta.png, id=2174, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run2_muons_1_eta.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run2_muons_1_eta.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run2_muons_1_eta.png  used on in
 put line 465.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run2_muons_2_eta.png, id=2172, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run2_muons_2_eta.png, id=2175, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run2_muons_2_eta.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run2_muons_2_eta.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run2_muons_2_eta.png  used on in
 put line 466.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run2_nPVsGood.png, id=2173, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run2_nPVsGood.png, id=2176, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run2_nPVsGood.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run2_nPVsGood.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run2_nPVsGood.png  used on input
  line 467.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run3_muons_1_pt.png, id=2174, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run3_muons_1_pt.png, id=2177, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run3_muons_1_pt.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run3_muons_1_pt.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run3_muons_1_pt.png  used on inp
 ut line 468.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run3_muons_2_pt.png, id=2175, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run3_muons_2_pt.png, id=2178, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run3_muons_2_pt.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run3_muons_2_pt.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run3_muons_2_pt.png  used on inp
 ut line 469.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run3_pair_mass.png, id=2176, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run3_pair_mass.png, id=2179, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run3_pair_mass.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run3_pair_mass.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run3_pair_mass.png  used on inpu
 t line 470.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run3_muons_1_eta.png, id=2177, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run3_muons_1_eta.png, id=2180, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run3_muons_1_eta.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run3_muons_1_eta.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run3_muons_1_eta.png  used on in
 put line 471.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run3_muons_2_eta.png, id=2178, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run3_muons_2_eta.png, id=2181, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run3_muons_2_eta.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run3_muons_2_eta.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run3_muons_2_eta.png  used on in
 put line 472.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/DiMu_Run3_nPVsGood.png, id=2179, 698.61pt x 752.8125pt>
+<Figures/analysis/DiMu_Run3_nPVsGood.png, id=2182, 698.61pt x 752.8125pt>
 File: Figures/analysis/DiMu_Run3_nPVsGood.png Graphic file (type png)
 <use Figures/analysis/DiMu_Run3_nPVsGood.png>
 Package pdftex.def Info: Figures/analysis/DiMu_Run3_nPVsGood.png  used on input
  line 473.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_muons_1_pt.png, id=2182, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_muons_1_pt.png, id=2185, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_muons_1_pt.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_muons_1_pt.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_muons_1_pt.png  used on inpu
 t line 486.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_electrons_1_pt.png, id=2183, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_electrons_1_pt.png, id=2186, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_electrons_1_pt.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_electrons_1_pt.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_electrons_1_pt.png  used on 
 input line 487.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_METv_pt.png, id=2184, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_METv_pt.png, id=2187, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_METv_pt.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_METv_pt.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_METv_pt.png  used on input l
 ine 488.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_muons_1_eta.png, id=2185, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_muons_1_eta.png, id=2188, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_muons_1_eta.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_muons_1_eta.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_muons_1_eta.png  used on inp
 ut line 489.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_electrons_1_eta.png, id=2186, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_electrons_1_eta.png, id=2189, 698.61pt x 752.8125pt>
 
 File: Figures/analysis/EMu_Run2_electrons_1_eta.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_electrons_1_eta.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_electrons_1_eta.png  used on
  input line 490.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_nPVsGood.png, id=2187, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_nPVsGood.png, id=2190, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_nPVsGood.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_nPVsGood.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_nPVsGood.png  used on input 
 line 491.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_muons_1_pt.png, id=2188, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_muons_1_pt.png, id=2191, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_muons_1_pt.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_muons_1_pt.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_muons_1_pt.png  used on inpu
 t line 492.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_electrons_1_pt.png, id=2189, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_electrons_1_pt.png, id=2192, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_electrons_1_pt.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_electrons_1_pt.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_electrons_1_pt.png  used on 
 input line 493.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_METv_pt.png, id=2190, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_METv_pt.png, id=2193, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_METv_pt.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_METv_pt.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_METv_pt.png  used on input l
 ine 494.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_muons_1_eta.png, id=2191, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_muons_1_eta.png, id=2194, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_muons_1_eta.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_muons_1_eta.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_muons_1_eta.png  used on inp
 ut line 495.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_electrons_1_eta.png, id=2192, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_electrons_1_eta.png, id=2195, 698.61pt x 752.8125pt>
 
 File: Figures/analysis/EMu_Run3_electrons_1_eta.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_electrons_1_eta.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_electrons_1_eta.png  used on
  input line 496.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_nPVsGood.png, id=2193, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_nPVsGood.png, id=2196, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_nPVsGood.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_nPVsGood.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_nPVsGood.png  used on input 
 line 497.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_jets_1_pt.png, id=2194, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_jets_1_pt.png, id=2197, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_jets_1_pt.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_jets_1_pt.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_jets_1_pt.png  used on input
  line 504.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_jets_1_eta.png, id=2195, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_jets_1_eta.png, id=2198, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_jets_1_eta.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_jets_1_eta.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_jets_1_eta.png  used on inpu
 t line 505.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_jets_size.png, id=2196, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_jets_size.png, id=2199, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_jets_size.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_jets_size.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_jets_size.png  used on input
  line 506.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_bjets_1_pt.png, id=2197, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_bjets_1_pt.png, id=2200, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_bjets_1_pt.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_bjets_1_pt.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_bjets_1_pt.png  used on inpu
 t line 507.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_bjets_1_eta.png, id=2198, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_bjets_1_eta.png, id=2201, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_bjets_1_eta.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_bjets_1_eta.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_bjets_1_eta.png  used on inp
 ut line 508.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run2_bjets_size.png, id=2199, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run2_bjets_size.png, id=2202, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run2_bjets_size.png Graphic file (type png)
 <use Figures/analysis/EMu_Run2_bjets_size.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run2_bjets_size.png  used on inpu
 t line 509.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_jets_1_pt.png, id=2200, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_jets_1_pt.png, id=2203, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_jets_1_pt.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_jets_1_pt.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_jets_1_pt.png  used on input
  line 510.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_jets_1_eta.png, id=2201, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_jets_1_eta.png, id=2204, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_jets_1_eta.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_jets_1_eta.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_jets_1_eta.png  used on inpu
 t line 511.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_jets_size.png, id=2202, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_jets_size.png, id=2205, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_jets_size.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_jets_size.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_jets_size.png  used on input
  line 512.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_bjets_1_pt.png, id=2203, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_bjets_1_pt.png, id=2206, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_bjets_1_pt.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_bjets_1_pt.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_bjets_1_pt.png  used on inpu
 t line 513.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_bjets_1_eta.png, id=2204, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_bjets_1_eta.png, id=2207, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_bjets_1_eta.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_bjets_1_eta.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_bjets_1_eta.png  used on inp
 ut line 514.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
-<Figures/analysis/EMu_Run3_bjets_size.png, id=2205, 698.61pt x 752.8125pt>
+<Figures/analysis/EMu_Run3_bjets_size.png, id=2208, 698.61pt x 752.8125pt>
 File: Figures/analysis/EMu_Run3_bjets_size.png Graphic file (type png)
 <use Figures/analysis/EMu_Run3_bjets_size.png>
 Package pdftex.def Info: Figures/analysis/EMu_Run3_bjets_size.png  used on inpu
@@ -2378,7 +2378,7 @@ on pair must sat-isfy $\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/1
  []
 
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/pair_mass
-.png, id=2271, 698.61pt x 752.8125pt>
+.png, id=2274, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/pair
 _mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/pair_
@@ -2387,7 +2387,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/S
 R1E2Mu/Central/pair_mass.png  used on input line 27.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/jets_1_pt
-.png, id=2272, 698.61pt x 752.8125pt>
+.png, id=2275, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/jets
 _1_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/jets_
@@ -2396,7 +2396,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/S
 R1E2Mu/Central/jets_1_pt.png  used on input line 28.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/bjets_1_p
-t.png, id=2273, 698.61pt x 752.8125pt>
+t.png, id=2276, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/bjet
 s_1_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR1E2Mu/Central/bjets
@@ -2405,7 +2405,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/S
 R1E2Mu/Central/bjets_1_pt.png  used on input line 29.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/pair_mass
-.png, id=2274, 698.61pt x 752.8125pt>
+.png, id=2277, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/pair
 _mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/pair_
@@ -2414,7 +2414,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/S
 R1E2Mu/Central/pair_mass.png  used on input line 30.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/jets_1_pt
-.png, id=2275, 698.61pt x 752.8125pt>
+.png, id=2278, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/jets
 _1_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/jets_
@@ -2423,7 +2423,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/S
 R1E2Mu/Central/jets_1_pt.png  used on input line 31.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/bjets_1_p
-t.png, id=2276, 698.61pt x 752.8125pt>
+t.png, id=2279, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/bjet
 s_1_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR1E2Mu/Central/bjets
@@ -2432,7 +2432,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/S
 R1E2Mu/Central/bjets_1_pt.png  used on input line 32.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/pair_lowM_m
-ass.png, id=2277, 698.61pt x 752.8125pt>
+ass.png, id=2280, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/pair_l
 owM_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/pair_lo
@@ -2441,7 +2441,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/S
 R3Mu/Central/pair_lowM_mass.png  used on input line 39.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/pair_highM_
-mass.png, id=2278, 698.61pt x 752.8125pt>
+mass.png, id=2281, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/pair_h
 ighM_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/pair_hi
@@ -2450,7 +2450,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/S
 R3Mu/Central/pair_highM_mass.png  used on input line 40.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/METv_pt.png
-, id=2279, 698.61pt x 752.8125pt>
+, id=2282, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/METv_p
 t.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/SR3Mu/Central/METv_pt
@@ -2459,7 +2459,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/S
 R3Mu/Central/METv_pt.png  used on input line 41.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/pair_lowM_m
-ass.png, id=2280, 698.61pt x 752.8125pt>
+ass.png, id=2283, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/pair_l
 owM_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/pair_lo
@@ -2468,7 +2468,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/S
 R3Mu/Central/pair_lowM_mass.png  used on input line 42.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/pair_highM_
-mass.png, id=2281, 698.61pt x 752.8125pt>
+mass.png, id=2284, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/pair_h
 ighM_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/pair_hi
@@ -2477,7 +2477,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/S
 R3Mu/Central/pair_highM_mass.png  used on input line 43.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/METv_pt.png
-, id=2282, 698.61pt x 752.8125pt>
+, id=2285, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/METv_p
 t.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/SR3Mu/Central/METv_pt
@@ -2500,7 +2500,7 @@ al/pair_lowM_mass.png> <./external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/
 SR3Mu/Central/pair_highM_mass.png> <./external/ChargedHiggsAnalysisV3/TriLepton
 /plots/Run3/SR3Mu/Central/METv_pt.png>] [97]
 <external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeatmaps/
-2018/SR3Mu/mass.png, id=2317, 691.383pt x 618.3903pt>
+2018/SR3Mu/mass.png, id=2320, 691.383pt x 618.3903pt>
 File: external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeat
 maps/2018/SR3Mu/mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeatm
@@ -2509,7 +2509,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/SignalKinematics/plots
 /DiscriminationHeatmaps/2018/SR3Mu/mass.png  used on input line 73.
 (pdftex.def)             Requested size: 120.18718pt x 107.49336pt.
 <external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeatmaps/
-2018/SR3Mu/gamma.png, id=2318, 691.383pt x 618.3903pt>
+2018/SR3Mu/gamma.png, id=2321, 691.383pt x 618.3903pt>
 File: external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeat
 maps/2018/SR3Mu/gamma.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeatm
@@ -2518,7 +2518,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/SignalKinematics/plots
 /DiscriminationHeatmaps/2018/SR3Mu/gamma.png  used on input line 74.
 (pdftex.def)             Requested size: 120.18718pt x 107.49336pt.
 <external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeatmaps/
-2018/SR3Mu/mT.png, id=2319, 691.383pt x 618.3903pt>
+2018/SR3Mu/mT.png, id=2322, 691.383pt x 618.3903pt>
 File: external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeat
 maps/2018/SR3Mu/mT.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/SignalKinematics/plots/DiscriminationHeatm
@@ -2550,7 +2550,7 @@ ic al-go-rithm (GA) [[]160[]].
 
 [102]
 <external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc100_MA95/fol
-d-4/best_model/training_curves.png, id=2379, 2103.86pt x 574.145pt>
+d-4/best_model/training_curves.png, id=2382, 2103.86pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc100_MA9
 5/fold-4/best_model/training_curves.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc100_MA95
@@ -2560,7 +2560,7 @@ Combined/MHc100_MA95/fold-4/best_model/training_curves.png  used on input line
 167.
 (pdftex.def)             Requested size: 356.7964pt x 97.3668pt.
 <external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc130_MA90/fol
-d-4/best_model/training_curves.png, id=2380, 2103.86pt x 574.145pt>
+d-4/best_model/training_curves.png, id=2383, 2103.86pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc130_MA9
 0/fold-4/best_model/training_curves.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc130_MA90
@@ -2570,7 +2570,7 @@ Combined/MHc130_MA90/fold-4/best_model/training_curves.png  used on input line
 168.
 (pdftex.def)             Requested size: 356.7964pt x 97.3668pt.
 <external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc160_MA85/fol
-d-4/best_model/training_curves.png, id=2381, 2103.86pt x 574.145pt>
+d-4/best_model/training_curves.png, id=2384, 2103.86pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc160_MA8
 5/fold-4/best_model/training_curves.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc160_MA85
@@ -2580,7 +2580,7 @@ Combined/MHc160_MA85/fold-4/best_model/training_curves.png  used on input line
 169.
 (pdftex.def)             Requested size: 356.7964pt x 97.3668pt.
 <external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc100_MA95/fol
-d-4/best_model/roc_curves.png, id=2382, 598.235pt x 574.145pt>
+d-4/best_model/roc_curves.png, id=2385, 598.235pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc100_MA9
 5/fold-4/best_model/roc_curves.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc100_MA95
@@ -2589,7 +2589,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/
 Combined/MHc100_MA95/fold-4/best_model/roc_curves.png  used on input line 176.
 (pdftex.def)             Requested size: 120.18718pt x 115.34384pt.
 <external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc130_MA90/fol
-d-4/best_model/roc_curves.png, id=2383, 598.235pt x 574.145pt>
+d-4/best_model/roc_curves.png, id=2386, 598.235pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc130_MA9
 0/fold-4/best_model/roc_curves.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc130_MA90
@@ -2598,7 +2598,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/
 Combined/MHc130_MA90/fold-4/best_model/roc_curves.png  used on input line 177.
 (pdftex.def)             Requested size: 120.18718pt x 115.34384pt.
 <external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc160_MA85/fol
-d-4/best_model/roc_curves.png, id=2384, 598.235pt x 574.145pt>
+d-4/best_model/roc_curves.png, id=2387, 598.235pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc160_MA8
 5/fold-4/best_model/roc_curves.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc160_MA85
@@ -2613,7 +2613,7 @@ ves.png> <./external/ChargedHiggsAnalysisV3/ParticleNetMD/GAOptim/Combined/MHc1
 60_MA85/fold-4/best_model/training_curves.png>]
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 100_MA95/Baseline/extended_unblind/validation/SR1E2Mu_Run2/stack_background.png
-, id=2403, 698.61pt x 752.8125pt>
+, id=2406, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc100_MA95/Baseline/extended_unblind/validation/SR1E2Mu_Run2/stack_backgroun
 d.png Graphic file (type png)
@@ -2626,7 +2626,7 @@ un2/stack_background.png  used on input line 236.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 130_MA90/Baseline/extended_unblind/validation/SR1E2Mu_Run2/stack_background.png
-, id=2404, 698.61pt x 752.8125pt>
+, id=2407, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc130_MA90/Baseline/extended_unblind/validation/SR1E2Mu_Run2/stack_backgroun
 d.png Graphic file (type png)
@@ -2639,7 +2639,7 @@ un2/stack_background.png  used on input line 237.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 160_MA85/Baseline/extended_unblind/validation/SR1E2Mu_Run2/stack_background.png
-, id=2405, 698.61pt x 752.8125pt>
+, id=2408, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc160_MA85/Baseline/extended_unblind/validation/SR1E2Mu_Run2/stack_backgroun
 d.png Graphic file (type png)
@@ -2652,7 +2652,7 @@ un2/stack_background.png  used on input line 238.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 100_MA95/ParticleNet/extended_unblind/validation/SR1E2Mu_Run2/stack_background.
-png, id=2406, 698.61pt x 752.8125pt>
+png, id=2409, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc100_MA95/ParticleNet/extended_unblind/validation/SR1E2Mu_Run2/stack_backgr
 ound.png Graphic file (type png)
@@ -2665,7 +2665,7 @@ u_Run2/stack_background.png  used on input line 239.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 130_MA90/ParticleNet/extended_unblind/validation/SR1E2Mu_Run2/stack_background.
-png, id=2407, 698.61pt x 752.8125pt>
+png, id=2410, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc130_MA90/ParticleNet/extended_unblind/validation/SR1E2Mu_Run2/stack_backgr
 ound.png Graphic file (type png)
@@ -2678,7 +2678,7 @@ u_Run2/stack_background.png  used on input line 240.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 160_MA85/ParticleNet/extended_unblind/validation/SR1E2Mu_Run2/stack_background.
-png, id=2408, 698.61pt x 752.8125pt>
+png, id=2411, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc160_MA85/ParticleNet/extended_unblind/validation/SR1E2Mu_Run2/stack_backgr
 ound.png Graphic file (type png)
@@ -2691,7 +2691,7 @@ u_Run2/stack_background.png  used on input line 241.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 100_MA95/Baseline/extended_unblind/validation/SR3Mu_Run2/stack_background.png, 
-id=2409, 698.61pt x 752.8125pt>
+id=2412, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc100_MA95/Baseline/extended_unblind/validation/SR3Mu_Run2/stack_background.
 png Graphic file (type png)
@@ -2704,7 +2704,7 @@ mplates/All/Combined/MHc100_MA95/Baseline/extended_unblind/validation/SR3Mu_Run
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 130_MA90/Baseline/extended_unblind/validation/SR3Mu_Run2/stack_background.png, 
-id=2410, 698.61pt x 752.8125pt>
+id=2413, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc130_MA90/Baseline/extended_unblind/validation/SR3Mu_Run2/stack_background.
 png Graphic file (type png)
@@ -2717,7 +2717,7 @@ mplates/All/Combined/MHc130_MA90/Baseline/extended_unblind/validation/SR3Mu_Run
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 160_MA85/Baseline/extended_unblind/validation/SR3Mu_Run2/stack_background.png, 
-id=2411, 698.61pt x 752.8125pt>
+id=2414, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc160_MA85/Baseline/extended_unblind/validation/SR3Mu_Run2/stack_background.
 png Graphic file (type png)
@@ -2730,7 +2730,7 @@ mplates/All/Combined/MHc160_MA85/Baseline/extended_unblind/validation/SR3Mu_Run
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 100_MA95/ParticleNet/extended_unblind/validation/SR3Mu_Run2/stack_background.pn
-g, id=2412, 698.61pt x 752.8125pt>
+g, id=2415, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc100_MA95/ParticleNet/extended_unblind/validation/SR3Mu_Run2/stack_backgrou
 nd.png Graphic file (type png)
@@ -2743,7 +2743,7 @@ Run2/stack_background.png  used on input line 245.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 130_MA90/ParticleNet/extended_unblind/validation/SR3Mu_Run2/stack_background.pn
-g, id=2413, 698.61pt x 752.8125pt>
+g, id=2416, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc130_MA90/ParticleNet/extended_unblind/validation/SR3Mu_Run2/stack_backgrou
 nd.png Graphic file (type png)
@@ -2756,7 +2756,7 @@ Run2/stack_background.png  used on input line 246.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 160_MA85/ParticleNet/extended_unblind/validation/SR3Mu_Run2/stack_background.pn
-g, id=2414, 698.61pt x 752.8125pt>
+g, id=2417, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc160_MA85/ParticleNet/extended_unblind/validation/SR3Mu_Run2/stack_backgrou
 nd.png Graphic file (type png)
@@ -2769,7 +2769,7 @@ Run2/stack_background.png  used on input line 247.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 100_MA95/Baseline/extended_unblind/validation/SR1E2Mu_Run3/stack_background.png
-, id=2415, 698.61pt x 752.8125pt>
+, id=2418, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc100_MA95/Baseline/extended_unblind/validation/SR1E2Mu_Run3/stack_backgroun
 d.png Graphic file (type png)
@@ -2782,7 +2782,7 @@ un3/stack_background.png  used on input line 254.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 130_MA90/Baseline/extended_unblind/validation/SR1E2Mu_Run3/stack_background.png
-, id=2416, 698.61pt x 752.8125pt>
+, id=2419, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc130_MA90/Baseline/extended_unblind/validation/SR1E2Mu_Run3/stack_backgroun
 d.png Graphic file (type png)
@@ -2795,7 +2795,7 @@ un3/stack_background.png  used on input line 255.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 160_MA85/Baseline/extended_unblind/validation/SR1E2Mu_Run3/stack_background.png
-, id=2417, 698.61pt x 752.8125pt>
+, id=2420, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc160_MA85/Baseline/extended_unblind/validation/SR1E2Mu_Run3/stack_backgroun
 d.png Graphic file (type png)
@@ -2808,7 +2808,7 @@ un3/stack_background.png  used on input line 256.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 100_MA95/ParticleNet/extended_unblind/validation/SR1E2Mu_Run3/stack_background.
-png, id=2418, 698.61pt x 752.8125pt>
+png, id=2421, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc100_MA95/ParticleNet/extended_unblind/validation/SR1E2Mu_Run3/stack_backgr
 ound.png Graphic file (type png)
@@ -2821,7 +2821,7 @@ u_Run3/stack_background.png  used on input line 257.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 130_MA90/ParticleNet/extended_unblind/validation/SR1E2Mu_Run3/stack_background.
-png, id=2419, 698.61pt x 752.8125pt>
+png, id=2422, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc130_MA90/ParticleNet/extended_unblind/validation/SR1E2Mu_Run3/stack_backgr
 ound.png Graphic file (type png)
@@ -2834,7 +2834,7 @@ u_Run3/stack_background.png  used on input line 258.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 160_MA85/ParticleNet/extended_unblind/validation/SR1E2Mu_Run3/stack_background.
-png, id=2420, 698.61pt x 752.8125pt>
+png, id=2423, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc160_MA85/ParticleNet/extended_unblind/validation/SR1E2Mu_Run3/stack_backgr
 ound.png Graphic file (type png)
@@ -2847,7 +2847,7 @@ u_Run3/stack_background.png  used on input line 259.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 100_MA95/Baseline/extended_unblind/validation/SR3Mu_Run3/stack_background.png, 
-id=2421, 698.61pt x 752.8125pt>
+id=2424, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc100_MA95/Baseline/extended_unblind/validation/SR3Mu_Run3/stack_background.
 png Graphic file (type png)
@@ -2860,7 +2860,7 @@ mplates/All/Combined/MHc100_MA95/Baseline/extended_unblind/validation/SR3Mu_Run
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 130_MA90/Baseline/extended_unblind/validation/SR3Mu_Run3/stack_background.png, 
-id=2422, 698.61pt x 752.8125pt>
+id=2425, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc130_MA90/Baseline/extended_unblind/validation/SR3Mu_Run3/stack_background.
 png Graphic file (type png)
@@ -2873,7 +2873,7 @@ mplates/All/Combined/MHc130_MA90/Baseline/extended_unblind/validation/SR3Mu_Run
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 160_MA85/Baseline/extended_unblind/validation/SR3Mu_Run3/stack_background.png, 
-id=2423, 698.61pt x 752.8125pt>
+id=2426, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc160_MA85/Baseline/extended_unblind/validation/SR3Mu_Run3/stack_background.
 png Graphic file (type png)
@@ -2886,7 +2886,7 @@ mplates/All/Combined/MHc160_MA85/Baseline/extended_unblind/validation/SR3Mu_Run
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 100_MA95/ParticleNet/extended_unblind/validation/SR3Mu_Run3/stack_background.pn
-g, id=2424, 698.61pt x 752.8125pt>
+g, id=2427, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc100_MA95/ParticleNet/extended_unblind/validation/SR3Mu_Run3/stack_backgrou
 nd.png Graphic file (type png)
@@ -2899,7 +2899,7 @@ Run3/stack_background.png  used on input line 263.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 130_MA90/ParticleNet/extended_unblind/validation/SR3Mu_Run3/stack_background.pn
-g, id=2425, 698.61pt x 752.8125pt>
+g, id=2428, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc130_MA90/ParticleNet/extended_unblind/validation/SR3Mu_Run3/stack_backgrou
 nd.png Graphic file (type png)
@@ -2912,7 +2912,7 @@ Run3/stack_background.png  used on input line 264.
 (pdftex.def)             Requested size: 103.2812pt x 111.28584pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 160_MA85/ParticleNet/extended_unblind/validation/SR3Mu_Run3/stack_background.pn
-g, id=2426, 698.61pt x 752.8125pt>
+g, id=2429, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc160_MA85/ParticleNet/extended_unblind/validation/SR3Mu_Run3/stack_backgrou
 nd.png Graphic file (type png)
@@ -2978,7 +2978,7 @@ cleNet/extended_unblind/validation/SR3Mu_Run3/stack_background.png> <./external
 /ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc160_MA85/
 ParticleNet/extended_unblind/validation/SR3Mu_Run3/stack_background.png>]
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc1
-00_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2476, 
+00_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2479, 
 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu
 /MHc100_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png Graph
@@ -2990,7 +2990,7 @@ mplates/All/SR1E2Mu/MHc100_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR
 _modified.png  used on input line 279.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc1
-00_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2477, 
+00_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2480, 
 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu
 /MHc100_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png Graph
@@ -3002,7 +3002,7 @@ mplates/All/SR1E2Mu/MHc100_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR
 _modified.png  used on input line 280.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc1
-00_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2478, 
+00_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2481, 
 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu
 /MHc100_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png Graph
@@ -3014,7 +3014,7 @@ mplates/All/SR1E2Mu/MHc100_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR
 _modified.png  used on input line 281.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc1
-30_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2479, 
+30_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2482, 
 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu
 /MHc130_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png Graph
@@ -3026,7 +3026,7 @@ mplates/All/SR1E2Mu/MHc130_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR
 _modified.png  used on input line 282.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc1
-30_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2480, 
+30_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2483, 
 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu
 /MHc130_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png Graph
@@ -3038,7 +3038,7 @@ mplates/All/SR1E2Mu/MHc130_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR
 _modified.png  used on input line 283.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc1
-30_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2481, 
+30_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2484, 
 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu
 /MHc130_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png Graph
@@ -3050,7 +3050,7 @@ mplates/All/SR1E2Mu/MHc130_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR
 _modified.png  used on input line 284.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc1
-60_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2482, 
+60_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2485, 
 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu
 /MHc160_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png Graph
@@ -3062,7 +3062,7 @@ mplates/All/SR1E2Mu/MHc160_MA85/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR
 _modified.png  used on input line 285.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc1
-60_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2483, 
+60_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2486, 
 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu
 /MHc160_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png Graph
@@ -3074,7 +3074,7 @@ mplates/All/SR1E2Mu/MHc160_MA90/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR
 _modified.png  used on input line 286.
 (pdftex.def)             Requested size: 120.18718pt x 129.5042pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu/MHc1
-60_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2484, 
+60_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png, id=2487, 
 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/SR1E2Mu
 /MHc160_MA95/ParticleNet/extended_unblind/scores/TTZ2E1Mu/LR_modified.png Graph
@@ -3112,7 +3112,7 @@ Overfull \hbox (19.0473pt too wide) detected at line 360
 
 [113]
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016preVFP/electron/faker
-ate.png, id=2531, 798.985pt x 574.145pt>
+ate.png, id=2534, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016preVFP/electron/
 fakerate.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016preVFP/electron/f
@@ -3121,7 +3121,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 016preVFP/electron/fakerate.png  used on input line 373.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016preVFP/muon/fakerate.
-png, id=2532, 798.985pt x 574.145pt>
+png, id=2535, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016preVFP/muon/fake
 rate.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016preVFP/muon/faker
@@ -3130,7 +3130,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 016preVFP/muon/fakerate.png  used on input line 374.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016postVFP/electron/fake
-rate.png, id=2533, 798.985pt x 574.145pt>
+rate.png, id=2536, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016postVFP/electron
 /fakerate.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016postVFP/electron/
@@ -3139,7 +3139,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 016postVFP/electron/fakerate.png  used on input line 375.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016postVFP/muon/fakerate
-.png, id=2534, 798.985pt x 574.145pt>
+.png, id=2537, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016postVFP/muon/fak
 erate.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2016postVFP/muon/fake
@@ -3148,7 +3148,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 016postVFP/muon/fakerate.png  used on input line 376.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2017/electron/fakerate.pn
-g, id=2535, 798.985pt x 574.145pt>
+g, id=2538, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2017/electron/fakera
 te.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2017/electron/fakerat
@@ -3157,7 +3157,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 017/electron/fakerate.png  used on input line 377.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2017/muon/fakerate.png, i
-d=2536, 798.985pt x 574.145pt>
+d=2539, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2017/muon/fakerate.p
 ng Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2017/muon/fakerate.pn
@@ -3166,7 +3166,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 017/muon/fakerate.png  used on input line 378.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2018/electron/fakerate.pn
-g, id=2537, 798.985pt x 574.145pt>
+g, id=2540, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2018/electron/fakera
 te.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2018/electron/fakerat
@@ -3175,7 +3175,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 018/electron/fakerate.png  used on input line 379.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2018/muon/fakerate.png, i
-d=2538, 798.985pt x 574.145pt>
+d=2541, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2018/muon/fakerate.p
 ng Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2018/muon/fakerate.pn
@@ -3184,7 +3184,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 018/muon/fakerate.png  used on input line 380.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022/electron/fakerate.pn
-g, id=2539, 798.985pt x 574.145pt>
+g, id=2542, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022/electron/fakera
 te.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022/electron/fakerat
@@ -3193,7 +3193,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 022/electron/fakerate.png  used on input line 387.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022/muon/fakerate.png, i
-d=2540, 798.985pt x 574.145pt>
+d=2543, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022/muon/fakerate.p
 ng Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022/muon/fakerate.pn
@@ -3202,7 +3202,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 022/muon/fakerate.png  used on input line 388.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022EE/electron/fakerate.
-png, id=2541, 798.985pt x 574.145pt>
+png, id=2544, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022EE/electron/fake
 rate.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022EE/electron/faker
@@ -3211,7 +3211,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 022EE/electron/fakerate.png  used on input line 389.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022EE/muon/fakerate.png,
- id=2542, 798.985pt x 574.145pt>
+ id=2545, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022EE/muon/fakerate
 .png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2022EE/muon/fakerate.
@@ -3220,7 +3220,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 022EE/muon/fakerate.png  used on input line 390.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023/electron/fakerate.pn
-g, id=2543, 798.985pt x 574.145pt>
+g, id=2546, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023/electron/fakera
 te.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023/electron/fakerat
@@ -3229,7 +3229,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 023/electron/fakerate.png  used on input line 391.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023/muon/fakerate.png, i
-d=2544, 798.985pt x 574.145pt>
+d=2547, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023/muon/fakerate.p
 ng Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023/muon/fakerate.pn
@@ -3238,7 +3238,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 023/muon/fakerate.png  used on input line 392.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023BPix/electron/fakerat
-e.png, id=2545, 798.985pt x 574.145pt>
+e.png, id=2548, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023BPix/electron/fa
 kerate.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023BPix/electron/fak
@@ -3247,7 +3247,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2
 023BPix/electron/fakerate.png  used on input line 393.
 (pdftex.def)             Requested size: 150.22824pt x 107.94978pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023BPix/muon/fakerate.pn
-g, id=2546, 798.985pt x 574.145pt>
+g, id=2549, 798.985pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023BPix/muon/fakera
 te.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/2023BPix/muon/fakerat
@@ -3286,7 +3286,7 @@ ack-ground es-ti-ma-tion meth-
  []
 
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Central/clo
-sure_pair_mass.png, id=2598, 698.61pt x 752.8125pt>
+sure_pair_mass.png, id=2601, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Centra
 l/closure_pair_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Central
@@ -3295,7 +3295,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un2/Run1E2Mu/Central/closure_pair_mass.png  used on input line 455.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Central/clo
-sure_nonprompt_pt.png, id=2599, 698.61pt x 752.8125pt>
+sure_nonprompt_pt.png, id=2602, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Centra
 l/closure_nonprompt_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Central
@@ -3304,7 +3304,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un2/Run1E2Mu/Central/closure_nonprompt_pt.png  used on input line 456.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Central/clo
-sure_nonprompt_eta.png, id=2600, 698.61pt x 752.8125pt>
+sure_nonprompt_eta.png, id=2603, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Centra
 l/closure_nonprompt_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run1E2Mu/Central
@@ -3313,7 +3313,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un2/Run1E2Mu/Central/closure_nonprompt_eta.png  used on input line 457.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/closu
-re_pair_lowm_mass.png, id=2601, 698.61pt x 752.8125pt>
+re_pair_lowm_mass.png, id=2604, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/
 closure_pair_lowm_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/c
@@ -3322,7 +3322,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un2/Run3Mu/Central/closure_pair_lowm_mass.png  used on input line 458.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/closu
-re_pair_highm_mass.png, id=2602, 698.61pt x 752.8125pt>
+re_pair_highm_mass.png, id=2605, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/
 closure_pair_highm_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/c
@@ -3331,7 +3331,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un2/Run3Mu/Central/closure_pair_highm_mass.png  used on input line 459.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/closu
-re_nonprompt_pt.png, id=2603, 698.61pt x 752.8125pt>
+re_nonprompt_pt.png, id=2606, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/
 closure_nonprompt_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run2/Run3Mu/Central/c
@@ -3340,7 +3340,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un2/Run3Mu/Central/closure_nonprompt_pt.png  used on input line 460.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Central/clo
-sure_pair_mass.png, id=2604, 698.61pt x 752.8125pt>
+sure_pair_mass.png, id=2607, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Centra
 l/closure_pair_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Central
@@ -3349,7 +3349,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un3/Run1E2Mu/Central/closure_pair_mass.png  used on input line 461.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Central/clo
-sure_nonprompt_pt.png, id=2605, 698.61pt x 752.8125pt>
+sure_nonprompt_pt.png, id=2608, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Centra
 l/closure_nonprompt_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Central
@@ -3358,7 +3358,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un3/Run1E2Mu/Central/closure_nonprompt_pt.png  used on input line 462.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Central/clo
-sure_nonprompt_eta.png, id=2606, 698.61pt x 752.8125pt>
+sure_nonprompt_eta.png, id=2609, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Centra
 l/closure_nonprompt_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run1E2Mu/Central
@@ -3367,7 +3367,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un3/Run1E2Mu/Central/closure_nonprompt_eta.png  used on input line 463.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/closu
-re_pair_lowm_mass.png, id=2607, 698.61pt x 752.8125pt>
+re_pair_lowm_mass.png, id=2610, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/
 closure_pair_lowm_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/c
@@ -3376,7 +3376,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un3/Run3Mu/Central/closure_pair_lowm_mass.png  used on input line 464.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/closu
-re_pair_highm_mass.png, id=2608, 698.61pt x 752.8125pt>
+re_pair_highm_mass.png, id=2611, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/
 closure_pair_highm_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/c
@@ -3385,7 +3385,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/R
 un3/Run3Mu/Central/closure_pair_highm_mass.png  used on input line 465.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/closu
-re_nonprompt_pt.png, id=2609, 698.61pt x 752.8125pt>
+re_nonprompt_pt.png, id=2612, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/
 closure_nonprompt_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/MeasFakeRateV4/plots/Run3/Run3Mu/Central/c
@@ -3400,7 +3400,7 @@ ver-i-fied in the $[]$+nonprompt
  []
 
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/ZCand_
-mass.png, id=2618, 698.61pt x 752.8125pt>
+mass.png, id=2621, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/Z
 Cand_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/ZC
@@ -3409,7 +3409,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 Fake1E2Mu/Central/ZCand_mass.png  used on input line 477.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/nonpro
-mpt_pt.png, id=2619, 698.61pt x 752.8125pt>
+mpt_pt.png, id=2622, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/n
 onprompt_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/no
@@ -3418,7 +3418,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 Fake1E2Mu/Central/nonprompt_pt.png  used on input line 478.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/nonpro
-mpt_eta.png, id=2620, 698.61pt x 752.8125pt>
+mpt_eta.png, id=2623, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/n
 onprompt_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake1E2Mu/Central/no
@@ -3427,7 +3427,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 Fake1E2Mu/Central/nonprompt_eta.png  used on input line 479.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/ZCand_
-mass.png, id=2621, 698.61pt x 752.8125pt>
+mass.png, id=2624, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/Z
 Cand_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/ZC
@@ -3436,7 +3436,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 Fake1E2Mu/Central/ZCand_mass.png  used on input line 480.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/nonpro
-mpt_pt.png, id=2622, 698.61pt x 752.8125pt>
+mpt_pt.png, id=2625, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/n
 onprompt_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/no
@@ -3445,7 +3445,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 Fake1E2Mu/Central/nonprompt_pt.png  used on input line 481.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/nonpro
-mpt_eta.png, id=2623, 698.61pt x 752.8125pt>
+mpt_eta.png, id=2626, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/n
 onprompt_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake1E2Mu/Central/no
@@ -3454,7 +3454,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 Fake1E2Mu/Central/nonprompt_eta.png  used on input line 482.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/ZCand_ma
-ss.png, id=2624, 698.61pt x 752.8125pt>
+ss.png, id=2627, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/ZCa
 nd_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/ZCan
@@ -3463,7 +3463,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 Fake3Mu/Central/ZCand_mass.png  used on input line 483.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/nonpromp
-t_pt.png, id=2625, 698.61pt x 752.8125pt>
+t_pt.png, id=2628, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/non
 prompt_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/nonp
@@ -3472,7 +3472,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 Fake3Mu/Central/nonprompt_pt.png  used on input line 484.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/nonpromp
-t_eta.png, id=2626, 698.61pt x 752.8125pt>
+t_eta.png, id=2629, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/non
 prompt_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZFake3Mu/Central/nonp
@@ -3481,7 +3481,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 Fake3Mu/Central/nonprompt_eta.png  used on input line 485.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/ZCand_ma
-ss.png, id=2627, 698.61pt x 752.8125pt>
+ss.png, id=2630, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/ZCa
 nd_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/ZCan
@@ -3490,7 +3490,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 Fake3Mu/Central/ZCand_mass.png  used on input line 486.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/nonpromp
-t_pt.png, id=2628, 698.61pt x 752.8125pt>
+t_pt.png, id=2631, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/non
 prompt_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/nonp
@@ -3499,7 +3499,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 Fake3Mu/Central/nonprompt_pt.png  used on input line 487.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/nonpromp
-t_eta.png, id=2629, 698.61pt x 752.8125pt>
+t_eta.png, id=2632, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/non
 prompt_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZFake3Mu/Central/nonp
@@ -3549,7 +3549,7 @@ Overfull \hbox (25.30377pt too wide) in paragraph at lines 500--529
  []
 
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/ZCand_ma
-ss.png, id=2672, 698.61pt x 752.8125pt>
+ss.png, id=2675, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/ZCa
 nd_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/ZCan
@@ -3558,7 +3558,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G1E2Mu/NoConvSF/ZCand_mass.png  used on input line 537.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/convLep_
-pt.png, id=2673, 698.61pt x 752.8125pt>
+pt.png, id=2676, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/con
 vLep_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/conv
@@ -3567,7 +3567,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G1E2Mu/NoConvSF/convLep_pt.png  used on input line 538.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/convLep_
-eta.png, id=2674, 698.61pt x 752.8125pt>
+eta.png, id=2677, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/con
 vLep_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/NoConvSF/conv
@@ -3576,7 +3576,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G1E2Mu/NoConvSF/convLep_eta.png  used on input line 539.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/ZCand_mas
-s.png, id=2675, 698.61pt x 752.8125pt>
+s.png, id=2678, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/ZCan
 d_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/ZCand
@@ -3585,7 +3585,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G1E2Mu/Central/ZCand_mass.png  used on input line 540.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/convLep_p
-t.png, id=2676, 698.61pt x 752.8125pt>
+t.png, id=2679, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/conv
 Lep_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/convL
@@ -3594,7 +3594,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G1E2Mu/Central/convLep_pt.png  used on input line 541.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/convLep_e
-ta.png, id=2677, 698.61pt x 752.8125pt>
+ta.png, id=2680, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/conv
 Lep_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG1E2Mu/Central/convL
@@ -3603,7 +3603,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G1E2Mu/Central/convLep_eta.png  used on input line 542.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/ZCand_ma
-ss.png, id=2678, 698.61pt x 752.8125pt>
+ss.png, id=2681, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/ZCa
 nd_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/ZCan
@@ -3612,7 +3612,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G1E2Mu/NoConvSF/ZCand_mass.png  used on input line 543.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/convLep_
-pt.png, id=2679, 698.61pt x 752.8125pt>
+pt.png, id=2682, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/con
 vLep_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/conv
@@ -3621,7 +3621,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G1E2Mu/NoConvSF/convLep_pt.png  used on input line 544.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/convLep_
-eta.png, id=2680, 698.61pt x 752.8125pt>
+eta.png, id=2683, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/con
 vLep_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/NoConvSF/conv
@@ -3630,7 +3630,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G1E2Mu/NoConvSF/convLep_eta.png  used on input line 545.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/ZCand_mas
-s.png, id=2681, 698.61pt x 752.8125pt>
+s.png, id=2684, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/ZCan
 d_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/ZCand
@@ -3639,7 +3639,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G1E2Mu/Central/ZCand_mass.png  used on input line 546.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/convLep_p
-t.png, id=2682, 698.61pt x 752.8125pt>
+t.png, id=2685, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/conv
 Lep_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/convL
@@ -3648,7 +3648,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G1E2Mu/Central/convLep_pt.png  used on input line 547.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/convLep_e
-ta.png, id=2683, 698.61pt x 752.8125pt>
+ta.png, id=2686, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/conv
 Lep_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG1E2Mu/Central/convL
@@ -3657,7 +3657,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G1E2Mu/Central/convLep_eta.png  used on input line 548.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/ZCand_mass
-.png, id=2684, 698.61pt x 752.8125pt>
+.png, id=2687, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/ZCand
 _mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/ZCand_
@@ -3666,7 +3666,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G3Mu/NoConvSF/ZCand_mass.png  used on input line 555.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/convLep_pt
-.png, id=2685, 698.61pt x 752.8125pt>
+.png, id=2688, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/convL
 ep_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/convLe
@@ -3675,7 +3675,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G3Mu/NoConvSF/convLep_pt.png  used on input line 556.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/convLep_et
-a.png, id=2686, 698.61pt x 752.8125pt>
+a.png, id=2689, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/convL
 ep_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/NoConvSF/convLe
@@ -3684,7 +3684,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G3Mu/NoConvSF/convLep_eta.png  used on input line 557.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/ZCand_mass.
-png, id=2687, 698.61pt x 752.8125pt>
+png, id=2690, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/ZCand_
 mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/ZCand_m
@@ -3693,7 +3693,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G3Mu/Central/ZCand_mass.png  used on input line 558.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/convLep_pt.
-png, id=2688, 698.61pt x 752.8125pt>
+png, id=2691, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/convLe
 p_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/convLep
@@ -3702,7 +3702,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G3Mu/Central/convLep_pt.png  used on input line 559.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/convLep_eta
-.png, id=2689, 698.61pt x 752.8125pt>
+.png, id=2692, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/convLe
 p_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/ZG3Mu/Central/convLep
@@ -3711,7 +3711,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run2/Z
 G3Mu/Central/convLep_eta.png  used on input line 560.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/ZCand_mass
-.png, id=2690, 698.61pt x 752.8125pt>
+.png, id=2693, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/ZCand
 _mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/ZCand_
@@ -3720,7 +3720,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G3Mu/NoConvSF/ZCand_mass.png  used on input line 561.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/convLep_pt
-.png, id=2691, 698.61pt x 752.8125pt>
+.png, id=2694, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/convL
 ep_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/convLe
@@ -3729,7 +3729,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G3Mu/NoConvSF/convLep_pt.png  used on input line 562.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/convLep_et
-a.png, id=2692, 698.61pt x 752.8125pt>
+a.png, id=2695, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/convL
 ep_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/NoConvSF/convLe
@@ -3738,7 +3738,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G3Mu/NoConvSF/convLep_eta.png  used on input line 563.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/ZCand_mass.
-png, id=2693, 698.61pt x 752.8125pt>
+png, id=2696, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/ZCand_
 mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/ZCand_m
@@ -3747,7 +3747,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G3Mu/Central/ZCand_mass.png  used on input line 564.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/convLep_pt.
-png, id=2694, 698.61pt x 752.8125pt>
+png, id=2697, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/convLe
 p_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/convLep
@@ -3756,7 +3756,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/Z
 G3Mu/Central/convLep_pt.png  used on input line 565.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/convLep_eta
-.png, id=2695, 698.61pt x 752.8125pt>
+.png, id=2698, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/convLe
 p_eta.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/convLep
@@ -3793,7 +3793,7 @@ sAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/convLep_pt.png> <./external/Char
 gedHiggsAnalysisV3/TriLepton/plots/Run3/ZG3Mu/Central/convLep_eta.png>]
 [126]
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/ZCand_mass
-.png, id=2741, 698.61pt x 752.8125pt>
+.png, id=2744, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/ZCand
 _mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/ZCand_
@@ -3802,7 +3802,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z1E2Mu/NoWZSF/ZCand_mass.png  used on input line 596.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/jets_1_pt.
-png, id=2742, 698.61pt x 752.8125pt>
+png, id=2745, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/jets_
 1_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/jets_1
@@ -3811,7 +3811,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z1E2Mu/NoWZSF/jets_1_pt.png  used on input line 597.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/jets_size.
-png, id=2743, 698.61pt x 752.8125pt>
+png, id=2746, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/jets_
 size.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/NoWZSF/jets_s
@@ -3820,7 +3820,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z1E2Mu/NoWZSF/jets_size.png  used on input line 598.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/ZCand_mas
-s.png, id=2744, 698.61pt x 752.8125pt>
+s.png, id=2747, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/ZCan
 d_mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/ZCand
@@ -3829,7 +3829,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z1E2Mu/Central/ZCand_mass.png  used on input line 599.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/jets_1_pt
-.png, id=2745, 698.61pt x 752.8125pt>
+.png, id=2748, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/jets
 _1_pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/jets_
@@ -3838,7 +3838,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z1E2Mu/Central/jets_1_pt.png  used on input line 600.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/jets_size
-.png, id=2746, 698.61pt x 752.8125pt>
+.png, id=2749, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/jets
 _size.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ1E2Mu/Central/jets_
@@ -3847,7 +3847,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z1E2Mu/Central/jets_size.png  used on input line 601.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/ZCand_mass.p
-ng, id=2747, 698.61pt x 752.8125pt>
+ng, id=2750, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/ZCand_m
 ass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/ZCand_ma
@@ -3856,7 +3856,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z3Mu/NoWZSF/ZCand_mass.png  used on input line 602.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/jets_1_pt.pn
-g, id=2748, 698.61pt x 752.8125pt>
+g, id=2751, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/jets_1_
 pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/jets_1_p
@@ -3865,7 +3865,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z3Mu/NoWZSF/jets_1_pt.png  used on input line 603.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/jets_size.pn
-g, id=2749, 698.61pt x 752.8125pt>
+g, id=2752, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/jets_si
 ze.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/NoWZSF/jets_siz
@@ -3874,7 +3874,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z3Mu/NoWZSF/jets_size.png  used on input line 604.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/ZCand_mass.
-png, id=2750, 698.61pt x 752.8125pt>
+png, id=2753, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/ZCand_
 mass.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/ZCand_m
@@ -3883,7 +3883,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z3Mu/Central/ZCand_mass.png  used on input line 605.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/jets_1_pt.p
-ng, id=2751, 698.61pt x 752.8125pt>
+ng, id=2754, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/jets_1
 _pt.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/jets_1_
@@ -3892,7 +3892,7 @@ Package pdftex.def Info: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/W
 Z3Mu/Central/jets_1_pt.png  used on input line 606.
 (pdftex.def)             Requested size: 97.64778pt x 105.22072pt.
 <external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/jets_size.p
-ng, id=2752, 698.61pt x 752.8125pt>
+ng, id=2755, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/jets_s
 ize.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/TriLepton/plots/Run3/WZ3Mu/Central/jets_si
@@ -3920,7 +3920,7 @@ Overfull \hbox (1.63821pt too wide) in paragraph at lines 752--787
 
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 70_MA15/Baseline/extended_unblind/combine_output/impacts_obs/condor/impacts.pdf
-, id=2848, 569.12625pt x 467.7475pt>
+, id=2851, 569.12625pt x 467.7475pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc70_MA15/Baseline/extended_unblind/combine_output/impacts_obs/condor/impact
 s.pdf Graphic file (type pdf)
@@ -3934,7 +3934,7 @@ s_obs/condor/impacts.pdf  used on input line 798.
 [134] [135]
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 100_MA60/Baseline/extended_unblind/combine_output/impacts_obs/condor/impacts.pd
-f, id=2861, 569.12625pt x 467.7475pt>
+f, id=2864, 569.12625pt x 467.7475pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc100_MA60/Baseline/extended_unblind/combine_output/impacts_obs/condor/impac
 ts.pdf Graphic file (type pdf)
@@ -3947,7 +3947,7 @@ ts_obs/condor/impacts.pdf  used on input line 805.
 (pdftex.def)             Requested size: 338.01643pt x 277.81717pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 130_MA90/ParticleNet/extended_unblind/combine_output/impacts_obs/condor/impacts
-.pdf, id=2862, 569.12625pt x 467.7475pt>
+.pdf, id=2865, 569.12625pt x 467.7475pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc130_MA90/ParticleNet/extended_unblind/combine_output/impacts_obs/condor/im
 pacts.pdf Graphic file (type pdf)
@@ -3960,7 +3960,7 @@ pacts_obs/condor/impacts.pdf  used on input line 812.
 (pdftex.def)             Requested size: 338.01643pt x 277.81717pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combined/MHc
 160_MA155/Baseline/extended_unblind/combine_output/impacts_obs/condor/impacts.p
-df, id=2863, 569.12625pt x 467.7475pt>
+df, id=2866, 569.12625pt x 467.7475pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/templates/All/Combine
 d/MHc160_MA155/Baseline/extended_unblind/combine_output/impacts_obs/condor/impa
 cts.pdf Graphic file (type pdf)
@@ -3988,7 +3988,7 @@ Chapter 6.
 ]
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR1E2Mu.Baseline.prefit
-.unblind.png, id=3068, 1405.25pt x 780.9175pt>
+.unblind.png, id=3071, 1405.25pt x 780.9175pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR1E2Mu.Baseline.p
 refit.unblind.png Graphic file (type png)
@@ -4001,7 +4001,7 @@ sults/plots/postfit_summary/extended/mHc160/Baseline/postfit_summary.mHc160.All
 (pdftex.def)             Requested size: 356.7964pt x 198.27934pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR1E2Mu.Baseline.postfi
-t_b.unblind.png, id=3069, 1405.25pt x 780.9175pt>
+t_b.unblind.png, id=3072, 1405.25pt x 780.9175pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR1E2Mu.Baseline.p
 ostfit_b.unblind.png Graphic file (type png)
@@ -4014,7 +4014,7 @@ sults/plots/postfit_summary/extended/mHc160/Baseline/postfit_summary.mHc160.All
 (pdftex.def)             Requested size: 356.7964pt x 198.27934pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR3Mu.Baseline.prefit.u
-nblind.png, id=3070, 1405.25pt x 780.9175pt>
+nblind.png, id=3073, 1405.25pt x 780.9175pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR3Mu.Baseline.pre
 fit.unblind.png Graphic file (type png)
@@ -4027,7 +4027,7 @@ sults/plots/postfit_summary/extended/mHc160/Baseline/postfit_summary.mHc160.All
 (pdftex.def)             Requested size: 356.7964pt x 198.27934pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR3Mu.Baseline.postfit_
-b.unblind.png, id=3071, 1405.25pt x 780.9175pt>
+b.unblind.png, id=3074, 1405.25pt x 780.9175pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc160/Baseline/postfit_summary.mHc160.All.SR3Mu.Baseline.pos
 tfit_b.unblind.png Graphic file (type png)
@@ -4040,7 +4040,7 @@ sults/plots/postfit_summary/extended/mHc160/Baseline/postfit_summary.mHc160.All
 (pdftex.def)             Requested size: 356.7964pt x 198.27934pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc160/ParticleNet/postfit_summary.mHc160.All.Combined.ParticleNet
-.prefit.unblind.png, id=3072, 1405.25pt x 780.9175pt>
+.prefit.unblind.png, id=3075, 1405.25pt x 780.9175pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc160/ParticleNet/postfit_summary.mHc160.All.Combined.Partic
 leNet.prefit.unblind.png Graphic file (type png)
@@ -4053,7 +4053,7 @@ All.Combined.ParticleNet.prefit.unblind.png  used on input line 50.
 (pdftex.def)             Requested size: 356.7964pt x 198.27934pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc160/ParticleNet/postfit_summary.mHc160.All.Combined.ParticleNet
-.postfit_b.unblind.png, id=3073, 1405.25pt x 780.9175pt>
+.postfit_b.unblind.png, id=3076, 1405.25pt x 780.9175pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc160/ParticleNet/postfit_summary.mHc160.All.Combined.Partic
 leNet.postfit_b.unblind.png Graphic file (type png)
@@ -4079,7 +4079,7 @@ d.ParticleNet.prefit.unblind.png> <./external/ChargedHiggsAnalysisV3/SignalRegi
 onStudyV3/results/plots/postfit_summary/extended/mHc160/ParticleNet/postfit_sum
 mary.mHc160.All.Combined.ParticleNet.postfit_b.unblind.png>]
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit
-.All.Asymptotic.Baseline.MHc70.unblind.png, id=3100, 598.235pt x 574.145pt>
+.All.Asymptotic.Baseline.MHc70.unblind.png, id=3103, 598.235pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/
 limit.All.Asymptotic.Baseline.MHc70.unblind.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/l
@@ -4089,7 +4089,7 @@ sults/plots/BR/All/limit.All.Asymptotic.Baseline.MHc70.unblind.png  used on inp
 ut line 64.
 (pdftex.def)             Requested size: 180.27504pt x 173.01576pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit
-.All.Asymptotic.ParticleNet.MHc100.unblind.png, id=3101, 598.235pt x 574.145pt>
+.All.Asymptotic.ParticleNet.MHc100.unblind.png, id=3104, 598.235pt x 574.145pt>
 
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/
 limit.All.Asymptotic.ParticleNet.MHc100.unblind.png Graphic file (type png)
@@ -4100,7 +4100,7 @@ sults/plots/BR/All/limit.All.Asymptotic.ParticleNet.MHc100.unblind.png  used on
  input line 65.
 (pdftex.def)             Requested size: 180.27504pt x 173.01576pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit
-.All.Asymptotic.ParticleNet.MHc130.unblind.png, id=3102, 598.235pt x 574.145pt>
+.All.Asymptotic.ParticleNet.MHc130.unblind.png, id=3105, 598.235pt x 574.145pt>
 
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/
 limit.All.Asymptotic.ParticleNet.MHc130.unblind.png Graphic file (type png)
@@ -4111,7 +4111,7 @@ sults/plots/BR/All/limit.All.Asymptotic.ParticleNet.MHc130.unblind.png  used on
  input line 66.
 (pdftex.def)             Requested size: 180.27504pt x 173.01576pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit
-.All.Asymptotic.ParticleNet.MHc160.unblind.png, id=3103, 598.235pt x 574.145pt>
+.All.Asymptotic.ParticleNet.MHc160.unblind.png, id=3106, 598.235pt x 574.145pt>
 
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/
 limit.All.Asymptotic.ParticleNet.MHc160.unblind.png Graphic file (type png)
@@ -4128,7 +4128,7 @@ ysisV3/SignalRegionStudyV3/results/plots/BR/All/limit.All.Asymptotic.ParticleNe
 t.MHc100.unblind.png> <./external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/re
 sults/plots/BR/All/limit.All.Asymptotic.ParticleNet.MHc130.unblind.png> <./exte
 rnal/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit.All.
-Asymptotic.ParticleNet.MHc160.unblind.png>]) (./Sections/conclusions.tex
+Asymptotic.ParticleNet.MHc160.unblind.png>]) (./Sections/summary.tex
 Chapter 7.
 [148
 
@@ -4149,7 +4149,7 @@ LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <9> not available
 Appendix B.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc70/Baseline/postfit_summary.mHc70.All.SR1E2Mu.Baseline.prefit.u
-nblind.png, id=3163, 698.61pt x 752.8125pt>
+nblind.png, id=3166, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc70/Baseline/postfit_summary.mHc70.All.SR1E2Mu.Baseline.pre
 fit.unblind.png Graphic file (type png)
@@ -4162,7 +4162,7 @@ R1E2Mu.Baseline.prefit.unblind.png  used on input line 8.
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc70/Baseline/postfit_summary.mHc70.All.SR1E2Mu.Baseline.postfit_
-b.unblind.png, id=3164, 698.61pt x 752.8125pt>
+b.unblind.png, id=3167, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc70/Baseline/postfit_summary.mHc70.All.SR1E2Mu.Baseline.pos
 tfit_b.unblind.png Graphic file (type png)
@@ -4175,7 +4175,7 @@ R1E2Mu.Baseline.postfit_b.unblind.png  used on input line 9.
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc70/Baseline/postfit_summary.mHc70.All.SR3Mu.Baseline.prefit.unb
-lind.png, id=3165, 698.61pt x 752.8125pt>
+lind.png, id=3168, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc70/Baseline/postfit_summary.mHc70.All.SR3Mu.Baseline.prefi
 t.unblind.png Graphic file (type png)
@@ -4188,7 +4188,7 @@ R3Mu.Baseline.prefit.unblind.png  used on input line 10.
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc70/Baseline/postfit_summary.mHc70.All.SR3Mu.Baseline.postfit_b.
-unblind.png, id=3166, 698.61pt x 752.8125pt>
+unblind.png, id=3169, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc70/Baseline/postfit_summary.mHc70.All.SR3Mu.Baseline.postf
 it_b.unblind.png Graphic file (type png)
@@ -4201,7 +4201,7 @@ R3Mu.Baseline.postfit_b.unblind.png  used on input line 11.
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc100/Baseline/postfit_summary.mHc100.All.SR1E2Mu.Baseline.prefit
-.unblind.png, id=3167, 698.61pt x 752.8125pt>
+.unblind.png, id=3170, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc100/Baseline/postfit_summary.mHc100.All.SR1E2Mu.Baseline.p
 refit.unblind.png Graphic file (type png)
@@ -4214,7 +4214,7 @@ sults/plots/postfit_summary/extended/mHc100/Baseline/postfit_summary.mHc100.All
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc100/Baseline/postfit_summary.mHc100.All.SR1E2Mu.Baseline.postfi
-t_b.unblind.png, id=3168, 698.61pt x 752.8125pt>
+t_b.unblind.png, id=3171, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc100/Baseline/postfit_summary.mHc100.All.SR1E2Mu.Baseline.p
 ostfit_b.unblind.png Graphic file (type png)
@@ -4227,7 +4227,7 @@ sults/plots/postfit_summary/extended/mHc100/Baseline/postfit_summary.mHc100.All
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc100/Baseline/postfit_summary.mHc100.All.SR3Mu.Baseline.prefit.u
-nblind.png, id=3169, 698.61pt x 752.8125pt>
+nblind.png, id=3172, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc100/Baseline/postfit_summary.mHc100.All.SR3Mu.Baseline.pre
 fit.unblind.png Graphic file (type png)
@@ -4240,7 +4240,7 @@ sults/plots/postfit_summary/extended/mHc100/Baseline/postfit_summary.mHc100.All
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc100/Baseline/postfit_summary.mHc100.All.SR3Mu.Baseline.postfit_
-b.unblind.png, id=3170, 698.61pt x 752.8125pt>
+b.unblind.png, id=3173, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc100/Baseline/postfit_summary.mHc100.All.SR3Mu.Baseline.pos
 tfit_b.unblind.png Graphic file (type png)
@@ -4253,7 +4253,7 @@ sults/plots/postfit_summary/extended/mHc100/Baseline/postfit_summary.mHc100.All
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc130/Baseline/postfit_summary.mHc130.All.SR1E2Mu.Baseline.prefit
-.unblind.png, id=3171, 698.61pt x 752.8125pt>
+.unblind.png, id=3174, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc130/Baseline/postfit_summary.mHc130.All.SR1E2Mu.Baseline.p
 refit.unblind.png Graphic file (type png)
@@ -4266,7 +4266,7 @@ sults/plots/postfit_summary/extended/mHc130/Baseline/postfit_summary.mHc130.All
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc130/Baseline/postfit_summary.mHc130.All.SR1E2Mu.Baseline.postfi
-t_b.unblind.png, id=3172, 698.61pt x 752.8125pt>
+t_b.unblind.png, id=3175, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc130/Baseline/postfit_summary.mHc130.All.SR1E2Mu.Baseline.p
 ostfit_b.unblind.png Graphic file (type png)
@@ -4279,7 +4279,7 @@ sults/plots/postfit_summary/extended/mHc130/Baseline/postfit_summary.mHc130.All
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc130/Baseline/postfit_summary.mHc130.All.SR3Mu.Baseline.prefit.u
-nblind.png, id=3173, 698.61pt x 752.8125pt>
+nblind.png, id=3176, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc130/Baseline/postfit_summary.mHc130.All.SR3Mu.Baseline.pre
 fit.unblind.png Graphic file (type png)
@@ -4292,7 +4292,7 @@ sults/plots/postfit_summary/extended/mHc130/Baseline/postfit_summary.mHc130.All
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit_summ
 ary/extended/mHc130/Baseline/postfit_summary.mHc130.All.SR3Mu.Baseline.postfit_
-b.unblind.png, id=3174, 698.61pt x 752.8125pt>
+b.unblind.png, id=3177, 698.61pt x 752.8125pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/postfit
 _summary/extended/mHc130/Baseline/postfit_summary.mHc130.All.SR3Mu.Baseline.pos
 tfit_b.unblind.png Graphic file (type png)
@@ -4304,7 +4304,7 @@ sults/plots/postfit_summary/extended/mHc130/Baseline/postfit_summary.mHc130.All
 .SR3Mu.Baseline.postfit_b.unblind.png  used on input line 31.
 (pdftex.def)             Requested size: 180.27504pt x 194.25629pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit
-.All.Asymptotic.Baseline.MHc100.unblind.png, id=3175, 598.235pt x 574.145pt>
+.All.Asymptotic.Baseline.MHc100.unblind.png, id=3178, 598.235pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/
 limit.All.Asymptotic.Baseline.MHc100.unblind.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/l
@@ -4314,7 +4314,7 @@ sults/plots/BR/All/limit.All.Asymptotic.Baseline.MHc100.unblind.png  used on in
 put line 38.
 (pdftex.def)             Requested size: 116.42775pt x 111.73442pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit
-.All.Asymptotic.Baseline.MHc130.unblind.png, id=3176, 598.235pt x 574.145pt>
+.All.Asymptotic.Baseline.MHc130.unblind.png, id=3179, 598.235pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/
 limit.All.Asymptotic.Baseline.MHc130.unblind.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/l
@@ -4324,7 +4324,7 @@ sults/plots/BR/All/limit.All.Asymptotic.Baseline.MHc130.unblind.png  used on in
 put line 39.
 (pdftex.def)             Requested size: 116.42775pt x 111.73442pt.
 <external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/limit
-.All.Asymptotic.Baseline.MHc160.unblind.png, id=3177, 598.235pt x 574.145pt>
+.All.Asymptotic.Baseline.MHc160.unblind.png, id=3180, 598.235pt x 574.145pt>
 File: external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/
 limit.All.Asymptotic.Baseline.MHc160.unblind.png Graphic file (type png)
 <use external/ChargedHiggsAnalysisV3/SignalRegionStudyV3/results/plots/BR/All/l
@@ -4387,16 +4387,16 @@ Underfull \hbox (badness 4341) in paragraph at lines 151--151
 
 ] (build/Main.aux)
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: CB33E53758E33FEBC8378D9AF8A8BE07;10323.
+(rerunfilecheck)             Checksum: D80AE57204EE8A9C14E7F3BAA8B25C6B;10237.
 Package logreq Info: Writing requests to 'Main.run.xml'.
 \openout1 = `Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35725 strings out of 477136
- 816001 string characters out of 5813392
+ 35729 strings out of 477136
+ 816051 string characters out of 5813392
  1958388 words of memory out of 6000000
- 54186 multiletter control sequences out of 15000+600000
+ 54188 multiletter control sequences out of 15000+600000
  566210 words of font info for 229 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  84i,18n,89p,2010b,1769s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4473,10 +4473,10 @@ share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on build/Main.pdf (198 pages, 12227590 bytes).
+Output written on build/Main.pdf (198 pages, 12244754 bytes).
 PDF statistics:
- 4164 PDF objects out of 4296 (max. 8388607)
- 3254 compressed objects within 33 object streams
- 963 named destinations out of 1000 (max. 500000)
+ 4167 PDF objects out of 4296 (max. 8388607)
+ 3257 compressed objects within 33 object streams
+ 965 named destinations out of 1000 (max. 500000)
  1930 words of extra memory for PDF output out of 10000 (max. 10000000)
 

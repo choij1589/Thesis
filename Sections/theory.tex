@@ -298,9 +298,15 @@ In the Minimal Supersymmetric Standard Model (MSSM), supersymmetry fixes the qua
 
 \subsubsection{Electroweak Symmetry Breaking and the Mass Spectrum}
 
-After electroweak symmetry breaking, both doublets acquire vacuum expectation values,
+After electroweak symmetry breaking, both doublets are expanded around their vacuum expectation values,
 \begin{equation}
-\langle\Phi_i\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v_i \end{pmatrix}, \quad v^2 = v_1^2 + v_2^2 = (246~\GeV)^2
+\Phi_i =
+\begin{pmatrix}
+\phi_i^+ \\
+(v_i + \rho_i + i\eta_i) / \sqrt{2}
+\end{pmatrix},
+\quad i = 1,2,
+\quad v^2 = v_1^2 + v_2^2 = (246~\GeV)^2,
 \label{eq:2hdm_vevs}
 \end{equation}
 The ratio of vacuum expectation values defines a key parameter,
@@ -312,7 +318,22 @@ which controls the relative contributions of the two doublets and strongly influ
 
 Of the eight real degrees of freedom, three become Goldstone bosons absorbed by the $\PWpm$ and $\PZ$, leaving five physical states, two CP-even scalars (\Ph, \PH), one CP-odd pseudoscalar (\PA), and a charged pair (\PHpm).
 
-In the CP-even sector, the neutral fields $\rho_1$ and $\rho_2$, the real parts of $\phi_1^0$ and $\phi_2^0$ oscillating around $v_1$ and $v_2$, mix through a $2\times2$ mass matrix,
+The charged and CP-odd sectors are diagonalized by rotations through the angle $\beta$,
+\begin{gather}
+\begin{pmatrix} G^+ \\ \PHp \end{pmatrix}
+=
+\begin{pmatrix} \cos\beta & \sin\beta \\ -\sin\beta & \cos\beta \end{pmatrix}
+\begin{pmatrix} \phi_1^+ \\ \phi_2^+ \end{pmatrix}
+\label{eq:charged_rotation} \\
+\begin{pmatrix} G^0 \\ \PA \end{pmatrix}
+=
+\begin{pmatrix} \cos\beta & \sin\beta \\ -\sin\beta & \cos\beta \end{pmatrix}
+\begin{pmatrix} \eta_1 \\ \eta_2 \end{pmatrix}
+\label{eq:cpodd_rotation}
+\end{gather}
+where $G^\pm$ and $G^0$ are the Goldstone bosons absorbed by the $\PWpm$ and $\PZ$ bosons, respectively.
+
+In the CP-even sector, the neutral fluctuations $\rho_1$ and $\rho_2$ introduced in Eq.~(\ref{eq:2hdm_vevs}) mix through a $2\times2$ mass matrix,
 \begin{equation}
 \mathcal{M}^2_{\text{CP-even}} = \begin{pmatrix} A_{11} & A_{12} \\ A_{12} & A_{22} \end{pmatrix}
 \label{eq:cpeven_mass_matrix}
@@ -325,7 +346,17 @@ A_{12} = -m_{12}^2 + (\lambda_3 + \lambda_4 + \lambda_5) v_1 v_2 = -m_{12}^2 + \
 \end{gather}
 Diagonalization yields the physical mass eigenstates \Ph and \PH through a rotation by angle $\alpha$,
 \begin{equation}
-\begin{pmatrix} \Ph \\ \PH \end{pmatrix} = \begin{pmatrix} -\sin\alpha & \cos\alpha \\ \cos\alpha & \sin\alpha \end{pmatrix} \begin{pmatrix} \rho_1 \\ \rho_2 \end{pmatrix}
+\begin{pmatrix}
+\PH \\ \Ph 
+\end{pmatrix} 
+= 
+\begin{pmatrix} 
+      \cos\alpha & \sin\alpha \\   
+      -\sin\alpha & \cos\alpha 
+\end{pmatrix} 
+\begin{pmatrix} 
+\rho_1 \\ \rho_2 
+\end{pmatrix}
 \label{eq:cpeven_rotation}
 \end{equation}
 By convention, $\mh < \mH$ and the lighter state \Ph is identified with the observed 125\GeV Higgs boson. The mixing angle $\alpha$ is determined by
@@ -344,7 +375,7 @@ The CP-odd and charged scalar masses are determined by the soft-breaking paramet
 m_\PA^2 = \frac{m_{12}^2}{\sin\beta\cos\beta} - \lambda_5 v^2 = m_{12}^2 \left(\frac{1 + \tan^2\beta}{\tan\beta}\right) - \lambda_5 v^2 \label{eq:mA}
 \end{gather}
 \begin{gather}
-m_{\PHpm}^2 = m_\PA^2 + \frac{1}{2}(\lambda_5 - \lambda_4)v^2 \label{eq:mHpm}
+m_{\PHp}^2 = m_\PA^2 + \frac{1}{2}(\lambda_5 - \lambda_4)v^2 \label{eq:mHpm}
 \end{gather}
 The \PHc-\PA mass splitting is governed by $(\lambda_5 - \lambda_4)$. In the MSSM ($\lambda_4 = -g^2/2$, $\lambda_5 = 0$), this gives $\mHc^2 = \mA^2 + m_W^2$.
 
